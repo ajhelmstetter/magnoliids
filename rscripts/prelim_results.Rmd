@@ -10,8 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r table, echo=FALSE}
 library(knitr)
-setwd("~/Dropbox/projects/AJH_magnoliids/")
-df<-read.csv("stats/exon_stats.csv",row.names = 1, header=F)
+setwd("~/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/")
+df<-read.csv("outputs/exon_stats.csv",row.names = 1, header=F)
 
 colnames(df)<-c("25% inds", "50% inds", "75% inds", "90% inds")
 df<-df[c(2:length(df[,1])),]
@@ -23,10 +23,15 @@ kable(df,caption = "number of exons recovered using different filtering levels. 
 
 ```{r venn,echo=FALSE,message=F,warning=F,results='hide',fig.width=6,fig.height=6,fig.cap="Venn diagram showing overlap of 75/50 exons in each order included in the analysis. Individuals were split by order into different datasets. Filtering was then done independently on each of the five datasets. Overlap among exons was then calculated. For example,  there are 24 exons that are common to Laurales and Magnoliales, but not recovered in the other orders after 75/50 filtering."}
 
-setwd("~/Dropbox/projects/AJH_magnoliids/")
+setwd("~/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/")
+
 library(ape)
 
-sample.filename = "stats/test_seq_lengths.txt"
+#Calculate sizes for gene and sample labels, increase the multiplier to make text bigger
+gene.size.multiplier = .1
+sample.size.multiplier = .5
+
+sample.filename = "data/test_seq_lengths.txt"
 sample.data= as.matrix(read.table(sample.filename,header=T,row.names=1,sep="\t"))
 
 #length reference exon
@@ -55,22 +60,22 @@ ord_l<-list(canel,chlor,laura,magno,piper,c(canel,chlor,laura,magno,piper))
 l_75_75<-list()
 
 for(i in 1:6){
-  
+
 #extract only sample exon lengths
 sample.len = sample.data[rownames(sample.data) %in% ord_l[[i]],]
 
 #calculate percentage of exon recovered for each exon in each individual
 percent.len= sweep(sample.len, 2, reference.len, "/")
 percent.len = ifelse(percent.len>1,1,percent.len)
-percent.len.0.75 <- percent.len
+percent.len.limit <- percent.len
 
 # if percentage exon length recovered is >= 75% make value 1
 # if not make value 0
-percent.len.0.75[percent.len.0.75>=0.75] = 1
-percent.len.0.75[percent.len.0.75<0.75] = 0
+percent.len.limit[percent.len.limit>=0.5] = 1
+percent.len.limit[percent.len.limit<0.5] = 0
 
 #For each exon calculate number of individuals with >= 75% of exon
-col <- colSums(percent.len.0.75 != 0)
+col <- colSums(percent.len.limit != 0)
 
 #Calculate % individuals with >= 75% of exon for each exon
 col <- col / (length(sample.len[,1]))
@@ -84,147 +89,13 @@ l_75_75[[i]]<-names(length7575[1,])
 }
 
 library(gplots)
-par(mar=c(3,3,3,3))
+par(mar=c(0,0,0,0))
 
 venn(list(Canellales=l_75_75[[1]],
           Chloranthales=l_75_75[[2]],
           Laurales=l_75_75[[3]],
           Magnoliales=l_75_75[[4]],
           Piperales=l_75_75[[5]]), small =T)
-
-```
-
-```{r lpp, echo=FALSE,fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with local posterior probability (LPP) and Quartet Support (QS). Inner pie charts on nodes show the value of LPP for the preceding branch (0-1) in black and white. Outer pie charts show QS in grey and white. QS is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Tree was constructed using loci where >75% of exon was reconstructed in >50% of individuals and paralogs removed (101 loci). Tip labels are coloured by order."}
-
-par(mar=c(0,0,0,0))
-
-library(ape)
-library(phylotools)
-library(RColorBrewer)
-
-palette(brewer.pal(5, "Set1"))
-
-setwd("~/Dropbox/projects/AJH_magnoliids/")
-
-#read in tree and tips
-phy <- read.tree("astral/astral_mag_run3_bs10.tre")
-df <- read.csv("data/rename_tips.csv")
-df <- df[df$tip_name %in% phy$tip.label, ]
-
-##tip label change
-dfnames <- data.frame(df$tip_name, df$genus_species)
-phy <- sub.taxa.label(phy, dfnames)
-phy$edge.length[phy$edge.length == "NaN"] <- 0.25
-
-#cols
-df <- df[match(phy$tip.label, df$genus_species), ]
-
-#plot tree QS
-phy <- root(phy, "Chloranthus_spicatus", edgelabel = T)
-phy <- ladderize(phy)
-plot(
-  phy,
-  cex = 0.75,
-  label.offset = 0.05,
-  align.tip.label = F,
-  edge.width = 2,
-  edge.color = "grey",
-  tip.color = as.numeric(as.factor(df$Order))
-)
-p <- character(length(phy$node.label))
-
-phy <- read.tree("astral/astral_mag_run3_bs10_QS.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
-  piecol = c("grey", "white"),
-  cex = 0.25
-)
-
-phy <- read.tree("astral/astral_mag_run3_bs10.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
-  piecol = c("black", "white"),
-  cex = 0.125
-)
-
-
-legend(
-  'bottomleft',
-  legend = c(
-    'canellales',
-    'chloranthales',
-    'laurales',
-    'magnoliales',
-    'piperales',
-    'Local PP',
-    'Quartet support'
-  ),
-  text.col = c(1, 2, 3, 4, 5,"black","black"),
-  pt.cex = c(NA,NA,NA,NA,NA,2,2),
-  pch = c(NA,NA,NA,NA,NA,16,16),
-  col = c(NA,NA,NA,NA,NA,"black","grey"),
-  bty = 'n'
-)
-
-```
-
-```{r qs, echo=FALSE,fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with quartet support (QS). This is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Pie charts on nodes show the value of QS for the preceding branch (0-1)."}
-#library(ape)
-#library(phylotools)
-#library(RColorBrewer)
-#
-#palette(brewer.pal(5,"Set1"))
-#
-#setwd("~/Dropbox/projects/AJH_magnoliids/")
-#
-##read in tree and tips
-#phy<-read.tree("astral/astral_mag_run2_75_50_bs10_QS.tre")
-#df<-read.csv("data/rename_tips.csv")
-#df<-df[df$tip_name%in%phy$tip.label,]
-#
-###tip label change
-#dfnames<-data.frame(df$tip_name,df$genus_species)
-#phy<-sub.taxa.label(phy,dfnames)
-#phy$edge.length[phy$edge.length=="NaN"]<-0.25
-#
-##cols
-#df<-df[match(phy$tip.label,df$genus_species),]
-#
-##plot tree QS
-#phy<-root(phy,"Chloranthus_spicatus",edgelabel = T)
-#phy<-ladderize(phy)
-#plot(phy,cex=0.75,label.offset = 0.05,edge.width = 2,edge.color="grey",tip.color = as.numeric(as.factor(df$Order)))
-#p <- character(length(phy$node.label))
-#nodelabels(pie=cbind(as.numeric(phy$node.label),100-as.numeric(phy$node.label)),
-#           piecol=c("black","white"),cex=0.2)
-#
-#legend('bottomleft',legend=c('canellales','chloranthales','laurales','magnoliales','piperales'),
-#       text.col=c(1,2,3,4,5),bty='n')
-
-
-```
-
-```{r iqtree, echo=FALSE,fig.width=10,fig.height=10,fig.cap="IQTREE annotated with bootstrap support (100 bootstraps). Pie charts on nodes show support for preceding branch. Tree was constructed using a supermatrix of 191 concatenated loci (supercontigs) that were selected with 75%/25% filtering (i.e. at least 75% exon length in 25% of individuals.)"}
-#library(ape)
-#library(phylotools)
-#setwd("~/Dropbox/projects/AJH_magnoliids/")
-
-#phy<-read.tree("iqtree/mag.partitions.contree")
-#df<-read.csv("data/rename_tips.csv")
-#df<-df[df$tip_name%in%phy$tip.label,]
-
-##tip label change
-#dfnames<-data.frame(df$tip_name,df$genus_species)
-#phy<-sub.taxa.label(phy,dfnames)
-
-#plot
-#phy<-root(phy,"Chloranthus_spicatus",edgelabel = T)
-#phy<-ladderize(phy)
-#plot(phy,cex=0.75,label.offset = 0.005,edge.width = 2,edge.color="grey")
-#p <- character(length(phy$node.label))
-#nodelabels(pie=cbind(as.numeric(phy$node.label),100-as.numeric(phy$node.label)),
-#           piecol=c("black","white"),cex=0.3)
-#add.scale.bar(length=0.1,lcol="grey")
 
 ```
 

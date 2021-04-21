@@ -41,15 +41,15 @@ sample.len = sample.data[rownames(sample.data) %in% ord_l[[i]],]
 #calculate percentage of exon recovered for each exon in each individual
 percent.len= sweep(sample.len, 2, reference.len, "/")
 percent.len = ifelse(percent.len>1,1,percent.len)
-percent.len.0.75 <- percent.len
+percent.len.limit <- percent.len
 
 # if percentage exon length recovered is >= 75% make value 1
 # if not make value 0
-percent.len.0.75[percent.len.0.75>=0.75] = 1
-percent.len.0.75[percent.len.0.75<0.75] = 0
+percent.len.limit[percent.len.limit>=0.5] = 1
+percent.len.limit[percent.len.limit<0.5] = 0
 
 #For each exon calculate number of individuals with >= 75% of exon
-col <- colSums(percent.len.0.75 != 0)
+col <- colSums(percent.len.limit != 0)
 
 #Calculate % individuals with >= 75% of exon for each exon
 col <- col / (length(sample.len[,1]))
@@ -63,6 +63,8 @@ l_75_75[[i]]<-names(length7575[1,])
 }
 
 library(gplots)
+
+png("figures/venn.png", height = 20, width = 20, units = "cm", res = 100)
 par(mar=c(0,0,0,0))
 
 venn(list(Canellales=l_75_75[[1]],
@@ -71,5 +73,17 @@ venn(list(Canellales=l_75_75[[1]],
           Magnoliales=l_75_75[[4]],
           Piperales=l_75_75[[5]]))
 
+dev.off()
 
 
+####
+# lactoris densities
+####
+
+lactoris_df<-data.frame(c(sample.data["P_019189", ], sample.data["P0102B", ]),
+           c(rep("P_019189", 353), rep("P0102B", 353)))
+
+colnames(lactoris_df)<-c("exon_length","name")
+
+ggplot(lactoris_df,aes(x=exon_length, fill=name)) +
+  geom_density(alpha=0.5)

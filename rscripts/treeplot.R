@@ -1,56 +1,79 @@
+
+
+
+
+###
+# ASTRAL
+###
+
+par(mar=c(0,0,0,0))
+
 library(ape)
 library(phylotools)
-par(mar=c(1,1,1,1))
+library(RColorBrewer)
+library(tidyr)
 
-setwd("~/Dropbox/projects/AJH_magnoliids/")
-
-###
-# QS tree
-###
+palette(colorRampPalette(brewer.pal(name="Set1", n = 8))(17))
 
 #read in tree and tips
-phy<-read.tree("astral_all_mag_bs10_QS.tre")
-df<-read.csv("rename_tips.csv")
-df<-df[df$tip_name%in%phy$tip.label,]
+phy <- read.tree("data/astral_all_bs10_lpp.tre")
+df <- read.csv("data/taxonomy_namelist.csv")
+df <- df[df$Namelist %in% phy$tip.label, ]
+df <-df %>% unite("genus_species", Genus:Species, na.rm = TRUE, remove = FALSE)
 
 ##tip label change
-dfnames<-data.frame(df$tip_name,df$genus_species)
-phy<-sub.taxa.label(phy,dfnames)
-phy$edge.length[phy$edge.length=="NaN"]<-0.001
+dfnames <- data.frame(df$Namelist, df$genus_species)
+phy <- sub.taxa.label(phy, dfnames)
+phy$edge.length[phy$edge.length == "NaN"] <- 0.25
+
+#cols
+df <- df[match(phy$tip.label, df$genus_species), ]
 
 #plot tree QS
-jpeg("astral_mag_bs10_QS.jpg",width = 2500, height = 2500,res=300)
-phy<-root(phy,"Chloranthus_spicatus",edgelabel = T)
-phy<-ladderize(phy)
-plot(phy,cex=0.7,label.offset = 0.1)
+phy <- root(phy, "Chloranthus_spicatus", edgelabel = T)
+phy <- ladderize(phy)
+plot(
+  phy,
+  cex = 0.5,
+  label.offset = 0.05,
+  align.tip.label = T,
+  edge.width = 2,
+  edge.color = "grey",
+  tip.color = as.numeric(as.factor(df$Order))
+)
 p <- character(length(phy$node.label))
-nodelabels(pie=cbind(as.numeric(phy$node.label),100-as.numeric(phy$node.label)),
-           piecol=c("black","white"),cex=0.3)
-dev.off()
 
-###
-# LPP tree
-###
+phy <- read.tree("data/astral_all_bs10_QS.tre")
+nodelabels(
+  pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
+  piecol = c("grey", "white"),
+  cex = 0.25
+)
 
-#read in tree and tips
-phy<-read.tree("astral_all_mag_bs10.tre")
-df<-read.csv("rename_tips.csv")
-df<-df[df$tip_name%in%phy$tip.label,]
+phy <- read.tree("data/astral_all_bs10_lpp.tre")
+nodelabels(
+  pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
+  piecol = c("black", "white"),
+  cex = 0.125
+)
 
-##tip label change
-dfnames<-data.frame(df$tip_name,df$genus_species)
-phy<-sub.taxa.label(phy,dfnames)
-phy$edge.length[phy$edge.length=="NaN"]<-0.001
-
-#plot tree QS
-jpeg("astral_mag_bs10.jpg",width = 2500, height = 2500,res=300)
-phy<-root(phy,"Chloranthus_spicatus",edgelabel = T)
-phy<-ladderize(phy)
-plot(phy,cex=0.7,label.offset = 0.1)
-p <- character(length(phy$node.label))
-nodelabels(pie=cbind(as.numeric(phy$node.label),1-as.numeric(phy$node.label)),
-           piecol=c("black","white"),cex=0.3)
-dev.off()
+legend(
+  'bottomleft',
+  legend = c(
+    'canellales',
+    'chloranthales',
+    'laurales',
+    'magnoliales',
+    'piperales',
+    'Local PP',
+    'Quartet support'
+  ),
+  text.col = c(1, 2, 3, 4, 5,"black","black"),
+  pt.cex = c(NA,NA,NA,NA,NA,2,2),
+  pch = c(NA,NA,NA,NA,NA,16,16),
+  col = c(NA,NA,NA,NA,NA,"black","grey"),
+  bty = 'n'
+)
 
 
 ####

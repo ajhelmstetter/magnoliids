@@ -1,7 +1,8 @@
 #' @keywords internal
 "_PACKAGE"
 
-# Imports: start ---- 
+# Imports: start ----
+#' @import ggplot2
 # Imports: end ----
 
 NULL

@@ -35,6 +35,12 @@ sample.len = sample.data[2:length(sample.data[, 1]),]
 percent.len = sweep(sample.len, 2, reference.len, "/")
 percent.len = ifelse(percent.len > 1, 1, percent.len)
 
+####
+#uncomment to ID low data samples
+####
+#percent.len = ifelse(percent.len > 0.01, 1, percent.len)
+#sort(rowSums(percent.len))
+
 ###
 # taxonomic scale
 ###
@@ -214,8 +220,8 @@ write.csv(exon_stats, "outputs/exon_filtering_stats.csv")
 # if percentage exon length recovered is >= 75% make value 1
 # if not make value 0
 percent.len.limit <- percent.len
-percent.len.limit[percent.len.limit >= 0.50] = 1
-percent.len.limit[percent.len.limit < 0.50] = 0
+percent.len.limit[percent.len.limit >= 0.01] = 1
+percent.len.limit[percent.len.limit < 0.01] = 0
 
 #For each exon calculate number of individuals with >= 75% of exon
 col <- colSums(percent.len.limit != 0)

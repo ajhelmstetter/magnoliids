@@ -21,6 +21,4 @@ README.html
 inst/doc
 
 # Unreleased data files ----
-data/trees/
-data/taxonomy_namelist.csv
-data/test_seq_lengths.txt
+data/

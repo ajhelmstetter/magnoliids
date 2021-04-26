@@ -13,7 +13,7 @@ library(tidyr)
 palette(colorRampPalette(brewer.pal(name="Set1", n = 8))(17))
 
 #read in tree and tips
-phy <- read.tree("data/astral_all_bs10_lpp.tre")
+phy <- read.tree("data/trees/astral_all_bs10_lpp.tre")
 df <- read.csv("data/taxonomy_namelist.csv")
 df <- df[df$Namelist %in% phy$tip.label, ]
 df <-df %>% unite("genus_species", Genus:Species, na.rm = TRUE, remove = FALSE)
@@ -40,14 +40,14 @@ plot(
 )
 p <- character(length(phy$node.label))
 
-phy <- read.tree("data/astral_all_bs10_QS.tre")
+phy <- read.tree("data/trees/astral_all_bs10_QS.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
   piecol = c("grey", "white"),
   cex = 0.25
 )
 
-phy <- read.tree("data/astral_all_bs10_LPP.tre")
+phy <- read.tree("data/trees/astral_all_bs10_LPP.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
   piecol = c("black", "white"),

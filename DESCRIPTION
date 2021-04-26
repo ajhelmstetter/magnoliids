@@ -29,7 +29,6 @@ Imports:
     RColorBrewer,
     reshape2,
     rmarkdown,
-    tictoc,
     tidyr,
     tidyverse,
     wesanderson

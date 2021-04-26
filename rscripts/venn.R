@@ -75,6 +75,20 @@ venn(list(Canellales=l_75_75[[1]],
 
 dev.off()
 
+x<-list(Canellales=l_75_75[[1]],
+        Chloranthales=l_75_75[[2]],
+        Laurales=l_75_75[[3]],
+        Magnoliales=l_75_75[[4]],
+        Piperales=l_75_75[[5]])
+
+library("ggVennDiagram")
+# Default plot
+ggVennDiagram(x,
+              label = c("percent"),
+              label_alpha = 0.5,
+              label_geom = c("label"))
+
+ggplot2::ggsave("figures/venn2.png")
 
 ####
 # lactoris densities

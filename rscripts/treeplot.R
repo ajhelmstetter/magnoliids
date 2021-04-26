@@ -1,7 +1,4 @@
 
-
-
-
 ###
 # ASTRAL
 ###
@@ -50,7 +47,7 @@ nodelabels(
   cex = 0.25
 )
 
-phy <- read.tree("data/astral_all_bs10_lpp.tre")
+phy <- read.tree("data/astral_all_bs10_LPP.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
   piecol = c("black", "white"),

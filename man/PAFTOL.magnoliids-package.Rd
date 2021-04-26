@@ -4,7 +4,7 @@
 \name{PAFTOL.magnoliids-package}
 \alias{PAFTOL.magnoliids}
 \alias{PAFTOL.magnoliids-package}
-\title{PAFTOL.magnoliids: The Title of the Project}
+\title{PAFTOL.magnoliids: Phylogenomic analysis of the magnoliids with angiosperm353}
 \description{
 A paragraph providing a full description of the project (on several 
     lines...)

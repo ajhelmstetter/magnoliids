@@ -1,6 +1,6 @@
 Package: PAFTOL.magnoliids
 Type: Package
-Title: The Title of the Project
+Title: Phylogenomic analysis of the magnoliids with angiosperm353
 Version: 0.0.0.9000
 Authors@R: c(
     person(given   = "Andrew",

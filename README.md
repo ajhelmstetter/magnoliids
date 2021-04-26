@@ -8,7 +8,7 @@
 Check](https://github.com/ajhelmstetter/PAFTOL_magnoliids/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ajhelmstetter/PAFTOL_magnoliids/actions/workflows/R-CMD-check.yaml)
 [![License: GPL (&gt;=
 2)](https://img.shields.io/badge/License-GPL%20%28%3E%3D%202%29-blue.svg)](https://choosealicense.com/licenses/gpl-2.0/)
-[![Dependencies](https://img.shields.io/badge/dependencies-15/146-red?style=flat)](#)
+[![Dependencies](https://img.shields.io/badge/dependencies-14/138-red?style=flat)](#)
 <!-- badges: end -->
 
 Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**

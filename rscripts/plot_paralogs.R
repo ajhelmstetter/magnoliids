@@ -1,7 +1,7 @@
 library(ape)
 
 #set paths to the trees folder you downloaded
-#should contain all trees output from paralog_tree.sh
+#should contain all trees output from paralogs.sh
 files <-
   list.files(
     path = "data/paralogs_magnollids_710179_trees/",

@@ -1,0 +1,5 @@
+mv RAxML_bipartitions.aligned.combined_5280.fasta paralogs/
+mv RAxML_bipartitions.aligned.combined_5355.fasta paralogs/
+mv RAxML_bipartitions.aligned.combined_5434.fasta paralogs/
+mv RAxML_bipartitions.aligned.combined_6004.fasta paralogs/
+mv RAxML_bipartitions.aligned.combined_6387.fasta paralogs/

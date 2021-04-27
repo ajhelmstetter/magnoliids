@@ -37,8 +37,8 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 #uncomment to ID low data samples
 ####
-#percent.len = ifelse(percent.len > 0.01, 1, percent.len)
-#sort(rowSums(percent.len))
+percent.len = ifelse(percent.len > 0.01, 1, percent.len)
+sort(rowSums(percent.len))
 
 ###
 # taxonomic scale
@@ -58,11 +58,11 @@ setdiff(rownames(percent.len),tn$Namelist)
 #uncomment for GENUS
 ####
 
-percent.len<-cbind.data.frame(percent.len,tn$Genus)
-percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-rownames(percent.len)<-percent.len[,1]
-percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-percent.len<-as.matrix(percent.len)
+#percent.len<-cbind.data.frame(percent.len,tn$Genus)
+#percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
+#rownames(percent.len)<-percent.len[,1]
+#percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
+#percent.len<-as.matrix(percent.len)
 
 ####
 #uncomment for FAMILY
@@ -219,18 +219,17 @@ write.csv(exon_stats, "outputs/exon_filtering_stats.csv")
 # if percentage exon length recovered is >= 75% make value 1
 # if not make value 0
 percent.len.limit <- percent.len
-percent.len.limit[percent.len.limit >= 0.01] = 1
-percent.len.limit[percent.len.limit < 0.01] = 0
+percent.len.limit[percent.len.limit >= 0.75] = 1
+percent.len.limit[percent.len.limit < 0.75] = 0
 
 #For each exon calculate number of individuals with >= 75% of exon
 col <- colSums(percent.len.limit != 0)
 
 #Calculate % individuals with >= 75% of exon for each exon
 col <- col / (length(sample.data[, 1]) - 1) # -1 for meanlength
-table(col >= 0.50)
 
 #Extract only 75_75 exons from original dataset
-length7575 <- sample.data[, col >= 0.50]
+length7575 <- sample.data[, col >= 0.75]
 
 #Density plot of exon lengths with rug of actual exon lengths
 #make data frame
@@ -255,7 +254,7 @@ ggsave("figures/exon_length_density.png")
 
 #Copy list of names into a file, and modify to the format shown in README
 cat(
-  x = paste0("cp *", marker_len$locus, "_supercontig.FNA* 50_50/"),
-  file = "outputs/50_50.txt",
+  x = paste0("cp *", marker_len$locus, "_supercontig.FNA* filtered/"),
+  file = "outputs/cp_filtered.txt",
   sep = "\n"
 )

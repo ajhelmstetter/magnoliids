@@ -25,18 +25,87 @@ knitr::opts_chunk$set(
 [![Dependencies](https://img.shields.io/badge/dependencies-16/144-red?style=flat)](#)
 <!-- badges: end -->
 
+Research Compendium of the project: PAFTOL Magnoliids
 
-Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**
+### Name change for some files
+
+```{r rename_table, echo = FALSE}
+
+r1s<-rbind(c("PAFTOL_014093_1.fastq.gz",	"PAFTOL_014095_1.fastq.gz"),
+c("PAFTOL_014095_1.fastq.gz",	"PAFTOL_014097_1.fastq.gz"),
+c("PAFTOL_014097_1.fastq.gz",	"PAFTOL_014099_1.fastq.gz"))
+
+r1s<-data.frame(r1s)
+colnames(r1s)<-c("Old R1 filename","New R1 filename")
+
+knitr::kable(
+  r1s, caption = 'Files that were renamed after naming error (suggested by O. Maurin).'
+)
+```
+
+### Taxa with only 10 loci or fewer recovered
+
+```{r low_qual_table, echo = FALSE}
+
+lq<-rbind(c("Gbel","0"),
+c("P_016915","0"),
+c("P4172","0"),
+c("S47","0"),
+c("S24","3"),
+c("S39","3"),
+c("P0110D","4"),
+c("P_014097","6"),
+c("P_011589","8"),
+c("S25","9"),
+c("GAP_79789","10"),
+c("P_007864","10"))
+
+lq<-data.frame(lq)
+colnames(lq)<-c("sample","no. exons recovered")
+
+knitr::kable(
+  lq, caption = 'Samples where we recovered a low number of exons using hybpiper'
+)
+```
 
 
+### Relevant programs
+
+* Treeshrink: https://github.com/uym2/TreeShrink
+* phyparts: https://bitbucket.org/blackrim/phyparts/wiki/Home
+* discovista: https://github.com/esayyari/DiscoVista
+* astral-pro: https://github.com/chaoszhang/A-pro
+* c++ astral: https://github.com/chaoszhang/ASTER/tree/548fd31493397ec44f5c8e3452c689e547b3e271
+* ggtree and plotly for interactive paralogs: https://yulab-smu.top/treedata-book/related-tools.html#plotly 
+
+### Relevant papers
+
+* Yan Z., Du P., Hahn M.W., Nakhleh L. 2020. Species tree inference under the multispecies coalescent on data with paralogs is accurate. bioRxiv:498378.
+
+### To do: 
+
+* Compare to PAFTOL 353 paper
+* Send list of species to everyone, so far (that work)
+* Alignments failed? CHECK: 5841, 5899, 6363
+* Keeping the whole tree vs removing those taxa from alignment with poor exon length recovery
+  * Use the test_seq_lengths.txt to remove individuals in supercontigs
+* Remove from Hybpiper and rerun retrieve: _Cananga_
+
+## Meetings
+
+### Meeting 21/04/21
+
+* send 1kp needed to kevin
+* compare to paftol
+* effect of supermatrix vs coalescent
+* If we too stringent, we may biasing the sampling towards taxa that are closer to the sequences represented in the bait kit
+* gradient plot but with genera instead of samples
 
 ### How to cite
 
 Please cite this compendium as: 
 
 > **{{ PLEASE ADD A CITATION }}**
-
-
 
 ### Content
 
@@ -69,8 +138,6 @@ contains project metadata (author, date, dependencies, etc.)
 - [`make.R`](https://github.com/ajhelmstetter/PAFTOL_magnoliids/tree/master/make.R):
 master R script to run the entire project by calling each R script stored in the `rscripts/` folder
 
-
-
 ### Usage
 
 Clone the repository, open the `.Rproj` file in RStudio and run:
@@ -78,7 +145,6 @@ Clone the repository, open the `.Rproj` file in RStudio and run:
 ```{r eval = FALSE}
 source("make.R")
 ```
-
 
 
 ### Notes

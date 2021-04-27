@@ -37,8 +37,9 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 #uncomment to ID low data samples
 ####
-percent.len = ifelse(percent.len > 0.01, 1, percent.len)
-sort(rowSums(percent.len))
+percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
+percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
+view(percent.len.low_df)
 
 ###
 # taxonomic scale

@@ -60,6 +60,10 @@ paralog_results <- data.frame(filenames, paralog_yn)
 paralog_results_positive <-
   paralog_results[paralog_results$paralog_yn == 1, ]
 
+#reformat filenames for mv
+paralog_results_positive$filenames<-gsub(".aligned.combined_","*",paralog_results_positive$filenames)
+paralog_results_positive$filenames<-gsub(".fasta","*",paralog_results_positive$filenames)
+
 #Copy list of names into a file, and modify to the format shown in README
 cat(
   x = paste0("mv ", paralog_results_positive$filenames, " paralogs/"),
@@ -147,6 +151,10 @@ paralog_results <- data.frame(filenames, paralog_yn)
 #true paralogs only
 paralog_results_positive <-
   paralog_results[paralog_results$paralog_yn == 1, ]
+
+#reformat filenames for mv
+paralog_results_positive$filenames<-gsub(".aligned.combined_","*",paralog_results_positive$filenames)
+paralog_results_positive$filenames<-gsub(".fasta","*",paralog_results_positive$filenames)
 
 #Copy list of names into a file, and modify to the format shown in README
 cat(

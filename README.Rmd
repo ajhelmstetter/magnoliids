@@ -105,14 +105,14 @@ knitr::kable(
 
 Please cite this compendium as: 
 
-> **{{ PLEASE ADD A CITATION }}**
+> **{{ CITATION TO BE ADDED UPON PUBLICATION }}**
 
 ### Content
 
 This repository is structured as follow:
 
 - [`data/`](https://github.com/ajhelmstetter/PAFTOL_magnoliids/tree/master/data):
-contains all raw data required to perform analyses
+contains all raw data required to perform analyses __(Hidden until publication)__
 
 - [`rscripts/`](https://github.com/ajhelmstetter/PAFTOL_magnoliids/tree/master/rscripts/):
 contains R scripts to run each step of the workflow
@@ -145,7 +145,6 @@ Clone the repository, open the `.Rproj` file in RStudio and run:
 ```{r eval = FALSE}
 source("make.R")
 ```
-
 
 ### Notes
 

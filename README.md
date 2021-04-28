@@ -131,6 +131,7 @@ Samples where we recovered a low number of exons using hybpiper
     poor exon length recovery
     -   Use the test\_seq\_lengths.txt to remove individuals in
         supercontigs
+-   Remove from Hybpiper and rerun retrieve: *Cananga*
 
 ## Meetings
 
@@ -147,14 +148,15 @@ Samples where we recovered a low number of exons using hybpiper
 
 Please cite this compendium as:
 
-> **{{ PLEASE ADD A CITATION }}**
+> **{{ CITATION TO BE ADDED UPON PUBLICATION }}**
 
 ### Content
 
 This repository is structured as follow:
 
 -   [`data/`](https://github.com/ajhelmstetter/PAFTOL_magnoliids/tree/master/data):
-    contains all raw data required to perform analyses
+    contains all raw data required to perform analyses **(Hidden until
+    publication)**
 
 -   [`rscripts/`](https://github.com/ajhelmstetter/PAFTOL_magnoliids/tree/master/rscripts/):
     contains R scripts to run each step of the workflow

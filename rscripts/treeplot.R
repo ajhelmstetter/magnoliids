@@ -4,7 +4,7 @@ rm(list=ls())
 # ASTRAL
 ###
 
-pdf("figures/astral_tree.pdf",width=10,height=20)
+pdf("figures/astral_tree_reduced_25_filtered_50_50.pdf",width=10,height=20)
 
 par(mar = c(0, 0, 0, 0))
 
@@ -16,7 +16,7 @@ library(tidyr)
 palette(colorRampPalette(brewer.pal(name = "Set1", n = 8))(17))
 
 #read in tree and tips
-phy <- read.tree("data/trees/astral_reduced_0_0/astral_all_bs10_LPP.tre")
+phy <- read.tree("data/trees/astral_reduced_50_50/astral_all_bs10_LPP.tre")
 df <- read.csv("data/taxonomy_namelist.csv")
 df <- df[df$Namelist %in% phy$tip.label,]
 df <-
@@ -37,7 +37,7 @@ phy$edge.length[phy$edge.length == "NaN"] <- 0.25
 df <- df[match(phy$tip.label, df$genus_species),]
 
 #plot tree QS
-phy <- ape::root(phy, "Chloranthaceae_Chloranthus_spicatus_PAFTOL", edgelabel = T)
+phy <- ape::root(phy, "Chloranthaceae_Chloranthus_spicatus_PAFTOL", edgelabel = T, resolve.root = T)
 phy <- ladderize(phy)
 plot(
   phy,
@@ -50,14 +50,14 @@ plot(
 )
 p <- character(length(phy$node.label))
 
-phy <- read.tree("data/trees/astral_reduced_0_0/astral_all_bs10_QS.tre")
+phy <- read.tree("data/trees/astral_reduced_50_50/astral_all_bs10_QS.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
   piecol = c("grey", "white"),
   cex = 0.25
 )
 
-phy <- read.tree("data/trees/astral_reduced_0_0/astral_all_bs10_LPP.tre")
+phy <- read.tree("data/trees/astral_reduced_50_50/astral_all_bs10_LPP.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
   piecol = c("black", "white"),
@@ -113,12 +113,6 @@ iqphy <-
     )
   )
 
-jpeg(
-  "iqtree_raphia.jpg",
-  width = 2500,
-  height = 2500,
-  res = 300
-)
 plot(iqphy, cex = 0.7, label.offset = 0.001)
 p <- character(length(iqphy$node.label))
 nodelabels(
@@ -129,6 +123,3 @@ nodelabels(
   piecol = c("black", "white"),
   cex = 0.3
 )
-dev.off()
-
-

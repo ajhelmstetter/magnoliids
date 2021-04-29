@@ -122,10 +122,17 @@ Samples where we recovered a low number of exons using hybpiper
     under the multispecies coalescent on data with paralogs is accurate.
     bioRxiv:498378.
 
-## Running ASTRAL post genetrees
+## Useful commands
+
+### Running ASTRAL post genetrees
 
 
     bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_50_50
+
+### Get paired-end fastqs after downloading from SRA
+
+
+    fastq-dump -I --split-files SRR10064004.1
 
 ## Comments on initial trees
 
@@ -217,6 +224,10 @@ Herve:
     -   With species names, sources, vouchers, contributors, and project
         (1KP, PAFTOL, or GAP) will be extremely useful for us to
         continue the conversation
+-   Updated metadata for the following sample IDs: 79724 to 79805
+    -   If you have any data from these sample ID ranges, please delete
+        them as the metadata could be incorrect or the data is not
+        usable (low quality).
 
 ### To do:
 

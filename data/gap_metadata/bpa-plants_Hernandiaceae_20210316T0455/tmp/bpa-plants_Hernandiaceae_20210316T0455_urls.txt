@@ -1,0 +1,4 @@
+https://data.bioplatforms.com/dataset/bpa-gap-illumina-shortread-82053-83653/resource/789368afa68d13a73d26c16d28d9a1cd/download/79862_LibID82053_HVM7GDRXX_TTCAATAG-TCGTGGGA_L001_R1.fastq.gz
+https://data.bioplatforms.com/dataset/bpa-gap-illumina-shortread-82053-83653/resource/99bac454443d76f44df642cf9c34589b/download/79862_LibID82053_HVM7GDRXX_TTCAATAG-TCGTGGGA_L001_R2.fastq.gz
+https://data.bioplatforms.com/dataset/bpa-gap-illumina-shortread-82053-83675/resource/3804240fd2e687716e446a78ea73abd1/download/79862_LibID82053_HY7KVDRXX_TTCAATAG-TCGTGGGA_L001_R1.fastq.gz
+https://data.bioplatforms.com/dataset/bpa-gap-illumina-shortread-82053-83675/resource/d3fd0b55a60d5ee1cb1434d551c55269/download/79862_LibID82053_HY7KVDRXX_TTCAATAG-TCGTGGGA_L001_R2.fastq.gz

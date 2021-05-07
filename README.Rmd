@@ -178,13 +178,13 @@ export CKAN_API_KEY=6a9c3f5d-b687-4ef9-8c9c-96d71cebf6f6
 
 Sequence metadata:
 
-[data/GAP_Magnoliidae](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/GAP_Magnoliidae)
+[data/gap_metadata](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/gap_metadata)
 
 ### Merge GAP data where samples have been sequenced multiple times
 
 Shows R2 merging only (same script used for R1):
 
-[scripts/combined_GAP.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/scripts/combined_GAP.sh)
+[scripts/combine_gap.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/bashscripts/combine_gap.sh)
 
 ## PAFTOL
 

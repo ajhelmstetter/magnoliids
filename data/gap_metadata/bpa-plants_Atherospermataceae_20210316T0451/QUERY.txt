@@ -1,0 +1,8 @@
+Title        : Search of organization: bpa-plants
+Prefix       : bpa-plants_Atherospermataceae_20210316T0451
+Timestamp    : 2021-03-16T04:51:56.495412+0000
+User Page    : https://data.bioplatforms.com/user/hervesauquet
+QueryURL     : https://data.bioplatforms.com/organization/f5691bdf-19c6-4c6a-a653-61eb8d6ae4df?q=Atherospermataceae
+Download URL : https://data.bioplatforms.com/bulk/organization/f5691bdf-19c6-4c6a-a653-61eb8d6ae4df/file_list?q=Atherospermataceae
+URL Count    : 8
+MD5 Sum Count: 8

@@ -38,7 +38,7 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 head(percent.len[, c(1:5)])
 
 #user input threshold
-lim <- 0.25
+lim <- 0.1
 
 #vector to store greps
 grep_cmds <- vector()

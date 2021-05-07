@@ -24,47 +24,6 @@ knitr::opts_chunk$set(
 
 Research Compendium of the project: PAFTOL Magnoliids
 
-### Name change for some files
-
-```{r rename_table, echo = FALSE}
-
-r1s<-rbind(c("PAFTOL_014093_1.fastq.gz",	"PAFTOL_014095_1.fastq.gz"),
-c("PAFTOL_014095_1.fastq.gz",	"PAFTOL_014097_1.fastq.gz"),
-c("PAFTOL_014097_1.fastq.gz",	"PAFTOL_014099_1.fastq.gz"))
-
-r1s<-data.frame(r1s)
-colnames(r1s)<-c("Old R1 filename","New R1 filename")
-
-knitr::kable(
-  r1s, caption = 'Files that were renamed after naming error (suggested by O. Maurin).'
-)
-```
-
-### Taxa with only 10 loci or fewer recovered
-
-```{r low_qual_table, echo = FALSE}
-
-lq<-rbind(c("Gbel","0"),
-c("P_016915","0"),
-c("P4172","0"),
-c("S47","0"),
-c("S24","3"),
-c("S39","3"),
-c("P0110D","4"),
-c("P_014097","6"),
-c("P_011589","8"),
-c("S25","9"),
-c("GAP_79789","10"),
-c("P_007864","10"))
-
-lq<-data.frame(lq)
-colnames(lq)<-c("sample","no. exons recovered")
-
-knitr::kable(
-  lq, caption = 'Samples where we recovered a low number of exons using hybpiper'
-)
-```
-
 ### Relevant programs
 
 * Treeshrink: https://github.com/uym2/TreeShrink
@@ -79,22 +38,6 @@ knitr::kable(
 * Yan Z., Du P., Hahn M.W., Nakhleh L. 2020. Species tree inference under the multispecies coalescent on data with paralogs is accurate. bioRxiv:498378.
 
 ## Useful commands
-
-### Running ASTRAL post genetrees
-
-```{bash astral, eval = FALSE}
-
-bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_50_50
-
-```
-
-### Get paired-end fastqs after downloading from SRA
-
-```{bash SRA, eval = FALSE}
-
-fastq-dump -I --split-files SRR10064004.1
-
-```
 
 ## Comments on initial trees
 
@@ -154,12 +97,11 @@ Herve:
 ### To do: 
 
 * Compare to PAFTOL 353 paper
-* Send list of species to everyone, so far (that work)
 * Alignments failed? CHECK: 5841, 5899, 6363
-* Keeping the whole tree vs removing those taxa from alignment with poor exon length recovery
-  * Use the test_seq_lengths.txt to remove individuals in supercontigs
-* Remove from Hybpiper and rerun retrieve: _Cananga_
-* It looks like paralogs aren't really an issue, so no need for astral-pro?
+* hybpiper_stats.sh is crashing before the end, but produces results...?
+* Run hybpiper on P_011527, P_011673, rerun retrieve seqs
+* check metadata for Endiandra, Austromatthaea
+* confirm that you are indeed using the correct raw data file (e.g., by replicating the cleanup of that specific taxon)?
 
 ## Meetings
 
@@ -221,3 +163,111 @@ source("make.R")
 - All required packages, listed in the `DESCRIPTION` file, will be installed (if necessary)
 - All required packages and R functions will be loaded
 - Some analyses listed in the `make.R` might take time
+
+# Pipeline: data assembly
+
+## GAP
+
+### Download sequence data
+
+Herve API key to download data:
+
+```{bash apikey, eval = FALSE}
+export CKAN_API_KEY=6a9c3f5d-b687-4ef9-8c9c-96d71cebf6f6
+```
+
+Sequence metadata:
+
+[data/GAP_Magnoliidae](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/GAP_Magnoliidae)
+
+### Merge GAP data where samples have been sequenced multiple times
+
+Shows R2 merging only (same script used for R1):
+
+[scripts/combined_GAP.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/scripts/combined_GAP.sh)
+
+## PAFTOL
+
+### Get data from Kew sftp
+
+```{bash ftp, eval = FALSE}
+#connect to ftp
+sftp anonymous@sftp.kew.org
+
+#cd to directory
+cd path/to/files
+
+#download data to directory you sftp'd from
+get *
+```
+
+### Filename change for the following files:
+
+```{r rename_table, echo = FALSE}
+
+r1s<-rbind(c("PAFTOL_014093_1.fastq.gz",	"PAFTOL_014095_1.fastq.gz"),
+c("PAFTOL_014095_1.fastq.gz",	"PAFTOL_014097_1.fastq.gz"),
+c("PAFTOL_014097_1.fastq.gz",	"PAFTOL_014099_1.fastq.gz"))
+
+r1s<-data.frame(r1s)
+colnames(r1s)<-c("Old R1 filename","New R1 filename")
+
+knitr::kable(
+  r1s, caption = 'Files that were renamed after naming error (suggested by O. Maurin).'
+)
+```
+
+## hybpiper output
+
+### Taxa with only 10 loci or fewer recovered
+
+```{r low_qual_table, echo = FALSE}
+
+lq<-rbind(c("Gbel","0"),
+c("P_016915","0"),
+c("P4172","0"),
+c("S47","0"),
+c("S24","3"),
+c("S39","3"),
+c("P0110D","4"),
+c("P_014097","6"),
+c("P_011589","8"),
+c("S25","9"),
+c("GAP_79789","10"),
+c("P_007864","10"))
+
+lq<-data.frame(lq)
+colnames(lq)<-c("sample","no. exons recovered")
+
+knitr::kable(
+  lq, caption = 'Samples where we recovered a low number of exons using hybpiper'
+)
+```
+
+
+## SRA
+
+### Get paired-end fastqs after downloading from SRA
+
+```{bash sra, eval = FALSE}
+fastq-dump -I --split-files SRR10064004.1
+```
+
+## 1KP
+
+K. Leempoel provided 353 recoveries from 1KP data.
+
+## iqtree
+
+```{bash iqtree, eval = FALSE}
+iqtree -s raphia.fa -spp raphia.partitions -m GTR+I+G -nt AUTO -ntmax 16 -bb 1000
+```
+
+## ASTRAL
+
+```{bash astral, eval = FALSE}
+
+bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_50_50
+
+```
+

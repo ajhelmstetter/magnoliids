@@ -214,13 +214,13 @@ Herve API key to download data:
 
 Sequence metadata:
 
-[data/GAP\_Magnoliidae](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/GAP_Magnoliidae)
+[data/gap\_metadata](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/gap_metadata)
 
 ### Merge GAP data where samples have been sequenced multiple times
 
 Shows R2 merging only (same script used for R1):
 
-[scripts/combined\_GAP.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/scripts/combined_GAP.sh)
+[scripts/combine\_gap.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/bashscripts/combine_gap.sh)
 
 ## PAFTOL
 

@@ -1,0 +1,8 @@
+Title        : Search of organization: bpa-plants
+Prefix       : bpa-plants_Annonaceae_20210314T0804
+Timestamp    : 2021-03-14T08:04:37.632466+0000
+User Page    : https://data.bioplatforms.com/user/hervesauquet
+QueryURL     : https://data.bioplatforms.com/organization/f5691bdf-19c6-4c6a-a653-61eb8d6ae4df?q=Annonaceae
+Download URL : https://data.bioplatforms.com/bulk/organization/f5691bdf-19c6-4c6a-a653-61eb8d6ae4df/file_list?q=Annonaceae
+URL Count    : 22
+MD5 Sum Count: 22

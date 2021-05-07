@@ -13,98 +13,6 @@ Check](https://github.com/ajhelmstetter/PAFTOL_magnoliids/actions/workflows/R-CM
 
 Research Compendium of the project: PAFTOL Magnoliids
 
-### Name change for some files
-
-<table>
-<caption>Files that were renamed after naming error (suggested by O. Maurin).</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Old R1 filename</th>
-<th style="text-align: left;">New R1 filename</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">PAFTOL_014093_1.fastq.gz</td>
-<td style="text-align: left;">PAFTOL_014095_1.fastq.gz</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">PAFTOL_014095_1.fastq.gz</td>
-<td style="text-align: left;">PAFTOL_014097_1.fastq.gz</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">PAFTOL_014097_1.fastq.gz</td>
-<td style="text-align: left;">PAFTOL_014099_1.fastq.gz</td>
-</tr>
-</tbody>
-</table>
-
-Files that were renamed after naming error (suggested by O. Maurin).
-
-### Taxa with only 10 loci or fewer recovered
-
-<table>
-<caption>Samples where we recovered a low number of exons using hybpiper</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">sample</th>
-<th style="text-align: left;">no. exons recovered</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Gbel</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">P_016915</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P4172</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">S47</td>
-<td style="text-align: left;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">S24</td>
-<td style="text-align: left;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">S39</td>
-<td style="text-align: left;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P0110D</td>
-<td style="text-align: left;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">P_014097</td>
-<td style="text-align: left;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P_011589</td>
-<td style="text-align: left;">8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">S25</td>
-<td style="text-align: left;">9</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">GAP_79789</td>
-<td style="text-align: left;">10</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">P_007864</td>
-<td style="text-align: left;">10</td>
-</tr>
-</tbody>
-</table>
-
-Samples where we recovered a low number of exons using hybpiper
-
 ### Relevant programs
 
 -   Treeshrink: <https://github.com/uym2/TreeShrink>
@@ -123,16 +31,6 @@ Samples where we recovered a low number of exons using hybpiper
     bioRxiv:498378.
 
 ## Useful commands
-
-### Running ASTRAL post genetrees
-
-
-    bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_50_50
-
-### Get paired-end fastqs after downloading from SRA
-
-
-    fastq-dump -I --split-files SRR10064004.1
 
 ## Comments on initial trees
 
@@ -232,15 +130,13 @@ Herve:
 ### To do:
 
 -   Compare to PAFTOL 353 paper
--   Send list of species to everyone, so far (that work)
 -   Alignments failed? CHECK: 5841, 5899, 6363
--   Keeping the whole tree vs removing those taxa from alignment with
-    poor exon length recovery
-    -   Use the test\_seq\_lengths.txt to remove individuals in
-        supercontigs
--   Remove from Hybpiper and rerun retrieve: *Cananga*
--   It looks like paralogs aren’t really an issue, so no need for
-    astral-pro?
+-   hybpiper\_stats.sh is crashing before the end, but produces
+    results…?
+-   Run hybpiper on P\_011527, P\_011673, rerun retrieve seqs
+-   check metadata for Endiandra, Austromatthaea
+-   confirm that you are indeed using the correct raw data file (e.g.,
+    by replicating the cleanup of that specific taxon)?
 
 ## Meetings
 
@@ -305,3 +201,149 @@ Clone the repository, open the `.Rproj` file in RStudio and run:
     installed (if necessary)
 -   All required packages and R functions will be loaded
 -   Some analyses listed in the `make.R` might take time
+
+# Pipeline: data assembly
+
+## GAP
+
+### Download sequence data
+
+Herve API key to download data:
+
+    export CKAN_API_KEY=6a9c3f5d-b687-4ef9-8c9c-96d71cebf6f6
+
+Sequence metadata:
+
+[data/GAP\_Magnoliidae](https://github.com/ajhelmstetter/PAFTOL_magnoliids/data/GAP_Magnoliidae)
+
+### Merge GAP data where samples have been sequenced multiple times
+
+Shows R2 merging only (same script used for R1):
+
+[scripts/combined\_GAP.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/scripts/combined_GAP.sh)
+
+## PAFTOL
+
+### Get data from Kew sftp
+
+    #connect to ftp
+    sftp anonymous@sftp.kew.org
+
+    #cd to directory
+    cd path/to/files
+
+    #download data to directory you sftp'd from
+    get *
+
+### Filename change for the following files:
+
+<table>
+<caption>Files that were renamed after naming error (suggested by O. Maurin).</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Old R1 filename</th>
+<th style="text-align: left;">New R1 filename</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PAFTOL_014093_1.fastq.gz</td>
+<td style="text-align: left;">PAFTOL_014095_1.fastq.gz</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PAFTOL_014095_1.fastq.gz</td>
+<td style="text-align: left;">PAFTOL_014097_1.fastq.gz</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PAFTOL_014097_1.fastq.gz</td>
+<td style="text-align: left;">PAFTOL_014099_1.fastq.gz</td>
+</tr>
+</tbody>
+</table>
+
+Files that were renamed after naming error (suggested by O. Maurin).
+
+## hybpiper output
+
+### Taxa with only 10 loci or fewer recovered
+
+<table>
+<caption>Samples where we recovered a low number of exons using hybpiper</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">sample</th>
+<th style="text-align: left;">no. exons recovered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gbel</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P_016915</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P4172</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S47</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">S24</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S39</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P0110D</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P_014097</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P_011589</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S25</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GAP_79789</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P_007864</td>
+<td style="text-align: left;">10</td>
+</tr>
+</tbody>
+</table>
+
+Samples where we recovered a low number of exons using hybpiper
+
+## SRA
+
+### Get paired-end fastqs after downloading from SRA
+
+    fastq-dump -I --split-files SRR10064004.1
+
+## 1KP
+
+K. Leempoel provided 353 recoveries from 1KP data.
+
+## iqtree
+
+    iqtree -s raphia.fa -spp raphia.partitions -m GTR+I+G -nt AUTO -ntmax 16 -bb 1000
+
+## ASTRAL
+
+
+    bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_50_50

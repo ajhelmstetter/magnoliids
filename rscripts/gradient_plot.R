@@ -39,41 +39,64 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
 percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
-view(percent.len.low_df)
+#view(percent.len.low_df)
 
 ###
 # taxonomic scale
 ###
 
+#set scale
+ts<-"asd"
+
 #read in taxonomy dataset
-tn<-read.csv("data/taxonomy_namelist.csv")
+tn<-read.csv("data/sample_data - samples_for_phylo.csv")
 
 #only those samples output put hybpiper
-tn<-tn[tn$Include_hybpiper==1,]
+tn<-tn[tn$included_hybpiper==1,]
 
 #check for differences
 setdiff(tn$Namelist,rownames(percent.len))
 setdiff(rownames(percent.len),tn$Namelist)
 
-####
-#uncomment for GENUS
-####
 
-#percent.len<-cbind.data.frame(percent.len,tn$Genus)
-#percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-#rownames(percent.len)<-percent.len[,1]
-#percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-#percent.len<-as.matrix(percent.len)
+if(ts == "family"){
 
-####
-#uncomment for FAMILY
-####
+  ####
+  #FAMILY
+  ####
 
-#percent.len<-cbind.data.frame(percent.len,tn$Family)
-#percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-#rownames(percent.len)<-percent.len[,1]
-#percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-#percent.len<-as.matrix(percent.len)
+  percent.len<-cbind.data.frame(percent.len,tn$Family)
+  percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
+  rownames(percent.len)<-percent.len[,1]
+  percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
+  percent.len<-as.matrix(percent.len)
+
+  filename<-"figures/exon_recovery_gradient_family.png"
+
+} else if(ts == "genus") {
+
+  ####
+  #GENUS
+  ####
+
+  percent.len<-cbind.data.frame(percent.len,tn$Genus)
+  percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
+  rownames(percent.len)<-percent.len[,1]
+  percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
+  percent.len<-as.matrix(percent.len)
+
+  filename<-"figures/exon_recovery_gradient_genus.png"
+
+} else {
+
+
+  ###
+  # sample
+  ###
+
+  filename<-"figures/exon_recovery_gradient_sample.png"
+
+}
 
 #set thresholds
 #limits <- c(0.25, 0.5, 0.75, 0.9)
@@ -172,4 +195,6 @@ p + geom_raster(aes(fill = no_markers)) +
     panel.background = element_blank()
   )
 
-ggsave("figures/exon_recovery_gradient_family.png")
+ggsave(filename,  width = 25,
+       height = 25,
+       units = "cm")

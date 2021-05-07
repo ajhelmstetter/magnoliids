@@ -9,18 +9,11 @@ library(ape)
 library(tidyr)
 
 #read in tree and tips
-phy <- read.tree("data/trees/astral_50_50/astral_all_bs10_LPP.tre")
-df <- read.csv("data/taxonomy_namelist.csv")
+phy <- read.tree("data/trees/astral_r10_l0_i0/astral_bs10_LPP.tre")
+df <- read.csv("data/sample_data - samples_for_phylo_OM.csv")
 df <- df[df$Namelist %in% phy$tip.label,]
-df <-
-  df %>% tidyr::unite("genus_species",
-                      Genus:Species,
-                      na.rm = TRUE,
-                      remove = FALSE)
 
-##tip label change
-#dfnames <- data.frame(df$Namelist, df$genus_species)
-#phy <- phylotools::sub.taxa.label(phy, dfnames)
+#fix terminal branches
 phy$edge.length[phy$edge.length == "NaN"] <- 0.25
 
 #plot tree QS
@@ -62,7 +55,12 @@ phy <- drop.tip(phy, setdiff(phy$tip.label, rownames(percent.len)))
 setdiff(phy$tip.label, rownames(percent.len))
 setdiff(rownames(percent.len), phy$tip.label)
 
-percent.lens<-percent.len[match(phy$tip.label, rownames(percent.len)),]
+#remove those in hybpiper but not in tree from table
+percent.len<-percent.len[match(phy$tip.label, rownames(percent.len)),]
+
+#check diffs
+setdiff(phy$tip.label, rownames(percent.len))
+setdiff(phy$tip.label, rownames(percent.len))
 
 #melt table
 library(reshape2)

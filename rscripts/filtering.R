@@ -39,14 +39,14 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
 percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
-view(percent.len.low_df)
+#view(percent.len.low_df)
 
 ###
 # taxonomic scale
 ###
 
 #read in taxonomy dataset
-tn<-read.csv("data/taxonomy_namelist.csv")
+tn<-read.csv("data/sample_data - samples_for_phylo_OM.csv")
 
 #only those samples output put hybpiper
 tn<-tn[tn$Include_hybpiper==1,]

@@ -93,25 +93,37 @@ Herve:
 * Updated  metadata for the following sample IDs: 79724 to 79805
 	* If you have any data from these sample ID ranges, please delete them as the metadata could be incorrect or the data is not usable (low quality).
 
+Thomas part II:
+
+* Just a quick point, the Uvariastrum pierreannum PAFTOL is in fact a mis identification.
+* Just make a note of this: For Uvariastrum use this sample instead:
+RUN79 Index 12 T48 (Uvariastrum zenkeri).
+* Also you can delete one of the Uvariopsis you have, keep the best one I would say.
+* You can also delete Boutiquea platypetala PAFTOL, it is now syn of Neostenanthera.
+
+Roy : 
+
+I also see some possibilities for deleting duplicated taxa, assuming we only need one per genus if the position stays fixed. I did not put them in the list yet, also here Thomas should give his opinion. Since I was not involved in the taxon selection the first time around, I do not want to make suggestions against things that might have been consciously been done. Options:
+
+* Anaxagorea (either one)
+* Drepananthus (either one)
+* Tetramaranthus (either one)
+* Pseuduvaria (keep PAFTOL?)
+* Mithrephora (keep PAFTOL?)
+* Xylopia (either one of the three)
+* Annona (keep PAFTOL?)
+* Uvariopsis (either one)
+* Uvaria (keep PAFTOL?)
 
 ### To do: 
 
 * Compare to PAFTOL 353 paper
 * Alignments failed? CHECK: 5841, 5899, 6363
 * hybpiper_stats.sh is crashing before the end, but produces results...?
-* Run hybpiper on P_011527, P_011673, rerun retrieve seqs
-* check metadata for Endiandra, Austromatthaea
-* confirm that you are indeed using the correct raw data file (e.g., by replicating the cleanup of that specific taxon)?
-
-## Meetings
-
-### Meeting 21/04/21
-
-* send 1kp needed to kevin
-* compare to paftol
-* effect of supermatrix vs coalescent
+* Rerun retrieve seqs including P_011527, P_011673 (already copied to hybpiper_magnoliids)
+* Check metadata for Endiandra, Austromatthaea
+* HS: confirm that you are indeed using the correct raw data file (e.g., by replicating the cleanup of that specific taxon)?
 * If we too stringent, we may biasing the sampling towards taxa that are closer to the sequences represented in the bait kit
-* gradient plot but with genera instead of samples
 
 ### How to cite
 

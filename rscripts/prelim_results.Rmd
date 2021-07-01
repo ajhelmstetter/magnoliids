@@ -39,7 +39,7 @@ percent.len = sweep(sample.len, 2, reference.len, "/")
 percent.len = ifelse(percent.len > 1, 1, percent.len)
 
 #read in taxonomy dataset
-tn<-read.csv("data/taxonomy_namelist.csv")
+tn<-read.csv("data/sample_data - samples_for_phylo_AZ.csv")
 
 #only those samples output put hybpiper
 tn<-tn[tn$Include_hybpiper==1,]
@@ -223,7 +223,7 @@ ggVennDiagram(x,
 
 ```
 
-```{r 0_0_tree,echo=FALSE,message=F,warning=F,results='hide',fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with local posterior probability (LPP) and Quartet Support (QS). Inner pie charts on nodes show the value of LPP for the preceding branch (0-1) in black and white. Outer pie charts show QS in grey and white. QS is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Tree was constructed using all possible loci without removing paralogs or filtering based on exon recovery statistics (330 in total). Tip labels are coloured by order."}
+```{r 0_0_tree,echo=FALSE,message=F,warning=F,results='hide',fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with local posterior probability (LPP) and Quartet Support (QS). Inner pie charts on nodes show the value of LPP for the preceding branch (0-1) in black and white. Outer pie charts show QS in grey and white. QS is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Filtering was done based on exon recovery statistics per locus (> 50% length of exon & > 50% individuals) and sequences representing <10% of the exon were removed from the dataset before alignment. Tree was constructed using 190 loci in total after removing potential paralogs (5). Tip labels are coloured by order."}
 
 par(mar=c(0,0,0,0))
 
@@ -236,8 +236,8 @@ library(ggplot2)
 palette(colorRampPalette(brewer.pal(name="Set1", n = 8))(17))
 
 #read in tree and tips
-phy <- read.tree("data/trees/astral_0_0/astral_all_bs10_LPP.tre")
-df <- read.csv("data/taxonomy_namelist.csv")
+phy <- read.tree("data/trees/astral_r10_l50_i50/astral_bs10_LPP.tre")
+df <- read.csv("data/sample_data - samples_for_phylo_AZ.csv")
 df <- df[df$Namelist %in% phy$tip.label, ]
 df <-df %>% unite("genus_species", Family:Genus:Species, na.rm = TRUE, remove = FALSE)
 
@@ -263,161 +263,14 @@ plot(
 )
 p <- character(length(phy$node.label))
 
-phy <- read.tree("data/trees/astral_0_0/astral_all_bs10_QS.tre")
+phy <- read.tree("data/trees/astral_r10_l50_i50/astral_bs10_QS.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
   piecol = c("grey", "white"),
   cex = 0.25
 )
 
-phy <- read.tree("data/trees/astral_0_0/astral_all_bs10_LPP.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
-  piecol = c("black", "white"),
-  cex = 0.125
-)
-
-legend(
-  'bottomleft',
-  legend = c(
-    'canellales',
-    'chloranthales',
-    'laurales',
-    'magnoliales',
-    'piperales',
-    'Local PP',
-    'Quartet support'
-  ),
-  text.col = c(1, 2, 3, 4, 5,"black","black"),
-  pt.cex = c(NA,NA,NA,NA,NA,2,3),
-  pch = c(NA,NA,NA,NA,NA,16,16),
-  col = c(NA,NA,NA,NA,NA,"black","grey"),
-  bty = 'n'
-)
-
-```
-
-```{r 50_50_tree,echo=FALSE,message=F,warning=F,results='hide',fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with local posterior probability (LPP) and Quartet Support (QS). Inner pie charts on nodes show the value of LPP for the preceding branch (0-1) in black and white. Outer pie charts show QS in grey and white. QS is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Tree was constructed using those trees where at least 50% exon length is recovered in at least 50% of samples in the dataset. Paralogs were also removed, ultimately resulting in 202 loci in total. Tip labels are coloured by order."}
-
-par(mar=c(0,0,0,0))
-
-library(ape)
-library(phylotools)
-library(RColorBrewer)
-library(tidyr)
-
-palette(colorRampPalette(brewer.pal(name="Set1", n = 8))(17))
-
-#read in tree and tips
-phy <- read.tree("data/trees/astral_50_50/astral_all_bs10_LPP.tre")
-df <- read.csv("data/taxonomy_namelist.csv")
-df <- df[df$Namelist %in% phy$tip.label, ]
-df <-df %>% unite("genus_species", Family:Genus:Species, na.rm = TRUE, remove = FALSE)
-
-##tip label change
-dfnames <- data.frame(df$Namelist, df$genus_species)
-phy <- sub.taxa.label(phy, dfnames)
-phy$edge.length[phy$edge.length == "NaN"] <- 0.25
-
-#cols
-df <- df[match(phy$tip.label, df$genus_species), ]
-
-#plot tree QS
-phy <- root(phy, "Chloranthaceae_Chloranthus_spicatus", edgelabel = T)
-phy <- ladderize(phy)
-plot(
-  phy,
-  cex = 0.5,
-  label.offset = 0.05,
-  align.tip.label = F,
-  edge.width = 2,
-  edge.color = "grey",
-  tip.color = as.numeric(as.factor(df$Order))
-)
-p <- character(length(phy$node.label))
-
-phy <- read.tree("data/trees/astral_50_50/astral_all_bs10_QS.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
-  piecol = c("grey", "white"),
-  cex = 0.25
-)
-
-phy <- read.tree("data/trees/astral_50_50/astral_all_bs10_LPP.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
-  piecol = c("black", "white"),
-  cex = 0.125
-)
-
-legend(
-  'bottomleft',
-  legend = c(
-    'canellales',
-    'chloranthales',
-    'laurales',
-    'magnoliales',
-    'piperales',
-    'Local PP',
-    'Quartet support'
-  ),
-  text.col = c(1, 2, 3, 4, 5,"black","black"),
-  pt.cex = c(NA,NA,NA,NA,NA,2,3),
-  pch = c(NA,NA,NA,NA,NA,16,16),
-  col = c(NA,NA,NA,NA,NA,"black","grey"),
-  bty = 'n'
-)
-
-```
-
-
-```{r 75_75_tree,echo=FALSE,message=F,warning=F,results='hide',fig.width=15,fig.height=17.5,fig.cap="ASTRAL-III tree annotated with local posterior probability (LPP) and Quartet Support (QS). Inner pie charts on nodes show the value of LPP for the preceding branch (0-1) in black and white. Outer pie charts show QS in grey and white. QS is the proportion of the highest-frequency quartet at each branch i.e. if the QS value is 60% then 60% of gene (supercontig) trees used contain a quartet that matches the relationship shown in the ASTRAL tree. Tree was constructed using those trees where at least 75% exon length is recovered in at least 75% of samples in the dataset. Paralogs were also removed, ultimately resulting in 32 loci in total. Tip labels are coloured by order."}
-
-par(mar=c(0,0,0,0))
-
-library(ape)
-library(phylotools)
-library(RColorBrewer)
-library(tidyr)
-
-palette(colorRampPalette(brewer.pal(name="Set1", n = 8))(17))
-
-#read in tree and tips
-phy <- read.tree("data/trees/astral_75_75/astral_all_bs10_LPP.tre")
-df <- read.csv("data/taxonomy_namelist.csv")
-df <- df[df$Namelist %in% phy$tip.label, ]
-df <-df %>% unite("genus_species", Family:Genus:Species, na.rm = TRUE, remove = FALSE)
-
-##tip label change
-dfnames <- data.frame(df$Namelist, df$genus_species)
-phy <- sub.taxa.label(phy, dfnames)
-phy$edge.length[phy$edge.length == "NaN"] <- 0.25
-
-#cols
-df <- df[match(phy$tip.label, df$genus_species), ]
-
-#plot tree QS
-phy <- root(phy, "Chloranthaceae_Chloranthus_spicatus", edgelabel = T)
-phy <- ladderize(phy)
-plot(
-  phy,
-  cex = 0.5,
-  label.offset = 0.05,
-  align.tip.label = F,
-  edge.width = 2,
-  edge.color = "grey",
-  tip.color = as.numeric(as.factor(df$Order))
-)
-p <- character(length(phy$node.label))
-
-phy <- read.tree("data/trees/astral_75_75/astral_all_bs10_QS.tre")
-nodelabels(
-  pie = cbind(as.numeric(phy$node.label), 100 - as.numeric(phy$node.label)),
-  piecol = c("grey", "white"),
-  cex = 0.25
-)
-
-phy <- read.tree("data/trees/astral_75_75/astral_all_bs10_LPP.tre")
+phy <- read.tree("data/trees/astral_r10_l50_i50/astral_bs10_LPP.tre")
 nodelabels(
   pie = cbind(as.numeric(phy$node.label), 1 - as.numeric(phy$node.label)),
   piecol = c("black", "white"),

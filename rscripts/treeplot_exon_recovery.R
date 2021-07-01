@@ -1,4 +1,5 @@
 
+
 ###
 # ASTRAL tree with hybpiper locus recovery
 ###
@@ -9,9 +10,10 @@ library(ape)
 library(tidyr)
 
 #read in tree and tips
-phy <- read.tree("data/trees/astral_r10_l0_i0/astral_bs10_LPP.tre")
-df <- read.csv("data/sample_data - samples_for_phylo_OM.csv")
-df <- df[df$Namelist %in% phy$tip.label,]
+phy <-
+  read.tree("data/trees/astral_r10_l50_i50/astral_bs10_LPP.tre")
+df <- read.csv("data/sample_data - samples_for_phylo_AZ.csv")
+df <- df[df$Namelist %in% phy$tip.label, ]
 
 #fix terminal branches
 phy$edge.length[phy$edge.length == "NaN"] <- 0.25
@@ -39,10 +41,10 @@ sample.data = as.matrix(read.table(
 colnames(sample.data) <- gsub("X", "", colnames(sample.data))
 
 #set length of reference exon
-reference.len = as.numeric(sample.data[1, ])
+reference.len = as.numeric(sample.data[1,])
 
 #extract only sample exon lengths
-sample.len = sample.data[2:length(sample.data[, 1]), ]
+sample.len = sample.data[2:length(sample.data[, 1]),]
 
 #calculate percentage of exon recovered for each exon in each individual
 percent.len = sweep(sample.len, 2, reference.len, "/")
@@ -56,7 +58,8 @@ setdiff(phy$tip.label, rownames(percent.len))
 setdiff(rownames(percent.len), phy$tip.label)
 
 #remove those in hybpiper but not in tree from table
-percent.len<-percent.len[match(phy$tip.label, rownames(percent.len)),]
+percent.len <-
+  percent.len[match(phy$tip.label, rownames(percent.len)), ]
 
 #check diffs
 setdiff(phy$tip.label, rownames(percent.len))
@@ -77,34 +80,39 @@ str(percent.len_melt)
 # COLOUR BASED ON ORDER
 ##
 
-df2<-df[df$Namelist%in%phy$tip.label,]
+#only include rows matching tips in the phylogenetic tree
+df2 <- df[df$Namelist %in% phy$tip.label, ]
 df2
 
-df2<-df2[match(phy$tip.label, df2$Namelist),]
+#match the order of dataframe to tips
+df2 <- df2[match(phy$tip.label, df2$Namelist), ]
 
-df3<-data.frame(phy$tip.label, df2$Order)
-colnames(df3)<-c("label","order")
+#make a data frame containing columns for only the tip label and the corresponding order
+df3 <- data.frame(phy$tip.label, df2$Order)
+colnames(df3) <- c("label", "order")
 head(df3)
 
-
-
-#check diffs
+#make sure there are no differences between data frame and phylogenetic tree
 setdiff(phy$tip.label, df3$label)
 setdiff(df3$label, phy$tip.label)
 
-
-
 #tree
+#if (!requireNamespace("BiocManager", quietly = TRUE))
+#install.packages("BiocManager")
+#BiocManager::install("ggtree")
 
+library(ggtree)
 g <- ggtree(phy)
 
 
 g2 <- g %<+% df3 +
-  geom_tiplab(aes(color = factor(order)),align = T, size = 1.75) + theme(legend.position = c(0.1,0.9),
-                                                                         legend.title = element_blank(), # no title
-                                                                         #legend.key = element_blank(),
-                                                                         legend.text = element_text(size= 7)
-  ) + guides(colour = guide_legend(override.aes = list(size=5)))
+  geom_tiplab(aes(color = factor(order)), align = T, size = 1.75) + theme(
+    legend.position = c(0.1, 0.9),
+    legend.title = element_blank(),
+    # no title
+    #legend.key = element_blank(),
+    legend.text = element_text(size = 7)
+  ) + guides(colour = guide_legend(override.aes = list(size = 5)))
 
 
 g2
@@ -113,7 +121,7 @@ g2
 
 #CHECK IF THE DATA IS IN CORRECT ORDER
 p2 <- ggplot(percent.len_melt, aes(x = category, y = label)) +
-  geom_tile(aes(fill = value)) + scale_fill_viridis_c(name="% exon length") +
+  geom_tile(aes(fill = value)) + scale_fill_viridis_c(name = "% exon length") +
   theme_tree2() + theme(
     axis.line.x = element_blank(),
     axis.title.x = element_blank(),
@@ -127,7 +135,9 @@ p2 <- ggplot(percent.len_melt, aes(x = category, y = label)) +
 
 p2
 
-pdf('figures/tree_exon_recovery.pdf', height=20,width=20)
+pdf('figures/tree_exon_recovery.pdf',
+    height = 20,
+    width = 20)
 library(aplot)
 p2 %>% insert_left(g2)
 dev.off()

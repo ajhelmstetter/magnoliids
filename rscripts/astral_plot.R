@@ -4,10 +4,10 @@ rm(list=ls())
 af<-"data/trees/astral_r10_l50_i50/"
 
 #set sample data filepath
-sample_data<-"data/sample_data - samples_for_phylo_AZ.csv"
+sample_data<-"data/sample_data - samples_for_phylo.csv"
 
 #set PDF name
-pdf("figures/astral_r10_l50_i50_AZ.pdf",width=10,height=20)
+pdf("figures/astral_r10_l50_i50.pdf",width=10,height=20)
 
 ####
 # Plot

@@ -39,17 +39,17 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
 percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
-#view(percent.len.low_df)
+view(percent.len.low_df)
 
 ###
 # taxonomic scale
 ###
 
 #read in taxonomy dataset
-tn<-read.csv("data/sample_data - samples_for_phylo_OM.csv")
+tn<-read.csv("data/sample_data - samples_for_phylo.csv")
 
 #only those samples output put hybpiper
-tn<-tn[tn$Include_hybpiper==1,]
+tn<-tn[tn$included_hybpiper==1,]
 
 #check for differences
 setdiff(tn$Namelist,rownames(percent.len))
@@ -104,7 +104,7 @@ col <- colSums(percent.len.limit != 0)
 #Calculate % individuals with >= 75% of exon for each exon
 col <- col / (length(sample.data[, 1]) - 1) # -1 for meanlength
 
-#Extract only 75_75 exons from original dataset
+#Extract only exons under filtering thresholds from original dataset
 length7575 <- sample.data[, col >= 0.5]
 
 #Density plot of exon lengths with rug of actual exon lengths
@@ -134,3 +134,4 @@ cat(
   file = "outputs/cp_filtered.txt",
   sep = "\n"
 )
+

@@ -196,7 +196,7 @@ Sequence metadata:
 
 Shows R2 merging only (same script used for R1):
 
-[scripts/combine_gap.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/blob/master/bashscripts/combine_gap.sh)
+[scripts/combine_gap.sh](https://github.com/ajhelmstetter/PAFTOL_magnoliids/blob/master/bashscripts/combine_gap.sh) 
 
 ## PAFTOL
 
@@ -283,3 +283,60 @@ bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/as
 
 ```
 
+## Pipeline
+
+```{bash pipeline, eval = FALSE}
+
+sbatch ~/scripts/hybpiper_magnoliids.sh
+
+cd /path/to/retrieved_supercontigs/
+
+bash ~/scripts/post_hybpiper.sh
+
+cd /data3/projects/AFRODYN2/magnoliids/raw_data/1kp/reformatted
+
+bash ~/scripts/combine_1kp_hybpiper.sh
+
+Download test_seq_lengths.txt to PAFTOL_magnoliids/data/
+
+Run low_length_exon_removal.R
+
+Upload outputs/low_length_exon_removal.txt to directory with header.* files
+
+cd /data3/projects/AFRODYN2/magnoliids/hybpiper_magnoliids_879389/retrieved_supercontigs/oneline/header
+
+bash low_length_exon_removal.txt
+
+#clean up
+mkdir originals
+mv header.* originals
+rename -v "reduced." "" *
+rm low_length_exon_removal.txt
+
+#add new path
+sbatch align_supercontigs.sh
+
+#add new path
+sbatch paralogs.sh
+
+#cd to align_supercontigs output
+cd /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557
+
+bash ~/scripts/post_align.sh
+
+#add new path
+sbatch genetrees_magnoliids.sh
+
+run filtering.R
+
+run paralog_detection.R
+
+#cd to genetrees output
+cd /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
+
+copy outputs/cp_filtered.txt to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
+copy outputs/mv_paralogs_handpicked.txt (or outputs/mv_paralogs_auto.txt) to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
+
+bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_r10_l50_i50
+
+```

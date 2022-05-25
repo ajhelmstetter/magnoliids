@@ -10,8 +10,8 @@
 .Ruserdata
 
 # RStudio files ----
-*.Rproj
-.Rproj.user/
+#*.Rproj
+#.Rproj.user/
 
 # R Environment Variables ----
 .Renviron
@@ -21,4 +21,5 @@ README.html
 inst/doc
 
 # Unreleased data files ----
-data/
+# data/
+.Rproj.user

@@ -6,7 +6,7 @@ gene.size.multiplier = .1
 sample.size.multiplier = .5
 
 sample.filename = "data/test_seq_lengths.txt"
-sample.data= as.matrix(read.table(sample.filename,header=T,row.names=1,sep="\t"))
+sample.data= as.matrix(read.table(sample.filename,header=T,sep="\t"))
 
 #length reference exon
 reference.len = as.numeric(sample.data[1,])

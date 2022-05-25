@@ -1,13 +1,13 @@
 rm(list=ls())
 
 #set ASTRAL output folder path
-af<-"data/trees/astral_r10_l50_i50_exons_b2_0/"
+af<-"data/trees/astral_r50_l50_i50_auto_b2_0/"
 
 #set sample data filepath
 sample_data<-"data/sample_data - samples_for_phylo.csv"
 
 #set PDF name
-pdf("figures/astral_r10_l50_i50_exons_b2_0.pdf",width=10,height=20)
+pdf("figures/astral_r50_l50_i50_auto_b2_0.pdf",width=10,height=20)
 #pdf("figures/astral_r10_l50_i50_circular.pdf",width=15,height=15)
 ####
 # Plot
@@ -126,7 +126,7 @@ legend(
 dev.off()
 
 #write labelled tree
-write.tree(phy,"outputs/astral_r10_l50_i50_exons_b2_0_tiplabels.tree")
+write.tree(phy,"outputs/astral_r50_l50_i50_auto_b2_0_tiplabels.tree")
 
 #prop bootstrap > 90 (-2 for NA)
 table(as.numeric(phy2$node.label)>0.9)[2]/(length(phy2$node.label)-2)

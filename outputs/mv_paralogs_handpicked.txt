@@ -1,13 +1,11 @@
 mv RAxML_bipartitions*4951* paralogs/
-mv RAxML_bipartitions*4989* paralogs/
 mv RAxML_bipartitions*5355* paralogs/
+mv RAxML_bipartitions*5428* paralogs/
 mv RAxML_bipartitions*5434* paralogs/
 mv RAxML_bipartitions*5578* paralogs/
-mv RAxML_bipartitions*5940* paralogs/
+mv RAxML_bipartitions*5919* paralogs/
 mv RAxML_bipartitions*5958* paralogs/
 mv RAxML_bipartitions*6003* paralogs/
 mv RAxML_bipartitions*6004* paralogs/
-mv RAxML_bipartitions*6051* paralogs/
-mv RAxML_bipartitions*6110* paralogs/
 mv RAxML_bipartitions*6128* paralogs/
 mv RAxML_bipartitions*6387* paralogs/

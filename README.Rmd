@@ -124,6 +124,8 @@ I also see some possibilities for deleting duplicated taxa, assuming we only nee
 * If we are too stringent, we may biasing the sampling towards taxa that are closer to the sequences represented in the bait kit>
 * add methods to google doc
 * Currently all gap positions are allowed - what about b5=h to allow only those positions with <50% gaps?
+* Accidentally deleted paralogs alignments for align_magnoliids_r10_auto_b2_0 - run alignment again
+
 
 ### Robustness analysis:
 * Default 10%, 50/50, --auto b2=0 (subject to change). These will be help constant as the others vary.
@@ -345,11 +347,11 @@ run paralog_detection.R
 #cd to genetrees output
 cd /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 
-copy outputs/cp_filtered.txt to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
+copy outputs/XX_XX.txt to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 copy outputs/mv_paralogs_handpicked.txt (or outputs/mv_paralogs_auto.txt) to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 
 #run trees subset and ASTRAL
-bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_r10_l50_i50
+bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar 50_50 astral_r10_l50_i50
 
 #only ASTRAL
 #java -jar ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar -t 3 -i all_bs10.trees -o astral_bs10_LPP.tre 2> astral_bs10_LPP.log
@@ -358,22 +360,12 @@ bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/as
 #cd to align_supercontigs output
 cd /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
 
-copy outputs/cp_filtered.txt to /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
+copy outputs/XX_XX.txt to /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
 copy outputs/mv_paralogs_handpicked.txt (or outputs/mv_paralogs_auto.txt) to /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
 
-#WRITE A SCRIPT THAT DOES PARALOGS AND FILTERING SUBSET
-mkdir paralogs
-mkdir filtered
-
-sed -i 's/RAxML_bipartitions\*/*./' mv_paralogs_handpicked.txt 
-sed -i 's/\* para/_\* para/' mv_paralogs_handpicked.txt 
-
-bash mv_paralogs_handpicked.txt
-bash cp_filtered.txt 
-
-##SOME OF THIS MIGHT BE REDUNDANT WITH ABOVE
 #need to use namelist with 1kp taxa
-bash ~/scripts/fill_fasta.sh ~/data/hybpiper/namelist_magnoliids_phylo_1kp.txt
+#need to replace mv_paralogs_handpicked.txt if run more than once in same dir
+bash ~/scripts/fill_fasta.sh ~/data/hybpiper/namelist_magnoliids_phylo_1kp.txt 50_50
 
 #WHY EMPTY?
 #Delete empty alignments

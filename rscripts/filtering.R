@@ -1,8 +1,8 @@
 rm(list=ls())
 
 # creates input objects:
-limit_perc_length_wanted = 0.75 # for 75% of length recovery wanted
-limit_perc_nb_wanted = 0.75 # for exons present in 75% of the samples
+limit_perc_length_wanted = 0.1 # for X% of length recovery wanted
+limit_perc_nb_wanted = 0.1 # for exons present in X% of the samples
 path_to_data = "data/"
 
 ####
@@ -44,7 +44,7 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
 percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
-view(percent.len.low_df)
+#view(percent.len.low_df)
 
 ###
 # taxonomic scale
@@ -133,12 +133,12 @@ ggdensity(
   ylab = "Density"
 )
 
-ggsave(paste0((100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted), "_exon_length_density.png"))
+ggsave(paste0("outputs/",(100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted), "_exon_length_density.png"))
 
 #Copy list of names into a file, and modify to the format shown in README
 cat(
   x = paste0("cp *", marker_len$locus, "_supercontig.FNA* ", (100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted),"/"),
-  file = paste0((100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted), ".txt"),
+  file = paste0("outputs/",(100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted), ".txt"),
   sep = "\n"
 )
 

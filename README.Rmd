@@ -117,13 +117,19 @@ I also see some possibilities for deleting duplicated taxa, assuming we only nee
 
 ### To do: 
 
-* Compare to PAFTOL 353 paper
+* b2_0 places yasuni strangely - check for low data. This seems better placed in e.g. linsi but might be wandering
+* no 1kp samples in exon tree - add with latest version
+* Compare to PAFTOL tree
 * Alignments failed? CHECK: 5841, 5899, 6363
-* hybpiper_stats.sh is crashing before the end, but produces results...?
-* Rerun retrieve seqs including P_011527, P_011673 (already copied to hybpiper_magnoliids)
-* Check metadata for Endiandra, Austromatthaea
-* HS: confirm that you are indeed using the correct raw data file (e.g., by replicating the cleanup of that specific taxon)?
-* If we too stringent, we may biasing the sampling towards taxa that are closer to the sequences represented in the bait kit
+* If we are too stringent, we may biasing the sampling towards taxa that are closer to the sequences represented in the bait kit>
+* add methods to google doc
+* Currently all gap positions are allowed - what about b5=h to allow only those positions with <50% gaps?
+
+### Robustness analysis:
+* Default 10%, 50/50, --auto b2=0 (subject to change). These will be help constant as the others vary.
+1. Sequences with lower than 0%, 10%, 25%, 50% (r0 - r50 respectively) of exon length recovered are deleted. Should improve quartet accuracy with increasing values
+2. Examine ASTRAL with six different alignment approaches --auto --b2=d, --auto --b2=0, --einsi -b2=0, --ginsi -b2=0, --linsi -b2=0 & exons only --auto -b2=0
+3. Make ASTRAL tree (IQTREE?) of six exon selection strategies (length of exon / proportion of individuals): 0/0 (everything), 25/25, 50/50, 75/75, 75/25, 25/75
 
 ### How to cite
 
@@ -293,6 +299,8 @@ cd /path/to/retrieved_supercontigs/
 
 bash ~/scripts/post_hybpiper.sh
 
+Open ~/scripts/combine_1kp_hybpiper.sh, find and replace folder name
+
 cd /data3/projects/AFRODYN2/magnoliids/raw_data/1kp/reformatted
 
 bash ~/scripts/combine_1kp_hybpiper.sh
@@ -314,10 +322,10 @@ rename -v "reduced." "" *
 rm low_length_exon_removal.txt
 
 #add new path
-sbatch align_supercontigs.sh
+sbatch ~/scripts/align_supercontigs.sh
 
 #add new path
-sbatch paralogs.sh
+sbatch ~/scripts/paralogs.sh
 
 #cd to align_supercontigs output
 cd /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557
@@ -329,6 +337,9 @@ sbatch genetrees_magnoliids.sh
 
 run filtering.R
 
+#paralogs
+download tree files in /data3/projects/AFRODYN2/magnoliids/paralog_magnoliids_879559/trees to data/paralog_trees
+
 run paralog_detection.R
 
 #cd to genetrees output
@@ -337,6 +348,41 @@ cd /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 copy outputs/cp_filtered.txt to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 copy outputs/mv_paralogs_handpicked.txt (or outputs/mv_paralogs_auto.txt) to /data3/projects/AFRODYN2/magnoliids/genetrees_magnoliids_879577
 
+#run trees subset and ASTRAL
 bash ~/scripts/post_genetrees_astral.sh ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar astral_r10_l50_i50
+
+#only ASTRAL
+#java -jar ~/programs/ASTRAL/Astral.5.7.7/Astral/astral.5.7.7.jar -t 3 -i all_bs10.trees -o astral_bs10_LPP.tre 2> astral_bs10_LPP.log
+
+#prepare data for concatenation
+#cd to align_supercontigs output
+cd /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
+
+copy outputs/cp_filtered.txt to /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
+copy outputs/mv_paralogs_handpicked.txt (or outputs/mv_paralogs_auto.txt) to /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_879557/gblocks
+
+#WRITE A SCRIPT THAT DOES PARALOGS AND FILTERING SUBSET
+mkdir paralogs
+mkdir filtered
+
+sed -i 's/RAxML_bipartitions\*/*./' mv_paralogs_handpicked.txt 
+sed -i 's/\* para/_\* para/' mv_paralogs_handpicked.txt 
+
+bash mv_paralogs_handpicked.txt
+bash cp_filtered.txt 
+
+##SOME OF THIS MIGHT BE REDUNDANT WITH ABOVE
+#need to use namelist with 1kp taxa
+bash ~/scripts/fill_fasta.sh ~/data/hybpiper/namelist_magnoliids_phylo_1kp.txt
+
+#WHY EMPTY?
+#Delete empty alignments
+find . -name "*.FNA" -type 'f' -size -4k -delete
+
+module load bioinfo/phyx/0.999 
+pxcat -s *.FNA -o mag.fa -p mag.partitions
+
+#add new path
+sbatch ~/scripts/iqtree_magnoliids.sh
 
 ```

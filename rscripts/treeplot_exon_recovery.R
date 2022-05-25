@@ -12,7 +12,7 @@ library(tidyr)
 #read in tree and tips
 phy <-
   read.tree("data/trees/astral_r10_l50_i50/astral_bs10_LPP.tre")
-df <- read.csv("data/sample_data - samples_for_phylo_AZ.csv")
+df <- read.csv("data/sample_data - samples_for_phylo.csv")
 df <- df[df$Namelist %in% phy$tip.label, ]
 
 #fix terminal branches

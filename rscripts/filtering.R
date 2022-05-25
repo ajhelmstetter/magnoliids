@@ -42,150 +42,26 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 ####
 #uncomment to ID low data samples
 ####
-percent.len = ifelse(percent.len > 0.01, 1, percent.len)
-sort(rowSums(percent.len))
+percent.len.low = ifelse(percent.len > 0.01, 1, percent.len)
+percent.len.low_df<-data.frame(sort(rowSums(percent.len.low)))
+view(percent.len.low_df)
 
 ###
 # taxonomic scale
 ###
 
 #read in taxonomy dataset
-tn<-read.csv("data/taxonomy_namelist.csv")
+tn<-read.csv("data/sample_data - samples_for_phylo.csv")
 
 #only those samples output put hybpiper
-tn<-tn[tn$Include_hybpiper==1,]
+tn<-tn[tn$included_hybpiper==1,]
 
 #check for differences
 setdiff(tn$Namelist,rownames(percent.len))
 setdiff(rownames(percent.len),tn$Namelist)
 
-####
-#uncomment for GENUS
-####
-
-#percent.len<-cbind.data.frame(percent.len,tn$Genus)
-#percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-#rownames(percent.len)<-percent.len[,1]
-#percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-#percent.len<-as.matrix(percent.len)
-
-####
-#uncomment for FAMILY
-####
-
-#percent.len<-cbind.data.frame(percent.len,tn$Family)
-#percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-#rownames(percent.len)<-percent.len[,1]
-#percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-#percent.len<-as.matrix(percent.len)
-
-#set thresholds
-#limits <- c(0.25, 0.5, 0.75, 0.9)
-limits <- seq(0.01, 0.99, 0.01)
-limits
-
-#make empty matrix
-exon_stats <- matrix(nrow = length(limits), ncol = length(limits))
-
-#loop through threshold combinations
-for (i in 1:length(limits)) {
-  for (j in 1:length(limits)) {
-
-    #reset limits
-    percent.len.limit <- percent.len
-
-    # if percentage exon length recovered is >= 75% make value 1
-    # if not make value 0
-    percent.len.limit[percent.len.limit >= limits[i]] = 1
-    percent.len.limit[percent.len.limit < limits[i]] = 0
-
-    #For each exon calculate number of individuals with >= 75% of exon
-    col <- colSums(percent.len.limit != 0)
-
-    #Calculate % individuals with >= 75% of exon for each exon
-    col <- col / (length(percent.len[, 1])) # -1 for meanlength
-
-    exon_stats[i, j] <-  table(col >= limits[j])["TRUE"]
-
-    print(paste("% exon",i, "% inds",j,sep=" "))
-
-  }
-
-}
-
-#####
-# Gradient plot
-#####
-
-#convert to data frame
-exon_stats <- data.frame(exon_stats)
-
-#view table
-#view(exon_stats)
-
-for (i in 1:length(limits)) {
-  colnames(exon_stats)[i] <-  limits[i] * 100
-  exon_stats$exon_prop[i] <-  limits[i] * 100
-}
-
-
-#melt table
-library(reshape2)
-exon_stats_melt <- melt(exon_stats, id.vars = "exon_prop")
-head(exon_stats_melt)
-exon_stats_melt$variable <- as.numeric(exon_stats_melt$variable)
-colnames(exon_stats_melt) <- c("exon_prop", "ind_prop", "no_markers")
-str(exon_stats_melt)
-
-#covert NA to 0
-#exon_stats_melt[is.na(exon_stats_melt)]<-0
-library(wesanderson)
-
-# Gradient color
-pal <- wes_palette("Zissou1", 100, type = "continuous")
-p <- ggplot(exon_stats_melt, aes(exon_prop, ind_prop, z = no_markers))
-p + geom_raster(aes(fill = no_markers)) +
-  scale_fill_gradientn(colours = pal, name = "No. exons") +
-  scale_y_continuous(expand = c(0, 0)) +
-  scale_x_continuous(expand = c(0, 0)) +
-  labs(y= "% families with exon", x = "% exon length recovered") +
-  geom_contour(colour = "white", linetype = "dashed", alpha = 0.5) +
-  theme(
-    text = element_text(size = 10),
-    axis.text = element_text(size = 10),
-    axis.title.x = element_text(size = 11, margin = margin(
-      t = 5,
-      r = 0,
-      b = 0,
-      l = 0
-    )),
-    #axis.text.x=element_blank(),
-    #axis.ticks.x=element_blank(),
-    #axis.line.x = element_line(),
-    #axis.title.y = element_blank(),
-    #axis.text.y = element_blank(),
-    #axis.ticks.y = element_blank(),
-    #axis.line.y = element_blank(),
-    legend.key = element_blank(),
-    legend.title = element_text(),
-    legend.text = element_text(size = 10),
-    #legend.position = c(0.8, 0.9),
-    panel.border = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.grid.major = element_blank(),
-    panel.background = element_blank()
-  )
-
-ggsave("figures/exon_recovery_gradient_family.png")
-
-####
-# Save table
-####
-
 #set thresholds
 limits <- c(0.25, 0.5, 0.75, 0.9)
-#limits <- seq(0.01,0.99,0.01)
-limits
 
 #make empty matrix
 exon_stats <- matrix(nrow = length(limits), ncol = length(limits))
@@ -224,8 +100,10 @@ write.csv(exon_stats, "outputs/exon_filtering_stats.csv")
 # if percentage exon length recovered is >= 75% make value 1
 # if not make value 0
 percent.len.limit <- percent.len
+
 percent.len.limit[percent.len.limit >= limit_perc_length_wanted] = 1
 percent.len.limit[percent.len.limit < limit_perc_length_wanted] = 0
+
 
 #For each exon calculate number of individuals with >= 75% of exon
 col <- colSums(percent.len.limit != 0)
@@ -263,3 +141,4 @@ cat(
   file = paste0((100*limit_perc_length_wanted), "_", (100*limit_perc_nb_wanted), ".txt"),
   sep = "\n"
 )
+

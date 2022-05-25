@@ -1,17 +1,19 @@
+rm(list = ls())
+
 library(ape)
 
 #set paths to the trees folder you downloaded
 #should contain all trees output from paralogs.sh
 files <-
   list.files(
-    path = "data/paralogs_magnollids_710179_trees/",
+    path = "data/paralog_trees/",
     pattern = "RA*",
     full.names = T,
     recursive = FALSE
   )
 filenames <-
   list.files(
-    path = "data/paralogs_magnollids_710179_trees/",
+    path = "data/paralog_trees/",
     pattern = "RA*",
     full.names = F,
     recursive = FALSE

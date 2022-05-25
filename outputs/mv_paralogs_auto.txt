@@ -1,2 +1,1 @@
-mv RAxML_bipartitions*4989* paralogs/
 mv RAxML_bipartitions*6004* paralogs/

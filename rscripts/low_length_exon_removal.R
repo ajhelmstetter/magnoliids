@@ -38,28 +38,30 @@ percent.len = ifelse(percent.len > 1, 1, percent.len)
 head(percent.len[, c(1:5)])
 
 #user input threshold
-lim <- 0.1
+lim <- 0.5
 
 #vector to store greps
-grep_cmds <- vector()
+sed_cmds <- vector()
 k <- 1
 
 #i = number of rows
 #j = number of columns
 
 #go through all cells in table and pull out those
-#combinations of indviidual/exon that are lower than threshold
+#combinations of individual/exon that are lower than threshold
 for (i in 1:length(percent.len[, 1])) {
   for (j in 1:length(percent.len[1, ])) {
     if (percent.len[i, j] < lim) {
       print(rownames(percent.len)[i])
       print(colnames(percent.len)[j])
 
-      grep_cmds[k] <-
+      #sed '/Asie/{N;d;}'
+
+      sed_cmds[k] <-
         paste(
-          "grep -v -A1 '",
+          "sed '/",
           rownames(percent.len)[i],
-          "' header.",
+          "/{N;d;}' header.",
           colnames(percent.len)[j],
           "_supercontig.FNA > reduced.header.",
           colnames(percent.len)[j],
@@ -70,16 +72,21 @@ for (i in 1:length(percent.len[, 1])) {
 
     }
   }
+
+  #renames files so they can be modified for the next individual
+  sed_cmds[k]<-paste('rename "reduced." "" *')
+  k <- k + 1
+
 }
 
 #numbers should be the same
-length(grep_cmds)
-table(percent.len < lim)[2]
+length(sed_cmds)
+table(percent.len < lim)[2] + length(rownames(percent.len))
 
 #output to file
 cat(
-  x = paste0(grep_cmds),
-  file = "outputs/low_length_exon_removal.txt",
+  x = paste0(sed_cmds),
+  file = "outputs/low_length_exon_removal_50.txt",
   sep = "\n"
 )
 

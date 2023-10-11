@@ -1,14 +1,33 @@
 rm(list=ls())
 
-#set ASTRAL output folder path
-af<-"data/trees/astral_r50_l50_i50_auto_b2_0/"
+#list paths to all tree folders in directory
+files <-
+  list.files(
+    path = "data/trees",
+    pattern = "ast*",
+    full.names = T,
+    recursive = FALSE
+  )
+
+#names of folders without path
+filenames <-
+  list.files(
+    path = "data/trees",
+    pattern = "ast*",
+    full.names = F,
+    recursive = FALSE
+  )
+
+
+
+for(i in 1:length(files)){
 
 #set sample data filepath
 sample_data<-"data/sample_data - samples_for_phylo.csv"
 
 #set PDF name
-pdf("figures/astral_r50_l50_i50_auto_b2_0.pdf",width=10,height=20)
-#pdf("figures/astral_r10_l50_i50_circular.pdf",width=15,height=15)
+pdf(paste("figures/",filenames[i],".pdf",sep=""),width=10,height=20)
+
 ####
 # Plot
 ####
@@ -23,7 +42,13 @@ library(tidyr)
 palette(colorRampPalette(brewer.pal(name = "Set1", n = 8))(17))
 
 #read in tree and tips
-phy <- read.tree(paste(af,"astral_bs10_LPP.tre",sep=""))
+phy <- read.tree(paste(files[i],"/astral_bs10_LPP.tre",sep=""))
+
+#fixed relabelled species in older runs
+phy$tip.label<-gsub("s11657","P_011657",phy$tip.label)
+phy$tip.label<-gsub("s11679","P_011679",phy$tip.label)
+phy$tip.label<-gsub("s11677","P_011677",phy$tip.label)
+
 df <- read.csv(sample_data)
 df <- df[df$Namelist %in% phy$tip.label,]
 df <-
@@ -32,12 +57,12 @@ df <-
                na.rm = TRUE,
                remove = FALSE)
 
-##match order of namelist and tip labels
-df<-df[match(phy$tip.label, df$Namelist),]
-
 #diffs
 setdiff(phy$tip.label, df$Namelist)
 setdiff(df$Namelist, phy$tip.label)
+
+##match order of namelist and tip labels
+df<-df[match(phy$tip.label, df$Namelist),]
 
 ##tip label change
 dfnames <- data.frame(df$Namelist, df$genus_species)
@@ -91,14 +116,14 @@ plot(
 )
 p <- character(length(phy$node.label))
 
-phy2 <- read.tree(paste(af,"astral_bs10_QS.tre",sep=""))
+phy2 <- read.tree(paste(files[i],"/astral_bs10_QS.tre",sep=""))
 nodelabels(
   pie = cbind(as.numeric(phy2$node.label), 100 - as.numeric(phy2$node.label)),
   piecol = c("grey", "white"),
   cex = 0.25
 )
 
-phy2 <- read.tree(paste(af,"astral_bs10_LPP.tre",sep=""))
+phy2 <- read.tree(paste(files[i],"/astral_bs10_LPP.tre",sep=""))
 nodelabels(
   pie = cbind(as.numeric(phy2$node.label), 1 - as.numeric(phy2$node.label)),
   piecol = c("black", "white"),
@@ -126,8 +151,9 @@ legend(
 dev.off()
 
 #write labelled tree
-write.tree(phy,"outputs/astral_r50_l50_i50_auto_b2_0_tiplabels.tree")
+#write.tree(phy,"outputs/astral_r50_l50_i50_auto_b2_d_tiplabels.tree")
 
 #prop bootstrap > 90 (-2 for NA)
 table(as.numeric(phy2$node.label)>0.9)[2]/(length(phy2$node.label)-2)
 
+}

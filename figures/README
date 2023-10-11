@@ -1,3 +1,17 @@
 # README
 
-This folder contains all figures created by user.
+Guide for tree filenames
+
+astral/iqtree is algorithm
+
+rXX = threshold for removing specimen's sequence based on proportion exon recovered. r10 removes loci with 10% or less exon recovered from dataset
+
+lXX = thresold for removing locus based on locus recovery length. 
+
+iXX = threshold for removing loci based on number of individuals. 
+
+l50_i50 means that only loci with 50% of the exon recovered in 50% of individuals are kept.
+
+_auto_, _ginsi_ etc indicates MAFFT alignment algorithm. exons is when exon alignment rather than supercontigs are used.
+
+b2_0, b2_d is how conservative GBLOCKS deals with gap characters

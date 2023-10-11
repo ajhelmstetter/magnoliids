@@ -1,0 +1,582 @@
+
+================== ASTRAL ===================== 
+
+This is ASTRAL version 5.7.7
+Gene trees are treated as unrooted
+14 trees read from all_bs10.trees
+index165
+All output trees will be *arbitrarily* rooted at P0109B
+
+======== Running the main analysis
+Number of taxa: 240 (240 species)
+Taxa: [WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, P0203H, P_016909, WZFE, P_018831, OSHQ, P0109B, CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, P_019191, P_025525, S38, Sdec, P_011611, P_008631, P_014081, P_025527, P_011701, P_014073, KAYP, P_019199, P_011607]
+Taxon occupancy: {P_019193=13, P_019191=7, P_019197=14, OPDF=14, GAP_81172=14, P_018783=14, P_019199=2, Wsal=13, P_016921=14, WKSU=14, P_025525=3, P_025527=2, P_014073=3, P0203H=11, P_014077=12, QDVW=14, P_011487=14, P_011489=14, P_016813=14, P_006421=14, P_006422=14, P_006420=12, P_006418=14, P_006419=14, P_006414=14, P_014081=11, P_014083=12, P_018689=14, P0206H=14, P0206G=14, Msal=13, P0109B=12, P_012901=14, P_006410=14, P_006411=14, P_012903=14, P_006412=14, P_006413=14, P_012905=14, GAP_79862=14, P_012907=14, PAWA=14, ABSS=14, P_012909=13, P_018691=12, GAP_80291=14, P_018695=14, P_014095=7, GAP_80293=14, P_018693=14, GAP_80292=14, GAP_80295=14, P_014099=14, GAP_80294=14, GAP_80297=14, GAP_80298=14, P_012911=14, P_011701=2, P_012913=13, P_011705=11, P_012915=13, P_012917=14, P_012919=14, P_011709=1, P_012881=14, P_011671=10, P_011551=12, MAQO=14, P_012883=14, P_011673=12, P_011675=14, P_012885=14, GAP_80322=13, P2590=13, P_011677=13, P_012887=14, P_012889=14, P_011679=13, P_008647=14, PSJT=14, P2589=14, P_011681=13, P_012891=14, P_012893=14, P_018637=14, P_012895=14, P_018635=13, P_012897=14, P0207C=14, P0207B=14, P_012899=14, P_018639=14, P0207A=14, P_008646=14, P_008640=14, BCGB=14, WZFE=14, P_018645=14, KRJP=14, KAYP=6, P_011699=5, P_011579=13, CSSK=14, P_008632=13, P_016909=13, P_007783=14, P_008631=4, P_019187=14, P_019185=14, Sdec=4, P_019189=14, P_012791=14, P_012793=14, P_012795=14, Asie=11, P_018779=12, P_011465=14, P_012797=14, P_011587=13, P_012799=14, GAP_80417=11, WIGA=14, P_007802=13, GAP_79804=12, P_012841=14, P_011631=14, P_012843=14, Pcol=14, P_012845=14, P_012847=13, P_011637=14, P_011759=14, P_012849=14, Apet=9, OBPL=14, P0110C=14, P0110B=13, P_018831=14, YZRI=14, P_012851=14, P_012853=14, P_011643=14, P_011523=14, P_012855=14, P_012857=14, P_011647=14, P_011527=14, P_012859=14, WAIL=14, P_016789=14, P_012861=14, P_011651=14, P_011531=13, P_016787=14, P_012863=14, P_012865=14, Schi=13, P_012867=14, P_011657=14, P_011537=14, P_012869=14, P_016793=14, P_016791=14, P_016797=14, SJEV=13, P_016795=14, P_012871=14, P_012873=14, P_016799=14, P_012875=14, P_012877=14, P_012879=14, P_011549=14, P_007844=13, S02=14, S04=7, P_012921=14, S03=14, P_012801=14, P_011713=10, P_012923=14, P_012803=14, P_011715=13, S08=13, P_012925=14, P_012805=14, P_007843=14, P_012927=14, P_012807=14, P_012809=14, VYLQ=14, DHPO=14, GAP_80390=13, P2622=13, P2623=8, XQWC=14, GAP_80394=14, GAP_80393=14, GAP_80395=14, GAP_80397=14, P_012931=14, P_012811=14, WPHN=14, P_012933=14, P_012813=14, P_012935=14, P_012815=14, P_012937=14, P_012817=13, P_011607=1, P_012939=14, P_012819=14, P_011609=11, P2619=12, OSHQ=14, GAP_80389=14, P_012941=14, P_012821=14, P_011611=3, P_012823=14, P_011613=4, P_011735=14, S27=13, P_012825=14, P_012827=14, P_011739=14, P_012829=14, Dhai=14, P0104A=13, P_012831=14, P_011501=14, P_012833=14, GAP_81226=14, P_011745=14, GAP_81227=14, P_012835=14, S38=4, P_012837=14, P_012839=14, P_011509=14}
+Number of gene trees: 14
+14 trees have missing taxa
+Calculating quartet distance matrix (for completion of X)
+Species tree distances calculated ...
+Will attempt to complete bipartitions from X before adding using a distance matrix.
+Building set of clusters (X) from gene trees 
+------------------------------
+gradient0: 3305
+Number of Clusters after addition by distance: 3305
+calculating extra bipartitions to be added at level 1 ...
+Adding to X using resolutions of greedy consensus ...
+Limit for sigma of degrees:6050
+polytomy size limit : 23
+discarded polytomies:  [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 8, 9, 11, 13, 23]
+Threshold 0.0:
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3395
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3399
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3403
+Threshold 0.01:
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3413
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3413
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3413
+Threshold 0.02:
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3415
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3415
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3415
+Threshold 0.05:
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3415
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3415
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3415
+Threshold 0.1:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3417
+polytomy of size 8; rounds with additions with at least 5 support: 0; clusters: 3453
+polytomy of size 7; rounds with additions with at least 5 support: 0; clusters: 3465
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3465
+Threshold 0.2:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3465
+polytomy of size 7; rounds with additions with at least 5 support: 0; clusters: 3483
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3483
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3483
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3483
+polytomy of size 11; rounds with additions with at least 5 support: 0; clusters: 3521
+polytomy of size 3; rounds with additions with at least 5 support: 1; clusters: 3525
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3531
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3531
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3531
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3535
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3537
+polytomy of size 9; rounds with additions with at least 5 support: 0; clusters: 3553
+Threshold 0.3333333333333333:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3553
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3553
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3553
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 3555
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3555
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 3557
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3557
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3559
+polytomy of size 13; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 3589
+polytomy of size 7; rounds with additions with at least 5 support: 0; clusters: 3601
+polytomy of size 23; rounds with additions with at least 5 support: 0; clusters: 3653
+max k is :2
+Number of Clusters after addition by greedy: 3653
+gradient0 in heuristiic: 3653
+partitions formed in 3.832 secs
+Dynamic Programming starting after 3.832 secs
+Using tree-based weight calculation.
+Using polytree-based weight calculation.
+Polytree max score: 1360848117
+Polytree building time: 0.028 seconds.
+Number of quartet trees in the gene trees: 1360848117
+Size of largest cluster: 240
+Greedy score: 1279291683
+estimationFactor: 1.0637512422567668
+Sub-optimal score: 1300363729
+Total Number of elements weighted: 5402
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.9570807812639975
+Optimization score: 1302441579
+Optimal tree inferred in 4.58 secs.
+(GAP_81226,(P_006410,(Pcol,(WKSU,(GAP_81227,(P_016921,((SJEV,(P_019193,(P_019187,Wsal))),((P_019189,((P_025525,((QDVW,Asie),(P_019197,PAWA))),(P_025527,(((CSSK,P_019185),(OPDF,P2589)),((P_019191,P_019199),(GAP_80417,(P2590,GAP_79804))))))),((P0203H,((P_016909,WZFE),(P0109B,(P_018831,OSHQ)))),((WPHN,(P_011613,(((P_011609,(P2619,Sdec)),(MAQO,(WAIL,(P_011527,((P_014083,GAP_80297),(P_014077,GAP_80298)))))),((((GAP_79862,P_011587),(P_014081,(P0104A,P_008647))),((KRJP,(P_011549,GAP_80395)),((P_011657,(P_011643,(P_011509,P_011651))),((GAP_80393,GAP_80394),((P_011647,(P_011465,((P_011501,P_011523),(P_011489,P_011487)))),((P_011551,P_011637),((P_007844,P_011631),(P_007843,(P_006414,P_007783))))))))),((P_011531,(P_011699,(P_006411,Schi))),((VYLQ,P_008631),(P_018635,((P_011709,(P_008632,(P_011579,P_011671))),(((P_011713,KAYP),(WIGA,(P_011705,(P_006413,(Dhai,(Apet,Msal)))))),(((ABSS,BCGB),(P_011679,(P_016813,((P_006412,P_008640),(P_008646,(GAP_80389,GAP_80390)))))),(P_011537,((P_011673,(P_011701,(P_011677,(P_011739,P_011607)))),(P_011681,(P_011759,((P_011675,P_011735),((P_011715,P_014073),(P_011745,P_011611))))))))))))))))),((((P_018639,P_018779),(P_018695,(P_018783,P_018645))),(P_018691,((P_016793,(P_016795,P_006422)),((P_018693,(P_016797,(P_016799,(GAP_80397,OBPL)))),(S38,((S08,P_014095),((S02,P_016787),((P_014099,S03),(P_016791,(S04,(S27,P_016789))))))))))),(((P2622,P2623),(P0110C,(P0207A,((P0110B,P0207C),((P0207B,XQWC),(P0206H,P0206G)))))),((GAP_80322,DHPO),((P_012941,P_012795),(((P_012855,(P_012827,P_007802)),((P_012919,P_012921),(P_012813,P_018637))),(P_012861,((P_012797,((P_012841,((P_012877,P_012913),(P_012811,(P_012891,P_012895)))),((((P_012903,P_012815),(P_012857,(P_012883,P_012925))),(P_012875,((P_012851,P_012887),(P_012901,(P_012831,P_012905))))),(P_018689,((P_012885,(GAP_80294,P_006420)),(P_012859,(((GAP_80291,P_012907),(P_012881,P_012873)),(P_012897,((P_012893,GAP_80293),(P_012889,((P_012863,(P_012911,(P_012821,P_012917))),(P_006418,(P_012793,(P_006419,GAP_80292)))))))))))))),((P_012867,((P_012899,P_012817),(P_012923,P_012847))),((P_012843,(P_012937,(P_012939,P_006421))),(((P_012837,P_012829),(P_012803,P_012853)),(((P_012801,(P_012809,P_012879)),(P_012839,(P_012805,(P_012825,(YZRI,P_012799))))),(((P_012865,(P_012931,(P_012935,P_012933))),((P_012845,P_012807),(P_012871,P_012849))),(P_012909,((P_012833,GAP_81172),((P_012927,(PSJT,GAP_80295)),((P_012791,P_012915),(P_012869,(P_012819,(P_012835,P_012823)))))))))))))))))))))))))))));
+Final quartet score is: 1302441579
+Final normalized quartet score is: 0.9570807812639975
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_018831, OSHQ}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_016909, WZFE}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{P2619, Sdec}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{P_011609, P2619, Sdec}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_014083, GAP_80297}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_014077, GAP_80298}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_014077, GAP_80298, P_014083, GAP_80297}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_014077, GAP_80298, P_011527, P_014083, GAP_80297}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_014077, GAP_80298, P_011527, WAIL, P_014083, GAP_80297}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_011609, P2619, Sdec}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{GAP_79862, P_011587}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 10:
+	{P0104A, P_008647}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{P0104A, P_008647, P_014081}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_79862, P0104A, P_008647, P_011587, P_014081}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011549, GAP_80395}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{KRJP, P_011549, GAP_80395}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011509, P_011651}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011643, P_011509, P_011651}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011643, P_011509, P_011651, P_011657}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80393, GAP_80394}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011501, P_011523}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011489, P_011487}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011489, P_011501, P_011487, P_011523}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011465, P_011489, P_011501, P_011487, P_011523}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011465, P_011489, P_011501, P_011487, P_011523, P_011647}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_011551, P_011637}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_007844, P_011631}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006414, P_007783}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_007843, P_006414, P_007783}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_007844, P_011631, P_007843, P_006414, P_007783}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011551, P_007844, P_011637, P_011631, P_007843, P_006414, P_007783}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, GAP_80394}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_79862, P0104A, P_008647, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011587, P_014081}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 5:
+	{P_006411, Schi}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 5:
+	{P_011699, P_006411, Schi}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_011531, P_011699, P_006411, Schi}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
+	{VYLQ, P_008631}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 8:
+	{P_011579, P_011671}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 1:
+	{P_008632, P_011579, P_011671}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 1:
+	{P_011709, P_008632, P_011579, P_011671}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{P_011713, KAYP}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 8:
+	{Apet, Msal}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{Apet, Msal, Dhai}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{P_006413, Apet, Msal, Dhai}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{P_011705, P_006413, Apet, Msal, Dhai}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, P_011705, P_006413, Apet, Msal, Dhai}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, P_011705, P_011713, P_006413, Apet, Msal, Dhai, KAYP}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{ABSS, BCGB}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006412, P_008640}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{GAP_80389, GAP_80390}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80389, GAP_80390, P_008646}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80389, GAP_80390, P_006412, P_008646, P_008640}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_016813, GAP_80389, GAP_80390, P_006412, P_008646, P_008640}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_016813, GAP_80389, GAP_80390, P_006412, P_008646, P_008640, P_011679}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{ABSS, BCGB, P_016813, GAP_80389, GAP_80390, P_006412, P_008646, P_008640, P_011679}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 1:
+	{P_011739, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{P_011677, P_011739, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 1:
+	{P_011677, P_011739, P_011701, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_011677, P_011739, P_011673, P_011701, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011675, P_011735}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{P_011715, P_014073}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 3:
+	{P_011745, P_011611}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011745, P_011715, P_011611, P_014073}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011745, P_011715, P_011675, P_011735, P_011611, P_014073}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_011759, P_011745, P_011715, P_011675, P_011735, P_011611, P_014073}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_011759, P_011745, P_011681, P_011715, P_011675, P_011735, P_011611, P_014073}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011673, P_011611, P_011701, P_014073, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_011673, P_011611, P_011701, P_014073, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_006412, P_008646, P_008640, P_011679, P_011673, P_011611, P_011701, P_014073, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_011713, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011611, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_011713, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011611, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011611, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, VYLQ, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011611, P_008631, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011611, P_008631, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, GAP_79862, P0104A, P_008647, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011587, P_011611, P_008631, P_014081, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011587, P_011609, P2619, Sdec, P_011611, P_008631, P_014081, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, Sdec, P_011611, P_008631, P_014081, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, Sdec, P_011611, P_008631, P_014081, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_018639, P_018779}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018783, P_018645}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018695, P_018783, P_018645}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018639, P_018695, P_018783, P_018645, P_018779}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016795, P_006422}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016793, P_016795, P_006422}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80397, OBPL}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016799, GAP_80397, OBPL}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016797, P_016799, GAP_80397, OBPL}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018693, P_016797, P_016799, GAP_80397, OBPL}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 6:
+	{S08, P_014095}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{S02, P_016787}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_014099, S03}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 7:
+	{S27, P_016789}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 7:
+	{S04, S27, P_016789}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016791, S04, S27, P_016789}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016791, P_014099, S03, S04, S27, P_016789}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
+	{S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
+	{S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016797, P_016799, GAP_80397, OBPL, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_018691, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 8:
+	{P2622, P2623}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P0110B, P0207C}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P0207B, XQWC}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P0206H, P0206G}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P0207B, P0206H, P0206G, XQWC}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P0207B, P0206H, P0206G, XQWC, P0110B, P0207C}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{GAP_80322, DHPO}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012941, P_012795}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012827, P_007802}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012855, P_012827, P_007802}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012813, P_018637}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921, P_012813, P_018637}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012877, P_012913}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012891, P_012895}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012891, P_012811, P_012895}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012877, P_012913, P_012891, P_012811, P_012895}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012877, P_012913, P_012891, P_012811, P_012895, P_012841}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012903, P_012815}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012883, P_012925}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012857, P_012883, P_012925}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012903, P_012815, P_012857, P_012883, P_012925}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012851, P_012887}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905, P_012901}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905, P_012901, P_012851, P_012887}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905, P_012901, P_012851, P_012887, P_012875}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{GAP_80294, P_006420}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012885, GAP_80294, P_006420}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80291, P_012907}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012881, P_012873}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{GAP_80291, P_012881, P_012873, P_012907}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012893, GAP_80293}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012821, P_012917}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012821, P_012917, P_012911}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012821, P_012917, P_012911, P_012863}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006419, GAP_80292}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012793, P_006419, GAP_80292}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012793, P_006419, GAP_80292, P_006418}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012821, P_012917, P_012911, P_012793, P_006419, GAP_80292, P_006418, P_012863}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012889, P_012821, P_012917, P_012911, P_012793, P_006419, GAP_80292, P_006418, P_012863}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012889, P_012821, P_012917, P_012911, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012893, GAP_80293}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012889, P_012821, P_012917, P_012911, P_012897, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012893, GAP_80293}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012889, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012889, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012877, P_012913, P_012891, P_012811, P_012895, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012899, P_012817}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012923, P_012847}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012899, P_012817, P_012923, P_012847}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012867, P_012899, P_012817, P_012923, P_012847}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012939, P_006421}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012937, P_012939, P_006421}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012937, P_012939, P_006421, P_012843}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012837, P_012829}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012803, P_012853}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012837, P_012829, P_012803, P_012853}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012809, P_012879}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012801, P_012809, P_012879}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012825}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012825, P_012805}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012839, P_012825, P_012805}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012935, P_012933}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012931, P_012935, P_012933}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012931, P_012935, P_012933, P_012865}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012845, P_012807}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012871, P_012849}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012845, P_012807, P_012871, P_012849}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012833, GAP_81172}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{PSJT, GAP_80295}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{PSJT, P_012927, GAP_80295}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012835, P_012823}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012835, P_012819, P_012823}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012869, P_012835, P_012819, P_012823}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012837, P_012829, P_012803, P_012853}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, S38}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, S38, Sdec, P_011611, P_008631, P_014081, P_011701, P_014073, KAYP, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{QDVW, Asie}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_019197, PAWA}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 3:
+	{QDVW, Asie, P_019197, PAWA}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 3:
+	{QDVW, Asie, P_019197, PAWA, P_025525}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{CSSK, P_019185}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{OPDF, P2589}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{CSSK, P_019185, OPDF, P2589}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{P_019191, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 10:
+	{P2590, GAP_79804}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 6:
+	{P2590, GAP_79804, GAP_80417}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 7:
+	{P2590, GAP_79804, GAP_80417, P_019191, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, P_019191, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
+	{CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, P_019191, P_025527, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019191, P_025525, P_025527, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_019191, P_025525, P_025527, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_019187, Wsal}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{P_019193, P_019187, Wsal}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 13:
+	{P_019193, P_019187, Wsal, SJEV}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, GAP_81226}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, GAP_81226, Pcol}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, WKSU, GAP_81226, Pcol}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, GAP_81227, WKSU, GAP_81226, Pcol}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 14:
+	{CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV, P_019191, P_025525, P_025527, P_019199}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, P_019191, P_025525, S38, Sdec, P_011611, P_008631, P_014081, P_025527, P_011701, P_014073, KAYP, P_019199, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, P0203H, CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, P_019191, P_025525, S38, Sdec, P_011611, P_008631, P_014081, P_025527, P_011701, P_014073, KAYP, P_019199, P_011607}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 12:
+	{WIGA, ABSS, BCGB, P_011759, P_011677, P_011739, P_011745, P_011681, P_011715, P_011675, P_011735, P_011537, P_016813, GAP_80389, GAP_80390, P_011705, P_018635, P_011713, P_011531, P_011699, P_006411, Schi, VYLQ, WPHN, GAP_79862, P0104A, P_008647, P_014077, GAP_80298, P_011527, WAIL, MAQO, P_014083, GAP_80297, P_018639, P_018691, P_018695, P_018783, P_018645, S08, P_014095, P_016791, P_014099, S03, S04, S27, P_016789, S02, P_016787, P_018693, P_016793, P_016797, P_016799, GAP_80397, OBPL, P_016795, P_006422, P_018779, P2622, P0110C, P0207B, P0206H, P0206G, XQWC, P0110B, P0207A, P0207C, P2623, P_012919, P_012921, P_012813, P_018637, P_012855, P_012827, P_007802, P_012867, P_012899, P_012817, P_012923, P_012847, YZRI, P_012799, P_012839, P_012825, P_012801, P_012809, P_012879, P_012805, P_012845, P_012807, P_012931, P_012935, P_012933, P_012865, P_012871, P_012849, P_012909, P_012833, GAP_81172, PSJT, P_012927, GAP_80295, P_012869, P_012835, P_012819, P_012823, P_012791, P_012915, P_012937, P_012939, P_006421, P_012837, P_012829, P_012803, P_012853, P_012843, P_012877, P_012913, P_012891, P_012811, P_012895, P_012797, P_012831, P_012905, P_012901, P_012851, P_012887, P_012875, P_012903, P_012815, P_012857, P_012883, P_012925, P_018689, P_012885, P_012889, GAP_80294, P_006420, P_012821, P_012917, P_012911, GAP_80291, P_012897, P_012881, P_012793, P_006419, GAP_80292, P_006418, P_012863, P_012873, P_012907, P_012893, GAP_80293, P_012859, P_012841, P_012861, P_012941, P_012795, GAP_80322, DHPO, P0203H, P_016909, WZFE, CSSK, P_019185, OPDF, P2589, P2590, GAP_79804, GAP_80417, QDVW, Asie, P_019197, PAWA, P_019189, P_006410, P_016921, GAP_81227, WKSU, GAP_81226, Pcol, P_019193, P_019187, Wsal, SJEV, KRJP, P_011549, GAP_80395, GAP_80393, P_011465, P_011489, P_011501, P_011487, P_011523, P_011551, P_007844, P_011637, P_011647, P_011631, P_007843, P_006414, P_007783, P_011643, P_011509, P_011651, P_011657, GAP_80394, P_011709, P_008632, P_011579, P_011671, P_006413, P_006412, P_008646, P_008640, P_011679, P_011673, Apet, Msal, Dhai, P_011613, P_011587, P_011609, P2619, P_019191, P_025525, S38, Sdec, P_011611, P_008631, P_014081, P_025527, P_011701, P_014073, KAYP, P_019199, P_011607}
+Extended species tree:
+(P0109B,((P_018831,OSHQ)1:2.159484249353373,((P_016909,WZFE)1:2.2335922215070947,(P0203H,(((WPHN,(P_011613,(((P_011609,(P2619,Sdec)0.87:0.6931471805599453)1:1.3233169386602026,(MAQO,(WAIL,(P_011527,((P_014083,GAP_80297)1:2.159484249353373,(P_014077,GAP_80298)0.44:0.08122264881338508)0.65:0.1622440909636826)0.76:0.2240093146974074)0.96:0.5025268209512953)1:1.5984496919936206)0.87:0.3572081636040754,((((GAP_79862,P_011587)1:2.2335922215070947,(P_014081,(P0104A,P_008647)1:1.9924301646902058)1:2.0794415416798353)1:2.302585092994046,((KRJP,(P_011549,GAP_80395)1:2.297944713437544)1:1.6068901403553022,((P_011657,(P_011643,(P_011509,P_011651)1:0.9358139679565228)0.64:0.17088672423937626)1:0.9580145752455546,((GAP_80393,GAP_80394)1:1.1227454234641878,((P_011647,(P_011465,((P_011501,P_011523)0.47:0.05031977669425516,(P_011489,P_011487)0.63:0.16308245714171957)1:1.0889507650987216)1:1.1215535266134031)0.39:0.005883189001951808,((P_011551,P_011637)0.85:0.3414146545067837,((P_007844,P_011631)0.92:0.4302667451188984,(P_007843,(P_006414,P_007783)0.55:0.10995005759217365)0.74:0.2279405977790499)0.63:0.16372115829529063)0.91:0.40010754968396195)1:0.9216821856361279)0.49:0.08212821416455775)1:2.2297051696253853)1:1.9921011568979865)0.35:0.015897420543544264,((P_011531,(P_011699,(P_006411,Schi)0.99:1.3862943611198908)0.4:0.0)1:1.7228327374944261,((VYLQ,P_008631)0.1:0.0,(P_018635,((P_011709,(P_008632,(P_011579,P_011671)0.86:0.40546510810816444)0.67:0.2876820724517809)0.18:0.0,(((P_011713,KAYP)0.52:0.06319713931336976,(WIGA,(P_011705,(P_006413,(Dhai,(Apet,Msal)0.86:0.40153669133086395)0.82:0.36284987910749483)0.4:0.12302725513744826)0.33:0.0)0.91:0.40589217285310847)0.32:0.00446422504782109,(((ABSS,BCGB)0.97:0.5545739255703319,(P_011679,(P_016813,((P_006412,P_008640)0.97:0.6137375474812864,(P_008646,(GAP_80389,GAP_80390)1:2.1551982912076326)0.5:0.0752589415969113)0.74:0.2614461084858692)0.63:0.24554196737847658)0.79:0.3289503833661283)0.21:0.0,(P_011537,((P_011673,(P_011701,(P_011677,(P_011739,P_011607)0.67:0.2876820724517809)0.87:0.6931471805599453)0.67:0.2876820724517809)0.81:0.2991966267677818,(P_011681,(P_011759,((P_011675,P_011735)1:1.0999830908018884,((P_011715,P_014073)0.66:0.2697443717651137,(P_011745,P_011611)0.67:0.28547212680097805)1:0.836992204434515)0.89:0.36814841733759934)0.48:0.20565208953118083)0.61:0.13811764344457375)0.54:0.11129586572253729)1:1.3067304628938947)0.57:0.12195579214374369)1:1.571201785040564)1:0.8053694830330684)1:0.9278457633715209)0.87:0.35569853391068296)1:1.647781987572228)1:0.843790005928607)0.47:0.10886583198666566)0.51:0.08278619361928728)1:1.4112458696797465,((((P_018639,P_018779)0.44:0.05316426057904238,(P_018695,(P_018783,P_018645)0.72:0.22192306517181123)0.58:0.12861737782209345)0.99:0.7526137760222488,(P_018691,((P_016793,(P_016795,P_006422)0.98:0.6350755169769406)0.98:0.601826882718508,((P_018693,(P_016797,(P_016799,(GAP_80397,OBPL)1:0.9162907318741549)1:1.6094379124341005)1:1.5730363016641395)0.75:0.24871967921202023,(S38,((S08,P_014095)1:1.5404450409471486,((S02,P_016787)1:2.302585092994046,((P_014099,S03)1:1.611575543766873,(P_016791,(S04,(S27,P_016789)0.83:0.44334905279700315)1:1.544450356713322)0.44:0.06687692655605304)0.8:0.287650539364715)0.31:0.0)0.43:0.036367644170874715)0.87:0.6666843914151509)0.56:0.1146864998155958)0.65:0.20167305055986337)0.59:0.16450584138631824)1:2.1177591555576107,(((P2622,P2623)0.97:0.6915611374043106,(P0110C,(P0207A,((P0110B,P0207C)0.75:0.2312403311454969,((P0207B,XQWC)0.96:0.47982682700373286,(P0206H,P0206G)0.86:0.3220945092247751)0.42:0.01849906294415531)0.42:0.03003589555666718)1:1.7917594692280545)1:2.2335922215070947)0.94:0.45095267543438794,((GAP_80322,DHPO)1:2.2335922215070947,((P_012941,P_012795)1:2.2279235642250255,(((P_012855,(P_012827,P_007802)1:2.2335922215070947)1:2.302585092994046,((P_012919,P_012921)1:2.302585092994046,(P_012813,P_018637)0.99:0.6931471805599453)1:1.6094379124341005)1:2.302585092994046,(P_012861,((P_012797,((P_012841,((P_012877,P_012913)1:2.2335922215070947,(P_012811,(P_012891,P_012895)0.64:0.2242652564234099)1:1.6094379124341005)1:2.302585092994046)0.38:5.436259987100702E-4,((((P_012903,P_012815)1:1.6094379124341005,(P_012857,(P_012883,P_012925)1:2.302585092994046)0.52:0.22140111524851286)0.38:0.0,(P_012875,((P_012851,P_012887)1:2.302585092994046,(P_012901,(P_012831,P_012905)0.96:0.5093319715092075)0.66:0.15785581746950078)0.78:0.2642658420379747)1:1.2427209367325571)1:0.7506815342539459,(P_018689,((P_012885,(GAP_80294,P_006420)1:2.159484249353373)0.97:0.7040595816636939,(P_012859,(((GAP_80291,P_012907)0.47:0.05435026083557119,(P_012881,P_012873)1:2.0831856263042803)0.66:0.1880660361681925,(P_012897,((P_012893,GAP_80293)1:1.3742002614189146,(P_012889,((P_012863,(P_012911,(P_012821,P_012917)1:1.6094379124341005)1:1.4585881042629807)0.57:0.1453075419491921,(P_006418,(P_012793,(P_006419,GAP_80292)1:2.302585092994046)0.99:0.8761927050939738)0.56:0.12157072664600163)0.42:0.017468003919064647)0.81:0.374211901941634)0.24:0.0)0.52:0.09420891087092557)0.69:0.23038432079753063)0.38:0.0)1:1.248130334185247)1:2.110363880745166)1:2.1475877925433386)0.4:0.013423020332140661)1:2.301071660998779,((P_012867,((P_012899,P_012817)1:1.5404450409471486,(P_012923,P_012847)1:2.2335922215070947)1:1.2039728043259361)1:2.302585092994046,((P_012843,(P_012937,(P_012939,P_006421)1:1.6094379124341005)1:2.302585092994046)0.5:0.09007182314273582,(((P_012837,P_012829)1:1.2039728043259361,(P_012803,P_012853)0.71:0.22194195155482374)0.97:0.5043924402308221,(((P_012801,(P_012809,P_012879)1:2.302585092994046)0.98:0.5447271754416719,(P_012839,(P_012805,(P_012825,(YZRI,P_012799)1:1.2039728043259361)0.75:0.22257293788931193)0.89:0.35667494393873245)0.95:0.456758402495715)1:1.4271163556401463,(((P_012865,(P_012931,(P_012935,P_012933)1:2.302585092994046)1:1.6094379124341005)1:0.8556661100577202,((P_012845,P_012807)0.89:0.3593239521103096,(P_012871,P_012849)1:1.0498221244986778)0.75:0.2231435513142097)1:2.222542385320508,(P_012909,((P_012833,GAP_81172)1:2.302585092994046,((P_012927,(PSJT,GAP_80295)0.75:0.22256768029340038)1:1.390093036153106,((P_012791,P_012915)0.93:0.442590615142141,(P_012869,(P_012819,(P_012835,P_012823)0.72:0.22256501499492023)1:1.386144199696078)1:2.2980499378286554)1:1.69644928942373)0.61:0.1319275430425482)1:2.232524415746263)0.45:0.0358122428791748)1:2.046651718856845)1:2.302585092994046)0.49:0.061154423153330695)1:1.6739764335716716)1:1.6350434283877568)0.97:0.5245290434836639)0.7:0.25297693905451973)1:2.302585092994046)1:2.226791253624512)0.96:0.4965654658601315)0.99:0.6949720148348314)1:2.049298102142252)1:0.8312437077325477,((P_019189,((P_025525,((QDVW,Asie)1:1.3862943611198908,(P_019197,PAWA)0.99:0.6913223625353162)0.42:0.0030292965328398754)0.27:0.0,(P_025527,(((CSSK,P_019185)0.63:0.16140966704348927,(OPDF,P2589)1:0.7985076962177715)1:1.0788096613719298,((P_019191,P_019199)0.58:0.1823215567939546,(GAP_80417,(P2590,GAP_79804)1:1.9924301646902058)0.85:0.4418327522790392)0.87:0.4700036292457356)0.8:0.5108256237659905)0.57:0.16176388103864547)0.62:0.19117523850622117)1:1.0411583724141726,((SJEV,(P_019193,(P_019187,Wsal)0.99:0.7743479659541095)0.94:0.454736157114947)1:2.2335922215070947,(P_016921,(GAP_81227,(WKSU,(Pcol,(P_006410,GAP_81226)0.99:0.6940692645349136)0.97:0.5117398398893939)0.93:0.4105572371976431)1:0.7985076962177715)1:2.302585092994046)1:2.302585092994046)0.81:0.27912066941651903)1:1.9455140846792542)1:1.0986122886681093)0.99:0.7731898882334817));
+Weight calculation took 0.537686511 secs
+ASTRAL finished in 5.123 secs

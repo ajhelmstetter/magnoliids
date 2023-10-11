@@ -1,0 +1,1159 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Partition file name: mag.partitions
+Input file name: mag.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 253111
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 244 taxa with 21 partitions and 179531 total sites (1.90624% missing data)
+
+  ID  Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Type	Seq	Site	Unique	Infor	Invar	Const
+   1  aligned.header.4471_supercontig.FNA+aligned.header.5357_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.5894_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.7296_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	238	5585	5494	4843	306	306
+   2  aligned.header.4527_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5034_supercontig.FNA+aligned.header.5220_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.7313_supercontig.FNA+aligned.header.7324_supercontig.FNA                                                                                                                                                                                                                                                                                                  DNA	241	19309	18802	14869	1730	1730
+   3  aligned.header.4691_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6538_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	238	5064	4764	3675	711	711
+   4  aligned.header.4724_supercontig.FNA+aligned.header.4796_supercontig.FNA+aligned.header.5339_supercontig.FNA+aligned.header.5348_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6979_supercontig.FNA+aligned.header.7128_supercontig.FNA                                                                                                                                                                                                                                                                                                  DNA	243	16894	16663	14368	875	875
+   5  aligned.header.4757_supercontig.FNA+aligned.header.4989_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6412_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6782_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6883_supercontig.FNA+aligned.header.6913_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.7067_supercontig.FNA  DNA	242	22129	21551	17515	1734	1734
+   6  aligned.header.4802_supercontig.FNA+aligned.header.4893_supercontig.FNA+aligned.header.5430_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6667_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	240	8481	8326	7039	588	588
+   7  aligned.header.4848_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5933_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.6882_supercontig.FNA+aligned.header.7572_supercontig.FNA+aligned.header.7577_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	240	8267	8120	6784	577	577
+   8  aligned.header.4942_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5335_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.6029_supercontig.FNA+aligned.header.6041_supercontig.FNA+aligned.header.6865_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	235	10724	10579	9076	572	572
+   9  aligned.header.4954_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5328_supercontig.FNA+aligned.header.5859_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6875_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	242	7165	6790	4942	1066	1066
+  10  aligned.header.4992_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6717_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	241	11059	10686	8240	1138	1138
+  11  aligned.header.5131_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.6550_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.6968_supercontig.FNA+aligned.header.7363_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	237	5598	5413	4450	541	541
+  12  aligned.header.5138_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6389_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6909_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	240	6587	6475	5211	449	449
+  13  aligned.header.5162_supercontig.FNA+aligned.header.5333_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	231	3367	3300	2562	318	318
+  14  aligned.header.5163_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6961_supercontig.FNA+aligned.header.7029_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	240	12906	12737	10771	645	645
+  15  aligned.header.5168_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.7136_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	232	6216	6156	5465	252	252
+  16  aligned.header.5188_supercontig.FNA+aligned.header.6068_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.7371_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	232	1502	1351	1070	272	272
+  17  aligned.header.5200_supercontig.FNA+aligned.header.5656_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6825_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	238	4957	4867	4046	348	347
+  18  aligned.header.5264_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6955_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	239	6907	6537	4873	1051	1051
+  19  aligned.header.5594_supercontig.FNA+aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA+aligned.header.6110_supercontig.FNA+aligned.header.6498_supercontig.FNA+aligned.header.7333_supercontig.FNA+aligned.header.7336_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      DNA	236	4171	3908	2872	685	685
+  20  aligned.header.5721_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.6924_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	238	5642	5498	4503	460	460
+  21  aligned.header.5960_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.7194_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	236	7001	6820	5504	552	552
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM3+F+R5:aligned.header.4471_supercontig.FNA+aligned.header.5357_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.5894_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.7296_supercontig.FNA,GTR+F+R6:aligned.header.4527_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5034_supercontig.FNA+aligned.header.5220_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.7313_supercontig.FNA+aligned.header.7324_supercontig.FNA,GTR+F+R6:aligned.header.4691_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6538_supercontig.FNA,TIM3+F+R6:aligned.header.4724_supercontig.FNA+aligned.header.4796_supercontig.FNA+aligned.header.5339_supercontig.FNA+aligned.header.5348_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6979_supercontig.FNA+aligned.header.7128_supercontig.FNA,GTR+F+R6:aligned.header.4757_supercontig.FNA+aligned.header.4989_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6412_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6782_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6883_supercontig.FNA+aligned.header.6913_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.7067_supercontig.FNA,GTR+F+R5:aligned.header.4802_supercontig.FNA+aligned.header.4893_supercontig.FNA+aligned.header.5430_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6667_supercontig.FNA,GTR+F+R6:aligned.header.4848_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5933_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.6882_supercontig.FNA+aligned.header.7572_supercontig.FNA+aligned.header.7577_supercontig.FNA,GTR+F+R6:aligned.header.4942_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5335_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.6029_supercontig.FNA+aligned.header.6041_supercontig.FNA+aligned.header.6865_supercontig.FNA,GTR+F+R6:aligned.header.4954_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5328_supercontig.FNA+aligned.header.5859_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6875_supercontig.FNA,GTR+F+R5:aligned.header.4992_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6717_supercontig.FNA,GTR+F+R5:aligned.header.5131_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.6550_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.6968_supercontig.FNA+aligned.header.7363_supercontig.FNA,GTR+F+R5:aligned.header.5138_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6389_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6909_supercontig.FNA,TIM3+F+R4:aligned.header.5162_supercontig.FNA+aligned.header.5333_supercontig.FNA,GTR+F+R5:aligned.header.5163_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6961_supercontig.FNA+aligned.header.7029_supercontig.FNA,TIM3+F+R4:aligned.header.5168_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.7136_supercontig.FNA,TIM3+F+R5:aligned.header.5188_supercontig.FNA+aligned.header.6068_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.7371_supercontig.FNA,GTR+F+R5:aligned.header.5200_supercontig.FNA+aligned.header.5656_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6825_supercontig.FNA,GTR+F+R5:aligned.header.5264_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6955_supercontig.FNA,GTR+F+R5:aligned.header.5594_supercontig.FNA+aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA+aligned.header.6110_supercontig.FNA+aligned.header.6498_supercontig.FNA+aligned.header.7333_supercontig.FNA+aligned.header.7336_supercontig.FNA,GTR+F+R5:aligned.header.5721_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.6924_supercontig.FNA,TVM+F+R5:aligned.header.5960_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.7194_supercontig.FNA
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM3+F+R5       -236065.636  472161.271 + 8.87e-315  472161.357 + 5.45e-317  472260.689 + 1.97e-316
+   2  GTR+F+R6        -694834.098 1389706.195 + 8.87e-315 1389706.235 + 5.45e-317 1389855.693 + 1.97e-316
+   3  GTR+F+R6        -190193.914  380425.829 + 8.87e-315  380425.979 + 5.45e-317  380549.897 + 1.97e-316
+   4  TIM3+F+R6       -677501.875 1355037.749 + 8.87e-315 1355037.786 + 5.45e-317 1355169.240 + 1.97e-316
+   5  GTR+F+R6        -855046.880 1710131.760 + 8.87e-315 1710131.795 + 5.45e-317 1710283.849 + 1.97e-316
+   6  GTR+F+R5        -326474.393  652982.785 + 8.87e-315  652982.858 + 5.45e-317  653102.560 + 1.97e-316
+   7  GTR+F+R6        -316315.042  632668.084 + 8.87e-315  632668.176 + 5.45e-317  632801.464 + 1.97e-316
+   8  GTR+F+R6        -406050.361  812138.722 + 8.87e-315  812138.793 + 5.45e-317  812277.046 + 1.97e-316
+   9  GTR+F+R6        -257676.681  515391.363 + 8.87e-315  515391.469 + 5.45e-317  515522.025 + 1.97e-316
+  10  GTR+F+R5        -391996.131  784026.261 + 8.87e-315  784026.317 + 5.45e-317  784150.548 + 1.97e-316
+  11  GTR+F+R5        -212216.919  424467.838 + 8.87e-315  424467.948 + 5.45e-317  424580.551 + 1.97e-316
+  12  GTR+F+R5        -245355.237  490744.474 + 8.87e-315  490744.568 + 5.45e-317  490859.953 + 1.97e-316
+  13  TIM3+F+R4       -112201.088  224428.176 + 8.87e-315  224428.284 + 5.45e-317  224507.759 + 1.97e-316
+  14  GTR+F+R5        -489052.729  978139.458 + 8.87e-315  978139.505 + 5.45e-317  978266.371 + 1.97e-316
+  15  TIM3+F+R4       -248020.120  496066.240 + 8.87e-315  496066.299 + 5.45e-317  496153.794 + 1.97e-316
+  16  TIM3+F+R5        -60279.140  120588.279 + 8.87e-315  120588.602 + 5.45e-317  120667.998 + 1.97e-316
+  17  GTR+F+R5        -208406.101  416846.201 + 8.87e-315  416846.325 + 5.45e-317  416956.847 + 1.97e-316
+  18  GTR+F+R5        -240766.273  481566.546 + 8.87e-315  481566.635 + 5.45e-317  481682.831 + 1.97e-316
+  19  GTR+F+R5        -155393.934  310821.868 + 8.87e-315  310822.015 + 5.45e-317  310929.578 + 1.97e-316
+  20  GTR+F+R5        -222197.845  444429.690 + 8.87e-315  444429.799 + 5.45e-317  444542.536 + 1.97e-316
+  21  TVM+F+R5        -255546.172  511124.345 + 8.87e-315  511124.422 + 5.45e-317  511234.006 + 1.97e-316
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM3+F+R5      1.4087  TIM3{1.15954,2.90552,3.45497}+F{0.280502,0.182222,0.222781,0.314495}+R5{0.115716,0.107379,0.267149,0.410782,0.309211,0.946973,0.270244,1.74161,0.0376802,3.03506}
+   2  GTR+F+R6       0.8425  GTR{1.33426,3.64775,1.14035,1.17987,4.37211}+F{0.272514,0.188297,0.243358,0.295831}+R6{0.140695,0.0891423,0.254905,0.327528,0.244502,0.829712,0.235808,1.55651,0.115624,2.55499,0.00846598,4.56481}
+   3  GTR+F+R6       0.9746  GTR{1.20698,3.29548,1.15137,1.13486,4.27418}+F{0.284318,0.197688,0.243823,0.27417}+R6{0.225587,0.0538878,0.189888,0.299899,0.199865,0.807651,0.216058,1.47593,0.142677,2.4185,0.0259249,4.07032}
+   4  TIM3+F+R6      1.1307  TIM3{1.14534,2.99907,3.65786}+F{0.282253,0.178167,0.236072,0.303508}+R6{0.0616092,0.106773,0.197653,0.285039,0.291872,0.689212,0.312794,1.33759,0.130149,2.2542,0.00592204,4.07747}
+   5  GTR+F+R6       0.9921  GTR{1.31398,3.17127,1.12197,1.14139,4.19935}+F{0.282258,0.1783,0.240529,0.298913}+R6{0.137415,0.082438,0.196519,0.266058,0.229767,0.687631,0.243556,1.32982,0.168427,2.18912,0.0243157,3.52849}
+   6  GTR+F+R5       1.0994  GTR{1.37028,3.13993,1.16958,1.35072,4.19309}+F{0.280073,0.168278,0.240279,0.311369}+R5{0.117979,0.0821756,0.271184,0.41442,0.336281,0.995745,0.241262,1.81331,0.0332942,3.17137}
+   7  GTR+F+R6       0.9912  GTR{1.24691,3.19244,1.15502,1.10291,4.21591}+F{0.281632,0.193523,0.246874,0.277971}+R6{0.0744613,0.0629208,0.23833,0.289623,0.312217,0.76167,0.285557,1.54981,0.0843921,2.62369,0.00504238,4.85962}
+   8  GTR+F+R6       1.1181  GTR{1.20615,3.29713,1.05819,1.08951,3.49133}+F{0.259437,0.189436,0.217732,0.333396}+R6{0.0483106,0.0918735,0.214584,0.275508,0.25656,0.633684,0.328254,1.29697,0.137709,2.15445,0.0145824,3.52762}
+   9  GTR+F+R6       0.7967  GTR{1.46535,3.93017,1.18001,1.26341,5.26038}+F{0.256311,0.196872,0.269788,0.277029}+R6{0.217311,0.0665968,0.200771,0.237415,0.216204,0.746123,0.216456,1.499,0.126119,2.68615,0.0231402,4.89648}
+  10  GTR+F+R5       0.8411  GTR{1.40963,3.53856,1.18692,1.17891,4.48991}+F{0.2577,0.183154,0.249563,0.309582}+R5{0.260783,0.108005,0.226476,0.47705,0.265237,1.09909,0.209343,2.06615,0.0381609,3.66184}
+  11  GTR+F+R5       1.0547  GTR{1.39966,3.60898,1.14117,1.16099,4.328}+F{0.273034,0.17939,0.244187,0.30339}+R5{0.130315,0.0553372,0.250998,0.345906,0.307793,0.943819,0.258284,1.74689,0.0526107,3.12245}
+  12  GTR+F+R5       1.0314  GTR{1.29844,3.28362,1.03334,1.11397,4.00124}+F{0.265075,0.18022,0.224183,0.330522}+R5{0.173388,0.126617,0.228855,0.365485,0.28492,0.932181,0.275716,1.84596,0.0371209,3.22852}
+  13  TIM3+F+R4      0.7016  TIM3{1.34476,3.5262,4.86356}+F{0.286313,0.179024,0.250204,0.284459}+R4{0.289934,0.192986,0.343918,0.757312,0.31585,1.62622,0.0502978,3.3789}
+  14  GTR+F+R5       0.9915  GTR{1.24162,3.15393,1.03669,1.14552,3.80591}+F{0.283327,0.183345,0.226327,0.307001}+R5{0.209364,0.210504,0.253565,0.545575,0.330162,1.14526,0.194963,2.02253,0.0119462,3.77949}
+  15  TIM3+F+R4      1.2341  TIM3{1.15316,2.96234,3.47097}+F{0.273749,0.186241,0.229523,0.310487}+R4{0.262201,0.310479,0.345628,0.777133,0.315926,1.44988,0.0762442,2.5174}
+  16  TIM3+F+R5      1.2217  TIM3{1.22133,3.08157,3.77663}+F{0.291443,0.172981,0.234014,0.301561}+R5{0.231494,0.0336009,0.119405,0.247955,0.201323,0.704346,0.29438,1.39955,0.153399,2.66505}
+  17  GTR+F+R5       1.1518  GTR{1.40688,3.4398,1.17895,1.19656,3.79589}+F{0.265158,0.185508,0.230802,0.318533}+R5{0.212355,0.120222,0.240949,0.447186,0.247546,1.00821,0.221391,1.78003,0.0777595,2.8686}
+  18  GTR+F+R5       0.7462  GTR{1.33978,3.93074,1.09147,1.24605,4.60334}+F{0.274236,0.189797,0.240029,0.295938}+R5{0.234071,0.0734371,0.224463,0.338737,0.251509,1.00336,0.240675,1.98507,0.0492815,3.58484}
+  19  GTR+F+R5       0.9144  GTR{1.31761,2.75527,1.09972,1.11503,3.73507}+F{0.236256,0.265318,0.288719,0.209707}+R5{0.319613,0.0761904,0.22232,0.429411,0.216215,1.15897,0.182715,2.26377,0.0591379,3.65199}
+  20  GTR+F+R5       1.1117  GTR{1.23144,2.83172,1.13659,1.08818,3.31684}+F{0.246914,0.221037,0.264468,0.267581}+R5{0.174307,0.109597,0.251413,0.419443,0.313428,1.03423,0.200295,1.84705,0.0605566,2.99437}
+  21  TVM+F+R5       0.9389  TVM{1.28209,3.69515,1.15067,1.23586}+F{0.252049,0.195951,0.22554,0.32646}+R5{0.213566,0.125323,0.229035,0.446963,0.292741,1.08067,0.239158,1.94936,0.0254992,3.4629}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+
+**NOTE**: Consensus tree has higher likelihood than ML tree found! Please use consensus tree below.
+Log-likelihood of the tree: -6800765.6038 (s.e. 10707.9697)
+Unconstrained log-likelihood (without tree): -1646899.8599
+Number of free parameters (#branches + #model parameters): 840
+Akaike information criterion (AIC) score: 13603211.2076
+Corrected Akaike information criterion (AICc) score: 13603219.1145
+Bayesian information criterion (BIC) score: 13611693.6143
+
+Total tree length (sum of branch lengths): 18.9733
+Sum of internal branch lengths: 5.4589 (28.7715% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Apet' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Apet
+|
+|                                                                           +--GAP_79804
+|                                                                      +----| (100)
+|                                                                      |    +--P2590
+|                                                                  +---| (100)
+|                                                                  |   +---------------GAP_80417
+|                                                             +----| (100)
+|                                                             |    |            +------------P_019191
+|                                                             |    +------------| (100)
+|                                                             |                 +-------------P_019199
+|                                                     +-------| (100)
+|                                                     |       |     +------P_019185
+|                                                     |       |  +--| (100)
+|                                                     |       |  |  |  +----P2589
+|                                                     |       |  |  +--| (100)
+|                                                     |       |  |     +--OPDF
+|                                                     |       +--| (100)
+|                                                     |          +--CSSK
+|                                                  +--| (100)
+|                                                  |  |         +--Asie
+|                                                  |  |  +------| (100)
+|                                                  |  |  |      +--QDVW
+|                                                  |  +--| (100)
+|                                                  |     |     +----------------P_019189
+|                                                  |     |  +--| (96)
+|                                                  |     |  |  |  +---------------P_019197
+|                                                  |     |  |  +--| (100)
+|                                                  |     |  |     +--------PAWA
+|                                                  |     +--| (96)
+|                                                  |        |                    +------------P_025523
+|                                                  |        |            +-------| (100)
+|                                                  |        |            |       +---------P_025525
+|                                                  |        +------------| (100)
+|                                                  |                     +------------------P_025527
+|                                               +--| (100)
+|                                               |  |               +---Pcol
+|                                               |  |            +--| (100)
+|                                               |  |            |  |  +--GAP_81226
+|                                               |  |            |  +--| (100)
+|                                               |  |            |     +--P_006410
+|                                               |  |         +--| (100)
+|                                               |  |         |  +--GAP_81227
+|                                               |  |      +--| (100)
+|                                               |  |      |  +----P_016921
+|                                               |  |  +---| (100)
+|                                               |  |  |   +--WKSU
+|                                               |  +--| (100)
+|                                               |     |           +--P_019187
+|                                               |     |        +--| (100)
+|                                               |     |        |  +--Wsal
+|                                               |     |     +--| (100)
+|                                               |     |     |  +---P_019193
+|                                               |     +-----| (100)
+|                                               |           +--SJEV
+|                                            +--| (100)
+|                                            |  |         +--P_016909
+|                                            |  |      +--| (100)
+|                                            |  |      |  +--WZFE
+|                                            |  |   +--| (100)
+|                                            |  |   |  |     +--P_018831
+|                                            |  |   |  |  +--| (100)
+|                                            |  |   |  |  |  +--OSHQ
+|                                            |  |   |  +--| (100)
+|                                            |  |   |     +--------------P0109B
+|                                            |  +---| (100)
+|                                            |      +-----------------P0203H
+|                                         +--| (100)
+|                                         |  |                                  +--S02
+|                                         |  |                               +--| (100)
+|                                         |  |                               |  +--P_016787
+|                                         |  |                            +--| (96)
+|                                         |  |                            |  |  +--S03
+|                                         |  |                            |  +--| (100)
+|                                         |  |                            |     +--P_014099
+|                                         |  |                         +--| (80)
+|                                         |  |                         |  |  +------P_014095
+|                                         |  |                         |  +--| (100)
+|                                         |  |                         |     +--S08
+|                                         |  |                      +--| (89)
+|                                         |  |                      |  +--P_016791
+|                                         |  |                   +--| (100)
+|                                         |  |                   |  |        +--P_016789
+|                                         |  |                   |  |     +--| (100)
+|                                         |  |                   |  |     |  +--S27
+|                                         |  |                   |  |  +--| (98)
+|                                         |  |                   |  |  |  +------S38
+|                                         |  |                   |  +--| (100)
+|                                         |  |                   |     +--S04
+|                                         |  |                +--| (100)
+|                                         |  |                |  +--P_018693
+|                                         |  |             +--| (100)
+|                                         |  |             |  |        +--GAP_80397
+|                                         |  |             |  |     +--| (100)
+|                                         |  |             |  |     |  +--OBPL
+|                                         |  |             |  |  +--| (100)
+|                                         |  |             |  |  |  +--P_016799
+|                                         |  |             |  +--| (100)
+|                                         |  |             |     +--P_016797
+|                                         |  |          +--| (100)
+|                                         |  |          |  |  +--P_016793
+|                                         |  |          |  +--| (100)
+|                                         |  |          |     |  +--P_006422
+|                                         |  |          |     +--| (100)
+|                                         |  |          |        +--P_016795
+|                                         |  |  +-------| (100)
+|                                         |  |  |       |           +---------P_007845
+|                                         |  |  |       |        +--| (86)
+|                                         |  |  |       |        |  +----P_018691
+|                                         |  |  |       |     +--| (100)
+|                                         |  |  |       |     |  +------P_018639
+|                                         |  |  |       |  +--| (100)
+|                                         |  |  |       |  |  +---------P_018779
+|                                         |  |  |       +--| (78)
+|                                         |  |  |          |     +--P_018645
+|                                         |  |  |          |  +--| (100)
+|                                         |  |  |          |  |  +--P_018783
+|                                         |  |  |          +--| (100)
+|                                         |  |  |             +--P_018695
+|                                         |  +--| (100)
+|                                         |     |          +--GAP_80322
+|                                         |     |     +----| (100)
+|                                         |     |     |    +--DHPO
+|                                         |     |  +--| (100)
+|                                         |     |  |  |                                             +--GAP_80293
+|                                         |     |  |  |                                          +--| (100)
+|                                         |     |  |  |                                          |  +--P_012893
+|                                         |     |  |  |                                       +--| (100)
+|                                         |     |  |  |                                       |  +--P_012897
+|                                         |     |  |  |                                    +--| (100)
+|                                         |     |  |  |                                    |  |              +--GAP_80292
+|                                         |     |  |  |                                    |  |           +--| (100)
+|                                         |     |  |  |                                    |  |           |  +--P_006419
+|                                         |     |  |  |                                    |  |        +--| (100)
+|                                         |     |  |  |                                    |  |        |  +--P_012793
+|                                         |     |  |  |                                    |  |     +--| (100)
+|                                         |     |  |  |                                    |  |     |  |  +--P_006418
+|                                         |     |  |  |                                    |  |     |  +--| (100)
+|                                         |     |  |  |                                    |  |     |     +--P_012863
+|                                         |     |  |  |                                    |  |  +--| (100)
+|                                         |     |  |  |                                    |  |  |  +--P_012889
+|                                         |     |  |  |                                    |  +--| (99)
+|                                         |     |  |  |                                    |     |     +--P_012821
+|                                         |     |  |  |                                    |     |  +--| (100)
+|                                         |     |  |  |                                    |     |  |  +--P_012917
+|                                         |     |  |  |                                    |     +--| (100)
+|                                         |     |  |  |                                    |        +--P_012911
+|                                         |     |  |  |                                 +--| (99)
+|                                         |     |  |  |                                 |  |     +--GAP_80291
+|                                         |     |  |  |                                 |  |  +--| (100)
+|                                         |     |  |  |                                 |  |  |  +--P_012907
+|                                         |     |  |  |                                 |  +--| (86)
+|                                         |     |  |  |                                 |     |  +--P_012873
+|                                         |     |  |  |                                 |     +--| (100)
+|                                         |     |  |  |                                 |        +--P_012881
+|                                         |     |  |  |                              +--| (94)
+|                                         |     |  |  |                              |  +--P_012859
+|                                         |     |  |  |                           +--| (99)
+|                                         |     |  |  |                           |  |  +--GAP_80294
+|                                         |     |  |  |                           |  +--| (100)
+|                                         |     |  |  |                           |     +----P_006420
+|                                         |     |  |  |                        +--| (100)
+|                                         |     |  |  |                        |  +--P_012885
+|                                         |     |  |  |                     +--| (100)
+|                                         |     |  |  |                     |  +--P_018689
+|                                         |     |  |  |                  +--| (100)
+|                                         |     |  |  |                  |  |           +--P_012815
+|                                         |     |  |  |                  |  |        +--| (100)
+|                                         |     |  |  |                  |  |        |  +--P_012903
+|                                         |     |  |  |                  |  |     +--| (95)
+|                                         |     |  |  |                  |  |     |  +--P_012857
+|                                         |     |  |  |                  |  |  +--| (92)
+|                                         |     |  |  |                  |  |  |  |  +--P_012883
+|                                         |     |  |  |                  |  |  |  +--| (100)
+|                                         |     |  |  |                  |  |  |     +--P_012925
+|                                         |     |  |  |                  |  +--| (100)
+|                                         |     |  |  |                  |     |           +--P_012831
+|                                         |     |  |  |                  |     |        +--| (100)
+|                                         |     |  |  |                  |     |        |  +--P_012905
+|                                         |     |  |  |                  |     |     +--| (100)
+|                                         |     |  |  |                  |     |     |  |  +--P_012851
+|                                         |     |  |  |                  |     |     |  +--| (100)
+|                                         |     |  |  |                  |     |     |     +--P_012887
+|                                         |     |  |  |                  |     |  +--| (100)
+|                                         |     |  |  |                  |     |  |  +--P_012901
+|                                         |     |  |  |                  |     +--| (100)
+|                                         |     |  |  |                  |        +--P_012875
+|                                         |     |  |  |               +--| (100)
+|                                         |     |  |  |               |  |        +--P_012811
+|                                         |     |  |  |               |  |     +--| (100)
+|                                         |     |  |  |               |  |     |  |  +--P_012891
+|                                         |     |  |  |               |  |     |  +--| (100)
+|                                         |     |  |  |               |  |     |     +--P_012895
+|                                         |     |  |  |               |  |  +--| (100)
+|                                         |     |  |  |               |  |  |  |  +--P_012877
+|                                         |     |  |  |               |  |  |  +--| (100)
+|                                         |     |  |  |               |  |  |     +--P_012913
+|                                         |     |  |  |               |  +--| (100)
+|                                         |     |  |  |               |     +--P_012841
+|                                         |     |  |  |            +--| (100)
+|                                         |     |  |  |            |  +--P_012797
+|                                         |     |  |  |         +--| (100)
+|                                         |     |  |  |         |  |                             +--GAP_80295
+|                                         |     |  |  |         |  |                          +--| (99)
+|                                         |     |  |  |         |  |                          |  +--P_012927
+|                                         |     |  |  |         |  |                       +--| (100)
+|                                         |     |  |  |         |  |                       |  +--PSJT
+|                                         |     |  |  |         |  |                    +--| (95)
+|                                         |     |  |  |         |  |                    |  |     +--P_012791
+|                                         |     |  |  |         |  |                    |  |  +--| (100)
+|                                         |     |  |  |         |  |                    |  |  |  +--P_012915
+|                                         |     |  |  |         |  |                    |  +--| (100)
+|                                         |     |  |  |         |  |                    |     |        +--P_012819
+|                                         |     |  |  |         |  |                    |     |     +--| (100)
+|                                         |     |  |  |         |  |                    |     |     |  +--P_012823
+|                                         |     |  |  |         |  |                    |     |  +--| (100)
+|                                         |     |  |  |         |  |                    |     |  |  +--P_012835
+|                                         |     |  |  |         |  |                    |     +--| (100)
+|                                         |     |  |  |         |  |                    |        +--P_012869
+|                                         |     |  |  |         |  |                 +--| (100)
+|                                         |     |  |  |         |  |                 |  |  +--GAP_81172
+|                                         |     |  |  |         |  |                 |  +--| (100)
+|                                         |     |  |  |         |  |                 |     +--P_012833
+|                                         |     |  |  |         |  |              +--| (13)
+|                                         |     |  |  |         |  |              |  +--P_012909
+|                                         |     |  |  |         |  |           +--| (100)
+|                                         |     |  |  |         |  |           |  |        +--P_012807
+|                                         |     |  |  |         |  |           |  |     +--| (100)
+|                                         |     |  |  |         |  |           |  |     |  +--P_012845
+|                                         |     |  |  |         |  |           |  |  +--| (100)
+|                                         |     |  |  |         |  |           |  |  |  |  +--P_012849
+|                                         |     |  |  |         |  |           |  |  |  +--| (100)
+|                                         |     |  |  |         |  |           |  |  |     +--P_012871
+|                                         |     |  |  |         |  |           |  +--| (100)
+|                                         |     |  |  |         |  |           |     |  +--P_012865
+|                                         |     |  |  |         |  |           |     +--| (100)
+|                                         |     |  |  |         |  |           |        |  +--P_012931
+|                                         |     |  |  |         |  |           |        +--| (100)
+|                                         |     |  |  |         |  |           |           |  +--P_012933
+|                                         |     |  |  |         |  |           |           +--| (100)
+|                                         |     |  |  |         |  |           |              +--P_012935
+|                                         |     |  |  |         |  |        +--| (100)
+|                                         |     |  |  |         |  |        |  |              +--P_012799
+|                                         |     |  |  |         |  |        |  |           +--| (100)
+|                                         |     |  |  |         |  |        |  |           |  +--YZRI
+|                                         |     |  |  |         |  |        |  |        +--| (100)
+|                                         |     |  |  |         |  |        |  |        |  +--P_012825
+|                                         |     |  |  |         |  |        |  |     +--| (100)
+|                                         |     |  |  |         |  |        |  |     |  +--P_012805
+|                                         |     |  |  |         |  |        |  |  +--| (100)
+|                                         |     |  |  |         |  |        |  |  |  +--P_012839
+|                                         |     |  |  |         |  |        |  +--| (100)
+|                                         |     |  |  |         |  |        |     |  +--P_012801
+|                                         |     |  |  |         |  |        |     +--| (100)
+|                                         |     |  |  |         |  |        |        |  +--P_012809
+|                                         |     |  |  |         |  |        |        +--| (100)
+|                                         |     |  |  |         |  |        |           +--P_012879
+|                                         |     |  |  |         |  |     +--| (100)
+|                                         |     |  |  |         |  |     |  |        +--P_006421
+|                                         |     |  |  |         |  |     |  |     +--| (100)
+|                                         |     |  |  |         |  |     |  |     |  +--P_012939
+|                                         |     |  |  |         |  |     |  |  +--| (100)
+|                                         |     |  |  |         |  |     |  |  |  +--P_012937
+|                                         |     |  |  |         |  |     |  +--| (99)
+|                                         |     |  |  |         |  |     |     |     +--P_012803
+|                                         |     |  |  |         |  |     |     |  +--| (100)
+|                                         |     |  |  |         |  |     |     |  |  |  +--P_012829
+|                                         |     |  |  |         |  |     |     |  |  +--| (100)
+|                                         |     |  |  |         |  |     |     |  |     +--P_012837
+|                                         |     |  |  |         |  |     |     +--| (100)
+|                                         |     |  |  |         |  |     |        +--P_012853
+|                                         |     |  |  |         |  |  +--| (100)
+|                                         |     |  |  |         |  |  |  +---P_012843
+|                                         |     |  |  |         |  +--| (100)
+|                                         |     |  |  |         |     |        +--P_012817
+|                                         |     |  |  |         |     |     +--| (100)
+|                                         |     |  |  |         |     |     |  +--P_012899
+|                                         |     |  |  |         |     |  +--| (100)
+|                                         |     |  |  |         |     |  |  |  +--P_012847
+|                                         |     |  |  |         |     |  |  +--| (100)
+|                                         |     |  |  |         |     |  |     +--P_012923
+|                                         |     |  |  |         |     +--| (100)
+|                                         |     |  |  |         |        +--P_012867
+|                                         |     |  |  |      +--| (100)
+|                                         |     |  |  |      |  +--P_012861
+|                                         |     |  |  |   +--| (100)
+|                                         |     |  |  |   |  |        +--P_007802
+|                                         |     |  |  |   |  |     +--| (100)
+|                                         |     |  |  |   |  |     |  +--P_012827
+|                                         |     |  |  |   |  |  +--| (100)
+|                                         |     |  |  |   |  |  |  +--P_012855
+|                                         |     |  |  |   |  +--| (100)
+|                                         |     |  |  |   |     |     +--P_012813
+|                                         |     |  |  |   |     |  +--| (100)
+|                                         |     |  |  |   |     |  |  +--P_018637
+|                                         |     |  |  |   |     +--| (100)
+|                                         |     |  |  |   |        |  +--P_012919
+|                                         |     |  |  |   |        +--| (100)
+|                                         |     |  |  |   |           +--P_012921
+|                                         |     |  |  +---| (100)
+|                                         |     |  |      |    +--P_012795
+|                                         |     |  |      +----| (100)
+|                                         |     |  |           +--P_012941
+|                                         |     +--| (100)
+|                                         |        |                 +--P0110B
+|                                         |        |              +--| (100)
+|                                         |        |              |  +--P0207C
+|                                         |        |           +--| (100)
+|                                         |        |           |  |     +--P0206G
+|                                         |        |           |  |  +--| (100)
+|                                         |        |           |  |  |  +--P0206H
+|                                         |        |           |  +--| (100)
+|                                         |        |           |     +--P0207B
+|                                         |        |        +--| (100)
+|                                         |        |        |  +--P0207A
+|                                         |        |     +--| (100)
+|                                         |        |     |  +--P0110C
+|                                         |        |  +--| (100)
+|                                         |        |  |  +--XQWC
+|                                         |        +--| (100)
+|                                         |           |  +-----P2622
+|                                         |           +--| (100)
+|                                         |              +---------------P2623
+|                                      +--| (98)
+|                                      |  |  +----WPHN
+|                                      |  +--| (98)
+|                                      |     |                 +-------------P_011613
+|                                      |     +-----------------| (98)
+|                                      |                       +-------------------------P_011719
+|                                   +--| (98)
+|                                   |  |                 +--GAP_80298
+|                                   |  |              +--| (100)
+|                                   |  |              |  |  +--GAP_80297
+|                                   |  |              |  +--| (100)
+|                                   |  |              |     +--P_014083
+|                                   |  |           +--| (100)
+|                                   |  |           |  +--P_011527
+|                                   |  |        +--| (100)
+|                                   |  |        |  +---P_014077
+|                                   |  |     +--| (100)
+|                                   |  |     |  +--WAIL
+|                                   |  |  +--| (100)
+|                                   |  |  |  +--MAQO
+|                                   |  +--| (100)
+|                                   |     |      +-----------P_011609
+|                                   |     +------| (100)
+|                                   |            |    +------P2619
+|                                   |            +----| (100)
+|                                   |                 +------------------------Sdec
+|                                +--| (78)
+|                                |  |       +-------GAP_79862
+|                                |  |   +---| (100)
+|                                |  |   |   +------------P_011587
+|                                |  +---| (100)
+|                                |      |           +--P_008647
+|                                |      |     +-----| (100)
+|                                |      |     |     +--P0104A
+|                                |      +-----| (100)
+|                                |            +---------P_014081
+|                             +--| (98)
+|                             |  |           +--GAP_80393
+|                             |  |        +--| (100)
+|                             |  |        |  +--GAP_80394
+|                             |  |     +--| (100)
+|                             |  |     |  |        +--P_006414
+|                             |  |     |  |     +--| (100)
+|                             |  |     |  |     |  |  +--P_007783
+|                             |  |     |  |     |  +--| (100)
+|                             |  |     |  |     |     |  +-----P_007843
+|                             |  |     |  |     |     +--| (100)
+|                             |  |     |  |     |        |  +------P_007844
+|                             |  |     |  |     |        +--| (100)
+|                             |  |     |  |     |           +--------P_011631
+|                             |  |     |  |  +--| (100)
+|                             |  |     |  |  |  |  +--P_011551
+|                             |  |     |  |  |  +--| (100)
+|                             |  |     |  |  |     +--P_011637
+|                             |  |     |  +--| (100)
+|                             |  |     |     |     +--P_011465
+|                             |  |     |     |  +--| (100)
+|                             |  |     |     |  |  |        +--P_011487
+|                             |  |     |     |  |  |     +--| (100)
+|                             |  |     |     |  |  |     |  +--P_011489
+|                             |  |     |     |  |  |  +--| (100)
+|                             |  |     |     |  |  |  |  +--P_011523
+|                             |  |     |     |  |  +--| (100)
+|                             |  |     |     |  |     +--P_011501
+|                             |  |     |     +--| (100)
+|                             |  |     |        +--P_011647
+|                             |  |  +--| (100)
+|                             |  |  |  |        +--P_011509
+|                             |  |  |  |     +--| (100)
+|                             |  |  |  |     |  +--P_011651
+|                             |  |  |  |  +--| (100)
+|                             |  |  |  |  |  +--P_011657
+|                             |  |  |  +--| (100)
+|                             |  |  |     +--P_011643
+|                             |  +--| (100)
+|                             |     |     +--GAP_80395
+|                             |     |  +--| (100)
+|                             |     |  |  +--P_011549
+|                             |     +--| (100)
+|                             |        +--KRJP
+|                          +--| (98)
+|                          |  |          +--Schi
+|                          |  |       +--| (100)
+|                          |  |       |  +--P_006411
+|                          |  |    +--| (100)
+|                          |  |    |  +--------------P_011699
+|                          |  +----| (100)
+|                          |       +--P_011531
+|                       +--| (98)
+|                       |  +----------VYLQ
+|                    +--| (97)
+|                    |  |       +--P_018635
+|                    |  +-------| (100)
+|                    |          +----------------P_011589
+|                 +--| (98)
+|                 |  +---P_008631
+|              +--| (94)
+|              |  |  +--P_008632
+|              |  +--| (100)
+|              |     |  +----P_011579
+|              |     +--| (100)
+|              |        +--P_011671
+|           +--| (86)
+|           |  |              +--GAP_80389
+|           |  |           +--| (100)
+|           |  |           |  +--GAP_80390
+|           |  |        +--| (100)
+|           |  |        |  |     +--P_006412
+|           |  |        |  |  +--| (100)
+|           |  |        |  |  |  +--P_008640
+|           |  |        |  +--| (100)
+|           |  |        |     |  +--P_008646
+|           |  |        |     +--| (100)
+|           |  |        |        +------P_011679
+|           |  |     +--| (100)
+|           |  |     |  +--P_016813
+|           |  |  +--| (100)
+|           |  |  |  +--P_006413
+|           |  +--| (98)
+|           |     |     +--P_011537
+|           |     |  +--| (93)
+|           |     |  |  |     +---P_011673
+|           |     |  |  |  +--| (100)
+|           |     |  |  |  |  |  +--------P_011681
+|           |     |  |  |  |  +--| (90)
+|           |     |  |  |  |     +------P_011701
+|           |     |  |  +--| (88)
+|           |     |  |     |     +--P_011677
+|           |     |  |     |  +--| (100)
+|           |     |  |     |  |  +--P_011739
+|           |     |  |     +--| (100)
+|           |     |  |        +---P_011607
+|           |     +--| (98)
+|           |        |        +--P_011675
+|           |        |     +--| (100)
+|           |        |     |  +--P_011735
+|           |        |  +--| (93)
+|           |        |  |  |  +--P_011715
+|           |        |  |  +--| (93)
+|           |        |  |     |  +--P_011745
+|           |        |  |     +--| (100)
+|           |        |  |        +--P_011611
+|           |        +--| (93)
+|           |           +--P_011759
+|        +--| (96)
+|        |  |  +------P_011705
+|        |  +--| (94)
+|        |     |  +------P_011713
+|        |     +--| (96)
+|        |        +-------------P_011709
+|     +--| (97)
+|     |  +-----P_014073
+|  +--| (100)
+|  |  |        +--ABSS
+|  |  |     +--| (100)
+|  |  |     |  +--BCGB
+|  |  |  +--| (100)
+|  |  |  |  +--KAYP
+|  |  +--| (100)
+|  |     +--WIGA
++--| (100)
+|  +--Dhai
+|
++--Msal
+
+Tree in newick format:
+
+(Apet:0.0073621537,((((((((((((((((((((((GAP_79804:0.0311891446,P2590:0.0254577732)100:0.0937194721,GAP_80417:0.2619934449)100:0.0724545017,(P_019191:0.2180761092,P_019199:0.2367939205)100:0.2148737612)100:0.0926901954,((P_019185:0.1257258500,(P2589:0.0959862097,OPDF:0.0195336938)100:0.0323799686)100:0.0141545469,CSSK:0.0606453740)100:0.0648943462)100:0.1330221634,((Asie:0.0227721647,QDVW:0.0184915641)100:0.1232191265,((P_019189:0.2838704486,(P_019197:0.2762918009,PAWA:0.1519104370)100:0.0390959689)96:0.0070570584,((P_025523:0.2274452449,P_025525:0.1681222254)100:0.1445502225,P_025527:0.3264114081)100:0.2182736465)96:0.0078728800)100:0.0174123169)100:0.0564989913,(((((Pcol:0.0782327409,(GAP_81226:0.0154876566,P_006410:0.0259509985)100:0.0191261121)100:0.0283752978,GAP_81227:0.0456807905)100:0.0114373001,P_016921:0.0866143430)100:0.0239533888,WKSU:0.0314864595)100:0.0657006308,(((P_019187:0.0319637146,Wsal:0.0614510924)100:0.0182421993,P_019193:0.0683343603)100:0.0605020340,SJEV:0.0410478160)100:0.1078396398)100:0.0436854959)100:0.0128492524,(((P_016909:0.0510838251,WZFE:0.0036836398)100:0.0473515360,((P_018831:0.0568157420,OSHQ:0.0057111792)100:0.0190405934,P0109B:0.2500982459)100:0.0273264057)100:0.0400263526,P0203H:0.3030074477)100:0.0744389116)100:0.0159467695,((((((((((S02:0.0064344907,P_016787:0.0042206604)100:0.0145391799,(S03:0.0087093552,P_014099:0.0193858039)100:0.0136135074)96:0.0007443978,(P_014095:0.1209734436,S08:0.0110312849)100:0.0174341953)80:0.0004586974,P_016791:0.0231506425)89:0.0008492467,(((P_016789:0.0113112675,S27:0.0186247586)100:0.0022647378,S38:0.1150129562)98:0.0029601834,S04:0.0239345779)100:0.0059865953)100:0.0031390980,P_018693:0.0267053708)100:0.0007638656,(((GAP_80397:0.0061864456,OBPL:0.0268992873)100:0.0016972514,P_016799:0.0066242824)100:0.0072339849,P_016797:0.0185220481)100:0.0081626769)100:0.0008702557,(P_016793:0.0197545961,(P_006422:0.0264696491,P_016795:0.0168292922)100:0.0031106240)100:0.0023755764)100:0.0028719883,((((P_007845:0.1702575298,P_018691:0.0863769945)86:0.0082629525,P_018639:0.1255252273)100:0.0192359884,P_018779:0.1649358982)100:0.0282115453,((P_018645:0.0172160249,P_018783:0.0177759193)100:0.0016934531,P_018695:0.0194550732)100:0.0035046819)78:0.0039603921)100:0.1340868110,(((GAP_80322:0.0393150943,DHPO:0.0143075222)100:0.0829684960,(((((((((((((((GAP_80293:0.0122636355,P_012893:0.0092226326)100:0.0109708426,P_012897:0.0244809680)100:0.0009564125,(((((GAP_80292:0.0100542283,P_006419:0.0111895863)100:0.0155844250,P_012793:0.0222891291)100:0.0015110805,(P_006418:0.0293053927,P_012863:0.0164672504)100:0.0012972299)100:0.0002769748,P_012889:0.0213418568)100:0.0003556827,((P_012821:0.0083779234,P_012917:0.0110175643)100:0.0072364397,P_012911:0.0165886209)100:0.0038563253)99:0.0005133500)100:0.0005874473,((GAP_80291:0.0223959988,P_012907:0.0208096720)100:0.0010653183,(P_012873:0.0139625524,P_012881:0.0153114677)100:0.0052082701)86:0.0004266471)99:0.0005173543,P_012859:0.0252199539)94:0.0004092658,(GAP_80294:0.0060797106,P_006420:0.0901679524)100:0.0206070803)99:0.0006016838,P_012885:0.0255489015)100:0.0057881994,P_018689:0.0198121518)100:0.0039219763,((((P_012815:0.0177607886,P_012903:0.0188866370)100:0.0050454987,P_012857:0.0287780984)95:0.0005492883,(P_012883:0.0104258990,P_012925:0.0102439788)100:0.0124293326)92:0.0003146562,((((P_012831:0.0228592917,P_012905:0.0222248031)100:0.0029395326,(P_012851:0.0139390513,P_012887:0.0103176823)100:0.0149655406)100:0.0007980149,P_012901:0.0249274545)100:0.0013856363,P_012875:0.0272178826)100:0.0028409307)100:0.0024924896)100:0.0109685499,(((P_012811:0.0179877195,(P_012891:0.0138094935,P_012895:0.0159040827)100:0.0022367074)100:0.0066132869,(P_012877:0.0215240395,P_012913:0.0185777134)100:0.0075815432)100:0.0087043141,P_012841:0.0365911567)100:0.0027843942)100:0.0016225721,P_012797:0.0405280525)100:0.0108115660,((((((((((GAP_80295:0.0259009007,P_012927:0.0101839467)99:0.0041740774,PSJT:0.0199786271)100:0.0221180836,((P_012791:0.0267373330,P_012915:0.0246085160)100:0.0023781869,(((P_012819:0.0074082027,P_012823:0.0120051889)100:0.0005034630,P_012835:0.0081916058)100:0.0037755071,P_012869:0.0133592200)100:0.0162113478)100:0.0074976027)95:0.0015937692,(GAP_81172:0.0192371831,P_012833:0.0151738149)100:0.0148353566)100:0.0133931236,P_012909:0.0630723241)13:0.0012441262,(((P_012807:0.0253712453,P_012845:0.0294956446)100:0.0033200857,(P_012849:0.0258698200,P_012871:0.0273030352)100:0.0124826123)100:0.0028516740,(P_012865:0.0374147607,(P_012931:0.0176540217,(P_012933:0.0069645879,P_012935:0.0041372875)100:0.0152655938)100:0.0102287591)100:0.0019872805)100:0.0145765698)100:0.0098292562,(((((P_012799:0.0441148291,YZRI:0.0393813905)100:0.0199479956,P_012825:0.0438726721)100:0.0031417294,P_012805:0.0328230184)100:0.0021699379,P_012839:0.0604438611)100:0.0054382319,(P_012801:0.0325473212,(P_012809:0.0088142013,P_012879:0.0082447900)100:0.0404277515)100:0.0066357645)100:0.0077049309)100:0.0154607337,(((P_006421:0.0117615248,P_012939:0.0145336802)100:0.0083599156,P_012937:0.0213910630)100:0.0401169479,((P_012803:0.0499734525,(P_012829:0.0381882712,P_012837:0.0323872795)100:0.0079072339)100:0.0017355425,P_012853:0.0458894013)100:0.0019274745)99:0.0016918585)100:0.0023884848,P_012843:0.0679831025)100:0.0080966716,(((P_012817:0.0388780629,P_012899:0.0370671298)100:0.0177356943,(P_012847:0.0174910664,P_012923:0.0154112556)100:0.0285773350)100:0.0087277322,P_012867:0.0482563476)100:0.0453629695)100:0.0101721491)100:0.0032655950,P_012861:0.0541601298)100:0.0023430598,(((P_007802:0.0247307052,P_012827:0.0140201838)100:0.0284555603,P_012855:0.0481587739)100:0.0108570425,((P_012813:0.0275094960,P_018637:0.0278512711)100:0.0061413741,(P_012919:0.0073444174,P_012921:0.0261927957)100:0.0278977446)100:0.0195687016)100:0.0339840443)100:0.0265725921,(P_012795:0.0126652043,P_012941:0.0097742499)100:0.0853601136)100:0.0716451651)100:0.0185972198,((((((P0110B:0.0221891934,P0207C:0.0113853714)100:0.0026932805,((P0206G:0.0162839937,P0206H:0.0158758510)100:0.0028592494,P0207B:0.0186346664)100:0.0024162287)100:0.0043398243,P0207A:0.0174504670)100:0.0181895174,P0110C:0.0607169649)100:0.0267333863,XQWC:0.0184647911)100:0.0458977225,(P2622:0.1107059850,P2623:0.2679676924)100:0.0199866665)100:0.0096150789)100:0.0181299144)100:0.0452462622)100:0.0513246878,(WPHN:0.0915465638,(P_011613:0.2325143510,P_011719:0.4346364081)98:0.3031127471)98:0.0349547015)98:0.0186198111,((((((GAP_80298:0.0372370157,(GAP_80297:0.0053866473,P_014083:0.0140672549)100:0.0317453035)100:0.0073853171,P_011527:0.0463046018)100:0.0049959709,P_014077:0.0679106465)100:0.0265800307,WAIL:0.0287397781)100:0.0171104245,MAQO:0.0382646110)100:0.0218849195,(P_011609:0.2105234897,(P2619:0.1185626874,Sdec:0.4151712219)100:0.0819467424)100:0.1154472126)100:0.0109247349)98:0.0110533173,((GAP_79862:0.1406442970,P_011587:0.2222479485)100:0.0793093472,((P_008647:0.0181201207,P0104A:0.0332577110)100:0.1052626669,P_014081:0.1722708251)100:0.1016282714)100:0.0671345850)78:0.0059648073,((((GAP_80393:0.0126112201,GAP_80394:0.0215880755)100:0.0051924514,(((P_006414:0.0221498748,(P_007783:0.0398086753,(P_007843:0.1068979606,(P_007844:0.1164217158,P_011631:0.1562250375)100:0.0140111231)100:0.0253072226)100:0.0124176605)100:0.0054780908,(P_011551:0.0578911592,P_011637:0.0231776383)100:0.0040121938)100:0.0018519592,((P_011465:0.0070600198,(((P_011487:0.0057180209,P_011489:0.0064397674)100:0.0007720405,P_011523:0.0080335386)100:0.0004794316,P_011501:0.0046107873)100:0.0025488908)100:0.0049348712,P_011647:0.0248116663)100:0.0010823581)100:0.0073085843)100:0.0035264050,(((P_011509:0.0108334661,P_011651:0.0320441382)100:0.0043537589,P_011657:0.0450430138)100:0.0007631072,P_011643:0.0169004081)100:0.0059878051)100:0.0412835677,((GAP_80395:0.0291696888,P_011549:0.0642843743)100:0.0275056600,KRJP:0.0442401324)100:0.0208167070)100:0.0271149482)98:0.0233103088,(((Schi:0.0391275442,P_006411:0.0270027455)100:0.0233379940,P_011699:0.2598537326)100:0.0193904943,P_011531:0.0607639495)100:0.0930772880)98:0.0105145882,VYLQ:0.1941419198)98:0.0110326944,(P_018635:0.0494782193,P_011589:0.2802965954)100:0.1353777877)97:0.0046920920,P_008631:0.0815936916)98:0.0330010566,(P_008632:0.0283799216,(P_011579:0.0974681463,P_011671:0.0525183327)100:0.0099777469)100:0.0342984968)94:0.0172254856,(((((GAP_80389:0.0149965928,GAP_80390:0.0131494169)100:0.0088293640,((P_006412:0.0129341915,P_008640:0.0097076691)100:0.0049827381,(P_008646:0.0158930306,P_011679:0.1163100089)100:0.0035492487)100:0.0014550722)100:0.0008603139,P_016813:0.0192693455)100:0.0028031603,P_006413:0.0169043791)100:0.0051357242,((P_011537:0.0238686858,((P_011673:0.0774242479,(P_011681:0.1532465037,P_011701:0.1191680810)90:0.0309856728)100:0.0291351878,((P_011677:0.0174700118,P_011739:0.0367734777)100:0.0062385695,P_011607:0.0689245618)100:0.0026597141)88:0.0026185365)93:0.0027052813,(((P_011675:0.0121839481,P_011735:0.0106730375)100:0.0081924867,(P_011715:0.0636043264,(P_011745:0.0088049392,P_011611:0.0345796834)100:0.0043724388)93:0.0051340125)93:0.0029442083,P_011759:0.0127855372)93:0.0012399386)98:0.0071528596)98:0.0115647614)86:0.0031125061,(P_011705:0.1158118425,(P_011713:0.1281922688,P_011709:0.2412635473)96:0.0565041127)94:0.0203515516)96:0.0139505878,P_014073:0.1142031300)97:0.0103287063,(((ABSS:0.0099839131,BCGB:0.0096334851)100:0.0021518433,KAYP:0.0126317987)100:0.0027219457,WIGA:0.0153229077)100:0.0068598714)100:0.0015979814,Dhai:0.0177111693)100:0.0018250649,Msal:0.0103177883);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6800759.049951
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Apet
+|
+|                                                                           +--GAP_79804
+|                                                                      +----| (100)
+|                                                                      |    +--P2590
+|                                                                  +---| (100)
+|                                                                  |   +---------------GAP_80417
+|                                                             +----| (100)
+|                                                             |    |            +------------P_019191
+|                                                             |    +------------| (100)
+|                                                             |                 +-------------P_019199
+|                                                     +-------| (100)
+|                                                     |       |     +------P_019185
+|                                                     |       |  +--| (100)
+|                                                     |       |  |  |  +----P2589
+|                                                     |       |  |  +--| (100)
+|                                                     |       |  |     +--OPDF
+|                                                     |       +--| (100)
+|                                                     |          +--CSSK
+|                                                  +--| (100)
+|                                                  |  |         +--Asie
+|                                                  |  |  +------| (100)
+|                                                  |  |  |      +--QDVW
+|                                                  |  +--| (100)
+|                                                  |     |     +----------------P_019189
+|                                                  |     |  +--| (96)
+|                                                  |     |  |  |  +---------------P_019197
+|                                                  |     |  |  +--| (100)
+|                                                  |     |  |     +--------PAWA
+|                                                  |     +--| (96)
+|                                                  |        |                    +------------P_025523
+|                                                  |        |            +-------| (100)
+|                                                  |        |            |       +---------P_025525
+|                                                  |        +------------| (100)
+|                                                  |                     +------------------P_025527
+|                                               +--| (100)
+|                                               |  |               +---Pcol
+|                                               |  |            +--| (100)
+|                                               |  |            |  |  +--GAP_81226
+|                                               |  |            |  +--| (100)
+|                                               |  |            |     +--P_006410
+|                                               |  |         +--| (100)
+|                                               |  |         |  +--GAP_81227
+|                                               |  |      +--| (100)
+|                                               |  |      |  +----P_016921
+|                                               |  |  +---| (100)
+|                                               |  |  |   +--WKSU
+|                                               |  +--| (100)
+|                                               |     |           +--P_019187
+|                                               |     |        +--| (100)
+|                                               |     |        |  +--Wsal
+|                                               |     |     +--| (100)
+|                                               |     |     |  +---P_019193
+|                                               |     +-----| (100)
+|                                               |           +--SJEV
+|                                            +--| (100)
+|                                            |  |         +--P_016909
+|                                            |  |      +--| (100)
+|                                            |  |      |  +--WZFE
+|                                            |  |   +--| (100)
+|                                            |  |   |  |     +--P_018831
+|                                            |  |   |  |  +--| (100)
+|                                            |  |   |  |  |  +--OSHQ
+|                                            |  |   |  +--| (100)
+|                                            |  |   |     +--------------P0109B
+|                                            |  +---| (100)
+|                                            |      +-----------------P0203H
+|                                         +--| (100)
+|                                         |  |                                  +--S02
+|                                         |  |                               +--| (100)
+|                                         |  |                               |  +--P_016787
+|                                         |  |                            +--| (96)
+|                                         |  |                            |  |  +--S03
+|                                         |  |                            |  +--| (100)
+|                                         |  |                            |     +--P_014099
+|                                         |  |                         +--| (80)
+|                                         |  |                         |  |  +------P_014095
+|                                         |  |                         |  +--| (100)
+|                                         |  |                         |     +--S08
+|                                         |  |                      +--| (89)
+|                                         |  |                      |  +--P_016791
+|                                         |  |                   +--| (100)
+|                                         |  |                   |  |        +--P_016789
+|                                         |  |                   |  |     +--| (100)
+|                                         |  |                   |  |     |  +--S27
+|                                         |  |                   |  |  +--| (98)
+|                                         |  |                   |  |  |  +------S38
+|                                         |  |                   |  +--| (100)
+|                                         |  |                   |     +--S04
+|                                         |  |                +--| (100)
+|                                         |  |                |  +--P_018693
+|                                         |  |             +--| (100)
+|                                         |  |             |  |        +--GAP_80397
+|                                         |  |             |  |     +--| (100)
+|                                         |  |             |  |     |  +--OBPL
+|                                         |  |             |  |  +--| (100)
+|                                         |  |             |  |  |  +--P_016799
+|                                         |  |             |  +--| (100)
+|                                         |  |             |     +--P_016797
+|                                         |  |          +--| (100)
+|                                         |  |          |  |  +--P_016793
+|                                         |  |          |  +--| (100)
+|                                         |  |          |     |  +--P_006422
+|                                         |  |          |     +--| (100)
+|                                         |  |          |        +--P_016795
+|                                         |  |  +-------| (100)
+|                                         |  |  |       |           +---------P_007845
+|                                         |  |  |       |        +--| (86)
+|                                         |  |  |       |        |  +----P_018691
+|                                         |  |  |       |     +--| (100)
+|                                         |  |  |       |     |  +------P_018639
+|                                         |  |  |       |  +--| (100)
+|                                         |  |  |       |  |  +---------P_018779
+|                                         |  |  |       +--| (78)
+|                                         |  |  |          |     +--P_018645
+|                                         |  |  |          |  +--| (100)
+|                                         |  |  |          |  |  +--P_018783
+|                                         |  |  |          +--| (100)
+|                                         |  |  |             +--P_018695
+|                                         |  +--| (100)
+|                                         |     |          +--GAP_80322
+|                                         |     |     +----| (100)
+|                                         |     |     |    +--DHPO
+|                                         |     |  +--| (100)
+|                                         |     |  |  |                                             +--GAP_80293
+|                                         |     |  |  |                                          +--| (100)
+|                                         |     |  |  |                                          |  +--P_012893
+|                                         |     |  |  |                                       +--| (100)
+|                                         |     |  |  |                                       |  +--P_012897
+|                                         |     |  |  |                                    +--| (100)
+|                                         |     |  |  |                                    |  |              +--GAP_80292
+|                                         |     |  |  |                                    |  |           +--| (100)
+|                                         |     |  |  |                                    |  |           |  +--P_006419
+|                                         |     |  |  |                                    |  |        +--| (100)
+|                                         |     |  |  |                                    |  |        |  +--P_012793
+|                                         |     |  |  |                                    |  |     +--| (100)
+|                                         |     |  |  |                                    |  |     |  |  +--P_006418
+|                                         |     |  |  |                                    |  |     |  +--| (100)
+|                                         |     |  |  |                                    |  |     |     +--P_012863
+|                                         |     |  |  |                                    |  |  +--| (100)
+|                                         |     |  |  |                                    |  |  |  +--P_012889
+|                                         |     |  |  |                                    |  +--| (99)
+|                                         |     |  |  |                                    |     |     +--P_012821
+|                                         |     |  |  |                                    |     |  +--| (100)
+|                                         |     |  |  |                                    |     |  |  +--P_012917
+|                                         |     |  |  |                                    |     +--| (100)
+|                                         |     |  |  |                                    |        +--P_012911
+|                                         |     |  |  |                                 +--| (99)
+|                                         |     |  |  |                                 |  |     +--GAP_80291
+|                                         |     |  |  |                                 |  |  +--| (100)
+|                                         |     |  |  |                                 |  |  |  +--P_012907
+|                                         |     |  |  |                                 |  +--| (86)
+|                                         |     |  |  |                                 |     |  +--P_012873
+|                                         |     |  |  |                                 |     +--| (100)
+|                                         |     |  |  |                                 |        +--P_012881
+|                                         |     |  |  |                              +--| (94)
+|                                         |     |  |  |                              |  +--P_012859
+|                                         |     |  |  |                           +--| (99)
+|                                         |     |  |  |                           |  |  +--GAP_80294
+|                                         |     |  |  |                           |  +--| (100)
+|                                         |     |  |  |                           |     +----P_006420
+|                                         |     |  |  |                        +--| (100)
+|                                         |     |  |  |                        |  +--P_012885
+|                                         |     |  |  |                     +--| (100)
+|                                         |     |  |  |                     |  +--P_018689
+|                                         |     |  |  |                  +--| (100)
+|                                         |     |  |  |                  |  |           +--P_012815
+|                                         |     |  |  |                  |  |        +--| (100)
+|                                         |     |  |  |                  |  |        |  +--P_012903
+|                                         |     |  |  |                  |  |     +--| (95)
+|                                         |     |  |  |                  |  |     |  +--P_012857
+|                                         |     |  |  |                  |  |  +--| (92)
+|                                         |     |  |  |                  |  |  |  |  +--P_012883
+|                                         |     |  |  |                  |  |  |  +--| (100)
+|                                         |     |  |  |                  |  |  |     +--P_012925
+|                                         |     |  |  |                  |  +--| (100)
+|                                         |     |  |  |                  |     |           +--P_012831
+|                                         |     |  |  |                  |     |        +--| (100)
+|                                         |     |  |  |                  |     |        |  +--P_012905
+|                                         |     |  |  |                  |     |     +--| (100)
+|                                         |     |  |  |                  |     |     |  |  +--P_012851
+|                                         |     |  |  |                  |     |     |  +--| (100)
+|                                         |     |  |  |                  |     |     |     +--P_012887
+|                                         |     |  |  |                  |     |  +--| (100)
+|                                         |     |  |  |                  |     |  |  +--P_012901
+|                                         |     |  |  |                  |     +--| (100)
+|                                         |     |  |  |                  |        +--P_012875
+|                                         |     |  |  |               +--| (100)
+|                                         |     |  |  |               |  |        +--P_012811
+|                                         |     |  |  |               |  |     +--| (100)
+|                                         |     |  |  |               |  |     |  |  +--P_012891
+|                                         |     |  |  |               |  |     |  +--| (100)
+|                                         |     |  |  |               |  |     |     +--P_012895
+|                                         |     |  |  |               |  |  +--| (100)
+|                                         |     |  |  |               |  |  |  |  +--P_012877
+|                                         |     |  |  |               |  |  |  +--| (100)
+|                                         |     |  |  |               |  |  |     +--P_012913
+|                                         |     |  |  |               |  +--| (100)
+|                                         |     |  |  |               |     +--P_012841
+|                                         |     |  |  |            +--| (100)
+|                                         |     |  |  |            |  +--P_012797
+|                                         |     |  |  |         +--| (100)
+|                                         |     |  |  |         |  |                          +--GAP_80295
+|                                         |     |  |  |         |  |                       +--| (99)
+|                                         |     |  |  |         |  |                       |  +--P_012927
+|                                         |     |  |  |         |  |                    +--| (100)
+|                                         |     |  |  |         |  |                    |  +--PSJT
+|                                         |     |  |  |         |  |                 +--| (95)
+|                                         |     |  |  |         |  |                 |  |     +--P_012791
+|                                         |     |  |  |         |  |                 |  |  +--| (100)
+|                                         |     |  |  |         |  |                 |  |  |  +--P_012915
+|                                         |     |  |  |         |  |                 |  +--| (100)
+|                                         |     |  |  |         |  |                 |     |        +--P_012819
+|                                         |     |  |  |         |  |                 |     |     +--| (100)
+|                                         |     |  |  |         |  |                 |     |     |  +--P_012823
+|                                         |     |  |  |         |  |                 |     |  +--| (100)
+|                                         |     |  |  |         |  |                 |     |  |  +--P_012835
+|                                         |     |  |  |         |  |                 |     +--| (100)
+|                                         |     |  |  |         |  |                 |        +--P_012869
+|                                         |     |  |  |         |  |              +--| (100)
+|                                         |     |  |  |         |  |              |  |  +--GAP_81172
+|                                         |     |  |  |         |  |              |  +--| (100)
+|                                         |     |  |  |         |  |              |     +--P_012833
+|                                         |     |  |  |         |  |           +--| (100)
+|                                         |     |  |  |         |  |           |  |           +--P_012807
+|                                         |     |  |  |         |  |           |  |        +--| (100)
+|                                         |     |  |  |         |  |           |  |        |  +--P_012845
+|                                         |     |  |  |         |  |           |  |     +--| (100)
+|                                         |     |  |  |         |  |           |  |     |  |  +--P_012849
+|                                         |     |  |  |         |  |           |  |     |  +--| (100)
+|                                         |     |  |  |         |  |           |  |     |     +--P_012871
+|                                         |     |  |  |         |  |           |  |  +--| (100)
+|                                         |     |  |  |         |  |           |  |  |  |  +--P_012865
+|                                         |     |  |  |         |  |           |  |  |  +--| (100)
+|                                         |     |  |  |         |  |           |  |  |     |  +--P_012931
+|                                         |     |  |  |         |  |           |  |  |     +--| (100)
+|                                         |     |  |  |         |  |           |  |  |        |  +--P_012933
+|                                         |     |  |  |         |  |           |  |  |        +--| (100)
+|                                         |     |  |  |         |  |           |  |  |           +--P_012935
+|                                         |     |  |  |         |  |           |  +--| (86)
+|                                         |     |  |  |         |  |           |     +--P_012909
+|                                         |     |  |  |         |  |        +--| (100)
+|                                         |     |  |  |         |  |        |  |              +--P_012799
+|                                         |     |  |  |         |  |        |  |           +--| (100)
+|                                         |     |  |  |         |  |        |  |           |  +--YZRI
+|                                         |     |  |  |         |  |        |  |        +--| (100)
+|                                         |     |  |  |         |  |        |  |        |  +--P_012825
+|                                         |     |  |  |         |  |        |  |     +--| (100)
+|                                         |     |  |  |         |  |        |  |     |  +--P_012805
+|                                         |     |  |  |         |  |        |  |  +--| (100)
+|                                         |     |  |  |         |  |        |  |  |  +--P_012839
+|                                         |     |  |  |         |  |        |  +--| (100)
+|                                         |     |  |  |         |  |        |     |  +--P_012801
+|                                         |     |  |  |         |  |        |     +--| (100)
+|                                         |     |  |  |         |  |        |        |  +--P_012809
+|                                         |     |  |  |         |  |        |        +--| (100)
+|                                         |     |  |  |         |  |        |           +--P_012879
+|                                         |     |  |  |         |  |     +--| (100)
+|                                         |     |  |  |         |  |     |  |        +--P_006421
+|                                         |     |  |  |         |  |     |  |     +--| (100)
+|                                         |     |  |  |         |  |     |  |     |  +--P_012939
+|                                         |     |  |  |         |  |     |  |  +--| (100)
+|                                         |     |  |  |         |  |     |  |  |  +--P_012937
+|                                         |     |  |  |         |  |     |  +--| (99)
+|                                         |     |  |  |         |  |     |     |     +--P_012803
+|                                         |     |  |  |         |  |     |     |  +--| (100)
+|                                         |     |  |  |         |  |     |     |  |  |  +--P_012829
+|                                         |     |  |  |         |  |     |     |  |  +--| (100)
+|                                         |     |  |  |         |  |     |     |  |     +--P_012837
+|                                         |     |  |  |         |  |     |     +--| (100)
+|                                         |     |  |  |         |  |     |        +--P_012853
+|                                         |     |  |  |         |  |  +--| (100)
+|                                         |     |  |  |         |  |  |  +---P_012843
+|                                         |     |  |  |         |  +--| (100)
+|                                         |     |  |  |         |     |        +--P_012817
+|                                         |     |  |  |         |     |     +--| (100)
+|                                         |     |  |  |         |     |     |  +--P_012899
+|                                         |     |  |  |         |     |  +--| (100)
+|                                         |     |  |  |         |     |  |  |  +--P_012847
+|                                         |     |  |  |         |     |  |  +--| (100)
+|                                         |     |  |  |         |     |  |     +--P_012923
+|                                         |     |  |  |         |     +--| (100)
+|                                         |     |  |  |         |        +--P_012867
+|                                         |     |  |  |      +--| (100)
+|                                         |     |  |  |      |  +--P_012861
+|                                         |     |  |  |   +--| (100)
+|                                         |     |  |  |   |  |        +--P_007802
+|                                         |     |  |  |   |  |     +--| (100)
+|                                         |     |  |  |   |  |     |  +--P_012827
+|                                         |     |  |  |   |  |  +--| (100)
+|                                         |     |  |  |   |  |  |  +--P_012855
+|                                         |     |  |  |   |  +--| (100)
+|                                         |     |  |  |   |     |     +--P_012813
+|                                         |     |  |  |   |     |  +--| (100)
+|                                         |     |  |  |   |     |  |  +--P_018637
+|                                         |     |  |  |   |     +--| (100)
+|                                         |     |  |  |   |        |  +--P_012919
+|                                         |     |  |  |   |        +--| (100)
+|                                         |     |  |  |   |           +--P_012921
+|                                         |     |  |  +---| (100)
+|                                         |     |  |      |    +--P_012795
+|                                         |     |  |      +----| (100)
+|                                         |     |  |           +--P_012941
+|                                         |     +--| (100)
+|                                         |        |                 +--P0110B
+|                                         |        |              +--| (100)
+|                                         |        |              |  +--P0207C
+|                                         |        |           +--| (100)
+|                                         |        |           |  |     +--P0206G
+|                                         |        |           |  |  +--| (100)
+|                                         |        |           |  |  |  +--P0206H
+|                                         |        |           |  +--| (100)
+|                                         |        |           |     +--P0207B
+|                                         |        |        +--| (100)
+|                                         |        |        |  +--P0207A
+|                                         |        |     +--| (100)
+|                                         |        |     |  +--P0110C
+|                                         |        |  +--| (100)
+|                                         |        |  |  +--XQWC
+|                                         |        +--| (100)
+|                                         |           |  +-----P2622
+|                                         |           +--| (100)
+|                                         |              +---------------P2623
+|                                      +--| (98)
+|                                      |  |  +----WPHN
+|                                      |  +--| (98)
+|                                      |     |                 +-------------P_011613
+|                                      |     +-----------------| (98)
+|                                      |                       +-------------------------P_011719
+|                                   +--| (98)
+|                                   |  |                 +--GAP_80298
+|                                   |  |              +--| (100)
+|                                   |  |              |  |  +--GAP_80297
+|                                   |  |              |  +--| (100)
+|                                   |  |              |     +--P_014083
+|                                   |  |           +--| (100)
+|                                   |  |           |  +--P_011527
+|                                   |  |        +--| (100)
+|                                   |  |        |  +---P_014077
+|                                   |  |     +--| (100)
+|                                   |  |     |  +--WAIL
+|                                   |  |  +--| (100)
+|                                   |  |  |  +--MAQO
+|                                   |  +--| (100)
+|                                   |     |      +-----------P_011609
+|                                   |     +------| (100)
+|                                   |            |    +------P2619
+|                                   |            +----| (100)
+|                                   |                 +------------------------Sdec
+|                                +--| (78)
+|                                |  |       +-------GAP_79862
+|                                |  |   +---| (100)
+|                                |  |   |   +------------P_011587
+|                                |  +---| (100)
+|                                |      |           +--P_008647
+|                                |      |     +-----| (100)
+|                                |      |     |     +--P0104A
+|                                |      +-----| (100)
+|                                |            +---------P_014081
+|                             +--| (98)
+|                             |  |           +--GAP_80393
+|                             |  |        +--| (100)
+|                             |  |        |  +--GAP_80394
+|                             |  |     +--| (100)
+|                             |  |     |  |        +--P_006414
+|                             |  |     |  |     +--| (100)
+|                             |  |     |  |     |  |  +--P_007783
+|                             |  |     |  |     |  +--| (100)
+|                             |  |     |  |     |     |  +-----P_007843
+|                             |  |     |  |     |     +--| (100)
+|                             |  |     |  |     |        |  +------P_007844
+|                             |  |     |  |     |        +--| (100)
+|                             |  |     |  |     |           +--------P_011631
+|                             |  |     |  |  +--| (100)
+|                             |  |     |  |  |  |  +--P_011551
+|                             |  |     |  |  |  +--| (100)
+|                             |  |     |  |  |     +--P_011637
+|                             |  |     |  +--| (100)
+|                             |  |     |     |     +--P_011465
+|                             |  |     |     |  +--| (100)
+|                             |  |     |     |  |  |        +--P_011487
+|                             |  |     |     |  |  |     +--| (100)
+|                             |  |     |     |  |  |     |  +--P_011489
+|                             |  |     |     |  |  |  +--| (100)
+|                             |  |     |     |  |  |  |  +--P_011523
+|                             |  |     |     |  |  +--| (100)
+|                             |  |     |     |  |     +--P_011501
+|                             |  |     |     +--| (100)
+|                             |  |     |        +--P_011647
+|                             |  |  +--| (100)
+|                             |  |  |  |        +--P_011509
+|                             |  |  |  |     +--| (100)
+|                             |  |  |  |     |  +--P_011651
+|                             |  |  |  |  +--| (100)
+|                             |  |  |  |  |  +--P_011657
+|                             |  |  |  +--| (100)
+|                             |  |  |     +--P_011643
+|                             |  +--| (100)
+|                             |     |     +--GAP_80395
+|                             |     |  +--| (100)
+|                             |     |  |  +--P_011549
+|                             |     +--| (100)
+|                             |        +--KRJP
+|                          +--| (98)
+|                          |  |          +--Schi
+|                          |  |       +--| (100)
+|                          |  |       |  +--P_006411
+|                          |  |    +--| (100)
+|                          |  |    |  +--------------P_011699
+|                          |  +----| (100)
+|                          |       +--P_011531
+|                       +--| (98)
+|                       |  +----------VYLQ
+|                    +--| (97)
+|                    |  |       +--P_018635
+|                    |  +-------| (100)
+|                    |          +----------------P_011589
+|                 +--| (98)
+|                 |  +---P_008631
+|              +--| (94)
+|              |  |  +--P_008632
+|              |  +--| (100)
+|              |     |  +----P_011579
+|              |     +--| (100)
+|              |        +--P_011671
+|           +--| (86)
+|           |  |              +--GAP_80389
+|           |  |           +--| (100)
+|           |  |           |  +--GAP_80390
+|           |  |        +--| (100)
+|           |  |        |  |     +--P_006412
+|           |  |        |  |  +--| (100)
+|           |  |        |  |  |  +--P_008640
+|           |  |        |  +--| (100)
+|           |  |        |     |  +--P_008646
+|           |  |        |     +--| (100)
+|           |  |        |        +------P_011679
+|           |  |     +--| (100)
+|           |  |     |  +--P_016813
+|           |  |  +--| (100)
+|           |  |  |  +--P_006413
+|           |  +--| (98)
+|           |     |     +--P_011537
+|           |     |  +--| (93)
+|           |     |  |  |     +---P_011673
+|           |     |  |  |  +--| (100)
+|           |     |  |  |  |  |  +--------P_011681
+|           |     |  |  |  |  +--| (90)
+|           |     |  |  |  |     +------P_011701
+|           |     |  |  +--| (88)
+|           |     |  |     |     +--P_011677
+|           |     |  |     |  +--| (100)
+|           |     |  |     |  |  +--P_011739
+|           |     |  |     +--| (100)
+|           |     |  |        +---P_011607
+|           |     +--| (98)
+|           |        |        +--P_011675
+|           |        |     +--| (100)
+|           |        |     |  +--P_011735
+|           |        |  +--| (93)
+|           |        |  |  |  +--P_011715
+|           |        |  |  +--| (93)
+|           |        |  |     |  +--P_011745
+|           |        |  |     +--| (100)
+|           |        |  |        +--P_011611
+|           |        +--| (93)
+|           |           +--P_011759
+|        +--| (96)
+|        |  |  +------P_011705
+|        |  +--| (94)
+|        |     |  +------P_011713
+|        |     +--| (96)
+|        |        +-------------P_011709
+|     +--| (97)
+|     |  +-----P_014073
+|  +--| (100)
+|  |  |        +--ABSS
+|  |  |     +--| (100)
+|  |  |     |  +--BCGB
+|  |  |  +--| (100)
+|  |  |  |  +--KAYP
+|  |  +--| (100)
+|  |     +--WIGA
++--| (100)
+|  +--Dhai
+|
++--Msal
+
+
+Consensus tree in newick format: 
+
+(Apet:0.0073645964,((((((((((((((((((((((GAP_79804:0.0311926151,P2590:0.0254629981)100:0.0937388820,GAP_80417:0.2620282817)100:0.0724711631,(P_019191:0.2181108246,P_019199:0.2368191203)100:0.2148853440)100:0.0926878756,((P_019185:0.1257433257,(P2589:0.0960005196,OPDF:0.0195368974)100:0.0323851238)100:0.0141551054,CSSK:0.0606546302)100:0.0649034196)100:0.1330407900,((Asie:0.0227758318,QDVW:0.0184963537)100:0.1232387167,((P_019189:0.2839147426,(P_019197:0.2763368898,PAWA:0.1519341466)100:0.0390980924)96:0.0070556429,((P_025523:0.2275003206,P_025525:0.1681627510)100:0.1445853768,P_025527:0.3265032187)100:0.2182772342)96:0.0078762963)100:0.0174116288)100:0.0565064830,(((((Pcol:0.0782430108,(GAP_81226:0.0154903612,P_006410:0.0259550781)100:0.0191294188)100:0.0283790763,GAP_81227:0.0456860544)100:0.0114390905,P_016921:0.0866240796)100:0.0239574530,WKSU:0.0314926470)100:0.0657069291,(((P_019187:0.0319691226,Wsal:0.0614588967)100:0.0182448763,P_019193:0.0683437066)100:0.0605103608,SJEV:0.0410533006)100:0.1078541224)100:0.0436906358)100:0.0128534257,(((P_016909:0.0510910801,WZFE:0.0036842884)100:0.0473580408,((P_018831:0.0568235954,OSHQ:0.0057124352)100:0.0190440339,P0109B:0.2501303524)100:0.0273306007)100:0.0400349815,P0203H:0.3030441997)100:0.0744454152)100:0.0159479256,((((((((((S02:0.0064364554,P_016787:0.0042223282)100:0.0145414663,(S03:0.0087109057,P_014099:0.0193898378)100:0.0136158196)96:0.0007455813,(P_014095:0.1209964079,S08:0.0110353584)100:0.0174330401)80:0.0004579590,P_016791:0.0231543413)89:0.0008502828,(((P_016789:0.0113126470,S27:0.0186282098)100:0.0022671742,S38:0.1150242950)98:0.0029570423,S04:0.0239379166)100:0.0059889591)100:0.0031405523,P_018693:0.0267088724)100:0.0007654082,(((GAP_80397:0.0061881563,OBPL:0.0269036274)100:0.0016982165,P_016799:0.0066262771)100:0.0072357584,P_016797:0.0185257913)100:0.0081633658)100:0.0008716712,(P_016793:0.0197585778,(P_006422:0.0264734131,P_016795:0.0168327949)100:0.0031111812)100:0.0023763348)100:0.0028722145,((((P_007845:0.1702924842,P_018691:0.0863968209)86:0.0082547198,P_018639:0.1255445884)100:0.0192361857,P_018779:0.1649560759)100:0.0282139174,((P_018645:0.0172197714,P_018783:0.0177791909)100:0.0016949289,P_018695:0.0194589733)100:0.0035045627)78:0.0039618063)100:0.1341045538,(((GAP_80322:0.0393207594,DHPO:0.0143116076)100:0.0829780517,(((((((((((((((GAP_80293:0.0122661587,P_012893:0.0092243940)100:0.0109725726,P_012897:0.0244849519)100:0.0009575254,(((((GAP_80292:0.0100562333,P_006419:0.0111918307)100:0.0155865010,P_012793:0.0222916217)100:0.0015128905,(P_006418:0.0293112505,P_012863:0.0164704210)100:0.0012981368)100:0.0002772804,P_012889:0.0213456112)100:0.0003558708,((P_012821:0.0083794785,P_012917:0.0110199087)100:0.0072374211,P_012911:0.0165921339)100:0.0038569927)99:0.0005148638)100:0.0005874584,((GAP_80291:0.0223988748,P_012907:0.0208130367)100:0.0010666303,(P_012873:0.0139658192,P_012881:0.0153147474)100:0.0052087248)86:0.0004278756)99:0.0005183614,P_012859:0.0252238984)94:0.0004101819,(GAP_80294:0.0060815182,P_006420:0.0901793483)100:0.0206094965)99:0.0006028138,P_012885:0.0255511509)100:0.0057892307,P_018689:0.0198158518)100:0.0039230714,((((P_012815:0.0177647996,P_012903:0.0188894472)100:0.0050461586,P_012857:0.0287827718)95:0.0005501916,(P_012883:0.0104274728,P_012925:0.0102454646)100:0.0124318190)92:0.0003149069,((((P_012831:0.0228623946,P_012905:0.0222278280)100:0.0029408372,(P_012851:0.0139421847,P_012887:0.0103198654)100:0.0149687320)100:0.0007995673,P_012901:0.0249315313)100:0.0013864816,P_012875:0.0272224678)100:0.0028420268)100:0.0024943144)100:0.0109693931,(((P_012811:0.0179904150,(P_012891:0.0138125012,P_012895:0.0159071972)100:0.0022386907)100:0.0066141839,(P_012877:0.0215274730,P_012913:0.0185814441)100:0.0075823378)100:0.0087062092,P_012841:0.0365962751)100:0.0027848318)100:0.0016245803,P_012797:0.0405357218)100:0.0108206773,(((((((((GAP_80295:0.0259052813,P_012927:0.0101849608)99:0.0041754987,PSJT:0.0199787686)100:0.0220908978,((P_012791:0.0267415700,P_012915:0.0246065451)100:0.0023808532,(((P_012819:0.0074102307,P_012823:0.0120074170)100:0.0005048661,P_012835:0.0081931113)100:0.0037755919,P_012869:0.0133638248)100:0.0162221711)100:0.0075198246)95:0.0015774233,(GAP_81172:0.0192517538,P_012833:0.0151700271)100:0.0148576407)100:0.0141968896,((((P_012807:0.0253748107,P_012845:0.0295015286)100:0.0033201255,(P_012849:0.0258652198,P_012871:0.0273014522)100:0.0124773057)100:0.0028449093,(P_012865:0.0373442339,(P_012931:0.0176531665,(P_012933:0.0069657137,P_012935:0.0041389076)100:0.0152705365)100:0.0102332192)100:0.0019845003)100:0.0137386448,P_012909:0.0629964625)86:0.0013925911)100:0.0098154950,(((((P_012799:0.0441329526,YZRI:0.0393707408)100:0.0199449671,P_012825:0.0438730235)100:0.0031376283,P_012805:0.0328357193)100:0.0021718149,P_012839:0.0604550948)100:0.0054350614,(P_012801:0.0325573773,(P_012809:0.0088160408,P_012879:0.0082462612)100:0.0404363405)100:0.0066406128)100:0.0077164569)100:0.0154381054,(((P_006421:0.0117629133,P_012939:0.0145381705)100:0.0083621736,P_012937:0.0213929511)100:0.0401250959,((P_012803:0.0499780751,(P_012829:0.0381935694,P_012837:0.0323891850)100:0.0079079299)100:0.0017359682,P_012853:0.0458979346)100:0.0019287842)99:0.0016942806)100:0.0023919590,P_012843:0.0679985882)100:0.0080960389,(((P_012817:0.0388826751,P_012899:0.0370727217)100:0.0177396952,(P_012847:0.0174948956,P_012923:0.0154148596)100:0.0285812244)100:0.0087290584,P_012867:0.0482619578)100:0.0453724367)100:0.0101711938)100:0.0032605004,P_012861:0.0541641541)100:0.0023406725,(((P_007802:0.0247343814,P_012827:0.0140228668)100:0.0284602670,P_012855:0.0481649410)100:0.0108594130,((P_012813:0.0275127641,P_018637:0.0278543191)100:0.0061427993,(P_012919:0.0073463439,P_012921:0.0261964046)100:0.0279011443)100:0.0195703021)100:0.0339931420)100:0.0265737309,(P_012795:0.0126673541,P_012941:0.0097763441)100:0.0853712889)100:0.0716503315)100:0.0186014348,((((((P0110B:0.0221929104,P0207C:0.0113877943)100:0.0026933511,((P0206G:0.0162873651,P0206H:0.0158789351)100:0.0028606827,P0207B:0.0186381525)100:0.0024173083)100:0.0043413746,P0207A:0.0174535405)100:0.0181928633,P0110C:0.0607245547)100:0.0267368739,XQWC:0.0184683857)100:0.0459051414,(P2622:0.1107311024,P2623:0.2680026041)100:0.0199785473)100:0.0096138429)100:0.0181326916)100:0.0452522840)100:0.0513308166,(WPHN:0.0915757456,(P_011613:0.2325961461,P_011719:0.4347283443)98:0.3030937919)98:0.0349418266)98:0.0186223463,((((((GAP_80298:0.0372427243,(GAP_80297:0.0053884525,P_014083:0.0140695022)100:0.0317495662)100:0.0073876141,P_011527:0.0463116148)100:0.0049963815,P_014077:0.0679175503)100:0.0265826823,WAIL:0.0287448984)100:0.0171132117,MAQO:0.0382696160)100:0.0218873967,(P_011609:0.2105640771,(P2619:0.1186141450,Sdec:0.4152694380)100:0.0819331038)100:0.1154553259)100:0.0109264324)98:0.0110547800,((GAP_79862:0.1406686043,P_011587:0.2222723176)100:0.0793114513,((P_008647:0.0181218475,P0104A:0.0332625815)100:0.1052812086,P_014081:0.1722926119)100:0.1016368080)100:0.0671416534)78:0.0059660201,((((GAP_80393:0.0126128649,GAP_80394:0.0215915527)100:0.0051930993,(((P_006414:0.0221534629,(P_007783:0.0398138462,(P_007843:0.1069124467,(P_007844:0.1164349639,P_011631:0.1562479842)100:0.0140112811)100:0.0253111412)100:0.0124189619)100:0.0054801433,(P_011551:0.0578990432,P_011637:0.0231830243)100:0.0040112533)100:0.0018520823,((P_011465:0.0070618172,(((P_011487:0.0057202688,P_011489:0.0064412750)100:0.0007735007,P_011523:0.0080355570)100:0.0004804110,P_011501:0.0046115341)100:0.0025507722)100:0.0049364200,P_011647:0.0248163660)100:0.0010837569)100:0.0073102366)100:0.0035279419,(((P_011509:0.0108351250,P_011651:0.0320492305)100:0.0043545424,P_011657:0.0450490145)100:0.0007635561,P_011643:0.0169033518)100:0.0059887248)100:0.0412882057,((GAP_80395:0.0291752393,P_011549:0.0642924512)100:0.0275088089,KRJP:0.0442458792)100:0.0208187783)100:0.0271195492)98:0.0233135734,(((Schi:0.0391328193,P_006411:0.0270065414)100:0.0233421417,P_011699:0.2598836712)100:0.0193918407,P_011531:0.0607698868)100:0.0930895181)98:0.0105181928,VYLQ:0.1941666805)98:0.0110314175,(P_018635:0.0505949769,P_011589:0.2801535535)100:0.1342620762)97:0.0046912512,P_008631:0.0816049927)98:0.0330036274,(P_008632:0.0283866497,(P_011579:0.0974833229,P_011671:0.0525285741)100:0.0099762125)100:0.0343046828)94:0.0172254644,(((((GAP_80389:0.0149993011,GAP_80390:0.0131517091)100:0.0088312689,((P_006412:0.0129362865,P_008640:0.0097101507)100:0.0049836808,(P_008646:0.0158967271,P_011679:0.1163293540)100:0.0035483363)100:0.0014562315)100:0.0008618066,P_016813:0.0192724624)100:0.0028031200,P_006413:0.0169067988)100:0.0051379787,((P_011537:0.0238724408,((P_011673:0.0774340677,(P_011681:0.1532940278,P_011701:0.1192107130)90:0.0309597009)100:0.0291358202,((P_011677:0.0174732316,P_011739:0.0367805580)100:0.0063183568,P_011607:0.0689300795)100:0.0025780375)88:0.0026209652)93:0.0027054716,(((P_011675:0.0121857089,P_011735:0.0106746482)100:0.0081943906,(P_011715:0.0636147604,(P_011745:0.0088072455,P_011611:0.0345829243)100:0.0043720591)93:0.0051344842)93:0.0029445765,P_011759:0.0127874900)93:0.0012407959)98:0.0071525441)98:0.0115706050)86:0.0031291067,(P_011705:0.1158350053,(P_011713:0.1281099517,P_011709:0.2412477811)96:0.0566118834)94:0.0203422231)96:0.0136700822,P_014073:0.1142291950)97:0.0105843919,(((ABSS:0.0099852540,BCGB:0.0096348486)100:0.0021530351,KAYP:0.0126337984)100:0.0027236421,WIGA:0.0153241612)100:0.0068611908)100:0.0015974116,Dhai:0.0177148357)100:0.0018265137,Msal:0.0103198659);
+
+TIME STAMP
+----------
+
+Date and time: Fri May 27 13:28:26 2022
+Total CPU time used: 210350.7668 seconds (58h:25m:50s)
+Total wall-clock time used: 72447.10467 seconds (20h:7m:27s)
+

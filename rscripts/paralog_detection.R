@@ -2,6 +2,15 @@ rm(list = ls())
 
 library(ape)
 
+#checking that my paralog script matches the hybpiper output
+ht<-read.tree("../4951.paralogs.tre")
+mt<-read.tree("data/paralog_trees/RAxML_bipartitions.aligned.combined_4951.fasta")
+sort(ht$tip.label[grep("\\." ,ht$tip.label)])==sort(mt$tip.label[grep("\\." ,mt$tip.label)])
+
+ht2<-read.tree("../7333.paralogs.tre")
+mt2<-read.tree("data/paralog_trees/RAxML_bipartitions.aligned.combined_7333.fasta")
+sort(ht2$tip.label[grep("\\." ,ht2$tip.label)])==sort(mt2$tip.label[grep("\\." ,mt2$tip.label)])
+
 #set paths to the trees folder you downloaded
 #should contain all trees output from paralogs.sh
 files <-

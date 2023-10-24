@@ -15,11 +15,11 @@ library(dplyr)
 sample_data<-"data/sample_data - samples_for_phylo.csv"
 
 ##
-# IQTREE
+# IQTREE ----
 ##
 
 #read in tree and tips
-iq_phy <- read.tree(paste("data/trees/iqtree_magnoliids_r10_auto_b2_0_l50_i50_1212013/mag.partitions.contree",sep=""))
+iq_phy <- read.tree(paste("data/trees/iqtree-mafft_r10_l50_i50_b2_0/mag.partitions.contree",sep=""))
 df <- read.csv(sample_data)
 df <- df[df$Namelist %in% iq_phy$tip.label,]
 df <-
@@ -58,7 +58,8 @@ nodelabels(cex=0.4)
 dev.off()
 
 #root tree
-iq_phy <- ape::root(iq_phy, node=288, edgelabel = T, resolve.root = T)
+#iq_phy <- ape::root(iq_phy, node=288, edgelabel = T, resolve.root = T)
+iq_phy <- ape::root(iq_phy,"Chloranthaceae_Chloranthus_spicatus_PAFTOL", resolve.root = T)
 
 #rescale IQTREE branches
 iq_phy$edge.length <- iq_phy$edge.length*30
@@ -69,11 +70,64 @@ i
 
 
 ##
-# ASTRAL
+# IQTREE 2 ----
 ##
 
 #read in tree and tips
-ast_phy <- read.tree("data/trees/astral_r10_l50_i50_auto_b2_0/astral_bs10_LPP.tre")
+iq_phy2 <- read.tree(paste("data/trees/iqtree-mafft_r10_l50_i50_b2_0_2249007/mag.partitions.contree",sep=""))
+df <- read.csv(sample_data)
+df <- df[df$Namelist %in% iq_phy2$tip.label,]
+df <-
+  df %>% unite("genus_species",
+               c(Family:Species,Source),
+               na.rm = TRUE,
+               remove = FALSE)
+
+head(df)
+
+##match order of namelist and tip labels
+df<-df[match(iq_phy2$tip.label, df$Namelist),]
+
+#diffs
+setdiff(iq_phy2$tip.label, df$Namelist)
+setdiff(df$Namelist, iq_phy2$tip.label)
+
+##tip label change
+dfnames <- data.frame(df$Namelist, df$genus_species)
+dfnames$df.genus_species <- make.unique(dfnames$df.genus_species)
+iq_phy2 <- sub.taxa.label(iq_phy2, dfnames)
+
+#cols
+df <- df[match(iq_phy2$tip.label, df$genus_species),]
+
+#plot IQTREE tree with node numbers
+pdf("figures/iqtree_r10_l50_i50_node_numbers.pdf",width=10,height=20)
+plot(
+  iq_phy2,
+  cex = 0.5,
+  label.offset = 0.05,
+  edge.color = "grey"
+)
+nodelabels(cex=0.4)
+dev.off()
+
+#root tree
+#iq_phy2 <- ape::root(iq_phy2, node=288, edgelabel = T, resolve.root = T)
+iq_phy2 <- ape::root(iq_phy2,"Chloranthaceae_Chloranthus_spicatus_PAFTOL", resolve.root = T)
+#rescale IQTREE branches
+iq_phy2$edge.length <- iq_phy2$edge.length*30
+
+#plot tree with orders labelled
+i2<-ggtree(iq_phy2, ladderize = T)
+i2
+
+
+##
+# ASTRAL ----
+##
+
+#read in tree and tips
+ast_phy <- read.tree("data/trees/astral-mafft_r10_l50_i50_b2_0/astral_bs10_LPP.tre")
 df <- read.csv(sample_data)
 df <- df[df$Namelist %in% ast_phy$tip.label,]
 df <-
@@ -102,7 +156,8 @@ df <- df[match(ast_phy$tip.label, df$genus_species),]
 df3<-df[,c("genus_species","Order")]
 
 #reroot
-ast_phy <- ape::root(ast_phy, node=251, edgelabel = T, resolve.root = T)
+#ast_phy <- ape::root(ast_phy, node=251, edgelabel = T, resolve.root = T)
+ast_phy <- ape::root(ast_phy,"Chloranthaceae_Chloranthus_spicatus_PAFTOL", resolve.root = T)
 
 #plot tree with orders labelled
 a<-ggtree(ast_phy, ladderize = T)
@@ -119,6 +174,10 @@ a
 
 t1 <- ggtree(ast_phy) + geom_tiplab(size=1, color = as.numeric(as.factor(df$Order)))
 t2 <- ggtree(iq_phy)
+
+#t1 <- ggtree(iq_phy) + geom_tiplab(size=1, color = as.numeric(as.factor(df$Order)))
+#t2 <- ggtree(iq_phy2) #FOR IQTREE COMPARISONS
+
 
 d1 <- t1$data
 
@@ -144,6 +203,6 @@ dd1 <- as.data.frame(dd)
 #Now, we are going to conditionally join the tips of both trees for the feature we are interested in.
 # Connected tips will represent the same species.
 
-pdf("figures/figSX_tangle.pdf",width=20,height=20)
+png("figures/figSX_tangle.png",width=1500,height=2000)
 pp + geom_line(aes(x, y, group=label), color='grey',linetype=2, data=dd1)
 dev.off()

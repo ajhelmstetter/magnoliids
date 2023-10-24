@@ -30,6 +30,7 @@ freqs_meio$V8 <- reorder(freqs_meio$V8, -freqs_meio$value)
 
 #select desired branch
 freqs_meio_20 <- freqs_meio[freqs_meio$V7==20,]
+freqs_meio_20
 
 #plot relative freqs
 r1 <- ggplot(data = freqs_meio_20) + aes(x = V8, y = value, fill = V9) + geom_bar(
@@ -55,7 +56,7 @@ f1 <- ggplot(data = freqs_meio_20) + aes(x = V8, y = V5, fill = V9) + geom_bar(
   scale_fill_manual(values = wesanderson::wes_palettes$Royal1, name = 'Topology') +
   ylab('Frequency') +
   xlab('') +
-  ylim(0,50) +
+  ylim(0,80) +
   theme(legend.position = "none")
 
 #Phylo
@@ -136,6 +137,7 @@ freqs_hydn$V8 <- reorder(freqs_hydn$V8, -freqs_hydn$value)
 
 #select desired branch
 freqs_hydn_19 <- freqs_hydn[freqs_hydn$V7==19,]
+freqs_hydn_19
 
 #plot relative freqs
 r2 <- ggplot(data = freqs_hydn_19) + aes(x = V8, y = value, fill = V9) + geom_bar(

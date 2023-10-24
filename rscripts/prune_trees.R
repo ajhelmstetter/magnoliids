@@ -5,25 +5,25 @@ par(mar=c(5,5,5,5))
 #load packages
 library(ape)
 
-# #SPECIES TREE
+ #SPECIES TREE
+ #list of filepaths to read in
+ filepaths <-
+   list.files(
+     path = "/home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag/species_pruned_trees",
+     pattern = "tree.tree$",
+     full.names = TRUE,
+     recursive = TRUE
+   )
+
+# #GENETREES
 # #list of filepaths to read in
 # filepaths <-
 #   list.files(
-#     path = "/home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag/species_pruned_trees",
-#     pattern = "tree.tree$",
+#     path = "/home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag/genetrees2_trimmed/",
+#     pattern = "trees.tree$",
 #     full.names = TRUE,
 #     recursive = TRUE
 #   )
-
-#GENETREES
-#list of filepaths to read in
-filepaths <-
-  list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag/genetrees2_trimmed/",
-    pattern = "trees.tree$",
-    full.names = TRUE,
-    recursive = TRUE
-  )
 
 
 filepaths
@@ -43,3 +43,4 @@ for(i in 1:length(filepaths)){
   write.tree(phy, file = filepaths[[i]])
 
 }
+

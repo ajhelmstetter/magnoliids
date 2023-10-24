@@ -572,5 +572,5 @@ write.csv(res_shall_deep_cleaned,"outputs/shallow_vs_deep_average_node_support.c
 
 
 png("figures/pairs_quality_scores.png",width=750,height=750)
-pairs(scoring_res[,c(1:4)])
+pairs(scoring_res[,c("Normalized scores","Total Quartets","Mean LPP","Mean QS")])
 dev.off()

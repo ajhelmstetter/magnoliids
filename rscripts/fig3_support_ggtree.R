@@ -122,7 +122,7 @@ pie <- data.frame(as.numeric(phy2$node.label), 100 - as.numeric(phy2$node.label)
 colnames(pie)<-c("a","b","node")
 pies_qs<-nodepie(pie, cols=1:2, color=c("darkgrey","white"), outline.color = "black", alpha=0.8)
 #add pies with quartet support
-p2 <- p + geom_inset(pies_qs, width=0.045, height=0.045)
+p2 <- p + geom_inset(pies_qs, width=0.045, height=0.045, vjust = 0.3, hjust = 0.1)
 
 #read in LPP phylo
 phy2 <- read.tree(paste(af,"astral_bs10_LPP.tre",sep=""))
@@ -137,7 +137,7 @@ pie <- data.frame(as.numeric(phy2$node.label)*100, 100 - (as.numeric(phy2$node.l
 colnames(pie)<-c("a","b","node")
 pies_lpp<-nodepie(pie, cols=1:2, color=c("black","white"), outline.color = "black", alpha=0.7)
 #add pies with LPP support
-p3 <- p2 + geom_inset(pies_lpp, width=0.025, height=0.025)
+p3 <- p2 + geom_inset(pies_lpp, width=0.025, height=0.025, vjust = 0.3, hjust = 0.1)
 
 #Colours
 cols<-df$Order
@@ -148,12 +148,11 @@ cols[grep("Magnoliales",cols)]<-list_cols[3]
 cols[grep("Laurales",cols)]<-list_cols[4]
 cols[grep("Chloranthales",cols)]<-list_cols[5]
 
-pdf("figures/fig3_support_ggtree.pdf",width=10, height=15)
+#pdf("figures/fig3_support_ggtree.pdf",width=10, height=15)
 
 #plot
 p3 + geom_tiplab(size=2, color = cols, offset = 0.4,fontface='italic',align=TRUE)
 
-
-dev.off()
+#dev.off()
 
 ggsave("figures/fig3_support_ggtree.png",width=10,height=15)

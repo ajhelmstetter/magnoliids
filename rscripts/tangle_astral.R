@@ -15,10 +15,10 @@ library(dplyr)
 sample_data<-"data/sample_data - samples_for_phylo.csv"
 
 #Trees to compare
-ast_phy <- read.tree("data/trees/astral-mafft_r10_l50_i50_b2_0/astral_bs10_LPP.tre")
-ast_phy2 <- read.tree("data/trees/astral-mafft_r10_l75_i25_b2_0/astral_bs10_LPP.tre")
+ast_phy <- read.tree("data/trees/astral-magusexons_r10_l50_i50_b2_0/astral_bs10_LPP.tre")
+ast_phy2 <- read.tree("data/trees/astral-magusexons_r25_l50_i50_b2_0/astral_bs10_LPP.tre")
 
-pdf_path <- "figures/tangle_astrals/l_i/astral-l50_i50_vs_l75_i25_mafft_r10_b2_0.pdf"
+pdf_path <- "figures/tangle_astrals/l_i/astral-r10_vs_r25_magus-exons_l50_i50_b2_0.pdf"
 
 #drop tips that arent present in both
 ast_phy<-drop.tip(ast_phy,setdiff(ast_phy$tip.label,ast_phy2$tip.label))

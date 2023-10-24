@@ -544,13 +544,13 @@ mv all_bs10.trees estimated_gene_trees.tree
 mv astral_bs10_LPP.tre estimated_species_tree.tree
 
 #conduct a relative frequency analysis with DiscoVista (angiosperm orders)
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/order_annotation.txt -m 5 -p trees/ -o order_output/ -g Chloranthales
+sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/order_annotation.txt -m 5 -p rel_trees/ -o order_output/ -g Chloranthales
 
 #Meiocarpidium, other Magnoliales + Orders
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/meio_annotation.txt -m 5 -p trees/ -o meio_output/ -g Chloranthales
+sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/meio_annotation.txt -m 5 -p rel_trees/ -o meio_output/ -g Chloranthales
 
 #Hydnora, other Piperales genera + Orders
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/hydn_annotation.txt -m 5 -p trees/ -o hydn_output/ -g Chloranthales
+sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/hydn_annotation.txt -m 5 -p rel_trees/ -o hydn_output/ -g Chloranthales
 
 ```
 
@@ -599,7 +599,7 @@ rename 's/_exons/-exons/' *
 # -y parameters/newModel.txt 
 # -w parameters/newOrders.txt
 
-sudo docker run  -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs.txt -p species/ -t 0.9 -m 0 -o species/results
+sudo docker run  -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs.txt -p species_oruned_trees/ -t 0.9 -m 0 -o species_oruned_trees/results
 
 ```
 

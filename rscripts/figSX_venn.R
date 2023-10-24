@@ -44,7 +44,7 @@ for(i in 1:5){
 sample.len = sample.data[rownames(sample.data) %in% ord_l[[i]],]
 
 #calculate percentage of exon recovered for each exon in each individual
-percent.len= sweep(sample.len, 2, reference.len, "/")
+percent.len = sweep(sample.len, 2, reference.len, "/")
 percent.len = ifelse(percent.len>1,1,percent.len)
 percent.len.limit <- percent.len
 

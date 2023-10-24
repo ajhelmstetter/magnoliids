@@ -1,10 +1,14 @@
 rm(list=ls())
 
 #set ASTRAL output folder path
-iqf<-"data/trees/iqtree-mafft_r10_l50_i50_b2_0/"
+iqf<-"data/trees/iqtree-magus_r10_l50_i50_trimal_auto//"
 
 #set sample data filepath
 sample_data<-"data/sample_data - samples_for_phylo.csv"
+
+#output filename
+output_file<-"figures/support_iqtree_2249007.png"
+
 
 ####
 # IQTREE
@@ -77,7 +81,7 @@ tip_cols<-as.numeric(as.factor(df$Order))
 
 #set PDF/PNG name
 #pdf("figures/figSX_support_iqtree.pdf",width=15,height=30)
-png("figures/figSX_support_iqtree.png",width=3000,height=4500,res=200)
+png(output_file,width=3000,height=4500,res=200)
 
 phy <- ladderize(phy)
 plot(

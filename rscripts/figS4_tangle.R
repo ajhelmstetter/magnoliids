@@ -68,7 +68,6 @@ iq_phy$edge.length <- iq_phy$edge.length*30
 i<-ggtree(iq_phy, ladderize = T)
 i
 
-
 ##
 # IQTREE 2 ----
 ##
@@ -147,6 +146,8 @@ setdiff(df$Namelist, ast_phy$tip.label)
 dfnames <- data.frame(df$Namelist, df$genus_species)
 dfnames$df.genus_species <- make.unique(dfnames$df.genus_species)
 ast_phy <- sub.taxa.label(ast_phy, dfnames)
+
+#NOTE: Uncomment to keep astral internal branch lengths
 ast_phy$edge.length[ast_phy$edge.length == "NaN"] <- 0.25
 
 #cols
@@ -172,24 +173,29 @@ a
 #You can toy with different values depending on the branch length unit of your tree
 #to get good visualization (I particularly suggest changing max(d1$x)*0.3 terms).
 
-t1 <- ggtree(ast_phy) + geom_tiplab(size=1, color = as.numeric(as.factor(df$Order)))
+t1 <- ggtree(ast_phy) + geom_tiplab(size=2, color = as.numeric(as.factor(df$Order)))
 t2 <- ggtree(iq_phy)
 
+#FOR IQTREE COMPARISONS
 #t1 <- ggtree(iq_phy) + geom_tiplab(size=1, color = as.numeric(as.factor(df$Order)))
-#t2 <- ggtree(iq_phy2) #FOR IQTREE COMPARISONS
+#t2 <- ggtree(iq_phy2)
+
+#NOTE: Uncomment to ignore branch lengths
+t1 <- ggtree(ast_phy, branch.length="none") + geom_tiplab(size=2, color = as.numeric(as.factor(df$Order)))
+#t2 <- ggtree(iq_phy, branch.length="none")
 
 
 d1 <- t1$data
 
 #add some space for tip label in ASTRAL phylo
-d1$x<-d1$x+3.5
+d1$x<-d1$x+(nchar(d1$label)/3.75)
 
 d2 <- t2$data
 
 d1$tree <-'t1'
 d2$tree <-'t2'
 
-d2$x <- max(d2$x) - d2$x + max(d1$x) +  max(d1$x)*0.3
+d2$x <- max(d2$x) - d2$x + max(d1$x) + max(d1$x)*0.001
 pp <- t1 + geom_tree(data=d2)
 pp
 
@@ -203,6 +209,12 @@ dd1 <- as.data.frame(dd)
 #Now, we are going to conditionally join the tips of both trees for the feature we are interested in.
 # Connected tips will represent the same species.
 
-png("figures/figSX_tangle.png",width=1500,height=2000)
-pp + geom_line(aes(x, y, group=label), color='grey',linetype=2, data=dd1)
+png("figures/figS4_tangle.png",width=1500,height=2000)
+pp + geom_line(aes(x, y, group=label), color='grey', alpha=0.5, linetype=2, data=dd1)
 dev.off()
+
+pdf("figures/figS4_tangle.pdf",width=15,height=20)
+pp + geom_line(aes(x, y, group=label), color='grey', alpha=0.5,linetype=2, data=dd1)
+dev.off()
+
+

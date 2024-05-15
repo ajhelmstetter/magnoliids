@@ -71,7 +71,7 @@ if(ts == "family"){
   percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
   percent.len<-as.matrix(percent.len)
 
-  filename<-"figures/fig1_family.png"
+  filename<-"figures/fig3_family.png"
 
 } else if(ts == "genus") {
 
@@ -85,7 +85,7 @@ if(ts == "family"){
   percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
   percent.len<-as.matrix(percent.len)
 
-  filename<-"figures/fig1_genus.png"
+  filename<-"figures/fig3_genus.png"
 
 } else {
 
@@ -94,7 +94,7 @@ if(ts == "family"){
   # sample
   ###
 
-  filename<-"figures/fig1_sample.png"
+  filename<-"figures/fig3_heatmap.png"
 
 }
 
@@ -137,16 +137,18 @@ for (i in 1:length(limits)) {
 #####
 
 #convert to data frame
+#Rows are exon length
+#Columns are individual proportion
 exon_stats <- data.frame(exon_stats)
 
 #view table
-#view(exon_stats)
+View(exon_stats)
 
+#rename columns based on limits
 for (i in 1:length(limits)) {
   colnames(exon_stats)[i] <-  limits[i] * 100
-  exon_stats$exon_prop[i] <-  limits[i] * 100
+  exon_stats$exon_prop[i] <-  limits[i] * 100 #add column to represent exon proportion for melting
 }
-
 
 #melt table
 library(reshape2)
@@ -164,6 +166,15 @@ x<-c(10,25,50,75,25,75)
 y<-c(10,25,50,75,75,25)
 ast_filt<-data.frame(x,y)
 ast_filt
+
+#get number of markers for annotation
+no_markers <- as.character(c(exon_stats[10, 10],
+                             exon_stats[25, 25],
+                             exon_stats[50, 50],
+                             exon_stats[75, 75],
+                             exon_stats[25, 75],
+                             exon_stats[75, 25]))
+
 
 #colors
 library(wesanderson)
@@ -202,7 +213,9 @@ p2 <- p + geom_raster(aes(fill = no_markers)) +
     panel.grid.major = element_blank(),
     panel.background = element_blank())
 
-    p2 + annotate("point", x = ast_filt$x, y = ast_filt$y, size=2, alpha=0.7, pch=3, stroke=1)
+p2 +
+  annotate("point", x = ast_filt$x, y = ast_filt$y, size=2, alpha=0.7, pch=3, stroke=1) +
+  annotate("text", x = ast_filt$x+2.5, y = ast_filt$y+2.5, label = no_markers, size=3, alpha=0.7)
 
 
 ggsave(filename,  width = 17.5,

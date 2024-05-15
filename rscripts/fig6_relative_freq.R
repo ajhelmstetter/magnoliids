@@ -39,7 +39,7 @@ r1 <- ggplot(data = freqs_meio_20) + aes(x = V8, y = value, fill = V9) + geom_ba
   position = 'dodge') +
   theme_bw() +
   theme(legend.position = "none") +
-  scale_fill_manual(values = wesanderson::wes_palettes$Royal1, name = 'Topology') +
+  scale_fill_manual(values = c(wesanderson::wes_palettes$Royal1[1],"#D3D3D3","#808080"), name = 'Topology') +
   geom_hline(yintercept = 1 / 3,size = 0.4,linetype = 2) +
   ylab('Relative frequency') +
   xlab('') +
@@ -53,7 +53,7 @@ f1 <- ggplot(data = freqs_meio_20) + aes(x = V8, y = V5, fill = V9) + geom_bar(
   position = 'dodge') +
   theme_bw() +
   theme(legend.position = "none",axis.text.x = element_text(size=12), axis.title.y = element_text(vjust=2)) +
-  scale_fill_manual(values = wesanderson::wes_palettes$Royal1, name = 'Topology') +
+  scale_fill_manual(values = c(wesanderson::wes_palettes$Royal1[1],"#D3D3D3","#808080"), name = 'Topology') +
   ylab('Frequency') +
   xlab('') +
   ylim(0,80) +
@@ -146,7 +146,7 @@ r2 <- ggplot(data = freqs_hydn_19) + aes(x = V8, y = value, fill = V9) + geom_ba
   position = 'dodge') +
   theme_bw() +
   theme(legend.position = "none") +
-  scale_fill_manual(values = wesanderson::wes_palettes$IsleofDogs1, name = 'Topology') +
+  scale_fill_manual(values = c(wesanderson::wes_palettes$IsleofDogs1[1],"#808080","#D3D3D3"), name = 'Topology') +
   geom_hline(yintercept = 1 / 3,size = 0.4,linetype = 2) +
   ylab('Relative frequency') +
   xlab('') +
@@ -160,7 +160,7 @@ f2 <- ggplot(data = freqs_hydn_19) + aes(x = V8, y = V5, fill = V9) + geom_bar(
   position = 'dodge') +
   theme_bw() +
   theme(legend.position = "none",axis.text.x = element_text(size=12), axis.title.y = element_text(vjust=2)) +
-  scale_fill_manual(values = wesanderson::wes_palettes$IsleofDogs1, name = 'Topology') +
+  scale_fill_manual(values = c(wesanderson::wes_palettes$IsleofDogs1[1],"#808080","#D3D3D3"), name = 'Topology') +
   ylab('Frequency') +
   xlab('') +
   ylim(0,50)
@@ -214,7 +214,7 @@ p2
 #combine phylo and absolute frequency plots
  ( p2 + f2 ) / ( p1 + f1 )
 
-ggsave("figures/figX_relative_freq.png",height = 10,width = 10)
+ggsave("figures/fig6_relative_freq.png",height = 10,width = 10)
 
 
 

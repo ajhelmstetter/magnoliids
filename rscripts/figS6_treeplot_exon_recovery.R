@@ -8,14 +8,19 @@ library(ggplot2)
 library(ggtree)
 library(ape)
 library(tidyr)
+library(phylotools)
 
 #read in tree and tips
 phy <-read.tree("data/trees/astral-mafft_r10_l50_i50_b2_0/astral_bs10_LPP.tre")
 df <- read.csv("data/sample_data - samples_for_phylo.csv")
 df <- df[df$Namelist %in% phy$tip.label, ]
 
+#NOTE: Not fixing branch lengths will cause plot to be cladogram, which is wanted
 #fix terminal branches
-phy$edge.length[phy$edge.length == "NaN"] <- 0.25
+#phy$edge.length[phy$edge.length == "NaN"] <- 0.25
+
+#make all branch lengths the same
+#phy$edge.length <- rep(0.1,length(phy$edge.length))
 
 #reroot
 phy <- ape::root(phy, node=251, edgelabel = T, resolve.root = T)
@@ -117,16 +122,17 @@ setdiff(df3$label, phy$tip.label)
 
 #plot tree
 library(ggtree)
-g <- ggtree(phy)
-
+g <- ggtree(phy, layout = "rectangular")
+g
 g2 <- g %<+% df3 +
-  geom_tiplab(aes(color = factor(order)), align = T, size = 1.75) + theme(
+  geom_tiplab(aes(color = factor(order)), size = 1.75) + theme(
     legend.position = c(0.1, 0.9),
-    legend.title = element_blank(),
+    #legend.title = element_blank(),
     # no title
     #legend.key = element_blank(),
-    legend.text = element_text(size = 5)
-  ) + guides(colour = guide_legend(override.aes = list(size = 5))) + xlim(0,32)
+    legend.text = element_blank()) +
+  guides(colour = guide_legend(override.aes = list(size = 5, label = sort(unique(df3$order))))) + labs(col="Order") +
+  xlim(0,27) #set axis limits to put tree close to heatmap
 
 g2
 
@@ -150,11 +156,11 @@ p2 <- ggplot(percent.len_melt, aes(x = category, y = label)) +
 
 p2
 
-pdf('figures/FigSX_tree_exon_recovery.pdf',
+pdf('figures/FigS6_tree_exon_recovery.pdf',
     height = 20,
     width = 20)
 library(aplot)
-p2 %>% insert_left(g2)
+p2 %>% insert_left(g2,width=0.5)
 dev.off()
 
-ggsave("figures/FigSX_tree_exon_recovery.png",height=20,width=20)
+ggsave("figures/FigS6_tree_exon_recovery.png",height=20,width=20)

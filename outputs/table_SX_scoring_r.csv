@@ -1,0 +1,4 @@
+"aligner","r","l","i","trimmer","data_type","Normalized_scores","Total_Quartets","Mean_LPP","Mean_QS","Sum_of_scaled_values"
+"mafft","10","50","50","gblocks_b2_0","supercontigs",0.951,15644833182,0.918,65.143,2.052
+"mafft","25","50","50","gblocks_b2_0","supercontigs",0.95,13053322906,0.911,67.013,1.809
+"mafft","50","50","50","gblocks_b2_0","supercontigs",0.949,7750821199,0.899,69.499,1.101

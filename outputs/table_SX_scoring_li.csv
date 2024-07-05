@@ -1,0 +1,9 @@
+"aligner","r","l","i","trimmer","data_type","Normalized_scores","Total_Quartets","Mean_LPP","Mean_QS","Sum_of_scaled_values"
+"mafft","10","10","10","gblocks_b2_0","supercontigs",0.944,20611504123,0.909,63.326,0.513
+"mafft","10","25","25","gblocks_b2_0","supercontigs",0.944,20592620666,0.909,63.41,0.586
+"mafft","10","25","50","gblocks_b2_0","supercontigs",0.945,20239311382,0.91,63.738,0.879
+"mafft","10","25","75","gblocks_b2_0","supercontigs",0.95,15302585869,0.902,64.839,0.739
+"mafft","10","50","25","gblocks_b2_0","supercontigs",0.946,19371615355,0.909,64.006,1.039
+"mafft","10","50","50","gblocks_b2_0","supercontigs",0.951,15644833182,0.918,65.143,2.052
+"mafft","10","75","25","gblocks_b2_0","supercontigs",0.952,12837288686,0.902,65.404,0.89
+"mafft","10","75","75","gblocks_b2_0","supercontigs",0.952,1620025305,0.836,70.189,-2.729

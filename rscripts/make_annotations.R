@@ -90,7 +90,6 @@ myri_phy<-extract.clade(phy,node=280)
 myri_phy$tip.label
 df[df$Namelist%in%myri_phy$tip.label,]
 
-
 #Start with orders
 df_meio<-data.frame(df$Namelist,df$Order)
 colnames(df_meio)<-c("Namelist","Group")
@@ -105,9 +104,7 @@ df_meio$Group[df_meio$Namelist%in%magn_phy$tip.label]<-"Magn_Degen_Himan"
 df_meio$Group[df_meio$Namelist%in%myri_phy$tip.label]<-"Myristicaceae"
 df_meio$Group[df_meio$Namelist%in%"P_012861"]<-"Meiocarpidium"
 
-
 write.table(df_meio,"outputs/meio_annotation.txt",col.names=FALSE,row.names=FALSE,sep="\t", quote = FALSE)
-
 
 ###
 # Hydnoraceae

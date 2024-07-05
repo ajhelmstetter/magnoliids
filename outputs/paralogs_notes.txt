@@ -1,34 +1,34 @@
-mv RAxML_bipartitions*4951* paralogs/ ###clear paralogy for a 5 species
-mv RAxML_bipartitions*4989* paralogs/ #too small
-mv RAxML_bipartitions*5034* paralogs/ #too small
-mv RAxML_bipartitions*5064* paralogs/ #too small
-mv RAxML_bipartitions*5280* paralogs/ #too small
-mv RAxML_bipartitions*5328* paralogs/ #too small
-mv RAxML_bipartitions*5347* paralogs/ #no paralogy
-mv RAxML_bipartitions*5355* paralogs/ ###many sequences but not a lot of clear paralogy
-mv RAxML_bipartitions*5428* paralogs/ ###paralogy for 4 species
-mv RAxML_bipartitions*5434* paralogs/ ###many sequences, a few sequences with potential paralogy
-mv RAxML_bipartitions*5578* paralogs/ ###clear paralogy
-mv RAxML_bipartitions*5594* paralogs/ #no obvious paralogy
-mv RAxML_bipartitions*5859* paralogs/ #iffy, lots of closely related so could be alleles (all Magnolia)
-mv RAxML_bipartitions*5919* paralogs/ ###iffy, small number of loci
-mv RAxML_bipartitions*5940* paralogs/ #no obvious paralogy
-mv RAxML_bipartitions*5958* paralogs/ ###many species, quite clear paralogy
-mv RAxML_bipartitions*6003* paralogs/ ###lots of species, probably not paralog
-mv RAxML_bipartitions*6004* paralogs/ ###iffy, some potential paralogy but just handful of species in Myristicaceae
-mv RAxML_bipartitions*6051* paralogs/ #no obvious paralogy
-mv RAxML_bipartitions*6068* paralogs/ #no paralogy
-mv RAxML_bipartitions*6110* paralogs/ #quite a few species but with no obvious signs of paralogy
-mv RAxML_bipartitions*6128* paralogs/ ###many, many species - if not paralogy then something strange is happening so better to remove
-mv RAxML_bipartitions*6387* paralogs/ ###obvious paralogy
-mv RAxML_bipartitions*6401* paralogs/ #no paralogy
-mv RAxML_bipartitions*6498* paralogs/ #potential but not real groupings of main/alternative seqs
-mv RAxML_bipartitions*6514* paralogs/ #no paralogy
-mv RAxML_bipartitions*6746* paralogs/ #no paralogy
-mv RAxML_bipartitions*6875* paralogs/ #no paralogy
-mv RAxML_bipartitions*6954* paralogs/ #a few slightly separately sequences but no real evidence of paralogy
-mv RAxML_bipartitions*6955* paralogs/ #perhaps some paralogy in four sequences
-mv RAxML_bipartitions*7333* paralogs/ #no paralogy
+mv RAxML_bipartitions*4951* paralogs/ ###potential paralogy for a 5 species ###
+mv RAxML_bipartitions*4989* paralogs/ #too small #
+mv RAxML_bipartitions*5034* paralogs/ #too small #
+mv RAxML_bipartitions*5064* paralogs/ #too small #
+mv RAxML_bipartitions*5280* paralogs/ #too small #
+mv RAxML_bipartitions*5328* paralogs/ #too small #
+mv RAxML_bipartitions*5347* paralogs/ #no paralogy #
+mv RAxML_bipartitions*5355* paralogs/ ###many sequences but not a lot of clear paralogy #
+mv RAxML_bipartitions*5428* paralogs/ ###paralogy for 4 species ###
+mv RAxML_bipartitions*5434* paralogs/ ###many sequences, a few sequences with potential paralogy ###
+mv RAxML_bipartitions*5578* paralogs/ ###clear paralogy ###
+mv RAxML_bipartitions*5594* paralogs/ #no obvious paralogy #
+mv RAxML_bipartitions*5859* paralogs/ #iffy, potential paralogy in closely related Magnolia ###
+mv RAxML_bipartitions*5919* paralogs/ ###iffy, small number of loci #
+mv RAxML_bipartitions*5940* paralogs/ #no obvious paralogy #
+mv RAxML_bipartitions*5958* paralogs/ ###many species, quite clear paralogy ###
+mv RAxML_bipartitions*6003* paralogs/ ###lots of species, probably not paralog #
+mv RAxML_bipartitions*6004* paralogs/ ###iffy, some potential paralogy but just handful of species in Myristicaceae, small distances ###
+mv RAxML_bipartitions*6051* paralogs/ #no obvious paralogy #
+mv RAxML_bipartitions*6068* paralogs/ #no paralogy #
+mv RAxML_bipartitions*6110* paralogs/ #quite a few species but with no obvious signs of paralogy #
+mv RAxML_bipartitions*6128* paralogs/ ###many, many species - if not paralogy then something strange is happening so better to remove ###
+mv RAxML_bipartitions*6387* paralogs/ ###obvious paralogy ###
+mv RAxML_bipartitions*6401* paralogs/ #no paralogy #
+mv RAxML_bipartitions*6498* paralogs/ #potential but not real groupings of main/alternative seqs #
+mv RAxML_bipartitions*6514* paralogs/ #no paralogy #
+mv RAxML_bipartitions*6746* paralogs/ #no paralogy #
+mv RAxML_bipartitions*6875* paralogs/ #no paralogy #
+mv RAxML_bipartitions*6954* paralogs/ #a few slightly separately sequences but no real evidence of paralogy #
+mv RAxML_bipartitions*6955* paralogs/ #no paralogy #
+mv RAxML_bipartitions*7333* paralogs/ #no paralogy #
 
-
-
+### = currently removed
+#Set of at least four clear paralogs? is that too small?

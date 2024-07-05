@@ -32,7 +32,7 @@ filenames <-
 # MANUAL
 #####
 
-par(mfrow = c(2, 1))
+#par(mfrow = c(1, 1))
 par(mar = c(1, 1, 1, 1))
 
 paralog_yn <- vector()
@@ -51,11 +51,13 @@ for (i in 1:length(files))
   } else {
     #otherwise plot trees and ask for input
 
-    plot(t, type = 'un', cex = 0.5)
+    plot(ladderize(t), type = 'un', cex = 0.5)
     add.scale.bar()
     title(main = filenames[i], cex = 0.5)
-    plot(t, cex = 0.5)
+
+    plot(ladderize(t), cex = 0.5)
     add.scale.bar()
+    title(main = filenames[i], cex = 0.5)
 
     paralog_response <-
       readline(prompt = "Paralog? 1 = yes, 0 = no: ")

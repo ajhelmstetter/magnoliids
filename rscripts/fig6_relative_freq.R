@@ -56,7 +56,7 @@ f1 <- ggplot(data = freqs_meio_20) + aes(x = V8, y = V5, fill = V9) + geom_bar(
   scale_fill_manual(values = c(wesanderson::wes_palettes$Royal1[1],"#D3D3D3","#808080"), name = 'Topology') +
   ylab('Frequency') +
   xlab('') +
-  ylim(0,80) +
+  ylim(0,100) +
   theme(legend.position = "none")
 
 #Phylo

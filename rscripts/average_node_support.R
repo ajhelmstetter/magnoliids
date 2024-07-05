@@ -7,11 +7,10 @@ library(ape)
 library(ggplot2)
 library(patchwork)
 
-
 #list of filepaths to read in
 filepaths_lpp <-
   list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/data/trees",
+    path = paste(here::here(),"/data/trees",sep=""),
     pattern = "*LPP.tre",
     full.names = TRUE,
     recursive = TRUE
@@ -19,7 +18,7 @@ filepaths_lpp <-
 
 filepaths_qs <-
   list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/data/trees",
+    path = paste(here::here(),"/data/trees",sep=""),
     pattern = "*QS.tre",
     full.names = TRUE,
     recursive = TRUE
@@ -28,7 +27,7 @@ filepaths_qs <-
 #names of analyses used to make trees
 filenames <-
   list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/data/trees",
+    path = paste(here::here(),"/data/trees",sep=""),
     pattern = "*LPP.tre",
     full.names = FALSE,
     recursive = TRUE
@@ -107,24 +106,20 @@ phy_lpp$edge.length[phy_lpp$edge.length == "NaN"] <- 0.25
 #To help check whether depths and node labels match:
 
 #plot node depths to check
-pdf("figures/phylo_with_node_depth.pdf",
-    width = 10,
-    height = 20)
+#pdf("figures/phylo_with_node_depth.pdf", width = 10, height = 20)
 plot(ladderize(phy_lpp),
      align.tip.label = TRUE,
      cex = 0.25)
 nodelabels((node.depth(phy_lpp)[node.depth(phy_lpp) > 1]), cex = 0.5)
-dev.off()
+#dev.off()
 
 #plot node depths to check
-pdf("figures/phylo_with_LPP_for_node_depth.pdf",
-    width = 10,
-    height = 20)
+#pdf("figures/phylo_with_LPP_for_node_depth.pdf", width = 10, height = 20)
 plot(ladderize(phy_lpp),
      align.tip.label = TRUE,
      cex = 0.25)
 nodelabels(phy_lpp$node.label, cex = 0.5)
-dev.off()
+#dev.off()
 
 #matrix to compare
 cbind((node.depth(phy_lpp)[node.depth(phy_lpp) > 1]), phy_lpp$node.label)
@@ -266,7 +261,7 @@ plot(res$mean_lpps ~ res_shallow$mean_lpps)
 #list of filepaths to read in
 filepaths_logs <-
   list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/data/trees",
+    path = paste(here::here(),"/data/trees",sep=""),
     pattern = "*LPP.log",
     full.names = TRUE,
     recursive = TRUE
@@ -274,7 +269,7 @@ filepaths_logs <-
 
 filenames <-
   list.files(
-    path = "/home/andrew/Dropbox/projects/AJH_magnoliids/PAFTOL_magnoliids/data/trees",
+    path = paste(here::here(),"/data/trees",sep=""),
     pattern = "*LPP.log",
     full.names = FALSE,
     recursive = TRUE
@@ -453,11 +448,7 @@ p2 <- ggplot(res_shal_deep, aes(x = mean_qss_shal, y = mean_qss_deep)) +
 
 p1+p2
 
-ggsave(
-  "figures/scatterplots_lpp_qs_shallow_vs_deep.png",
-  width = 30,
-  height = 15
-)
+ggsave("figures/scatterplots_lpp_qs_shallow_vs_deep.png",width = 30,height = 15)
 
 
 ggplot(combined_res, aes(x = quartets, y = trees, fill = mean_lpps)) +
@@ -477,11 +468,7 @@ ggplot(combined_res, aes(x = quartets, y = trees, fill = mean_lpps)) +
     size = 3
   ) + scale_fill_gradientn(colours = rainbow(5))
 
-ggsave(
-  "figures/scatter_quartets_vs_notrees_filled_by_mean_lpp.png",
-  width = 15,
-  height = 15
-)
+ggsave("figures/scatter_quartets_vs_notrees_filled_by_mean_lpp.png",width = 15,height = 15)
 
 ggplot(combined_res, aes(x = mean_lpps, y = mean_qss, fill = scores)) +
   geom_point(
@@ -500,11 +487,11 @@ ggplot(combined_res, aes(x = mean_lpps, y = mean_qss, fill = scores)) +
     size = 3
   ) + scale_fill_gradientn(colours = rainbow(5))
 
-ggsave(
-  "figures/scatter_lpp_vs_qss_filled_by_scores.png",
-  width = 15,
-  height = 15
-)
+#ggsave("figures/scatter_lpp_vs_qss_filled_by_scores.png",width = 15,height = 15)
+
+###
+# ---- Make tables ----
+###
 
 #remove columns not used in scoring
 scoring_res <- combined_res[, !names(combined_res) %in% c("filenames",
@@ -529,12 +516,12 @@ rownames(scoring_res)==names(rowSums(scoring_res_scaled))
 scoring_res$combined_scaled<-rowSums(scoring_res_scaled)
 
 colnames(scoring_res)<-
-  c("Normalized scores","Total Quartets","Mean LPP","Mean QS","Sum of scaled values")
+  c("Normalized_scores","Total_Quartets","Mean_LPP","Mean_QS","Sum_of_scaled_values")
 
 
 scoring_res <- round(scoring_res,3)
 
-tree_names<-data.frame(t(sapply(str_split(rownames(scoring_res), "_"),c)))
+tree_names<-data.frame(t(sapply(stringr::str_split(rownames(scoring_res), "_"),c)))
 
 scoring_res$aligner <- tree_names[,1]
 scoring_res$r <- tree_names[,2]
@@ -546,14 +533,59 @@ scoring_res$i<-gsub("i","",scoring_res$i)
 scoring_res$trimmer <- paste(tree_names[,5],tree_names[,6],sep="_")
 scoring_res$trimmer<-gsub("b2_0","gblocks_b2_0",scoring_res$trimmer)
 scoring_res$trimmer<-gsub("b2_d","gblocks_b2_d",scoring_res$trimmer)
-scoring_res$data_type <- rep("supercontigs",length(scoring_res$`Normalized scores`))
+scoring_res$data_type <- rep("supercontigs",length(scoring_res$Normalized_scores))
 scoring_res$data_type[grep("exons",scoring_res$aligner)] <- "exons"
 scoring_res$aligner<-gsub("exons","",scoring_res$aligner)
 scoring_res$aligner<-gsub("astral-","",scoring_res$aligner)
 
 scoring_res <- scoring_res[,c(6:length(colnames(scoring_res)),1:5)]
 
-write.csv(scoring_res,"outputs/average_node_support.csv",row.names = FALSE)
+scoring_res
+
+####
+# ---- Write tables ----
+####
+
+write.csv(scoring_res,"outputs/average_node_support.csv",row.names = T)
+
+scoring_li<- scoring_res[c("astral-mafft_r10_l10_i10_b2_0",
+"astral-mafft_r10_l25_i25_b2_0",
+"astral-mafft_r10_l25_i50_b2_0",
+"astral-mafft_r10_l25_i75_b2_0",
+"astral-mafft_r10_l50_i25_b2_0",
+"astral-mafft_r10_l50_i50_b2_0",
+"astral-mafft_r10_l75_i25_b2_0",
+"astral-mafft_r10_l75_i75_b2_0"),]
+
+write.csv(scoring_li,"outputs/table_SX_scoring_li.csv",row.names = FALSE)
+
+scoring_r<- scoring_res[c("astral-mafft_r10_l50_i50_b2_0",
+                           "astral-mafft_r25_l50_i50_b2_0",
+                           "astral-mafft_r50_l50_i50_b2_0"),]
+
+write.csv(scoring_r,"outputs/table_SX_scoring_r.csv",row.names = FALSE)
+
+scoring_aligner<- scoring_res[c("astral-mafft_r10_l50_i50_b2_0",
+                          "astral-magus_r10_l50_i50_b2_0"),]
+
+write.csv(scoring_aligner,"outputs/table_SX_scoring_aligner.csv",row.names = FALSE)
+
+scoring_data_type<- scoring_res[c("astral-mafft_r10_l50_i50_b2_0",
+                                "astral-mafftexons_r10_l50_i50_b2_0",
+                                "astral-magus_r10_l50_i50_b2_0",
+                                "astral-magusexons_r10_l50_i50_b2_0"),]
+
+write.csv(scoring_data_type,"outputs/table_SX_scoring_data_type.csv",row.names = FALSE)
+
+scoring_trimmer<- scoring_res[c("astral-mafft_r10_l50_i50_b2_0",
+                                  "astral-mafft_r10_l50_i50_b2_d",
+                                  "astral-magus_r10_l50_i50_b2_0",
+                                  "astral-magus_r10_l50_i50_b2_d",
+                                "astral-magus_r10_l50_i50_trimal_02",
+                                "astral-magus_r10_l50_i50_trimal_auto",
+                                "astral-magus_r10_l50_i50_trimal_gappyout"),]
+
+write.csv(scoring_trimmer,"outputs/table_SX_scoring_trimmer.csv",row.names = FALSE)
 
 res_shal_deep$filenames_shal==res_shal_deep$filenames_deep
 
@@ -568,9 +600,93 @@ res_shall_deep_cleaned <- round(res_shall_deep_cleaned,3)
 
 write.csv(res_shall_deep_cleaned,"outputs/shallow_vs_deep_average_node_support.csv")
 
-###PAirs plot
+res_shall_deep_cleaned[c("astral-mafft_r10_l50_i50_b2_0",
+                         "astral-mafftexons_r10_l50_i50_b2_0",
+                         "astral-magus_r10_l50_i50_b2_0",
+                         "astral-magusexons_r10_l50_i50_b2_0"),]
+
+####
+# ---- Depth figure ----
+####
+
+# Libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(viridis)
+library(reshape)
+
+res_shall_deep_cleaned$tree<-rownames(res_shall_deep_cleaned)
+
+melted_df <- melt(res_shall_deep_cleaned, na.rm = FALSE, id = 'tree')
+
+melted_df_qs <- melted_df[grepl("qss",melted_df$variable),]
+colnames(melted_df_qs)[3]<-"Mean_QS"
+
+melted_df_lpp <- melted_df[grepl("lpp",melted_df$variable),]
+colnames(melted_df_lpp)[3]<-"Mean_LPP"
+
+# With transparency (right)
+p1 <- ggplot(data=melted_df_qs, aes(x=Mean_QS, group=variable, fill=variable)) +
+  geom_density(adjust=1.5, alpha=.4) +
+  xlim(55,80) +
+  scale_fill_brewer(palette = "Set1",labels=c("Shallow","Deep")) +
+  labs(fill = "Depth")
+p1
 
 
-png("figures/pairs_quality_scores.png",width=750,height=750)
-pairs(scoring_res[,c("Normalized scores","Total Quartets","Mean LPP","Mean QS")])
-dev.off()
+# With transparency (right)
+p2 <- ggplot(data=melted_df_lpp, aes(x=Mean_LPP, group=variable, fill=variable)) +
+  geom_density(adjust=1.5, alpha=.4) +
+  xlim(0.75,1.0) +
+  scale_fill_brewer(palette = "Set1",labels=c("Shallow","Deep")) +
+  labs(fill = "Depth")
+p2
+
+library(patchwork)
+( p2 / p1 ) + plot_annotation(tag_levels = 'a',tag_prefix="(",tag_suffix=")") & theme(plot.tag = element_text(size = 14))
+
+ggsave("figures/figS5_depths.png",height=10,width=7.5)
+
+####
+# ---- Pairs plot ----
+####
+
+#png("figures/pairs_quality_scores.png",width=750,height=750)
+pairs(scoring_res[,c("Normalized_scores","Total_Quartets","Mean_LPP","Mean_QS")])
+#dev.off()
+
+library(GGally)
+ggpairs(scoring_res[,c("Normalized_scores","Total_Quartets","Mean_LPP","Mean_QS")])
+
+p1 <- ggplot(scoring_res, aes(x=Mean_LPP, y=Mean_QS)) + geom_point(pch=21,fill="grey40",alpha=0.5) + scale_y_continuous(breaks=seq(60,80,2)) + theme_bw()
+p2 <- ggplot(scoring_res, aes(x=Mean_LPP, y=Total_Quartets)) + geom_point(pch=21,fill="grey40",alpha=0.5) + theme_bw()
+p3 <- ggplot(scoring_res, aes(x=Mean_LPP, y=Normalized_scores)) + geom_point(pch=21,fill="grey40",alpha=0.5) + theme_bw()
+p4 <- ggplot(scoring_res, aes(x=Mean_QS, y=Total_Quartets)) + geom_point(pch=21,fill="grey40",alpha=0.5) + scale_x_continuous(breaks=seq(60,80,2)) + theme_bw()
+p5 <- ggplot(scoring_res, aes(x=Mean_QS, y=Normalized_scores)) + geom_point(pch=21,fill="grey40",alpha=0.5) + scale_x_continuous(breaks=seq(60,80,2)) + theme_bw()
+p6 <- ggplot(scoring_res, aes(x=Total_Quartets, y=Normalized_scores)) + geom_point(pch=21,fill="grey40",alpha=0.5) + theme_bw()
+
+library(patchwork)
+
+( p1 + p2 ) / ( p3 + p4 ) / ( p5 + p6 )
+
+ggsave("figures/figS14_scatterplots_quality_scores.png",width=8,height=8)
+
+###
+# ---- Summary stats ----
+###
+
+avg_node_support<-read.csv("outputs/average_node_support.csv")
+
+summary(avg_node_support$Normalized_scores)
+sd(avg_node_support$Normalized_scores)
+
+summary(avg_node_support$Total_Quartets)
+format(sd(avg_node_support$Total_Quartets),scientific = TRUE)
+
+summary(avg_node_support$Mean_LPP)
+sd(avg_node_support$Mean_LPP)
+
+summary(avg_node_support$Mean_QS)
+sd(avg_node_support$Mean_QS)
+

@@ -39,7 +39,7 @@ df <-
 phy$edge.length[phy$edge.length == "NaN"] <- 0.25
 
 #plot tree with node numbers
-pdf("figures/r10_l50_i50_node_numbers.pdf",width=10,height=20)
+#pdf("figures/r10_l50_i50_node_numbers.pdf",width=10,height=20)
 
 plot(
   phy,
@@ -50,7 +50,7 @@ plot(
 )
 nodelabels(cex=0.4)
 
-dev.off()
+#dev.off()
 
 #reroot
 phy <- ape::root(phy, node=251, edgelabel = T, resolve.root = T)
@@ -122,13 +122,13 @@ phy <- sub.taxa.label(phy, dfnames)
 tip_cols<-as.numeric(as.factor(df$Order))
 
 #plot tree with node numbers
-pdf("figures/fig3_support_base.pdf",width=10,height=20)
+pdf("figures/fig5_support_base.pdf",width=10,height=20)
 
 plot(
   phy,
   cex = 0.4,
   label.offset = 0.1,
-  align.tip.label = T,
+  #align.tip.label = T,
   edge.width = 2,
   edge.color = "grey",
   tip.color = tip_cols#,

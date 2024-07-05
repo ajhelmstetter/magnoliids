@@ -1,9 +1,9 @@
-IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+IQ-TREE 2.3.4 COVID-edition built Apr 26 2024
 
 Partition file name: mag.partitions
 Input file name: mag.fa
 Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
-Random seed number: 835304
+Random seed number: 832208
 
 REFERENCES
 ----------
@@ -40,29 +40,34 @@ https://doi.org/10.1093/sysbio/syw037
 SEQUENCE ALIGNMENT
 ------------------
 
-Input data: 244 taxa with 20 partitions and 85071 total sites (2.25816% missing data)
+Input data: 244 taxa with 25 partitions and 85338 total sites (3.08617% missing data)
 
-  ID  Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Type	Seq	Site	Unique	Infor	Invar	Const
-   1  aligned.header.4471_supercontig.FNA+aligned.header.4691_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.6068_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6538_supercontig.FNA+aligned.header.6883_supercontig.FNA+aligned.header.7371_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	239	2266	2005	1301	458	458
-   2  aligned.header.4527_supercontig.FNA+aligned.header.4802_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5188_supercontig.FNA+aligned.header.5200_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5721_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6825_supercontig.FNA+aligned.header.6924_supercontig.FNA+aligned.header.7067_supercontig.FNA+aligned.header.7324_supercontig.FNA                                                                          DNA	242	7192	6931	5060	642	642
-   3  aligned.header.4724_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.7128_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	238	2121	2038	1677	167	167
-   4  aligned.header.4757_supercontig.FNA+aligned.header.4942_supercontig.FNA+aligned.header.5162_supercontig.FNA+aligned.header.5168_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.6389_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6550_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.7029_supercontig.FNA+aligned.header.7572_supercontig.FNA  DNA	243	11009	10874	8855	531	531
-   5  aligned.header.4796_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5333_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.6968_supercontig.FNA                                                                                                                                                                                                                                                                                                  DNA	243	6052	5944	4662	331	331
-   6  aligned.header.4848_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.7136_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      DNA	234	2218	2206	1986	46	46
-   7  aligned.header.4893_supercontig.FNA+aligned.header.5034_supercontig.FNA+aligned.header.5138_supercontig.FNA+aligned.header.5335_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.6882_supercontig.FNA+aligned.header.6961_supercontig.FNA+aligned.header.7194_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	241	9007	8899	7665	481	481
-   8  aligned.header.4954_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5357_supercontig.FNA+aligned.header.5859_supercontig.FNA+aligned.header.5960_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.7296_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	240	2254	2083	1432	353	353
-   9  aligned.header.4989_supercontig.FNA+aligned.header.4992_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6667_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.6865_supercontig.FNA+aligned.header.6955_supercontig.FNA+aligned.header.7313_supercontig.FNA+aligned.header.7363_supercontig.FNA                                                                                                                                                  DNA	243	4447	4100	2745	673	673
-  10  aligned.header.5131_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6782_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	242	3863	3625	2727	498	497
-  11  aligned.header.5163_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6913_supercontig.FNA                                                                                                                                                                                                                                                                                                  DNA	242	7036	6858	5230	515	515
-  12  aligned.header.5220_supercontig.FNA+aligned.header.5656_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6412_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	218	2109	1990	1608	244	244
-  13  aligned.header.5264_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6717_supercontig.FNA+aligned.header.6909_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	239	6019	5794	4359	547	547
-  14  aligned.header.5328_supercontig.FNA+aligned.header.6875_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	226	1350	1298	985	152	152
-  15  aligned.header.5339_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5894_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.7577_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	236	3350	3344	2997	86	86
-  16  aligned.header.5348_supercontig.FNA+aligned.header.6041_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	231	1470	1463	1327	22	22
-  17  aligned.header.5430_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6979_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	241	4511	4467	3654	197	197
-  18  aligned.header.5594_supercontig.FNA+aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA+aligned.header.6110_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	235	2337	2227	1705	259	259
-  19  aligned.header.5933_supercontig.FNA+aligned.header.6029_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DNA	221	5595	5299	4588	538	538
-  20  aligned.header.6498_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.7333_supercontig.FNA+aligned.header.7336_supercontig.FNA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DNA	232	865	737	481	226	225
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	243	6298	5814	3911	905	905	aligned.header.4471_supercontig.FNA+aligned.header.4527_supercontig.FNA+aligned.header.4691_supercontig.FNA+aligned.header.4802_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5721_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6003_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6667_supercontig.FNA+aligned.header.6924_supercontig.FNA+aligned.header.6955_supercontig.FNA+aligned.header.6968_supercontig.FNA
+   2	DNA	242	3956	3886	3032	277	277	aligned.header.4724_supercontig.FNA+aligned.header.4954_supercontig.FNA+aligned.header.5220_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6875_supercontig.FNA
+   3	DNA	243	9935	9658	7453	731	731	aligned.header.4757_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.5919_supercontig.FNA+aligned.header.5960_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.6717_supercontig.FNA+aligned.header.6913_supercontig.FNA
+   4	DNA	243	9779	9357	6978	1004	1004	aligned.header.4796_supercontig.FNA+aligned.header.4942_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6883_supercontig.FNA
+   5	DNA	237	3484	3467	3104	84	84	aligned.header.4848_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5339_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.5894_supercontig.FNA
+   6	DNA	239	3683	3642	3237	174	174	aligned.header.4893_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.6882_supercontig.FNA
+   7	DNA	233	411	393	258	50	50	aligned.header.4989_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.6865_supercontig.FNA+aligned.header.7313_supercontig.FNA
+   8	DNA	241	1994	1851	1289	308	308	aligned.header.4992_supercontig.FNA+aligned.header.5355_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.7363_supercontig.FNA
+   9	DNA	237	5186	5144	4426	259	259	aligned.header.5034_supercontig.FNA+aligned.header.5138_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.6961_supercontig.FNA
+  10	DNA	239	5099	4899	3680	512	512	aligned.header.5131_supercontig.FNA+aligned.header.5200_supercontig.FNA+aligned.header.5264_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6782_supercontig.FNA+aligned.header.6909_supercontig.FNA
+  11	DNA	241	7402	7335	6082	239	239	aligned.header.5162_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6041_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.7029_supercontig.FNA
+  12	DNA	240	3972	3877	2973	257	257	aligned.header.5163_supercontig.FNA+aligned.header.5188_supercontig.FNA+aligned.header.5333_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6825_supercontig.FNA+aligned.header.7067_supercontig.FNA+aligned.header.7324_supercontig.FNA
+  13	DNA	237	3313	3244	2712	195	195	aligned.header.5168_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.7136_supercontig.FNA
+  14	DNA	230	1048	1002	810	90	90	aligned.header.5328_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.7128_supercontig.FNA
+  15	DNA	228	2458	2435	2059	125	125	aligned.header.5335_supercontig.FNA+aligned.header.7194_supercontig.FNA+aligned.header.7577_supercontig.FNA
+  16	DNA	235	1641	1624	1258	90	90	aligned.header.5348_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6389_supercontig.FNA
+  17	DNA	190	529	464	342	94	94	aligned.header.5357_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6550_supercontig.FNA
+  18	DNA	242	3823	3787	3120	182	182	aligned.header.5430_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.6979_supercontig.FNA+aligned.header.7572_supercontig.FNA
+  19	DNA	237	1800	1633	1136	324	324	aligned.header.5594_supercontig.FNA+aligned.header.6110_supercontig.FNA+aligned.header.6498_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.6538_supercontig.FNA+aligned.header.7336_supercontig.FNA
+  20	DNA	212	1806	1699	1390	194	194	aligned.header.5656_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6412_supercontig.FNA
+  21	DNA	223	1358	1313	1045	111	111	aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA
+  22	DNA	215	3506	3231	2753	434	434	aligned.header.5933_supercontig.FNA
+  23	DNA	202	2089	2078	1835	104	104	aligned.header.6029_supercontig.FNA
+  24	DNA	202	413	310	206	137	137	aligned.header.6068_supercontig.FNA+aligned.header.7296_supercontig.FNA+aligned.header.7371_supercontig.FNA
+  25	DNA	183	355	297	199	104	104	aligned.header.7333_supercontig.FNA
 
 Column meanings:
   Unique: Number of unique site patterns
@@ -73,31 +78,36 @@ Column meanings:
 ModelFinder
 -----------
 
-Best-fit model according to BIC: GTR+F+R5:aligned.header.4471_supercontig.FNA+aligned.header.4691_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.6068_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6538_supercontig.FNA+aligned.header.6883_supercontig.FNA+aligned.header.7371_supercontig.FNA,GTR+F+R5:aligned.header.4527_supercontig.FNA+aligned.header.4802_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5188_supercontig.FNA+aligned.header.5200_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5721_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6825_supercontig.FNA+aligned.header.6924_supercontig.FNA+aligned.header.7067_supercontig.FNA+aligned.header.7324_supercontig.FNA,TIM2+F+R5:aligned.header.4724_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.7128_supercontig.FNA,GTR+F+R6:aligned.header.4757_supercontig.FNA+aligned.header.4942_supercontig.FNA+aligned.header.5162_supercontig.FNA+aligned.header.5168_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.6389_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6550_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.7029_supercontig.FNA+aligned.header.7572_supercontig.FNA,GTR+F+R5:aligned.header.4796_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5333_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.6968_supercontig.FNA,TIM2+F+R5:aligned.header.4848_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.7136_supercontig.FNA,TIM3+F+R5:aligned.header.4893_supercontig.FNA+aligned.header.5034_supercontig.FNA+aligned.header.5138_supercontig.FNA+aligned.header.5335_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.6882_supercontig.FNA+aligned.header.6961_supercontig.FNA+aligned.header.7194_supercontig.FNA,GTR+F+R5:aligned.header.4954_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5357_supercontig.FNA+aligned.header.5859_supercontig.FNA+aligned.header.5960_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.7296_supercontig.FNA,GTR+F+R5:aligned.header.4989_supercontig.FNA+aligned.header.4992_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6667_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.6865_supercontig.FNA+aligned.header.6955_supercontig.FNA+aligned.header.7313_supercontig.FNA+aligned.header.7363_supercontig.FNA,GTR+F+R5:aligned.header.5131_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6782_supercontig.FNA,GTR+F+R5:aligned.header.5163_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6913_supercontig.FNA,TVM+F+R4:aligned.header.5220_supercontig.FNA+aligned.header.5656_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6412_supercontig.FNA,GTR+F+R5:aligned.header.5264_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6717_supercontig.FNA+aligned.header.6909_supercontig.FNA,TIM3+F+R5:aligned.header.5328_supercontig.FNA+aligned.header.6875_supercontig.FNA,TPM3+F+R5:aligned.header.5339_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5894_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.7577_supercontig.FNA,TPM2+F+G4:aligned.header.5348_supercontig.FNA+aligned.header.6041_supercontig.FNA,TIM2+F+R5:aligned.header.5430_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6979_supercontig.FNA,TIM3e+R5:aligned.header.5594_supercontig.FNA+aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA+aligned.header.6110_supercontig.FNA,TPM3+F+R5:aligned.header.5933_supercontig.FNA+aligned.header.6029_supercontig.FNA,TIM3+F+R5:aligned.header.6498_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.7333_supercontig.FNA+aligned.header.7336_supercontig.FNA
+Best-fit model according to BIC: GTR+F+R5:aligned.header.4471_supercontig.FNA+aligned.header.4527_supercontig.FNA+aligned.header.4691_supercontig.FNA+aligned.header.4802_supercontig.FNA+aligned.header.5032_supercontig.FNA+aligned.header.5206_supercontig.FNA+aligned.header.5406_supercontig.FNA+aligned.header.5528_supercontig.FNA+aligned.header.5536_supercontig.FNA+aligned.header.5639_supercontig.FNA+aligned.header.5702_supercontig.FNA+aligned.header.5721_supercontig.FNA+aligned.header.5849_supercontig.FNA+aligned.header.6003_supercontig.FNA+aligned.header.6034_supercontig.FNA+aligned.header.6038_supercontig.FNA+aligned.header.6130_supercontig.FNA+aligned.header.6148_supercontig.FNA+aligned.header.6284_supercontig.FNA+aligned.header.6295_supercontig.FNA+aligned.header.6303_supercontig.FNA+aligned.header.6366_supercontig.FNA+aligned.header.6405_supercontig.FNA+aligned.header.6432_supercontig.FNA+aligned.header.6459_supercontig.FNA+aligned.header.6462_supercontig.FNA+aligned.header.6496_supercontig.FNA+aligned.header.6639_supercontig.FNA+aligned.header.6667_supercontig.FNA+aligned.header.6924_supercontig.FNA+aligned.header.6955_supercontig.FNA+aligned.header.6968_supercontig.FNA,GTR+F+R5:aligned.header.4724_supercontig.FNA+aligned.header.4954_supercontig.FNA+aligned.header.5220_supercontig.FNA+aligned.header.6487_supercontig.FNA+aligned.header.6492_supercontig.FNA+aligned.header.6875_supercontig.FNA,GTR+F+R5:aligned.header.4757_supercontig.FNA+aligned.header.4932_supercontig.FNA+aligned.header.5326_supercontig.FNA+aligned.header.5404_supercontig.FNA+aligned.header.5426_supercontig.FNA+aligned.header.5772_supercontig.FNA+aligned.header.5840_supercontig.FNA+aligned.header.5913_supercontig.FNA+aligned.header.5919_supercontig.FNA+aligned.header.5960_supercontig.FNA+aligned.header.6016_supercontig.FNA+aligned.header.6139_supercontig.FNA+aligned.header.6226_supercontig.FNA+aligned.header.6274_supercontig.FNA+aligned.header.6450_supercontig.FNA+aligned.header.6570_supercontig.FNA+aligned.header.6649_supercontig.FNA+aligned.header.6652_supercontig.FNA+aligned.header.6717_supercontig.FNA+aligned.header.6913_supercontig.FNA,GTR+F+R5:aligned.header.4796_supercontig.FNA+aligned.header.4942_supercontig.FNA+aligned.header.5090_supercontig.FNA+aligned.header.5116_supercontig.FNA+aligned.header.5271_supercontig.FNA+aligned.header.5273_supercontig.FNA+aligned.header.5280_supercontig.FNA+aligned.header.5343_supercontig.FNA+aligned.header.5614_supercontig.FNA+aligned.header.5620_supercontig.FNA+aligned.header.5644_supercontig.FNA+aligned.header.5744_supercontig.FNA+aligned.header.5858_supercontig.FNA+aligned.header.5940_supercontig.FNA+aligned.header.5950_supercontig.FNA+aligned.header.5977_supercontig.FNA+aligned.header.5981_supercontig.FNA+aligned.header.6176_supercontig.FNA+aligned.header.6460_supercontig.FNA+aligned.header.6494_supercontig.FNA+aligned.header.6500_supercontig.FNA+aligned.header.6527_supercontig.FNA+aligned.header.6559_supercontig.FNA+aligned.header.6563_supercontig.FNA+aligned.header.6883_supercontig.FNA,TIM2+F+R5:aligned.header.4848_supercontig.FNA+aligned.header.5318_supercontig.FNA+aligned.header.5339_supercontig.FNA+aligned.header.5502_supercontig.FNA+aligned.header.5551_supercontig.FNA+aligned.header.5841_supercontig.FNA+aligned.header.5853_supercontig.FNA+aligned.header.5894_supercontig.FNA,TIM3+F+R4:aligned.header.4893_supercontig.FNA+aligned.header.5815_supercontig.FNA+aligned.header.6238_supercontig.FNA+aligned.header.6746_supercontig.FNA+aligned.header.6882_supercontig.FNA,TIM2+F+R4:aligned.header.4989_supercontig.FNA+aligned.header.5945_supercontig.FNA+aligned.header.6865_supercontig.FNA+aligned.header.7313_supercontig.FNA,GTR+F+R5:aligned.header.4992_supercontig.FNA+aligned.header.5355_supercontig.FNA+aligned.header.5398_supercontig.FNA+aligned.header.5463_supercontig.FNA+aligned.header.6298_supercontig.FNA+aligned.header.6860_supercontig.FNA+aligned.header.7363_supercontig.FNA,TIM3+F+R5:aligned.header.5034_supercontig.FNA+aligned.header.5138_supercontig.FNA+aligned.header.5949_supercontig.FNA+aligned.header.6961_supercontig.FNA,GTR+F+R5:aligned.header.5131_supercontig.FNA+aligned.header.5200_supercontig.FNA+aligned.header.5264_supercontig.FNA+aligned.header.6026_supercontig.FNA+aligned.header.6051_supercontig.FNA+aligned.header.6420_supercontig.FNA+aligned.header.6439_supercontig.FNA+aligned.header.6528_supercontig.FNA+aligned.header.6782_supercontig.FNA+aligned.header.6909_supercontig.FNA,GTR+F+R4:aligned.header.5162_supercontig.FNA+aligned.header.5427_supercontig.FNA+aligned.header.5599_supercontig.FNA+aligned.header.5664_supercontig.FNA+aligned.header.5922_supercontig.FNA+aligned.header.5943_supercontig.FNA+aligned.header.6041_supercontig.FNA+aligned.header.6098_supercontig.FNA+aligned.header.6221_supercontig.FNA+aligned.header.6378_supercontig.FNA+aligned.header.6404_supercontig.FNA+aligned.header.6506_supercontig.FNA+aligned.header.6533_supercontig.FNA+aligned.header.6552_supercontig.FNA+aligned.header.6779_supercontig.FNA+aligned.header.6914_supercontig.FNA+aligned.header.6954_supercontig.FNA+aligned.header.7029_supercontig.FNA,GTR+F+R5:aligned.header.5163_supercontig.FNA+aligned.header.5188_supercontig.FNA+aligned.header.5333_supercontig.FNA+aligned.header.6036_supercontig.FNA+aligned.header.6320_supercontig.FNA+aligned.header.6797_supercontig.FNA+aligned.header.6825_supercontig.FNA+aligned.header.7067_supercontig.FNA+aligned.header.7324_supercontig.FNA,GTR+F+R5:aligned.header.5168_supercontig.FNA+aligned.header.5449_supercontig.FNA+aligned.header.5596_supercontig.FNA+aligned.header.5918_supercontig.FNA+aligned.header.6620_supercontig.FNA+aligned.header.7136_supercontig.FNA,HKY+F+R5:aligned.header.5328_supercontig.FNA+aligned.header.5893_supercontig.FNA+aligned.header.7128_supercontig.FNA,TIM3+F+I+G4:aligned.header.5335_supercontig.FNA+aligned.header.7194_supercontig.FNA+aligned.header.7577_supercontig.FNA,TIM2+F+R3:aligned.header.5348_supercontig.FNA+aligned.header.5477_supercontig.FNA+aligned.header.5716_supercontig.FNA+aligned.header.5944_supercontig.FNA+aligned.header.5974_supercontig.FNA+aligned.header.6318_supercontig.FNA+aligned.header.6373_supercontig.FNA+aligned.header.6389_supercontig.FNA,TN+F+R4:aligned.header.5357_supercontig.FNA+aligned.header.6379_supercontig.FNA+aligned.header.6550_supercontig.FNA,GTR+F+R5:aligned.header.5430_supercontig.FNA+aligned.header.5464_supercontig.FNA+aligned.header.5554_supercontig.FNA+aligned.header.5822_supercontig.FNA+aligned.header.6119_supercontig.FNA+aligned.header.6376_supercontig.FNA+aligned.header.6979_supercontig.FNA+aligned.header.7572_supercontig.FNA,SYM+R5:aligned.header.5594_supercontig.FNA+aligned.header.6110_supercontig.FNA+aligned.header.6498_supercontig.FNA+aligned.header.6532_supercontig.FNA+aligned.header.6538_supercontig.FNA+aligned.header.7336_supercontig.FNA,TPM2u+F+R4:aligned.header.5656_supercontig.FNA+aligned.header.5990_supercontig.FNA+aligned.header.6401_supercontig.FNA+aligned.header.6412_supercontig.FNA,TIM3e+R4:aligned.header.5910_supercontig.FNA+aligned.header.5942_supercontig.FNA,GTR+F+I+G4:aligned.header.5933_supercontig.FNA,GTR+F+I+G4:aligned.header.6029_supercontig.FNA,TIM3+F+I+G4:aligned.header.6068_supercontig.FNA+aligned.header.7296_supercontig.FNA+aligned.header.7371_supercontig.FNA,GTR+F+I+G4:aligned.header.7333_supercontig.FNA
 
 List of best-fit models per partition:
 
   ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
-   1  GTR+F+R5         -66649.471  133332.942 + 5.82e-315  133333.214 + 5.45e-317  133430.280 + 1.73e-316
-   2  GTR+F+R5        -242008.230  484050.461 + 5.82e-315  484050.546 + 5.45e-317  484167.433 + 1.73e-316
-   3  TIM2+F+R5        -84401.180  168832.360 + 5.82e-315  168832.588 + 5.45e-317  168917.255 + 1.73e-316
-   4  GTR+F+R6        -400497.531  801033.062 + 5.82e-315  801033.131 + 5.45e-317  801171.884 + 1.73e-316
-   5  GTR+F+R5        -201574.278  403182.557 + 5.82e-315  403182.658 + 5.45e-317  403296.595 + 1.73e-316
-   6  TIM2+F+R5        -91475.070  182980.139 + 5.82e-315  182980.357 + 5.45e-317  183065.705 + 1.73e-316
-   7  TIM3+F+R5       -332393.351  664816.701 + 5.82e-315  664816.755 + 5.45e-317  664923.288 + 1.73e-316
-   8  GTR+F+R5         -71576.304  143186.608 + 5.82e-315  143186.882 + 5.45e-317  143283.856 + 1.73e-316
-   9  GTR+F+R5        -129557.418  259148.837 + 5.82e-315  259148.975 + 5.45e-317  259257.637 + 1.73e-316
-  10  GTR+F+R5        -140076.554  280187.108 + 5.82e-315  280187.268 + 5.45e-317  280293.515 + 1.73e-316
-  11  GTR+F+R5        -239375.684  478785.368 + 5.82e-315  478785.455 + 5.45e-317  478901.967 + 1.73e-316
-  12  TVM+F+R4         -72970.238  145968.476 + 5.82e-315  145968.677 + 5.45e-317  146047.632 + 1.73e-316
-  13  GTR+F+R5        -210736.294  421506.588 + 5.82e-315  421506.690 + 5.45e-317  421620.534 + 1.73e-316
-  14  TIM3+F+R5        -48162.081   96354.163 + 5.82e-315   96354.522 + 5.45e-317   96432.280 + 1.73e-316
-  15  TPM3+F+R5       -137101.093  274230.185 + 5.82e-315  274230.311 + 5.45e-317  274315.819 + 1.73e-316
-  16  TPM2+F+G4        -57597.966  115209.932 + 5.82e-315  115210.008 + 5.45e-317  115246.983 + 1.73e-316
-  17  TIM2+F+R5       -171696.287  343422.575 + 5.82e-315  343422.682 + 5.45e-317  343518.789 + 1.73e-316
-  18  TIM3e+R5         -90490.372  181004.743 + 5.82e-315  181004.878 + 5.45e-317  181073.823 + 1.73e-316
-  19  TPM3+F+R5       -168473.583  336975.166 + 5.82e-315  336975.241 + 5.45e-317  337067.980 + 1.73e-316
-  20  TIM3+F+R5        -27312.290   54654.580 + 5.82e-315   54655.145 + 5.45e-317   54726.021 + 1.73e-316
+   1  GTR+F+R5        -187956.492  375946.984 - 8.07e-317  375947.082 + 1.19e-322  376061.700 + 6.95e-310
+   2  GTR+F+R5        -149625.240  299284.480 - 8.07e-317  299284.636 + 1.19e-322  299391.291 + 6.95e-310
+   3  GTR+F+R5        -352681.397  705396.795 - 8.07e-317  705396.857 + 1.19e-322  705519.260 + 6.95e-310
+   4  GTR+F+R5        -335015.386  670064.772 - 8.07e-317  670064.835 + 1.19e-322  670186.968 + 6.95e-310
+   5  TIM2+F+R5       -141993.300  284016.600 - 8.07e-317  284016.738 + 1.19e-322  284108.939 + 6.95e-310
+   6  TIM3+F+R4       -150999.477  302024.954 - 8.07e-317  302025.053 + 1.19e-322  302105.703 + 6.95e-310
+   7  TIM2+F+R4        -10707.599   21441.198 - 8.07e-317   21442.115 + 1.19e-322   21493.440 + 6.95e-310
+   8  GTR+F+R5         -59909.115  119852.231 - 8.07e-317  119852.540 + 1.19e-322  119947.395 + 6.95e-310
+   9  TIM3+F+R5       -192823.382  385676.763 - 8.07e-317  385676.856 + 1.19e-322  385775.069 + 6.95e-310
+  10  GTR+F+R5        -179019.590  358073.180 - 8.07e-317  358073.300 + 1.19e-322  358184.306 + 6.95e-310
+  11  GTR+F+R4        -264621.076  529272.153 - 8.07e-317  529272.218 + 1.19e-322  529375.795 + 6.95e-310
+  12  GTR+F+R5        -134704.044  269442.089 - 8.07e-317  269442.243 + 1.19e-322  269548.968 + 6.95e-310
+  13  GTR+F+R5        -129144.972  258323.943 - 8.07e-317  258324.129 + 1.19e-322  258427.739 + 6.95e-310
+  14  HKY+F+R5         -39839.763   79705.526 - 8.07e-317   79705.878 + 1.19e-322   79769.936 + 6.95e-310
+  15  TIM3+F+I+G4      -85423.234  170864.468 - 8.07e-317  170864.542 + 1.19e-322  170916.732 + 6.95e-310
+  16  TIM2+F+R3        -51191.811  102405.622 - 8.07e-317  102405.784 + 1.19e-322  102465.056 + 6.95e-310
+  17  TN+F+R4          -14489.019   29002.038 - 8.07e-317   29002.643 + 1.19e-322   29053.290 + 6.95e-310
+  18  GTR+F+R5        -147615.865  295265.731 - 8.07e-317  295265.892 + 1.19e-322  295371.960 + 6.95e-310
+  19  SYM+R5           -64411.498  128850.997 - 8.07e-317  128851.232 + 1.19e-322  128927.934 + 6.95e-310
+  20  TPM2u+F+R4       -61436.410  122896.820 - 8.07e-317  122896.994 + 1.19e-322  122962.807 + 6.95e-310
+  21  TIM3e+R4         -53711.482  107442.964 - 8.07e-317  107443.128 + 1.19e-322  107495.102 + 6.95e-310
+  22  GTR+F+I+G4      -104209.688  208441.375 - 8.07e-317  208441.451 + 1.19e-322  208509.160 + 6.95e-310
+  23  GTR+F+I+G4       -64370.728  128763.455 - 8.07e-317  128763.582 + 1.19e-322  128825.544 + 6.95e-310
+  24  TIM3+F+I+G4       -9017.321   18052.641 - 8.07e-317   18053.088 + 1.19e-322   18088.852 + 6.95e-310
+  25  GTR+F+I+G4       -10835.101   21692.202 - 8.07e-317   21692.971 + 1.19e-322   21734.795 + 6.95e-310
 
 AIC, w-AIC   : Akaike information criterion scores and weights.
 AICc, w-AICc : Corrected AIC scores and weights.
@@ -112,39 +122,44 @@ SUBSTITUTION PROCESS
 Edge-linked-proportional partition model with separate substitution models and separate rates across sites
 
   ID  Model           Speed  Parameters
-   1  GTR+F+R5       0.5705  GTR{1.43516,3.77132,1.5049,1.25958,5.77167}+F{0.295102,0.209817,0.257953,0.237128}+R5{0.402067,0.129038,0.223517,0.472756,0.210488,1.42413,0.142218,2.97442,0.0217105,5.5121}
-   2  GTR+F+R5       0.6606  GTR{1.67952,3.59197,1.28085,1.41352,5.7133}+F{0.279396,0.171058,0.27137,0.278176}+R5{0.381223,0.211482,0.240313,0.625081,0.237237,1.47364,0.129834,2.76431,0.011393,5.32422}
-   3  TIM2+F+R5      0.9431  TIM2{1.20499,2.83513,3.54107}+F{0.262483,0.221646,0.268926,0.246945}+R5{0.178102,0.123482,0.326986,0.429578,0.299497,1.12452,0.15789,2.24005,0.0375256,3.91922}
-   4  GTR+F+R6       0.8635  GTR{1.35807,3.37469,1.22732,1.26052,4.36124}+F{0.269181,0.190699,0.245125,0.294995}+R6{0.13258,0.17686,0.305565,0.394288,0.285825,0.958935,0.208939,1.77644,0.0645033,3.01611,0.00258812,6.28547}
-   5  GTR+F+R5       0.6848  GTR{1.39003,3.39937,1.15447,1.15499,4.58894}+F{0.276567,0.181695,0.253464,0.288274}+R5{0.346871,0.27339,0.248296,0.667115,0.279685,1.41443,0.110729,2.50846,0.0144187,4.58924}
-   6  TIM2+F+R5      1.0422  TIM2{1.1745,2.56812,3.41851}+F{0.266007,0.191661,0.269813,0.272519}+R5{0.115559,0.222845,0.446645,0.578948,0.290374,1.25176,0.139145,2.25083,0.00827762,4.7108}
-   7  TIM3+F+R5      1.4778  TIM3{1.206,2.74894,3.42093}+F{0.282549,0.1806,0.227701,0.30915}+R5{0.118882,0.106182,0.216719,0.335593,0.267286,0.821248,0.316106,1.52897,0.0810068,2.61489}
-   8  GTR+F+R5       0.7338  GTR{1.59466,3.94341,1.21983,1.25963,6.39679}+F{0.256009,0.203106,0.274723,0.266162}+R5{0.34664,0.123207,0.280718,0.501472,0.211695,1.38898,0.133044,2.79636,0.0279037,5.3914}
-   9  GTR+F+R5       0.5095  GTR{1.74128,4.07588,1.27345,1.3236,6.94352}+F{0.281325,0.173832,0.260122,0.284722}+R5{0.384776,0.169934,0.227127,0.505832,0.209847,1.32457,0.152124,2.68992,0.0261254,5.07418}
-  10  GTR+F+R5       0.7405  GTR{1.62492,3.98338,1.21414,1.42374,4.89868}+F{0.266919,0.179835,0.259467,0.293778}+R5{0.217544,0.0816574,0.290212,0.370283,0.255217,1.08934,0.197772,2.20973,0.0392547,4.06917}
-  11  GTR+F+R5       0.7234  GTR{1.23005,3.36461,1.23428,1.13088,4.64847}+F{0.291346,0.192533,0.243717,0.272404}+R5{0.252739,0.19254,0.340615,0.498904,0.264744,1.3759,0.131397,2.71408,0.0105058,5.7609}
-  12  TVM+F+R4       1.3251  TVM{1.34424,3.49122,1.14071,1.11043}+F{0.262816,0.198139,0.228961,0.310084}+R4{0.259073,0.0847653,0.242503,0.47809,0.307722,1.31058,0.190702,2.40588}
-  13  GTR+F+R5       0.8397  GTR{1.49291,3.48371,1.24948,1.25197,5.03805}+F{0.26463,0.182364,0.270562,0.282443}+R5{0.369328,0.178122,0.21086,0.581573,0.222766,1.27938,0.154227,2.28762,0.0428196,4.05822}
-  14  TIM3+F+R5      1.1922  TIM3{1.42448,3.34392,4.74514}+F{0.259397,0.177357,0.305833,0.257413}+R5{0.257367,0.0837249,0.23408,0.403882,0.264731,1.08084,0.216234,2.14517,0.0275873,4.85442}
-  15  TPM3+F+R5      1.3147  TPM3{0.890416,2.54593}+F{0.272225,0.220476,0.21916,0.288139}+R5{0.164484,0.21737,0.33718,0.533031,0.317041,1.1787,0.170776,2.16284,0.0105184,3.94169}
-  16  TPM2+F+G4      0.8910  TPM2{1.1176,3.33798}+F{0.271384,0.200863,0.214783,0.31297}+G4{2.49357}
-  17  TIM2+F+R5      1.0194  TIM2{1.1834,2.90955,4.25872}+F{0.292018,0.192116,0.258399,0.257467}+R5{0.310772,0.234606,0.206596,0.562819,0.269658,1.12099,0.182238,2.15012,0.0307357,3.79679}
-  18  TIM3e+R5       0.9634  TIM3e{1.30964,2.96025,3.51169}+FQ+R5{0.303484,0.107153,0.308097,0.499644,0.186857,1.33903,0.133315,2.37014,0.0682472,3.62446}
-  19  TPM3+F+R5      2.3478  TPM3{1.20953,2.87558}+F{0.27386,0.184247,0.205866,0.336026}+R5{0.0362819,0.0713125,0.191248,0.305841,0.242203,0.72129,0.397739,1.23851,0.132529,2.04953}
-  20  TIM3+F+R5      0.8392  TIM3{1.17925,2.7986,4.00004}+F{0.221137,0.284099,0.278247,0.216517}+R5{0.33818,0.0423303,0.294919,0.325286,0.176086,1.28543,0.130864,2.78636,0.0599495,4.98367}
+   1  GTR+F+R5       0.5608  GTR{1.74845,3.81408,1.40365,1.35413,5.9371}+F{0.271499,0.17999,0.266117,0.282394}+R5{0.418456,0.180067,0.228707,0.609769,0.218388,1.59382,0.119395,2.95002,0.0150541,5.6399}
+   2  GTR+F+R5       1.0763  GTR{1.51605,3.366,1.18708,1.18069,4.66079}+F{0.259127,0.1867,0.277494,0.276679}+R5{0.298686,0.151501,0.222408,0.481104,0.249475,1.14888,0.182038,2.15553,0.047393,3.56051}
+   3  GTR+F+R5       0.7656  GTR{1.38709,3.35915,1.29012,1.20307,4.83923}+F{0.268523,0.188779,0.260466,0.282232}+R5{0.332347,0.202836,0.260087,0.58176,0.248367,1.34539,0.141402,2.54541,0.0177955,4.9002}
+   4  GTR+F+R5       0.7078  GTR{1.35939,3.70357,1.17023,1.23927,4.81876}+F{0.273686,0.191252,0.25117,0.283892}+R5{0.217786,0.122875,0.323817,0.422646,0.244595,1.16827,0.181251,2.28018,0.0325509,4.21931}
+   5  TIM2+F+R5      1.1250  TIM2{1.08066,2.53651,3.33654}+F{0.28107,0.199466,0.252403,0.267062}+R5{0.179802,0.255227,0.386368,0.618208,0.290633,1.25039,0.12919,2.27576,0.0140064,4.12984}
+   6  TIM3+F+R4      1.3903  TIM3{1.07765,2.33715,3.15412}+F{0.2919,0.195953,0.235138,0.277009}+R4{0.132044,0.125939,0.325175,0.493725,0.378189,1.20899,0.164592,2.22123}
+   7  TIM2+F+R4      0.4305  TIM2{1.27209,2.73898,7.28092}+F{0.309836,0.157717,0.291646,0.240801}+R4{0.422991,0.279149,0.344021,0.855302,0.200273,2.12607,0.0327144,4.94847}
+   8  GTR+F+R5       0.5273  GTR{1.57785,4.24113,1.137,1.22139,6.81894}+F{0.308877,0.167586,0.256763,0.266774}+R5{0.323107,0.129896,0.278516,0.511682,0.200682,1.25496,0.169038,2.5186,0.0286573,4.81318}
+   9  TIM3+F+R5      1.5337  TIM3{1.19817,2.97746,3.2969}+F{0.273927,0.184916,0.222637,0.31852}+R5{0.142282,0.122035,0.205295,0.335822,0.258793,0.848919,0.33631,1.58245,0.0573207,2.82284}
+  10  GTR+F+R5       0.8545  GTR{1.55535,3.69677,1.25777,1.29863,5.00328}+F{0.275613,0.178256,0.261003,0.285129}+R5{0.257553,0.138389,0.242705,0.35455,0.243732,1.03077,0.202303,2.0633,0.0537067,3.90383}
+  11  GTR+F+R4       0.8112  GTR{1.27358,3.18919,1.16389,1.16706,4.20635}+F{0.281786,0.191398,0.241399,0.285416}+R4{0.413669,0.356143,0.346453,0.978267,0.20699,1.91653,0.0328874,3.55904}
+  12  GTR+F+R5       0.6985  GTR{1.64422,3.30397,1.06483,1.38932,5.91066}+F{0.308442,0.1609,0.261292,0.269365}+R5{0.362054,0.232578,0.265785,0.730986,0.283251,1.55423,0.0823554,2.93566,0.00655473,6.02663}
+  13  GTR+F+R5       0.9261  GTR{1.42854,3.36298,1.23976,1.23859,3.93668}+F{0.257925,0.197379,0.248658,0.296039}+R5{0.144205,0.111322,0.29336,0.452807,0.360936,1.05998,0.185297,2.19197,0.0162028,3.84878}
+  14  HKY+F+R5       1.0577  HKY{3.13685}+F{0.265745,0.228697,0.261314,0.244245}+R5{0.221429,0.0949345,0.334619,0.488832,0.274171,1.23211,0.14929,2.46372,0.0204908,5.35804}
+  15  TIM3+F+I+G4    1.4048  TIM3{1.13736,2.8158,3.16739}+F{0.274804,0.182108,0.225366,0.317721}+I{0.0109159}+G4{1.47665}
+  16  TIM2+F+R3      0.6874  TIM2{1.33702,3.08529,4.58505}+F{0.279911,0.181896,0.263919,0.274275}+R3{0.516222,0.380261,0.340208,1.22737,0.14357,2.68957}
+  17  TN+F+R4        0.9482  TN{2.89744,5.1343}+F{0.295863,0.204097,0.263757,0.236284}+R4{0.402486,0.160467,0.371335,0.911306,0.188571,2.2433,0.0376083,4.62648}
+  18  GTR+F+R5       0.9605  GTR{1.35661,3.1889,1.2625,1.1507,4.52569}+F{0.277655,0.19098,0.258537,0.272827}+R5{0.285349,0.231233,0.247516,0.544797,0.305513,1.26669,0.151274,2.36866,0.0103481,5.20525}
+  19  SYM+R5         0.8202  SYM{1.25573,3.33206,1.04405,1.56536,4.40189}+FQ+R5{0.36386,0.0849593,0.275532,0.477792,0.159885,1.40016,0.16275,2.67366,0.0379725,4.69911}
+  20  TPM2u+F+R4     1.3527  TPM2u{1.12545,3.0773}+F{0.261466,0.206774,0.222954,0.308806}+R4{0.242442,0.0895146,0.280277,0.469408,0.30032,1.37701,0.176961,2.44794}
+  21  TIM3e+R4       1.0524  TIM3e{1.17995,2.67031,3.0018}+FQ+R4{0.339727,0.150228,0.300577,0.591513,0.211527,1.48789,0.148169,3.08053}
+  22  GTR+F+I+G4     2.3793  GTR{1.12552,2.66478,0.961545,1.19346,2.77088}+F{0.278171,0.184864,0.210301,0.326664}+I{0.00965372}+G4{1.90541}
+  23  GTR+F+I+G4     2.1071  GTR{1.1365,3.01082,0.97292,1.23706,2.84333}+F{0.267494,0.183477,0.199458,0.349571}+I{0.00321935}+G4{2.66664}
+  24  TIM3+F+I+G4    0.6482  TIM3{1.61602,4.53299,6.3735}+F{0.304007,0.202436,0.234689,0.258868}+I{0.243689}+G4{1.0147}
+  25  GTR+F+I+G4     1.0488  GTR{1.49278,3.14405,1.2907,0.936202,3.80612}+F{0.20457,0.36159,0.240794,0.193046}+I{0.217547}+G4{0.74871}
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -2983486.5624 (s.e. 7348.3628)
-Unconstrained log-likelihood (without tree): -721881.5654
-Number of free parameters (#branches + #model parameters): 790
-Akaike information criterion (AIC) score: 5968553.1247
-Corrected Akaike information criterion (AICc) score: 5968567.9536
-Bayesian information criterion (BIC) score: 5975940.6055
+Log-likelihood of the tree: -2994805.9885 (s.e. 7359.4395)
+Unconstrained log-likelihood (without tree): -713107.2599
+Number of free parameters (#branches + #model parameters): 831
+Akaike information criterion (AIC) score: 5991273.9770
+Corrected Akaike information criterion (AICc) score: 5991290.3401
+Bayesian information criterion (BIC) score: 5999047.4627
 
-Total tree length (sum of branch lengths): 17.8848
-Sum of internal branch lengths: 4.1584 (23.2508% of tree length)
+Total tree length (sum of branch lengths): 17.8748
+Sum of internal branch lengths: 3.9484 (22.0894% of tree length)
 
 NOTE: Tree is UNROOTED although outgroup taxon 'P_012861' is drawn at root
 Numbers in parentheses are  ultrafast bootstrap support (%)
@@ -192,7 +207,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |  |     |  |     |     |  +--P_012807
 |  |  |     |  |     |     +--| (100)
 |  |  |     |  |     |        +--P_012845
-|  |  |     |  |  +--| (99)
+|  |  |     |  |  +--| (92)
 |  |  |     |  |  |  |     +--GAP_81172
 |  |  |     |  |  |  |  +--| (100)
 |  |  |     |  |  |  |  |  +--P_012833
@@ -218,7 +233,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |  |     |     +--P_012909
 |  |  |  +--| (100)
 |  |  |  |  |        +--P_012803
-|  |  |  |  |     +--| (94)
+|  |  |  |  |     +--| (89)
 |  |  |  |  |     |  +--P_012853
 |  |  |  |  |  +--| (100)
 |  |  |  |  |  |  |  +--P_012829
@@ -233,40 +248,40 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |  +--| (100)
 |  |     +--P_012843
 +--| (100)
-|  |                             +--P_012897
-|  |                          +--| (48)
-|  |                          |  |     +--P_012893
+|  |                                   +--P_012897
+|  |                                +--| (19)
+|  |                                |  |  +--P_012893
+|  |                                |  +--| (100)
+|  |                                |     +--GAP_80293
+|  |                             +--| (18)
+|  |                             |  |  +--P_012863
+|  |                             |  +--| (100)
+|  |                             |     +--P_006418
+|  |                          +--| (19)
+|  |                          |  |     +--P_012821
 |  |                          |  |  +--| (100)
-|  |                          |  |  |  +--GAP_80293
-|  |                          |  +--| (51)
-|  |                          |     |     +--P_012821
-|  |                          |     |  +--| (100)
-|  |                          |     |  |  +--P_012917
-|  |                          |     +--| (100)
-|  |                          |        +--P_012911
-|  |                       +--| (99)
-|  |                       |  |        +--P_012863
+|  |                          |  |  |  +--P_012917
+|  |                          |  +--| (100)
+|  |                          |     +--P_012911
+|  |                       +--| (96)
+|  |                       |  |        +--P_006419
 |  |                       |  |     +--| (100)
-|  |                       |  |     |  +--P_006418
-|  |                       |  |  +--| (53)
-|  |                       |  |  |  |     +--P_006419
-|  |                       |  |  |  |  +--| (100)
-|  |                       |  |  |  |  |  +--GAP_80292
-|  |                       |  |  |  +--| (100)
-|  |                       |  |  |     +--P_012793
-|  |                       |  +--| (53)
+|  |                       |  |     |  +--GAP_80292
+|  |                       |  |  +--| (100)
+|  |                       |  |  |  +--P_012793
+|  |                       |  +--| (46)
 |  |                       |     +--P_012889
-|  |                    +--| (79)
+|  |                    +--| (83)
 |  |                    |  |     +--P_012907
 |  |                    |  |  +--| (100)
 |  |                    |  |  |  +--GAP_80291
-|  |                    |  +--| (65)
+|  |                    |  +--| (75)
 |  |                    |     |  +--P_012881
 |  |                    |     +--| (100)
 |  |                    |        +--P_012873
-|  |                 +--| (89)
+|  |                 +--| (85)
 |  |                 |  +--P_012859
-|  |              +--| (81)
+|  |              +--| (72)
 |  |              |  |  +--GAP_80294
 |  |              |  +--| (100)
 |  |              |     +---P_006420
@@ -276,7 +291,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |        |  +--P_018689
 |  |     +--| (100)
 |  |     |  |     +--P_012857
-|  |     |  |  +--| (98)
+|  |     |  |  +--| (99)
 |  |     |  |  |  |  +--P_012815
 |  |     |  |  |  +--| (100)
 |  |     |  |  |     +--P_012903
@@ -286,7 +301,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |     |     |        |  +--P_012905
 |  |     |     |     +--| (100)
 |  |     |     |     |  |  +--P_012901
-|  |     |     |     |  +--| (100)
+|  |     |     |     |  +--| (98)
 |  |     |     |     |     |  +--P_012887
 |  |     |     |     |     +--| (100)
 |  |     |     |     |        +--P_012851
@@ -336,7 +351,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |                    |  |        |  |     +--P2589
 |                    |  |        |  |  +--| (100)
 |                    |  |        |  |  |  +--OPDF
-|                    |  |        |  +--| (100)
+|                    |  |        |  +--| (96)
 |                    |  |        |     +--CSSK
 |                    |  |  +-----| (100)
 |                    |  |  |     |      +-----------GAP_80417
@@ -386,13 +401,13 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |              |  |           |      |   +--P0104A
 |              |  |           |      +---| (100)
 |              |  |           |          +--P_008647
-|              |  |        +--| (92)
+|              |  |        +--| (98)
 |              |  |        |  |                 +---P_011551
-|              |  |        |  |              +--| (98)
+|              |  |        |  |              +--| (99)
 |              |  |        |  |              |  |     +--P_011637
-|              |  |        |  |              |  |  +--| (99)
-|              |  |        |  |              |  |  |  +-------------------P_011589
-|              |  |        |  |              |  +--| (98)
+|              |  |        |  |              |  |  +--| (100)
+|              |  |        |  |              |  |  |  +------------------P_011589
+|              |  |        |  |              |  +--| (99)
 |              |  |        |  |              |     +------P_007844
 |              |  |        |  |           +--| (100)
 |              |  |        |  |           |  |        +-----P_007843
@@ -400,7 +415,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |              |  |        |  |           |  |     |  +--P_006414
 |              |  |        |  |           |  |  +--| (100)
 |              |  |        |  |           |  |  |  +--P_007783
-|              |  |        |  |           |  +--| (96)
+|              |  |        |  |           |  +--| (98)
 |              |  |        |  |           |     +--------P_011631
 |              |  |        |  |        +--| (100)
 |              |  |        |  |        |  |  +--P_011647
@@ -441,96 +456,96 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |              |  |     |  |  +--| (100)
 |              |  |     |  |  |  +--P_011531
 |              |  |     |  +--| (100)
-|              |  |     |     |                    +---P_011579
-|              |  |     |     |                 +--| (99)
-|              |  |     |     |                 |  +--P_008632
-|              |  |     |     |              +--| (100)
-|              |  |     |     |              |  +--P_011671
-|              |  |     |     |           +--| (94)
-|              |  |     |     |           |  |                 +-------P_011701
-|              |  |     |     |           |  |              +--| (51)
-|              |  |     |     |           |  |              |  +---P_011673
-|              |  |     |     |           |  |           +--| (51)
-|              |  |     |     |           |  |           |  |  +--P_011537
-|              |  |     |     |           |  |           |  +--| (100)
-|              |  |     |     |           |  |           |     |  +--P_011677
-|              |  |     |     |           |  |           |     +--| (100)
-|              |  |     |     |           |  |           |        +--P_011739
-|              |  |     |     |           |  |        +--| (100)
-|              |  |     |     |           |  |        |  |        +--P_011715
-|              |  |     |     |           |  |        |  |     +--| (56)
-|              |  |     |     |           |  |        |  |     |  |     +--P_011745
-|              |  |     |     |           |  |        |  |     |  |  +--| (95)
-|              |  |     |     |           |  |        |  |     |  |  |  +-------P_014073
-|              |  |     |     |           |  |        |  |     |  +--| (56)
-|              |  |     |     |           |  |        |  |     |     |  +-------P_011681
-|              |  |     |     |           |  |        |  |     |     +--| (52)
-|              |  |     |     |           |  |        |  |     |        +--P_011611
-|              |  |     |     |           |  |        |  |  +--| (56)
-|              |  |     |     |           |  |        |  |  |  |  +--P_011735
-|              |  |     |     |           |  |        |  |  |  +--| (100)
-|              |  |     |     |           |  |        |  |  |     +--P_011675
-|              |  |     |     |           |  |        |  +--| (50)
-|              |  |     |     |           |  |        |     +--P_011759
-|              |  |     |     |           |  |     +--| (77)
-|              |  |     |     |           |  |     |  |        +--GAP_80390
-|              |  |     |     |           |  |     |  |     +--| (100)
-|              |  |     |     |           |  |     |  |     |  +--GAP_80389
-|              |  |     |     |           |  |     |  |  +--| (100)
-|              |  |     |     |           |  |     |  |  |  |     +--P_008646
-|              |  |     |     |           |  |     |  |  |  |  +--| (100)
-|              |  |     |     |           |  |     |  |  |  |  |  +----P_011679
-|              |  |     |     |           |  |     |  |  |  +--| (100)
-|              |  |     |     |           |  |     |  |  |     |  +--P_006412
-|              |  |     |     |           |  |     |  |  |     +--| (100)
-|              |  |     |     |           |  |     |  |  |        +--P_008640
-|              |  |     |     |           |  |     |  +--| (100)
-|              |  |     |     |           |  |     |     +--P_016813
-|              |  |     |     |           |  |  +--| (94)
-|              |  |     |     |           |  |  |  |  +--P_006413
-|              |  |     |     |           |  |  |  +--| (97)
-|              |  |     |     |           |  |  |     |     +----------P_011713
-|              |  |     |     |           |  |  |     |  +--| (98)
-|              |  |     |     |           |  |  |     |  |  |         +-------------------------------P_011719
-|              |  |     |     |           |  |  |     |  |  +---------| (98)
-|              |  |     |     |           |  |  |     |  |            +**P_011607
-|              |  |     |     |           |  |  |     +--| (99)
-|              |  |     |     |           |  |  |        +-----P_011705
-|              |  |     |     |           |  +--| (100)
-|              |  |     |     |           |     |           +--ABSS
-|              |  |     |     |           |     |        +--| (100)
-|              |  |     |     |           |     |        |  +--BCGB
-|              |  |     |     |           |     |     +--| (100)
-|              |  |     |     |           |     |     |  +--KAYP
-|              |  |     |     |           |     |  +--| (100)
-|              |  |     |     |           |     |  |  +--WIGA
-|              |  |     |     |           |     +--| (99)
-|              |  |     |     |           |        |  +--Dhai
-|              |  |     |     |           |        +--| (99)
-|              |  |     |     |           |           |  +--Apet
-|              |  |     |     |           |           +--| (99)
-|              |  |     |     |           |              +--Msal
-|              |  |     |     |        +--| (100)
-|              |  |     |     |        |  +----------P_011709
-|              |  |     |     |     +--| (48)
-|              |  |     |     |     |  +------P_018635
+|              |  |     |     |                 +---P_011579
+|              |  |     |     |              +--| (98)
+|              |  |     |     |              |  +--P_008632
+|              |  |     |     |           +--| (100)
+|              |  |     |     |           |  +--P_011671
+|              |  |     |     |        +--| (91)
+|              |  |     |     |        |  |              +--------P_011701
+|              |  |     |     |        |  |           +--| (83)
+|              |  |     |     |        |  |           |  +---P_011673
+|              |  |     |     |        |  |        +--| (82)
+|              |  |     |     |        |  |        |  |  +--P_011537
+|              |  |     |     |        |  |        |  +--| (100)
+|              |  |     |     |        |  |        |     |     +--P_011677
+|              |  |     |     |        |  |        |     |  +--| (100)
+|              |  |     |     |        |  |        |     |  |  +--P_011739
+|              |  |     |     |        |  |        |     +--| (99)
+|              |  |     |     |        |  |        |        +---------P_011607
+|              |  |     |     |        |  |     +--| (100)
+|              |  |     |     |        |  |     |  |        +--P_011715
+|              |  |     |     |        |  |     |  |     +--| (91)
+|              |  |     |     |        |  |     |  |     |  |     +--P_011745
+|              |  |     |     |        |  |     |  |     |  |  +--| (99)
+|              |  |     |     |        |  |     |  |     |  |  |  +-------P_014073
+|              |  |     |     |        |  |     |  |     |  +--| (91)
+|              |  |     |     |        |  |     |  |     |     |  +-------P_011681
+|              |  |     |     |        |  |     |  |     |     +--| (90)
+|              |  |     |     |        |  |     |  |     |        +--P_011611
+|              |  |     |     |        |  |     |  |  +--| (91)
+|              |  |     |     |        |  |     |  |  |  |  +--P_011735
+|              |  |     |     |        |  |     |  |  |  +--| (100)
+|              |  |     |     |        |  |     |  |  |     +--P_011675
+|              |  |     |     |        |  |     |  +--| (82)
+|              |  |     |     |        |  |     |     +--P_011759
+|              |  |     |     |        |  |  +--| (92)
+|              |  |     |     |        |  |  |  |           +--GAP_80390
+|              |  |     |     |        |  |  |  |        +--| (100)
+|              |  |     |     |        |  |  |  |        |  +--GAP_80389
+|              |  |     |     |        |  |  |  |     +--| (100)
+|              |  |     |     |        |  |  |  |     |  |     +--P_008646
+|              |  |     |     |        |  |  |  |     |  |  +--| (100)
+|              |  |     |     |        |  |  |  |     |  |  |  +----P_011679
+|              |  |     |     |        |  |  |  |     |  +--| (100)
+|              |  |     |     |        |  |  |  |     |     |  +--P_006412
+|              |  |     |     |        |  |  |  |     |     +--| (100)
+|              |  |     |     |        |  |  |  |     |        +--P_008640
+|              |  |     |     |        |  |  |  |  +--| (100)
+|              |  |     |     |        |  |  |  |  |  +--P_016813
+|              |  |     |     |        |  |  |  +--| (56)
+|              |  |     |     |        |  |  |     |  +--P_006413
+|              |  |     |     |        |  |  |     +--| (93)
+|              |  |     |     |        |  |  |        |     +---------P_011713
+|              |  |     |     |        |  |  |        |  +--| (98)
+|              |  |     |     |        |  |  |        |  |  +----------------------------------------P_011719
+|              |  |     |     |        |  |  |        +--| (98)
+|              |  |     |     |        |  |  |           +-----P_011705
+|              |  |     |     |        |  +--| (98)
+|              |  |     |     |        |     |           +--ABSS
+|              |  |     |     |        |     |        +--| (100)
+|              |  |     |     |        |     |        |  +--BCGB
+|              |  |     |     |        |     |     +--| (100)
+|              |  |     |     |        |     |     |  +--KAYP
+|              |  |     |     |        |     |  +--| (100)
+|              |  |     |     |        |     |  |  +--WIGA
+|              |  |     |     |        |     +--| (100)
+|              |  |     |     |        |        |     +--Dhai
+|              |  |     |     |        |        |  +--| (95)
+|              |  |     |     |        |        |  |  +--Msal
+|              |  |     |     |        |        +--| (100)
+|              |  |     |     |        |           +--Apet
+|              |  |     |     |     +--| (100)
+|              |  |     |     |     |  +------------P_011709
 |              |  |     |     |  +--| (100)
-|              |  |     |     |  |  +--P_008631
+|              |  |     |     |  |  |  +------P_018635
+|              |  |     |     |  |  +--| (91)
+|              |  |     |     |  |     +--P_008631
 |              |  |     |     +--| (100)
 |              |  |     |        +---------VYLQ
 |              |  |  +--| (100)
-|              |  |  |  |         +-----------------------------Sdec
+|              |  |  |  |         +----------------------------Sdec
 |              |  |  |  |      +--| (100)
 |              |  |  |  |      |  +----P2619
 |              |  |  |  |  +---| (100)
 |              |  |  |  |  |   +----------P_011609
 |              |  |  |  +--| (100)
 |              |  |  |     |           +--P_011527
-|              |  |  |     |        +--| (99)
+|              |  |  |     |        +--| (100)
 |              |  |  |     |        |  |     +--GAP_80297
 |              |  |  |     |        |  |  +--| (100)
 |              |  |  |     |        |  |  |  +--P_014083
-|              |  |  |     |        |  +--| (99)
+|              |  |  |     |        |  +--| (100)
 |              |  |  |     |        |     +--GAP_80298
 |              |  |  |     |     +--| (100)
 |              |  |  |     |     |  +--P_014077
@@ -544,7 +559,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |              |        +----------------------------------P_011613
 |           +--| (100)
 |           |  |          +--P_018695
-|           |  |       +--| (86)
+|           |  |       +--| (84)
 |           |  |       |  +--P_018783
 |           |  |    +--| (100)
 |           |  |    |  |  +--P_018645
@@ -556,19 +571,19 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |           |       |           +--P_016797
 |           |       |        +--| (100)
 |           |       |        |  |     +--GAP_80397
-|           |       |        |  |  +--| (100)
+|           |       |        |  |  +--| (98)
 |           |       |        |  |  |  |  +-------------P_007845
-|           |       |        |  |  |  +--| (100)
+|           |       |        |  |  |  +--| (98)
 |           |       |        |  |  |     +--OBPL
 |           |       |        |  +--| (100)
 |           |       |        |     +--P_016799
-|           |       |     +--| (97)
+|           |       |     +--| (99)
 |           |       |     |  |           +--P_016791
 |           |       |     |  |        +--| (98)
 |           |       |     |  |        |  |  +------P_014095
 |           |       |     |  |        |  +--| (100)
 |           |       |     |  |        |     +--S08
-|           |       |     |  |     +--| (55)
+|           |       |     |  |     +--| (57)
 |           |       |     |  |     |  |  +--P_014099
 |           |       |     |  |     |  +--| (100)
 |           |       |     |  |     |     +--S03
@@ -583,12 +598,12 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |           |       |     |  |  |     +--| (100)
 |           |       |     |  |  |        |  +--S04
 |           |       |     |  |  |        +--| (100)
-|           |       |     |  |  |           +-------S38
-|           |       |     |  +--| (97)
+|           |       |     |  |  |           +------S38
+|           |       |     |  +--| (99)
 |           |       |     |     +--P_018693
-|           |       |  +--| (96)
+|           |       |  +--| (99)
 |           |       |  |  +----P_018691
-|           |       +--| (97)
+|           |       +--| (99)
 |           |          |     +--P_016795
 |           |          |  +--| (100)
 |           |          |  |  +--P_006422
@@ -596,21 +611,21 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |           |             +--P_016793
 |        +--| (100)
 |        |  |     +---P2622
-|        |  |  +--| (100)
-|        |  |  |  +----------P2623
+|        |  |  +--| (99)
+|        |  |  |  +-----------P2623
 |        |  +--| (100)
 |        |     |  +--P0110C
 |        |     +--| (100)
 |        |        |     +--P0207A
-|        |        |  +--| (97)
+|        |        |  +--| (95)
 |        |        |  |  |        +--P0207B
-|        |        |  |  |     +--| (94)
+|        |        |  |  |     +--| (90)
 |        |        |  |  |     |  +--P0110B
-|        |        |  |  |  +--| (97)
+|        |        |  |  |  +--| (95)
 |        |        |  |  |  |  |  +--P0206H
-|        |        |  |  |  |  +--| (98)
+|        |        |  |  |  |  +--| (95)
 |        |        |  |  |  |     +--P0206G
-|        |        |  |  +--| (97)
+|        |        |  |  +--| (95)
 |        |        |  |     +--P0207C
 |        |        +--| (100)
 |        |           +--XQWC
@@ -622,7 +637,7 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 |  |  |  +--P_012795
 |  |  +--| (100)
 |  |     +--P_012941
-+--| (100)
++--| (99)
    |     +--P_012855
    |  +--| (100)
    |  |  |  +--P_007802
@@ -639,14 +654,14 @@ Numbers in parentheses are  ultrafast bootstrap support (%)
 
 Tree in newick format:
 
-(P_012861:0.0445024809,(((((P_012899:0.0308469176,P_012817:0.0349272897)100:0.0134893887,(P_012847:0.0122910577,P_012923:0.0125595249)100:0.0234297789)100:0.0071136274,P_012867:0.0367492777)100:0.0352634466,((((((P_012809:0.0069718494,P_012879:0.0083739603)100:0.0317965779,P_012801:0.0275919874)100:0.0048673220,((P_012805:0.0239946028,((P_012799:0.0277359244,YZRI:0.0342073334)100:0.0195299035,P_012825:0.0372094150)100:0.0024222518)100:0.0018345883,P_012839:0.0465345833)100:0.0048188441)100:0.0064311180,(((((P_012931:0.0154963408,(P_012933:0.0045409288,P_012935:0.0025452160)100:0.0123034846)100:0.0083123308,P_012865:0.0286976732)100:0.0014717112,((P_012849:0.0246226981,P_012871:0.0243132175)100:0.0100432655,(P_012807:0.0199820737,P_012845:0.0264509551)100:0.0028893659)100:0.0023588460)100:0.0117962317,((GAP_81172:0.0154900077,P_012833:0.0149628029)100:0.0126396082,(((P_012869:0.0096038086,(P_012835:0.0075301982,(P_012819:0.0057911377,P_012823:0.0104066939)100:0.0004581054)100:0.0028399987)100:0.0121086104,(P_012791:0.0230504523,P_012915:0.0196576596)100:0.0019162837)100:0.0058410987,(P_012927:0.0078351086,(GAP_80295:0.0193414533,PSJT:0.0178188849)100:0.0023027506)100:0.0202546166)100:0.0014906733)100:0.0108232247)99:0.0014380176,P_012909:0.0521700442)100:0.0080835336)100:0.0129874184,(((P_012803:0.0429366971,P_012853:0.0347590432)94:0.0021090656,(P_012829:0.0291380435,P_012837:0.0279347470)100:0.0074339495)100:0.0013377964,(P_012937:0.0179398738,(P_006421:0.0108741857,P_012939:0.0115040982)100:0.0073904220)100:0.0294441658)100:0.0018473562)100:0.0019921375,P_012843:0.0519474036)100:0.0068156754)100:0.0077128871,((((((((((P_012897:0.0195864740,((P_012893:0.0076505049,GAP_80293:0.0107838287)100:0.0085316714,((P_012821:0.0080704922,P_012917:0.0103195207)100:0.0065054763,P_012911:0.0142917895)100:0.0028786781)51:0.0003924601)48:0.0003841097,(((P_012863:0.0145303042,P_006418:0.0276465086)100:0.0014516407,((P_006419:0.0081751234,GAP_80292:0.0106411095)100:0.0138979693,P_012793:0.0192314640)100:0.0015213292)53:0.0002569862,P_012889:0.0188808993)53:0.0005141596)99:0.0005346142,((P_012907:0.0189201001,GAP_80291:0.0184604790)100:0.0009947975,(P_012881:0.0138232203,P_012873:0.0126557042)100:0.0037272903)65:0.0003772960)79:0.0005020191,P_012859:0.0236820192)89:0.0004127639,(GAP_80294:0.0037180196,P_006420:0.0893495674)100:0.0185327796)81:0.0006242835,P_012885:0.0211495414)100:0.0045688495,P_018689:0.0177841347)100:0.0034383210,((P_012857:0.0245174582,(P_012815:0.0142177697,P_012903:0.0173720511)100:0.0044150846)98:0.0005423164,((((P_012831:0.0184044302,P_012905:0.0186451863)100:0.0026047545,(P_012901:0.0215995984,(P_012887:0.0092819119,P_012851:0.0116290253)100:0.0112084335)100:0.0009683101)100:0.0015473934,P_012875:0.0241644731)100:0.0027077713,(P_012883:0.0097444858,P_012925:0.0091654566)100:0.0110106844)100:0.0007063807)100:0.0017192898)100:0.0096435402,(((P_012811:0.0151786373,(P_012895:0.0152120121,P_012891:0.0119364914)100:0.0019113502)100:0.0053491670,(P_012877:0.0208124294,P_012913:0.0176135914)100:0.0057651978)100:0.0083415699,P_012841:0.0345320479)100:0.0029309507)92:0.0013951889,P_012797:0.0306641918)100:0.0086011405)100:0.0024297375,((((((((((((GAP_81227:0.0400692024,(Pcol:0.0411624940,(GAP_81226:0.0150289135,P_006410:0.0244392742)100:0.0148480187)100:0.0174931192)100:0.0063880137,P_016921:0.0692371837)100:0.0179443101,WKSU:0.0296143096)100:0.0555050439,(SJEV:0.0378921450,(P_019193:0.0744477240,(P_019187:0.0266772529,Wsal:0.0457939948)100:0.0165352570)100:0.0226879420)100:0.0982183052)100:0.0327297163,(((P_019185:0.0830582257,((P2589:0.0724709374,OPDF:0.0201706373)100:0.0326488073,CSSK:0.0655213610)100:0.0111193211)100:0.0424971880,((GAP_80417:0.2364109469,(P2590:0.0275714888,GAP_79804:0.0313598300)100:0.0660113656)100:0.0590710988,(P_019191:0.2778144813,P_019199:0.3298054242)100:0.1621486509)100:0.0834556524)100:0.1266227125,(((P_019197:0.2229111887,PAWA:0.1500466093)100:0.0368472375,(P_019189:0.2149309729,((P_025523:0.2716091266,P_025525:0.2043538442)100:0.1740809707,P_025527:0.2920072320)100:0.1477564827)99:0.0150516499)100:0.0140456393,(Asie:0.0241379649,QDVW:0.0208928890)100:0.1132096306)100:0.0163301993)100:0.0547562297)100:0.0107696179,(((P_016909:0.0331320600,WZFE:0.0037648684)100:0.0451880651,((P_018831:0.0389917516,OSHQ:0.0046136100)100:0.0197971124,P0109B:0.1690054955)100:0.0246010071)100:0.0223526752,P0203H:0.2365050002)100:0.0706342832)100:0.0196003057,((((((GAP_79862:0.1088585906,P_011587:0.1965885175)100:0.0581299678,(P_014081:0.1469412161,(P0104A:0.0260751494,P_008647:0.0170990176)100:0.0854369092)100:0.0786615212)100:0.0514040869,((((((P_011551:0.0762805625,((P_011637:0.0017469242,P_011589:0.3725056905)99:0.0170388483,P_007844:0.1313983917)98:0.0046427239)98:0.0024349749,(((P_007843:0.1167027922,P_006414:0.0153899555)100:0.0024545070,P_007783:0.0353139770)100:0.0049315867,P_011631:0.1809677680)96:0.0006913966)100:0.0016965573,(P_011647:0.0312463408,((P_011523:0.0055022029,((P_011489:0.0056773278,P_011487:0.0047654600)100:0.0009903491,P_011501:0.0049179636)100:0.0008350190)100:0.0022228642,P_011465:0.0058285763)100:0.0044999555)100:0.0013023653)100:0.0053975948,(GAP_80393:0.0126550811,GAP_80394:0.0217552641)100:0.0052155280)100:0.0035613716,((P_011643:0.0151748137,P_011657:0.0443338059)100:0.0017537369,(P_011509:0.0099630919,P_011651:0.0339207324)100:0.0047398723)100:0.0056828694)100:0.0289354654,((GAP_80395:0.0216946845,P_011549:0.0465251562)100:0.0187539047,KRJP:0.0498560524)100:0.0200813909)100:0.0167548034)92:0.0045339677,(((P_011699:0.2707032513,(Schi:0.0425131470,P_006411:0.0186638918)100:0.0167673476)100:0.0166429869,P_011531:0.0597362658)100:0.0558107644,(((((((P_011579:0.0890430947,P_008632:0.0210835680)99:0.0040946993,P_011671:0.0569380328)100:0.0244873970,((((((P_011701:0.1536726479,P_011673:0.0808799880)51:0.0149009270,(P_011537:0.0152236282,(P_011677:0.0140490788,P_011739:0.0320825275)100:0.0058657267)100:0.0011036088)51:0.0010657298,(((P_011715:0.0543919942,((P_011745:0.0056793802,P_014073:0.1564824384)95:0.0057080934,(P_011681:0.1587290534,P_011611:0.0184668634)52:0.0040652919)56:0.0032962851)56:0.0034441101,(P_011735:0.0048651341,P_011675:0.0104880153)100:0.0080587127)56:0.0025316206,P_011759:0.0115538158)50:0.0009011604)100:0.0076689623,(((GAP_80390:0.0107097681,GAP_80389:0.0113103176)100:0.0064175117,((P_008646:0.0131696972,P_011679:0.1018605270)100:0.0033259364,(P_006412:0.0106336970,P_008640:0.0084193405)100:0.0028629475)100:0.0010847511)100:0.0009048000,P_016813:0.0200367714)100:0.0016149645)77:0.0021601334,(P_006413:0.0108678310,((P_011713:0.2057876328,(P_011719:0.5945484289,P_011607:0.0000023003)98:0.1860011140)98:0.0165955830,P_011705:0.1240695416)99:0.0161480826)97:0.0016908765)94:0.0048532202,((((ABSS:0.0086926375,BCGB:0.0094202811)100:0.0025020133,KAYP:0.0091588453)100:0.0024841795,WIGA:0.0126164372)100:0.0082217253,(Dhai:0.0161623079,(Apet:0.0068041596,Msal:0.0094507416)99:0.0007717093)99:0.0012506041)99:0.0186068020)100:0.0179834366)94:0.0026639441,P_011709:0.2157024658)100:0.0233444803,P_018635:0.1375975192)48:0.0022593662,P_008631:0.0672687767)100:0.0082297521,VYLQ:0.1956698174)100:0.0090088829)100:0.0201902355)100:0.0114305183,(((Sdec:0.5631101932,P2619:0.0998228703)100:0.0628792896,P_011609:0.2108526429)100:0.0756947957,((((P_011527:0.0445565529,((GAP_80297:0.0044552822,P_014083:0.0308452240)100:0.0257183666,GAP_80298:0.0339223932)99:0.0042846104)99:0.0031331448,P_014077:0.0670116170)100:0.0074427439,WAIL:0.0316990856)100:0.0177462479,MAQO:0.0373454987)100:0.0177723762)100:0.0121256733)100:0.0154779678,(WPHN:0.0770785077,P_011613:0.6527945681)100:0.0556692181)100:0.0379377862)100:0.0370119588,(((P_018695:0.0170579952,P_018783:0.0152555669)86:0.0015943783,(P_018645:0.0140595953,(P_018639:0.1155048365,P_018779:0.1770027963)100:0.0114823453)98:0.0011673864)100:0.0052811238,((((P_016797:0.0169661309,((GAP_80397:0.0064302145,(P_007845:0.2656967891,OBPL:0.0072505102)100:0.0102879701)100:0.0013139580,P_016799:0.0066109502)100:0.0063991569)100:0.0071514346,((((P_016791:0.0230777617,(P_014095:0.1477245059,S08:0.0186409896)100:0.0126640434)98:0.0011788468,(P_014099:0.0189439821,S03:0.0079754044)100:0.0129831670)55:0.0004491235,((P_016787:0.0026081850,S02:0.0059412811)100:0.0123332240,((P_016789:0.0089665124,S27:0.0240370274)100:0.0030446264,(S04:0.0266848705,S38:0.1487811360)100:0.0063124162)100:0.0056582009)100:0.0013404231)100:0.0030361095,P_018693:0.0241137960)97:0.0009647528)97:0.0007208792,P_018691:0.1060962759)96:0.0005469333,((P_016795:0.0154649664,P_006422:0.0219308171)100:0.0030878175,P_016793:0.0189881118)100:0.0020337738)97:0.0025730995)100:0.0977489979)100:0.0154693389,((P2622:0.0761798398,P2623:0.2217770320)100:0.0110089786,(P0110C:0.0374197223,((P0207A:0.0177989598,(((P0207B:0.0140240358,P0110B:0.0211161494)94:0.0018409675,(P0206H:0.0130112268,P0206G:0.0171514244)98:0.0013748847)97:0.0040898892,P0207C:0.0125830651)97:0.0029575725)97:0.0039229126,XQWC:0.0225535793)100:0.0186176553)100:0.0362529253)100:0.0084708059)100:0.0150965692,(GAP_80322:0.0212251616,DHPO:0.0197567080)100:0.0722217271)100:0.0521555067,(P_012795:0.0116307907,P_012941:0.0076181049)100:0.0648872318)100:0.0190342211,((P_012855:0.0421782926,(P_007802:0.0269944875,P_012827:0.0146848340)100:0.0211620100)100:0.0088559438,((P_012919:0.0075070173,P_012921:0.0282654871)100:0.0239233890,(P_018637:0.0258431775,P_012813:0.0256046634)100:0.0041096715)100:0.0151728216)100:0.0256529564)100:0.0018087081);
+(P_012861:0.0443365593,(((((P_012899:0.0305780436,P_012817:0.0347129561)100:0.0135135099,(P_012847:0.0121910156,P_012923:0.0125111407)100:0.0232565304)100:0.0071095860,P_012867:0.0365401544)100:0.0350047224,((((((P_012809:0.0069580773,P_012879:0.0082779145)100:0.0317367410,P_012801:0.0272824188)100:0.0046775450,((P_012805:0.0236766026,((P_012799:0.0275849049,YZRI:0.0337679274)100:0.0194465673,P_012825:0.0367996871)100:0.0023911273)100:0.0018782549,P_012839:0.0461259974)100:0.0047795748)100:0.0064213341,(((((P_012931:0.0153682863,(P_012933:0.0045159834,P_012935:0.0025696348)100:0.0121627580)100:0.0082999556,P_012865:0.0285101648)100:0.0014537932,((P_012849:0.0244739687,P_012871:0.0241071660)100:0.0099314868,(P_012807:0.0198469959,P_012845:0.0264786324)100:0.0028589513)100:0.0023433912)100:0.0117201481,((GAP_81172:0.0152718103,P_012833:0.0147516767)100:0.0126238253,(((P_012869:0.0094781397,(P_012835:0.0074969927,(P_012819:0.0057779998,P_012823:0.0103462593)100:0.0004535498)100:0.0028278951)100:0.0119741510,(P_012791:0.0229190948,P_012915:0.0193999736)100:0.0018966852)100:0.0058026883,(P_012927:0.0077276772,(GAP_80295:0.0191292923,PSJT:0.0175760779)100:0.0022740933)100:0.0201529465)100:0.0015164655)100:0.0106100105)92:0.0014508140,P_012909:0.0517404364)100:0.0080113397)100:0.0128988760,(((P_012803:0.0426859529,P_012853:0.0343765564)89:0.0020604774,(P_012829:0.0288291743,P_012837:0.0276478612)100:0.0073103776)100:0.0014029760,(P_012937:0.0178229425,(P_006421:0.0108715956,P_012939:0.0114315089)100:0.0073445733)100:0.0292659208)100:0.0018475840)100:0.0019390551,P_012843:0.0518862874)100:0.0067179971)100:0.0076975433,((((((((((((P_012897:0.0191216418,(P_012893:0.0073123709,GAP_80293:0.0108174830)100:0.0081628528)19:0.0006734689,(P_012863:0.0143984255,P_006418:0.0276544204)100:0.0010687771)18:0.0006110255,((P_012821:0.0079877618,P_012917:0.0101441757)100:0.0064187710,P_012911:0.0142119943)100:0.0030877886)19:0.0002861010,(((P_006419:0.0080589308,GAP_80292:0.0105459412)100:0.0139489235,P_012793:0.0191059540)100:0.0014851025,P_012889:0.0186616633)46:0.0004359066)96:0.0006051581,((P_012907:0.0187688048,GAP_80291:0.0181993475)100:0.0009777549,(P_012881:0.0137410775,P_012873:0.0125876047)100:0.0037099727)75:0.0004070105)83:0.0004994274,P_012859:0.0232427632)85:0.0004263371,(GAP_80294:0.0036651431,P_006420:0.0901277769)100:0.0184899267)72:0.0005818326,P_012885:0.0210344787)100:0.0044642734,P_018689:0.0176307440)100:0.0034281681,((P_012857:0.0242783331,(P_012815:0.0140426596,P_012903:0.0170593720)100:0.0044610661)99:0.0005175155,((((P_012831:0.0182626567,P_012905:0.0186099921)100:0.0025695224,(P_012901:0.0214981563,(P_012887:0.0091812111,P_012851:0.0115723320)100:0.0112015823)98:0.0009602153)100:0.0015303308,P_012875:0.0240896657)100:0.0026589795,(P_012883:0.0097512953,P_012925:0.0090941085)100:0.0109487997)100:0.0007048924)100:0.0017718737)100:0.0094795160,(((P_012811:0.0150006785,(P_012895:0.0150971505,P_012891:0.0118649831)100:0.0019202218)100:0.0052687446,(P_012877:0.0206983936,P_012913:0.0175518290)100:0.0057651104)100:0.0082687513,P_012841:0.0342032001)100:0.0028840410)92:0.0013358379,P_012797:0.0302694113)100:0.0086584841)100:0.0024029820,((((((((((((GAP_81227:0.0397397172,(Pcol:0.0406757212,(GAP_81226:0.0149557992,P_006410:0.0246751303)100:0.0146123841)100:0.0174081158)100:0.0062778359,P_016921:0.0688132912)100:0.0176340148,WKSU:0.0294963661)100:0.0550268141,(SJEV:0.0378480745,(P_019193:0.0732033130,(P_019187:0.0264418857,Wsal:0.0433516237)100:0.0166637876)100:0.0223042163)100:0.0974833203)100:0.0325433475,(((P_019185:0.0826796676,((P2589:0.0717165544,OPDF:0.0202106872)100:0.0325849811,CSSK:0.0655781167)96:0.0108293995)100:0.0422494258,((GAP_80417:0.2320980300,(P2590:0.0273118915,GAP_79804:0.0308179558)100:0.0647356031)100:0.0578971733,(P_019191:0.2913451141,P_019199:0.3229293294)100:0.1551682097)100:0.0841110857)100:0.1255049080,(((P_019197:0.2206949947,PAWA:0.1492454194)100:0.0367343814,(P_019189:0.2125349055,((P_025523:0.2666206722,P_025525:0.2017021929)100:0.1711665554,P_025527:0.2848054836)100:0.1452530482)99:0.0156742062)100:0.0137694773,(Asie:0.0239014454,QDVW:0.0210366526)100:0.1127914591)100:0.0164165650)100:0.0538815745)100:0.0107247853,(((P_016909:0.0328470425,WZFE:0.0037426584)100:0.0451611782,((P_018831:0.0383935250,OSHQ:0.0045818824)100:0.0195753976,P0109B:0.1668884401)100:0.0242021677)100:0.0221745975,P0203H:0.2335135728)100:0.0702084722)100:0.0195020813,((((((GAP_79862:0.1080836167,P_011587:0.1966869558)100:0.0572372603,(P_014081:0.1447945791,(P0104A:0.0258605094,P_008647:0.0169414734)100:0.0847146793)100:0.0782189313)100:0.0514063523,((((((P_011551:0.0744677158,((P_011637:0.0017430150,P_011589:0.3490316750)100:0.0170888498,P_007844:0.1299314274)99:0.0044930743)99:0.0024684724,(((P_007843:0.1137942740,P_006414:0.0153111934)100:0.0024355177,P_007783:0.0363713516)100:0.0047868170,P_011631:0.1775565752)98:0.0007501292)100:0.0016276425,(P_011647:0.0279876837,((P_011523:0.0054738726,((P_011489:0.0055692054,P_011487:0.0047441180)100:0.0010003314,P_011501:0.0048887311)100:0.0008282134)100:0.0022009839,P_011465:0.0057592170)100:0.0044800445)100:0.0012329968)100:0.0053632997,(GAP_80393:0.0125677518,GAP_80394:0.0217165694)100:0.0051928328)100:0.0035536522,((P_011643:0.0151900049,P_011657:0.0444346786)100:0.0017151140,(P_011509:0.0099117421,P_011651:0.0336048761)100:0.0046571802)100:0.0057394149)100:0.0288935235,((GAP_80395:0.0216320432,P_011549:0.0463625947)100:0.0185482307,KRJP:0.0497083961)100:0.0198539361)100:0.0166927172)98:0.0045976930,(((P_011699:0.2667144473,(Schi:0.0423895659,P_006411:0.0186331238)100:0.0166002255)100:0.0164767534,P_011531:0.0596231944)100:0.0555936827,((((((P_011579:0.0886474140,P_008632:0.0211661543)98:0.0039369220,P_011671:0.0566098578)100:0.0246364111,(((((P_011701:0.1659779242,P_011673:0.0814122168)83:0.0131940777,(P_011537:0.0152656097,((P_011677:0.0141931537,P_011739:0.0316466775)100:0.0043546055,P_011607:0.1926802596)99:0.0015006152)100:0.0010298407)82:0.0010762084,(((P_011715:0.0541510368,((P_011745:0.0056256397,P_014073:0.1576963691)99:0.0055631048,(P_011681:0.1600257800,P_011611:0.0179814282)90:0.0041695997)91:0.0033372090)91:0.0035033989,(P_011735:0.0050128333,P_011675:0.0097768906)100:0.0077503329)91:0.0025915290,P_011759:0.0115234208)82:0.0008481360)100:0.0071618842,((((GAP_80390:0.0108118570,GAP_80389:0.0112871829)100:0.0063035378,((P_008646:0.0131064555,P_011679:0.1006907955)100:0.0032558783,(P_006412:0.0104770843,P_008640:0.0086086576)100:0.0028224630)100:0.0010892692)100:0.0008767032,P_016813:0.0198095564)100:0.0018314592,(P_006413:0.0105089022,((P_011713:0.1935969923,P_011719:0.7569758014)98:0.0234942232,P_011705:0.1210516216)98:0.0161802046)93:0.0030316839)56:0.0022507619)92:0.0041001244,((((ABSS:0.0086868977,BCGB:0.0093490736)100:0.0025666284,KAYP:0.0088166688)100:0.0018237293,WIGA:0.0130683351)100:0.0079909603,((Dhai:0.0158694489,Msal:0.0095618931)95:0.0008768180,Apet:0.0070314208)100:0.0017289502)100:0.0183492319)98:0.0176461520)91:0.0017193494,P_011709:0.2407290363)100:0.0248038627,(P_018635:0.1339091415,P_008631:0.0643234872)91:0.0035759613)100:0.0095564631,VYLQ:0.1945361619)100:0.0091388826)100:0.0200128023)100:0.0113532635,(((Sdec:0.5295973754,P2619:0.0950518433)100:0.0647504629,P_011609:0.2074511594)100:0.0765916527,((((P_011527:0.0440514383,((GAP_80297:0.0043795390,P_014083:0.0305607298)100:0.0256543947,GAP_80298:0.0337336101)100:0.0042389331)100:0.0030692698,P_014077:0.0669518425)100:0.0074267403,WAIL:0.0315528205)100:0.0174013148,MAQO:0.0371059806)100:0.0178027286)100:0.0119056303)100:0.0154295003,(WPHN:0.0763623141,P_011613:0.6417758918)100:0.0554811847)100:0.0376745696)100:0.0367192696,(((P_018695:0.0169735630,P_018783:0.0151256191)84:0.0016011540,(P_018645:0.0140999649,(P_018639:0.1167137698,P_018779:0.1739113822)100:0.0107917458)98:0.0011231122)100:0.0051471815,((((P_016797:0.0168548030,((GAP_80397:0.0064099765,(P_007845:0.2592349702,OBPL:0.0071065912)98:0.0102377095)98:0.0013195091,P_016799:0.0065909441)100:0.0063353285)100:0.0071633148,((((P_016791:0.0229766084,(P_014095:0.1434394348,S08:0.0182563406)100:0.0129005072)98:0.0011384414,(P_014099:0.0183517250,S03:0.0079268752)100:0.0129070107)57:0.0004399938,((P_016787:0.0025228546,S02:0.0058854749)100:0.0122319883,((P_016789:0.0089042873,S27:0.0237337143)100:0.0030011104,(S04:0.0263769364,S38:0.1451712479)100:0.0060553693)100:0.0056390222)100:0.0013528193)100:0.0029891483,P_018693:0.0238116300)99:0.0009620647)99:0.0007186639,P_018691:0.1045930911)99:0.0005344842,((P_016795:0.0153878810,P_006422:0.0216185753)100:0.0030692230,P_016793:0.0189871762)100:0.0020263640)99:0.0025786061)100:0.0971159775)100:0.0154311019,((P2622:0.0758141087,P2623:0.2189314357)99:0.0109568954,(P0110C:0.0383784005,((P0207A:0.0176674801,(((P0207B:0.0139932182,P0110B:0.0208678672)90:0.0017976831,(P0206H:0.0128744384,P0206G:0.0167556036)95:0.0013688193)95:0.0040139716,P0207C:0.0124769954)95:0.0029555287)95:0.0038074319,XQWC:0.0224204486)100:0.0185245310)100:0.0360674040)100:0.0084519382)100:0.0149854472,(GAP_80322:0.0211539768,DHPO:0.0197881566)100:0.0718517948)100:0.0519618674,(P_012795:0.0115267323,P_012941:0.0076015507)100:0.0641320735)100:0.0188633149,((P_012855:0.0418950015,(P_007802:0.0265533708,P_012827:0.0144446251)100:0.0211441083)100:0.0086714675,((P_012919:0.0073450096,P_012921:0.0279567197)100:0.0238256752,(P_018637:0.0256532148,P_012813:0.0251352148)100:0.0040916128)100:0.0149850980)100:0.0253842271)99:0.0017489845);
 
 CONSENSUS TREE
 --------------
 
 Consensus tree is constructed from 1000 bootstrap trees
-Log-likelihood of consensus tree: -2983486.941298
-Robinson-Foulds distance between ML tree and consensus tree: 2
+Log-likelihood of consensus tree: -2994811.138658
+Robinson-Foulds distance between ML tree and consensus tree: 8
 
 Branches with support >0.000000% are kept (extended consensus)
 Branch lengths are optimized by maximum likelihood on original alignment
@@ -695,7 +710,7 @@ Numbers in parentheses are bootstrap supports (%)
 |  |  |     |  |     |     |  +--P_012807
 |  |  |     |  |     |     +--| (100)
 |  |  |     |  |     |        +--P_012845
-|  |  |     |  |  +--| (99)
+|  |  |     |  |  +--| (92)
 |  |  |     |  |  |  |     +--GAP_81172
 |  |  |     |  |  |  |  +--| (100)
 |  |  |     |  |  |  |  |  +--P_012833
@@ -721,7 +736,7 @@ Numbers in parentheses are bootstrap supports (%)
 |  |  |     |     +--P_012909
 |  |  |  +--| (100)
 |  |  |  |  |        +--P_012803
-|  |  |  |  |     +--| (94)
+|  |  |  |  |     +--| (89)
 |  |  |  |  |     |  +--P_012853
 |  |  |  |  |  +--| (100)
 |  |  |  |  |  |  |  +--P_012829
@@ -737,39 +752,39 @@ Numbers in parentheses are bootstrap supports (%)
 |  |     +--P_012843
 +--| (100)
 |  |                             +--P_012897
-|  |                          +--| (48)
+|  |                          +--| (51)
 |  |                          |  |     +--P_012893
 |  |                          |  |  +--| (100)
 |  |                          |  |  |  +--GAP_80293
-|  |                          |  +--| (51)
+|  |                          |  +--| (52)
 |  |                          |     |     +--P_012821
 |  |                          |     |  +--| (100)
 |  |                          |     |  |  +--P_012917
 |  |                          |     +--| (100)
 |  |                          |        +--P_012911
-|  |                       +--| (99)
+|  |                       +--| (96)
 |  |                       |  |        +--P_012863
 |  |                       |  |     +--| (100)
 |  |                       |  |     |  +--P_006418
-|  |                       |  |  +--| (53)
+|  |                       |  |  +--| (52)
 |  |                       |  |  |  |     +--P_006419
 |  |                       |  |  |  |  +--| (100)
 |  |                       |  |  |  |  |  +--GAP_80292
 |  |                       |  |  |  +--| (100)
 |  |                       |  |  |     +--P_012793
-|  |                       |  +--| (53)
+|  |                       |  +--| (52)
 |  |                       |     +--P_012889
-|  |                    +--| (79)
+|  |                    +--| (83)
 |  |                    |  |     +--P_012907
 |  |                    |  |  +--| (100)
 |  |                    |  |  |  +--GAP_80291
-|  |                    |  +--| (65)
+|  |                    |  +--| (75)
 |  |                    |     |  +--P_012881
 |  |                    |     +--| (100)
 |  |                    |        +--P_012873
-|  |                 +--| (89)
+|  |                 +--| (85)
 |  |                 |  +--P_012859
-|  |              +--| (81)
+|  |              +--| (72)
 |  |              |  |  +--GAP_80294
 |  |              |  +--| (100)
 |  |              |     +---P_006420
@@ -779,7 +794,7 @@ Numbers in parentheses are bootstrap supports (%)
 |  |        |  +--P_018689
 |  |     +--| (100)
 |  |     |  |     +--P_012857
-|  |     |  |  +--| (98)
+|  |     |  |  +--| (99)
 |  |     |  |  |  |  +--P_012815
 |  |     |  |  |  +--| (100)
 |  |     |  |  |     +--P_012903
@@ -789,7 +804,7 @@ Numbers in parentheses are bootstrap supports (%)
 |  |     |     |        |  +--P_012905
 |  |     |     |     +--| (100)
 |  |     |     |     |  |  +--P_012901
-|  |     |     |     |  +--| (100)
+|  |     |     |     |  +--| (98)
 |  |     |     |     |     |  +--P_012887
 |  |     |     |     |     +--| (100)
 |  |     |     |     |        +--P_012851
@@ -839,7 +854,7 @@ Numbers in parentheses are bootstrap supports (%)
 |                    |  |        |  |     +--P2589
 |                    |  |        |  |  +--| (100)
 |                    |  |        |  |  |  +--OPDF
-|                    |  |        |  +--| (100)
+|                    |  |        |  +--| (96)
 |                    |  |        |     +--CSSK
 |                    |  |  +-----| (100)
 |                    |  |  |     |      +-----------GAP_80417
@@ -889,13 +904,13 @@ Numbers in parentheses are bootstrap supports (%)
 |              |  |           |      |   +--P0104A
 |              |  |           |      +---| (100)
 |              |  |           |          +--P_008647
-|              |  |        +--| (92)
+|              |  |        +--| (98)
 |              |  |        |  |                 +---P_011551
-|              |  |        |  |              +--| (98)
+|              |  |        |  |              +--| (99)
 |              |  |        |  |              |  |     +--P_011637
-|              |  |        |  |              |  |  +--| (99)
-|              |  |        |  |              |  |  |  +-------------------P_011589
-|              |  |        |  |              |  +--| (98)
+|              |  |        |  |              |  |  +--| (100)
+|              |  |        |  |              |  |  |  +------------------P_011589
+|              |  |        |  |              |  +--| (99)
 |              |  |        |  |              |     +------P_007844
 |              |  |        |  |           +--| (100)
 |              |  |        |  |           |  |        +-----P_007843
@@ -903,7 +918,7 @@ Numbers in parentheses are bootstrap supports (%)
 |              |  |        |  |           |  |     |  +--P_006414
 |              |  |        |  |           |  |  +--| (100)
 |              |  |        |  |           |  |  |  +--P_007783
-|              |  |        |  |           |  +--| (96)
+|              |  |        |  |           |  +--| (98)
 |              |  |        |  |           |     +--------P_011631
 |              |  |        |  |        +--| (100)
 |              |  |        |  |        |  |  +--P_011647
@@ -945,61 +960,61 @@ Numbers in parentheses are bootstrap supports (%)
 |              |  |     |  |  |  +--P_011531
 |              |  |     |  +--| (100)
 |              |  |     |     |                 +---P_011579
-|              |  |     |     |              +--| (99)
+|              |  |     |     |              +--| (98)
 |              |  |     |     |              |  +--P_008632
 |              |  |     |     |           +--| (100)
 |              |  |     |     |           |  +--P_011671
-|              |  |     |     |        +--| (94)
-|              |  |     |     |        |  |                 +-------P_011701
-|              |  |     |     |        |  |              +--| (51)
-|              |  |     |     |        |  |              |  +---P_011673
-|              |  |     |     |        |  |           +--| (51)
-|              |  |     |     |        |  |           |  |  +--P_011537
-|              |  |     |     |        |  |           |  +--| (100)
-|              |  |     |     |        |  |           |     |  +--P_011677
-|              |  |     |     |        |  |           |     +--| (100)
-|              |  |     |     |        |  |           |        +--P_011739
-|              |  |     |     |        |  |        +--| (100)
-|              |  |     |     |        |  |        |  |        +--P_011715
-|              |  |     |     |        |  |        |  |     +--| (56)
-|              |  |     |     |        |  |        |  |     |  |     +--P_011745
-|              |  |     |     |        |  |        |  |     |  |  +--| (95)
-|              |  |     |     |        |  |        |  |     |  |  |  +-------P_014073
-|              |  |     |     |        |  |        |  |     |  +--| (56)
-|              |  |     |     |        |  |        |  |     |     |  +-------P_011681
-|              |  |     |     |        |  |        |  |     |     +--| (52)
-|              |  |     |     |        |  |        |  |     |        +--P_011611
-|              |  |     |     |        |  |        |  |  +--| (56)
-|              |  |     |     |        |  |        |  |  |  |  +--P_011735
-|              |  |     |     |        |  |        |  |  |  +--| (100)
-|              |  |     |     |        |  |        |  |  |     +--P_011675
-|              |  |     |     |        |  |        |  +--| (50)
-|              |  |     |     |        |  |        |     +--P_011759
-|              |  |     |     |        |  |     +--| (77)
-|              |  |     |     |        |  |     |  |        +--GAP_80390
-|              |  |     |     |        |  |     |  |     +--| (100)
-|              |  |     |     |        |  |     |  |     |  +--GAP_80389
-|              |  |     |     |        |  |     |  |  +--| (100)
-|              |  |     |     |        |  |     |  |  |  |     +--P_008646
-|              |  |     |     |        |  |     |  |  |  |  +--| (100)
-|              |  |     |     |        |  |     |  |  |  |  |  +----P_011679
+|              |  |     |     |        +--| (91)
+|              |  |     |     |        |  |              +--------P_011701
+|              |  |     |     |        |  |           +--| (83)
+|              |  |     |     |        |  |           |  +---P_011673
+|              |  |     |     |        |  |        +--| (82)
+|              |  |     |     |        |  |        |  |  +--P_011537
+|              |  |     |     |        |  |        |  +--| (100)
+|              |  |     |     |        |  |        |     |     +--P_011677
+|              |  |     |     |        |  |        |     |  +--| (100)
+|              |  |     |     |        |  |        |     |  |  +--P_011739
+|              |  |     |     |        |  |        |     +--| (99)
+|              |  |     |     |        |  |        |        +---------P_011607
+|              |  |     |     |        |  |     +--| (100)
+|              |  |     |     |        |  |     |  |        +--P_011715
+|              |  |     |     |        |  |     |  |     +--| (91)
+|              |  |     |     |        |  |     |  |     |  |     +--P_011745
+|              |  |     |     |        |  |     |  |     |  |  +--| (99)
+|              |  |     |     |        |  |     |  |     |  |  |  +-------P_014073
+|              |  |     |     |        |  |     |  |     |  +--| (91)
+|              |  |     |     |        |  |     |  |     |     |  +-------P_011681
+|              |  |     |     |        |  |     |  |     |     +--| (90)
+|              |  |     |     |        |  |     |  |     |        +--P_011611
+|              |  |     |     |        |  |     |  |  +--| (91)
+|              |  |     |     |        |  |     |  |  |  |  +--P_011735
 |              |  |     |     |        |  |     |  |  |  +--| (100)
-|              |  |     |     |        |  |     |  |  |     |  +--P_006412
-|              |  |     |     |        |  |     |  |  |     +--| (100)
-|              |  |     |     |        |  |     |  |  |        +--P_008640
-|              |  |     |     |        |  |     |  +--| (100)
-|              |  |     |     |        |  |     |     +--P_016813
-|              |  |     |     |        |  |  +--| (94)
-|              |  |     |     |        |  |  |  |  +--P_006413
-|              |  |     |     |        |  |  |  +--| (97)
-|              |  |     |     |        |  |  |     |     +----------P_011713
-|              |  |     |     |        |  |  |     |  +--| (98)
-|              |  |     |     |        |  |  |     |  |  |         +-------------------------------P_011719
-|              |  |     |     |        |  |  |     |  |  +---------| (98)
-|              |  |     |     |        |  |  |     |  |            +--P_011607
-|              |  |     |     |        |  |  |     +--| (99)
-|              |  |     |     |        |  |  |        +-----P_011705
-|              |  |     |     |        |  +--| (100)
+|              |  |     |     |        |  |     |  |  |     +--P_011675
+|              |  |     |     |        |  |     |  +--| (82)
+|              |  |     |     |        |  |     |     +--P_011759
+|              |  |     |     |        |  |  +--| (92)
+|              |  |     |     |        |  |  |  |           +--GAP_80390
+|              |  |     |     |        |  |  |  |        +--| (100)
+|              |  |     |     |        |  |  |  |        |  +--GAP_80389
+|              |  |     |     |        |  |  |  |     +--| (100)
+|              |  |     |     |        |  |  |  |     |  |     +--P_008646
+|              |  |     |     |        |  |  |  |     |  |  +--| (100)
+|              |  |     |     |        |  |  |  |     |  |  |  +----P_011679
+|              |  |     |     |        |  |  |  |     |  +--| (100)
+|              |  |     |     |        |  |  |  |     |     |  +--P_006412
+|              |  |     |     |        |  |  |  |     |     +--| (100)
+|              |  |     |     |        |  |  |  |     |        +--P_008640
+|              |  |     |     |        |  |  |  |  +--| (100)
+|              |  |     |     |        |  |  |  |  |  +--P_016813
+|              |  |     |     |        |  |  |  +--| (56)
+|              |  |     |     |        |  |  |     |  +--P_006413
+|              |  |     |     |        |  |  |     +--| (93)
+|              |  |     |     |        |  |  |        |     +---------P_011713
+|              |  |     |     |        |  |  |        |  +--| (98)
+|              |  |     |     |        |  |  |        |  |  +----------------------------------------P_011719
+|              |  |     |     |        |  |  |        +--| (98)
+|              |  |     |     |        |  |  |           +-----P_011705
+|              |  |     |     |        |  +--| (98)
 |              |  |     |     |        |     |           +--ABSS
 |              |  |     |     |        |     |        +--| (100)
 |              |  |     |     |        |     |        |  +--BCGB
@@ -1007,33 +1022,33 @@ Numbers in parentheses are bootstrap supports (%)
 |              |  |     |     |        |     |     |  +--KAYP
 |              |  |     |     |        |     |  +--| (100)
 |              |  |     |     |        |     |  |  +--WIGA
-|              |  |     |     |        |     +--| (99)
-|              |  |     |     |        |        |  +--Dhai
-|              |  |     |     |        |        +--| (99)
-|              |  |     |     |        |           |  +--Apet
-|              |  |     |     |        |           +--| (99)
-|              |  |     |     |        |              +--Msal
+|              |  |     |     |        |     +--| (100)
+|              |  |     |     |        |        |     +--Dhai
+|              |  |     |     |        |        |  +--| (95)
+|              |  |     |     |        |        |  |  +--Msal
+|              |  |     |     |        |        +--| (100)
+|              |  |     |     |        |           +--Apet
 |              |  |     |     |     +--| (100)
-|              |  |     |     |     |  +----------P_011709
+|              |  |     |     |     |  +------------P_011709
 |              |  |     |     |  +--| (100)
 |              |  |     |     |  |  |  +------P_018635
-|              |  |     |     |  |  +--| (51)
+|              |  |     |     |  |  +--| (91)
 |              |  |     |     |  |     +--P_008631
 |              |  |     |     +--| (100)
 |              |  |     |        +---------VYLQ
 |              |  |  +--| (100)
-|              |  |  |  |         +-----------------------------Sdec
+|              |  |  |  |         +----------------------------Sdec
 |              |  |  |  |      +--| (100)
 |              |  |  |  |      |  +----P2619
 |              |  |  |  |  +---| (100)
 |              |  |  |  |  |   +----------P_011609
 |              |  |  |  +--| (100)
 |              |  |  |     |           +--P_011527
-|              |  |  |     |        +--| (99)
+|              |  |  |     |        +--| (100)
 |              |  |  |     |        |  |     +--GAP_80297
 |              |  |  |     |        |  |  +--| (100)
 |              |  |  |     |        |  |  |  +--P_014083
-|              |  |  |     |        |  +--| (99)
+|              |  |  |     |        |  +--| (100)
 |              |  |  |     |        |     +--GAP_80298
 |              |  |  |     |     +--| (100)
 |              |  |  |     |     |  +--P_014077
@@ -1047,7 +1062,7 @@ Numbers in parentheses are bootstrap supports (%)
 |              |        +----------------------------------P_011613
 |           +--| (100)
 |           |  |          +--P_018695
-|           |  |       +--| (86)
+|           |  |       +--| (84)
 |           |  |       |  +--P_018783
 |           |  |    +--| (100)
 |           |  |    |  |  +--P_018645
@@ -1059,19 +1074,19 @@ Numbers in parentheses are bootstrap supports (%)
 |           |       |           +--P_016797
 |           |       |        +--| (100)
 |           |       |        |  |     +--GAP_80397
-|           |       |        |  |  +--| (100)
+|           |       |        |  |  +--| (98)
 |           |       |        |  |  |  |  +-------------P_007845
-|           |       |        |  |  |  +--| (100)
+|           |       |        |  |  |  +--| (98)
 |           |       |        |  |  |     +--OBPL
 |           |       |        |  +--| (100)
 |           |       |        |     +--P_016799
-|           |       |     +--| (97)
+|           |       |     +--| (99)
 |           |       |     |  |           +--P_016791
 |           |       |     |  |        +--| (98)
 |           |       |     |  |        |  |  +------P_014095
 |           |       |     |  |        |  +--| (100)
 |           |       |     |  |        |     +--S08
-|           |       |     |  |     +--| (55)
+|           |       |     |  |     +--| (57)
 |           |       |     |  |     |  |  +--P_014099
 |           |       |     |  |     |  +--| (100)
 |           |       |     |  |     |     +--S03
@@ -1086,12 +1101,12 @@ Numbers in parentheses are bootstrap supports (%)
 |           |       |     |  |  |     +--| (100)
 |           |       |     |  |  |        |  +--S04
 |           |       |     |  |  |        +--| (100)
-|           |       |     |  |  |           +-------S38
-|           |       |     |  +--| (97)
+|           |       |     |  |  |           +------S38
+|           |       |     |  +--| (99)
 |           |       |     |     +--P_018693
-|           |       |  +--| (96)
+|           |       |  +--| (99)
 |           |       |  |  +----P_018691
-|           |       +--| (97)
+|           |       +--| (99)
 |           |          |     +--P_016795
 |           |          |  +--| (100)
 |           |          |  |  +--P_006422
@@ -1099,21 +1114,21 @@ Numbers in parentheses are bootstrap supports (%)
 |           |             +--P_016793
 |        +--| (100)
 |        |  |     +---P2622
-|        |  |  +--| (100)
+|        |  |  +--| (99)
 |        |  |  |  +-----------P2623
 |        |  +--| (100)
 |        |     |  +--P0110C
 |        |     +--| (100)
 |        |        |     +--P0207A
-|        |        |  +--| (97)
+|        |        |  +--| (95)
 |        |        |  |  |        +--P0207B
-|        |        |  |  |     +--| (94)
+|        |        |  |  |     +--| (90)
 |        |        |  |  |     |  +--P0110B
-|        |        |  |  |  +--| (97)
+|        |        |  |  |  +--| (95)
 |        |        |  |  |  |  |  +--P0206H
-|        |        |  |  |  |  +--| (98)
+|        |        |  |  |  |  +--| (95)
 |        |        |  |  |  |     +--P0206G
-|        |        |  |  +--| (97)
+|        |        |  |  +--| (95)
 |        |        |  |     +--P0207C
 |        |        +--| (100)
 |        |           +--XQWC
@@ -1125,7 +1140,7 @@ Numbers in parentheses are bootstrap supports (%)
 |  |  |  +--P_012795
 |  |  +--| (100)
 |  |     +--P_012941
-+--| (100)
++--| (99)
    |     +--P_012855
    |  +--| (100)
    |  |  |  +--P_007802
@@ -1143,12 +1158,28 @@ Numbers in parentheses are bootstrap supports (%)
 
 Consensus tree in newick format: 
 
-(P_012861:0.0445087721,(((((P_012899:0.0308511717,P_012817:0.0349318803)100:0.0134924137,(P_012847:0.0122936685,P_012923:0.0125618154)100:0.0234338908)100:0.0071149102,P_012867:0.0367543944)100:0.0352679519,((((((P_012809:0.0069736474,P_012879:0.0083760853)100:0.0318007499,P_012801:0.0275958624)100:0.0048691608,((P_012805:0.0239980331,((P_012799:0.0277410297,YZRI:0.0342123582)100:0.0195326403,P_012825:0.0372147864)100:0.0024231435)100:0.0018353266,P_012839:0.0465413500)100:0.0048202668)100:0.0064331228,(((((P_012931:0.0154994736,(P_012933:0.0045419379,P_012935:0.0025467936)100:0.0123053807)100:0.0083146807,P_012865:0.0287019317)100:0.0014726368,((P_012849:0.0246264525,P_012871:0.0243169118)100:0.0100448825,(P_012807:0.0199852566,P_012845:0.0264548391)100:0.0028904855)100:0.0023596504)100:0.0117983393,((GAP_81172:0.0154928969,P_012833:0.0149656688)100:0.0126420212,(((P_012869:0.0096061954,(P_012835:0.0075323414,(P_012819:0.0057928270,P_012823:0.0104095085)100:0.0004581538)100:0.0028412778)100:0.0121112745,(P_012791:0.0230538404,P_012915:0.0196607519)100:0.0019168707)100:0.0058425426,(P_012927:0.0078372084,(GAP_80295:0.0193439796,PSJT:0.0178226859)100:0.0023040881)100:0.0202568944)100:0.0014917592)100:0.0108255649)99:0.0014391725,P_012909:0.0521767443)100:0.0080846084)100:0.0129900534,(((P_012803:0.0429426944,P_012853:0.0347633114)94:0.0021100828,(P_012829:0.0291420385,P_012837:0.0279385165)100:0.0074357631)100:0.0013384993,(P_012937:0.0179434773,(P_006421:0.0108770589,P_012939:0.0115064402)100:0.0073920332)100:0.0294480697)100:0.0018482127)100:0.0019925864,P_012843:0.0519543528)100:0.0068163872)100:0.0077144006,((((((((((P_012897:0.0195894730,((P_012893:0.0076523704,GAP_80293:0.0107866982)100:0.0085334009,((P_012821:0.0080726317,P_012917:0.0103219390)100:0.0065067992,P_012911:0.0142946279)100:0.0028804532)51:0.0003934423)48:0.0003849144,(((P_012863:0.0145331028,P_006418:0.0276504143)100:0.0014528466,((P_006419:0.0081777617,GAP_80292:0.0106439292)100:0.0139005099,P_012793:0.0192348904)100:0.0015225087)53:0.0002575838,P_012889:0.0188845378)53:0.0005153707)99:0.0005352839,((P_012907:0.0189236820,GAP_80291:0.0184639278)100:0.0009954541,(P_012881:0.0138261098,P_012873:0.0126585239)100:0.0037279476)65:0.0003782384)79:0.0005028963,P_012859:0.0236852775)89:0.0004132925,(GAP_80294:0.0037187288,P_006420:0.0893607655)100:0.0185364491)81:0.0006251622,P_012885:0.0211527813)100:0.0045703781,P_018689:0.0177876168)100:0.0034393466,((P_012857:0.0245218444,(P_012815:0.0142207441,P_012903:0.0173747099)100:0.0044160866)98:0.0005429861,((((P_012831:0.0184080916,P_012905:0.0186489130)100:0.0026055352,(P_012901:0.0216030039,(P_012887:0.0092838203,P_012851:0.0116313189)100:0.0112112395)100:0.0009688225)100:0.0015479002,P_012875:0.0241679112)100:0.0027096923,(P_012883:0.0097469847,P_012925:0.0091677262)100:0.0110130622)100:0.0007067522)100:0.0017196853)100:0.0096457855,(((P_012811:0.0151818045,(P_012895:0.0152147392,P_012891:0.0119388577)100:0.0019123322)100:0.0053498316,(P_012877:0.0208154675,P_012913:0.0176170119)100:0.0057661820)100:0.0083433146,P_012841:0.0345371791)100:0.0029320779)92:0.0013959907,P_012797:0.0306692746)100:0.0086032667)100:0.0024309703,((((((((((((GAP_81227:0.0400756306,(Pcol:0.0411690290,(GAP_81226:0.0150323166,P_006410:0.0244434262)100:0.0148504222)100:0.0174963300)100:0.0063893637,P_016921:0.0692470313)100:0.0179466758,WKSU:0.0296189398)100:0.0555135721,(SJEV:0.0378989695,(P_019193:0.0744586744,(P_019187:0.0266813242,Wsal:0.0458011318)100:0.0165388026)100:0.0226899848)100:0.0982326405)100:0.0327323692,(((P_019185:0.0830697899,((P2589:0.0724800223,OPDF:0.0201748494)100:0.0326536182,CSSK:0.0655316477)100:0.0111209645)100:0.0425039865,((GAP_80417:0.2364444925,(P2590:0.0275753848,GAP_79804:0.0313642087)100:0.0660243073)100:0.0590809365,(P_019191:0.2778567555,P_019199:0.3298603884)100:0.1621614786)100:0.0834575689)100:0.1266379052,(((P_019197:0.2229443680,PAWA:0.1500696474)100:0.0368503330,(P_019189:0.2149698326,((P_025523:0.2716527782,P_025525:0.2044058329)100:0.1741071887,P_025527:0.2920699455)100:0.1477690168)99:0.0150427520)100:0.0140462077,(Asie:0.0241423819,QDVW:0.0208967364)100:0.1132256874)100:0.0163328879)100:0.0547648321)100:0.0107725117,(((P_016909:0.0331372287,WZFE:0.0037663882)100:0.0451944962,((P_018831:0.0389962394,OSHQ:0.0046152943)100:0.0197999125,P0109B:0.1690300241)100:0.0246044688)100:0.0223580134,P0203H:0.2365357318)100:0.0706434209)100:0.0196041322,((((((GAP_79862:0.1088742562,P_011587:0.1966213294)100:0.0581380485,(P_014081:0.1469628913,(P0104A:0.0260781788,P_008647:0.0171024444)100:0.0854476923)100:0.0786721308)100:0.0514062754,((((((P_011551:0.0762914851,((P_011637:0.0018619026,P_011589:0.3721964525)99:0.0169069704,P_007844:0.1314147125)98:0.0046522795)98:0.0024375688,(((P_007843:0.1167203719,P_006414:0.0153922877)100:0.0024548000,P_007783:0.0353198157)100:0.0049323438,P_011631:0.1809958840)96:0.0006918751)100:0.0016968774,(P_011647:0.0312508554,((P_011523:0.0055040021,((P_011489:0.0056786883,P_011487:0.0047669472)100:0.0009914381,P_011501:0.0049196836)100:0.0008361409)100:0.0022246945,P_011465:0.0058301033)100:0.0045006993)100:0.0013026421)100:0.0053985078,(GAP_80393:0.0126577840,GAP_80394:0.0217590741)100:0.0052174909)100:0.0035627400,((P_011643:0.0151769485,P_011657:0.0443405123)100:0.0017550816,(P_011509:0.0099661848,P_011651:0.0339264319)100:0.0047406165)100:0.0056837401)100:0.0289400129,((GAP_80395:0.0216981959,P_011549:0.0465334459)100:0.0187565669,KRJP:0.0498655882)100:0.0200857209)100:0.0167581911)92:0.0045400229,(((P_011699:0.2707509634,(Schi:0.0425187903,P_006411:0.0186690418)100:0.0167743285)100:0.0166429678,P_011531:0.0597474403)100:0.0558087705,((((((P_011579:0.0890547208,P_008632:0.0210969902)99:0.0040966216,P_011671:0.0569391438)100:0.0244924625,((((((P_011701:0.1537108609,P_011673:0.0808959641)51:0.0148998284,(P_011537:0.0152273174,(P_011677:0.0140527245,P_011739:0.0320881015)100:0.0058673027)100:0.0011034550)51:0.0010660575,(((P_011715:0.0544015517,((P_011745:0.0056703568,P_014073:0.1565025375)95:0.0057191262,(P_011681:0.1587530179,P_011611:0.0184698703)52:0.0040679520)56:0.0032965855)56:0.0034455831,(P_011735:0.0048670671,P_011675:0.0104899717)100:0.0080603312)56:0.0025320541,P_011759:0.0115571077)50:0.0009022996)100:0.0076705933,(((GAP_80390:0.0107117694,GAP_80389:0.0113124497)100:0.0064190986,((P_008646:0.0131727064,P_011679:0.1018769849)100:0.0033269582,(P_006412:0.0106367488,P_008640:0.0084213654)100:0.0028640125)100:0.0010856145)100:0.0009059001,P_016813:0.0200392884)100:0.0016150636)77:0.0021622983,(P_006413:0.0108754394,((P_011713:0.2058432953,(P_011719:0.5946160736,P_011607:0.0000023891)98:0.1859934327)98:0.0165793697,P_011705:0.1240893676)99:0.0161493109)97:0.0016832787)94:0.0048769314,((((ABSS:0.0086953366,BCGB:0.0094223498)100:0.0025035717,KAYP:0.0091616505)100:0.0024860513,WIGA:0.0126188035)100:0.0082237644,(Dhai:0.0161654635,(Apet:0.0068067787,Msal:0.0094528340)99:0.0007725031)99:0.0012486400)99:0.0185892158)100:0.0180020787)94:0.0028848389,P_011709:0.2156448188)100:0.0237447747,(P_018635:0.1345272553,P_008631:0.0648218586)51:0.0035559950)100:0.0097155545,VYLQ:0.1957203487)100:0.0090005265)100:0.0201949042)100:0.0114319648,(((Sdec:0.5631637299,P2619:0.0998520004)100:0.0628720647,P_011609:0.2108838937)100:0.0757002777,((((P_011527:0.0445634428,((GAP_80297:0.0044572775,P_014083:0.0308499994)100:0.0257210217,GAP_80298:0.0339286889)99:0.0042836893)99:0.0031351500,P_014077:0.0670239284)100:0.0074450308,WAIL:0.0317041177)100:0.0177524094,MAQO:0.0373472557)100:0.0177726122)100:0.0121309757)100:0.0154772324,(WPHN:0.0769794925,P_011613:0.6528452351)100:0.0557969991)100:0.0379428457)100:0.0370135190,(((P_018695:0.0170607607,P_018783:0.0152585384)86:0.0015947658,(P_018645:0.0140621036,(P_018639:0.1155221992,P_018779:0.1770277472)100:0.0114824629)98:0.0011673081)100:0.0052814818,((((P_016797:0.0169691832,((GAP_80397:0.0064322982,(P_007845:0.2657263150,OBPL:0.0072554687)100:0.0102845906)100:0.0013148550,P_016799:0.0066133080)100:0.0064016127)100:0.0071527690,((((P_016791:0.0230824214,(P_014095:0.1477396525,S08:0.0186441114)100:0.0126661488)98:0.0011784145,(P_014099:0.0189470702,S03:0.0079776163)100:0.0129844963)55:0.0004502254,((P_016787:0.0026093780,S02:0.0059425864)100:0.0123356858,((P_016789:0.0089688871,S27:0.0240419839)100:0.0030445580,(S04:0.0266900365,S38:0.1487995056)100:0.0063115800)100:0.0056589389)100:0.0013420011)100:0.0030365662,P_018693:0.0241186959)97:0.0009651116)97:0.0007213529,P_018691:0.1061101942)96:0.0005480955,((P_016795:0.0154677954,P_006422:0.0219350932)100:0.0030886281,P_016793:0.0189915180)100:0.0020344818)97:0.0025742504)100:0.0977620375)100:0.0154731050,((P2622:0.0761945338,P2623:0.2218119719)100:0.0110067312,(P0110C:0.0374252031,((P0207A:0.0178027602,(((P0207B:0.0140258111,P0110B:0.0211196542)94:0.0018415477,(P0206H:0.0130131931,P0206G:0.0171549676)98:0.0013760360)97:0.0040908405,P0207C:0.0125854494)97:0.0029581317)97:0.0039236014,XQWC:0.0225580459)100:0.0186198444)100:0.0362574904)100:0.0084720806)100:0.0150989223,(GAP_80322:0.0212280969,DHPO:0.0197602869)100:0.0722301715)100:0.0521631523,(P_012795:0.0116326953,P_012941:0.0076199826)100:0.0648953480)100:0.0190375393,((P_012855:0.0421845144,(P_007802:0.0269996727,P_012827:0.0146872522)100:0.0211647752)100:0.0088581962,((P_012919:0.0075084038,P_012921:0.0282706448)100:0.0239260363,(P_018637:0.0258470114,P_012813:0.0256085771)100:0.0041116338)100:0.0151753123)100:0.0256569272)100:0.0018100744);
+(P_012861:0.0443422810,(((((P_012899:0.0305802205,P_012817:0.0347168127)100:0.0135146092,(P_012847:0.0121926246,P_012923:0.0125129313)100:0.0232598080)100:0.0071095933,P_012867:0.0365435177)100:0.0350106573,((((((P_012809:0.0069598357,P_012879:0.0082794239)100:0.0317395436,P_012801:0.0272847195)100:0.0046777636,((P_012805:0.0236787296,((P_012799:0.0275880534,YZRI:0.0337705870)100:0.0194477975,P_012825:0.0368021161)100:0.0023921885)100:0.0018795308,P_012839:0.0461293616)100:0.0047805303)100:0.0064216937,(((((P_012931:0.0153700016,(P_012933:0.0045158826,P_012935:0.0025695797)100:0.0121644805)100:0.0083016083,P_012865:0.0285123934)100:0.0014540390,((P_012849:0.0244771690,P_012871:0.0241093666)100:0.0099322241,(P_012807:0.0198497156,P_012845:0.0264800818)100:0.0028598264)100:0.0023430081)100:0.0117215217,((GAP_81172:0.0152736528,P_012833:0.0147545022)100:0.0126253399,(((P_012869:0.0094801496,(P_012835:0.0074988379,(P_012819:0.0057793822,P_012823:0.0103480047)100:0.0004538309)100:0.0028280862)100:0.0119750191,(P_012791:0.0229205998,P_012915:0.0194019466)100:0.0018978616)100:0.0058033115,(P_012927:0.0077296084,(GAP_80295:0.0191316638,PSJT:0.0175791280)100:0.0022746742)100:0.0201547433)100:0.0015174167)100:0.0106109133)92:0.0014505575,P_012909:0.0517437035)100:0.0080127326)100:0.0128978378,(((P_012803:0.0426881676,P_012853:0.0343802245)89:0.0020608435,(P_012829:0.0288321508,P_012837:0.0276506862)100:0.0073133136)100:0.0014039551,(P_012937:0.0178249990,(P_006421:0.0108725990,P_012939:0.0114338338)100:0.0073463076)100:0.0292690993)100:0.0018493581)100:0.0019404964,P_012843:0.0518878799)100:0.0067190731)100:0.0076998775,((((((((((P_012897:0.0194485588,((P_012893:0.0075635219,GAP_80293:0.0107216710)100:0.0084655164,((P_012821:0.0079509532,P_012917:0.0101808221)100:0.0064343304,P_012911:0.0141513084)100:0.0028268960)52:0.0003810825)51:0.0003816514,(((P_012863:0.0143759794,P_006418:0.0274735935)100:0.0014418295,((P_006419:0.0080382180,GAP_80292:0.0105617607)100:0.0139645607,P_012793:0.0191371251)100:0.0015003461)52:0.0002587173,P_012889:0.0187852722)52:0.0004960593)96:0.0005260024,((P_012907:0.0187449398,GAP_80291:0.0182159570)100:0.0010194364,(P_012881:0.0136957814,P_012873:0.0126145532)100:0.0036874516)75:0.0003780047)83:0.0004854574,P_012859:0.0232023594)85:0.0004165924,(GAP_80294:0.0036432515,P_006420:0.0901507171)100:0.0184733579)72:0.0006075008,P_012885:0.0210202899)100:0.0044896223,P_018689:0.0176339842)100:0.0034312559,((P_012857:0.0242775300,(P_012815:0.0140255032,P_012903:0.0170807740)100:0.0044617407)99:0.0005270301,((((P_012831:0.0182665012,P_012905:0.0186107937)100:0.0025715422,(P_012901:0.0215002022,(P_012887:0.0091836925,P_012851:0.0115737234)100:0.0112015624)98:0.0009605938)100:0.0015320124,P_012875:0.0240940172)100:0.0026597729,(P_012883:0.0097470664,P_012925:0.0091021325)100:0.0109493735)100:0.0006968297)100:0.0017504677)100:0.0095038331,(((P_012811:0.0150040201,(P_012895:0.0150981478,P_012891:0.0118687165)100:0.0019183246)100:0.0052714236,(P_012877:0.0207019368,P_012913:0.0175534247)100:0.0057627746)100:0.0082742999,P_012841:0.0342045644)100:0.0028851324)92:0.0013305545,P_012797:0.0302763086)100:0.0086582050)100:0.0024026173,((((((((((((GAP_81227:0.0397455335,(Pcol:0.0406785074,(GAP_81226:0.0149584259,P_006410:0.0246776005)100:0.0146141440)100:0.0174099802)100:0.0062792062,P_016921:0.0688160451)100:0.0176344089,WKSU:0.0294973380)100:0.0550321500,(SJEV:0.0378505948,(P_019193:0.0732128702,(P_019187:0.0264458076,Wsal:0.0433576082)100:0.0166659314)100:0.0223097525)100:0.0974885852)100:0.0325448216,(((P_019185:0.0826845631,((P2589:0.0717196705,OPDF:0.0202088296)100:0.0325861212,CSSK:0.0655851948)96:0.0108310068)100:0.0422496797,((GAP_80417:0.2321207949,(P2590:0.0273124089,GAP_79804:0.0308187853)100:0.0647371830)100:0.0578988926,(P_019191:0.2913659032,P_019199:0.3229647870)100:0.1551651612)100:0.0841078695)100:0.1255116941,(((P_019197:0.2207032912,PAWA:0.1492518733)100:0.0367298736,(P_019189:0.2125241866,((P_025523:0.2667008958,P_025525:0.2016137629)100:0.1711237421,P_025527:0.2848918082)100:0.1451568177)99:0.0156860764)100:0.0137728085,(Asie:0.0239025845,QDVW:0.0210397861)100:0.1127946774)100:0.0164162467)100:0.0538847037)100:0.0107267799,(((P_016909:0.0328514715,WZFE:0.0037421168)100:0.0451633339,((P_018831:0.0383978630,OSHQ:0.0045820097)100:0.0195800566,P0109B:0.1669026308)100:0.0242018369)100:0.0221762319,P0203H:0.2335351757)100:0.0702117118)100:0.0195039318,((((((GAP_79862:0.1080835460,P_011587:0.1966764978)100:0.0572465872,(P_014081:0.1448126105,(P0104A:0.0258648503,P_008647:0.0169439395)100:0.0847251300)100:0.0782270988)100:0.0514104148,((((((P_011551:0.0744741848,((P_011637:0.0017320187,P_011589:0.3489348653)100:0.0171033005,P_007844:0.1299299763)99:0.0044926054)99:0.0024683469,(((P_007843:0.1137979503,P_006414:0.0153129463)100:0.0024363437,P_007783:0.0363756886)100:0.0047881842,P_011631:0.1775580006)98:0.0007505165)100:0.0016278298,(P_011647:0.0279892465,((P_011523:0.0054749546,((P_011489:0.0055702714,P_011487:0.0047451886)100:0.0010004033,P_011501:0.0048898805)100:0.0008281601)100:0.0022021240,P_011465:0.0057604885)100:0.0044803821)100:0.0012338850)100:0.0053642628,(GAP_80393:0.0125694167,GAP_80394:0.0217194487)100:0.0051934365)100:0.0035543418,((P_011643:0.0151911978,P_011657:0.0444366329)100:0.0017156902,(P_011509:0.0099128408,P_011651:0.0336072926)100:0.0046577512)100:0.0057407468)100:0.0288972898,((GAP_80395:0.0216342034,P_011549:0.0463664183)100:0.0185500892,KRJP:0.0497124736)100:0.0198560388)100:0.0166937819)98:0.0045985828,(((P_011699:0.2667452209,(Schi:0.0423924018,P_006411:0.0186354570)100:0.0165980731)100:0.0164805412,P_011531:0.0596308700)100:0.0555969643,((((((P_011579:0.0886541643,P_008632:0.0211684554)98:0.0039366866,P_011671:0.0566084274)100:0.0246398954,(((((P_011701:0.1659395549,P_011673:0.0813559405)83:0.0132598874,(P_011537:0.0152661362,((P_011677:0.0141927625,P_011739:0.0316477711)100:0.0042497754,P_011607:0.1919448023)99:0.0016090208)100:0.0010280590)82:0.0010771259,(((P_011715:0.0541515698,((P_011745:0.0056053647,P_014073:0.1577358387)99:0.0055815679,(P_011681:0.1600488053,P_011611:0.0179813632)90:0.0041709285)91:0.0033370802)91:0.0035048377,(P_011735:0.0050138574,P_011675:0.0097787254)100:0.0077506172)91:0.0025926567,P_011759:0.0115256147)82:0.0008497099)100:0.0071602102,((((GAP_80390:0.0108134478,GAP_80389:0.0112884350)100:0.0063046158,((P_008646:0.0131086959,P_011679:0.1007038402)100:0.0032554530,(P_006412:0.0104780039,P_008640:0.0086099752)100:0.0028227727)100:0.0010893540)100:0.0008774554,P_016813:0.0198119178)100:0.0018319019,(P_006413:0.0105103574,((P_011713:0.1910059665,P_011719:0.7556115574)98:0.0261333178,P_011705:0.1210698849)98:0.0161306141)93:0.0030312592)56:0.0022518185)92:0.0041005548,((((ABSS:0.0086883618,BCGB:0.0093501237)100:0.0025674334,KAYP:0.0088186455)100:0.0018231578,WIGA:0.0130709555)100:0.0079920597,((Dhai:0.0158714393,Msal:0.0095631084)95:0.0008771951,Apet:0.0070312554)100:0.0017306901)100:0.0183494737)98:0.0176456329)91:0.0020269421,P_011709:0.2404763527)100:0.0244993613,(P_018635:0.1339101586,P_008631:0.0643134682)91:0.0035777262)100:0.0095565319,VYLQ:0.1945475912)100:0.0091408780)100:0.0200140340)100:0.0113565821,(((Sdec:0.5296545085,P2619:0.0950517635)100:0.0647645913,P_011609:0.2074615189)100:0.0766018765,((((P_011527:0.0440490806,((GAP_80297:0.0043795052,P_014083:0.0305639895)100:0.0256572868,GAP_80298:0.0337374865)100:0.0042397180)100:0.0030714860,P_014077:0.0669566277)100:0.0074252116,WAIL:0.0315558316)100:0.0174030705,MAQO:0.0371087204)100:0.0178047085)100:0.0119064015)100:0.0154301753,(WPHN:0.0762580253,P_011613:0.6418024484)100:0.0555975314)100:0.0376761608)100:0.0367224382,(((P_018695:0.0169758627,P_018783:0.0151272818)84:0.0016016784,(P_018645:0.0141022507,(P_018639:0.1167209967,P_018779:0.1739353570)100:0.0107906972)98:0.0011225255)100:0.0051483783,((((P_016797:0.0168569704,((GAP_80397:0.0064114329,(P_007845:0.2592833701,OBPL:0.0071081434)98:0.0102372260)98:0.0013195471,P_016799:0.0065923480)100:0.0063367643)100:0.0071649927,((((P_016791:0.0229786662,(P_014095:0.1434582400,S08:0.0182597124)100:0.0129005867)98:0.0011385950,(P_014099:0.0183541201,S03:0.0079281360)100:0.0129084124)57:0.0004411236,((P_016787:0.0025224999,S02:0.0058868841)100:0.0122338284,((P_016789:0.0089059150,S27:0.0237378115)100:0.0030013370,(S04:0.0263802420,S38:0.1451900055)100:0.0060559625)100:0.0056411176)100:0.0013523488)100:0.0029889041,P_018693:0.0238146879)99:0.0009628119)99:0.0007182725,P_018691:0.1046053582)99:0.0005342803,((P_016795:0.0153899196,P_006422:0.0216199988)100:0.0030696214,P_016793:0.0189897696)100:0.0020273742)99:0.0025787021)100:0.0971244327)100:0.0154329877,((P2622:0.0758238656,P2623:0.2189599684)99:0.0109575965,(P0110C:0.0383812867,((P0207A:0.0176688120,(((P0207B:0.0139948904,P0110B:0.0208708402)90:0.0017984704,(P0206H:0.0128770214,P0206G:0.0167567749)95:0.0013695097)95:0.0040138783,P0207C:0.0124787671)95:0.0029556884)95:0.0038070792,XQWC:0.0224220209)100:0.0185261132)100:0.0360713225)100:0.0084513711)100:0.0149879922,(GAP_80322:0.0211557991,DHPO:0.0197909274)100:0.0718553938)100:0.0519666508,(P_012795:0.0115290572,P_012941:0.0076023985)100:0.0641336272)100:0.0188661313,((P_012855:0.0419004107,(P_007802:0.0265564887,P_012827:0.0144457395)100:0.0211457923)100:0.0086728963,((P_012919:0.0073466707,P_012921:0.0279599859)100:0.0238282976,(P_018637:0.0256555917,P_012813:0.0251388068)100:0.0040929832)100:0.0149866701)100:0.0253859245)99:0.0017482141);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t mag.partitions.treefile -p mag.partitions.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s mag.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s mag.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Tue Aug  8 11:12:10 2023
-Total CPU time used: 86100.32697 seconds (23h:55m:0s)
-Total wall-clock time used: 29215.47365 seconds (8h:6m:55s)
+Date and time: Tue Jun  4 06:17:29 2024
+Total CPU time used: 205251.2333 seconds (57h:0m:51s)
+Total wall-clock time used: 69189.15333 seconds (19h:13m:9s)
 

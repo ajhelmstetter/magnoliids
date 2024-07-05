@@ -58,45 +58,7 @@ tn<-tn[tn$included_hybpiper==1,]
 setdiff(tn$Namelist,rownames(percent.len))
 setdiff(rownames(percent.len),tn$Namelist)
 
-
-if(ts == "family"){
-
-  ####
-  #FAMILY
-  ####
-
-  percent.len<-cbind.data.frame(percent.len,tn$Family)
-  percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-  rownames(percent.len)<-percent.len[,1]
-  percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-  percent.len<-as.matrix(percent.len)
-
-  filename<-"figures/fig3_family.png"
-
-} else if(ts == "genus") {
-
-  ####
-  #GENUS
-  ####
-
-  percent.len<-cbind.data.frame(percent.len,tn$Genus)
-  percent.len<-aggregate(percent.len, by = list(percent.len[,length(percent.len[1,])]), max)
-  rownames(percent.len)<-percent.len[,1]
-  percent.len<-percent.len[,2:(length(percent.len[1,])-1)]
-  percent.len<-as.matrix(percent.len)
-
-  filename<-"figures/fig3_genus.png"
-
-} else {
-
-
-  ###
-  # sample
-  ###
-
-  filename<-"figures/fig3_heatmap.png"
-
-}
+filename<-"figures/fig3_heatmap.png"
 
 #set thresholds
 #limits <- c(0.25, 0.5, 0.75, 0.9)
@@ -133,7 +95,7 @@ for (i in 1:length(limits)) {
 }
 
 #####
-# Gradient plot
+# ---- Figure 3 Heatmap ----
 #####
 
 #convert to data frame
@@ -217,34 +179,6 @@ p2 +
   annotate("point", x = ast_filt$x, y = ast_filt$y, size=2, alpha=0.7, pch=3, stroke=1) +
   annotate("text", x = ast_filt$x+2.5, y = ast_filt$y+2.5, label = no_markers, size=3, alpha=0.7)
 
-
 ggsave(filename,  width = 17.5,
        height = 15,
        units = "cm")
-
-# Library
-library(lattice)
-
-wireframe(no_markers ~ exon_prop*ind_prop, data = exon_stats_melt,
-          xlab = "exon_prop",
-          ylab = "ind_prop",
-          main = "no_markers",
-          drape = TRUE,
-          colorkey = TRUE,
-          screen = list(z = 45, x = -120, y = 0)
-)
-
-library(plotly)
-x <- seq_len(nrow(volcano)) + 100
-y <- seq_len(ncol(volcano)) + 500
-plot_ly() %>% add_surface(x = ~x, y = ~y, z = ~volcano)
-
-str(exon_stats)
-str(volcano)
-
-
-
-exon_mat<-as.matrix(exon_stats[,c(1:(length(colnames(exon_stats))-1))])
-exon_mat<-exon_mat/353*100
-
-plot_ly() %>% add_surface(z = ~exon_mat)

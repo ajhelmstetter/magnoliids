@@ -3,115 +3,117 @@
 
 This is ASTRAL version 5.7.7
 Gene trees are treated as unrooted
-187 trees read from all_bs10.trees
+181 trees read from all_bs10.trees
 index142
 All output trees will be *arbitrarily* rooted at P0109B
 
 ======== Running the main analysis
 Number of taxa: 244 (244 species)
 Taxa: [P_012907, P_006419, GAP_80292, P_006418, P_012889, P_012873, P_012881, P_012793, P_012911, P_012897, P_012917, P_012821, P_012863, P_006420, GAP_80294, P_012885, P_012859, P_018689, GAP_80293, P_012893, P_012895, GAP_80291, P_012891, P_012875, P_012887, P_012851, P_012831, P_012815, P_012903, P_012925, P_012883, P_012857, P_012841, P_012913, P_012877, P_012797, P_012905, P_012901, P_012861, XQWC, P0207B, P0206H, P0206G, P0110C, P0110B, P0207C, P0207A, P2622, P2623, P_016795, P_016797, P_007845, GAP_80397, P_016799, OBPL, S04, S27, P_016789, S02, P_018779, P_014099, S03, P_018691, P_018693, P_016791, P_006422, P_016787, P_016793, Sdec, P_018695, P_018645, P_018783, P_018831, P_016909, WZFE, P2619, P_014083, P_018635, P_011551, VYLQ, WPHN, P_011681, P_011715, P_011537, P_011671, P_011677, GAP_80390, P_011679, P_011739, P_011673, GAP_80389, ABSS, P_011713, Dhai, P_006413, P_008640, P_008646, P_011745, P_011759, P_006412, P_011675, P_011735, P_016813, Apet, WAIL, P_014077, GAP_80395, KRJP, P_011549, P_011509, P_011651, P_011489, P_011487, P_011523, P_011501, P_011465, GAP_80394, P_011643, P_011637, P_007844, P_007783, P_006414, P_007843, P_011647, GAP_80393, P_011657, MAQO, P_011527, GAP_80297, GAP_80298, P_011699, P_011531, Schi, P_006411, GAP_79862, P_008647, P0104A, P_014081, P0203H, P_011609, P_008632, P_011587, P0109B, P_018639, P_011579, P_011701, GAP_81227, P_016921, Pcol, WKSU, P_006410, GAP_81226, SJEV, P_019193, P_019187, Wsal, P_019189, PAWA, P_019197, P_025523, CSSK, P_019185, P2589, OPDF, GAP_80417, P2590, GAP_79804, Asie, QDVW, DHPO, GAP_80322, P_012941, P_012795, P_012813, P_007802, P_012827, P_012855, P_018637, P_012921, P_012919, P_012853, P_012843, P_012803, P_012937, P_006421, P_012939, P_012829, P_012837, P_012867, P_012847, P_012923, P_012817, P_012899, P_012865, P_012849, P_012871, P_012933, P_012935, P_012931, GAP_81172, P_012833, P_012927, P_012915, P_012869, P_012823, P_012791, P_012819, P_012835, P_012807, PSJT, GAP_80295, P_012845, P_012809, P_012879, P_012839, P_012801, P_012805, P_012909, YZRI, P_012799, P_012825, P_012811, S08, P_014095, S38, OSHQ, P_019191, P_011613, P_011705, BCGB, WIGA, Msal, P_008631, P_011631, P_025525, KAYP, P_011719, P_025527, P_014073, P_011709, P_011611, P_019199, P_011607, P_011589]
-Taxon occupancy: {P_019193=163, P_019191=80, P_019197=172, OPDF=169, GAP_81172=186, P_018783=181, P_019199=64, Wsal=163, P_016921=183, WKSU=181, P_025523=30, P_025525=53, P_025527=25, P_014073=20, P0203H=133, P_014077=108, QDVW=177, P_011487=182, P_011489=184, P_016813=169, P_006421=186, P_006422=181, P_006420=148, P_006418=184, P_006419=185, P_006414=184, P_014081=131, P_014083=136, P_018689=186, P0206H=174, P0206G=162, Msal=163, P0109B=98, P_012901=183, P_006410=179, P_006411=181, P_012903=184, P_006412=183, P_006413=179, P_012905=184, P_012907=187, GAP_79862=178, PAWA=174, ABSS=176, P_012909=185, P_018691=89, GAP_80291=187, P_018695=179, P_014095=77, GAP_80293=185, GAP_80292=185, P_018693=179, GAP_80295=182, GAP_80294=185, P_014099=177, GAP_80297=182, GAP_80298=181, P_012911=184, P_011701=31, P_012913=165, P_012915=182, P_011705=98, P_012917=179, P_012919=175, P_011709=17, P_012881=187, P_011671=110, P_011551=113, P_012883=186, P_011673=154, MAQO=180, P_012885=184, P_011675=172, GAP_80322=185, P2590=158, P_012887=185, P_011677=143, P_012889=183, P_011679=160, P_008647=175, PSJT=170, P2589=161, P_012891=184, P_011681=132, P_012893=185, P_018637=182, P_012895=185, P_018635=172, P_012897=184, P0207C=180, P0207B=181, P_012899=182, P0207A=180, P_018639=171, P_008646=184, P_008640=183, BCGB=170, WZFE=177, P_018645=178, KRJP=178, KAYP=84, P_011699=94, P_011579=142, CSSK=169, P_008632=180, P_016909=184, P_007783=171, P_008631=39, P_019187=180, P_019185=177, Sdec=45, P_019189=157, P_012791=184, P_012793=182, Asie=143, P_012795=184, P_018779=141, P_011465=184, P_012797=183, P_011587=144, P_012799=184, P_011589=3, GAP_80417=112, WIGA=160, GAP_79804=145, P_007802=142, P_012841=182, P_011631=152, Pcol=156, P_012843=185, P_012845=184, P_011637=179, P_012847=177, P_011759=171, P_012849=185, Apet=86, OBPL=180, P0110C=170, P0110B=129, P_018831=180, YZRI=179, P_012851=182, P_011643=184, P_012853=181, P_011523=184, P_012855=178, P_012857=182, P_011647=166, P_011527=115, P_012859=184, WAIL=185, P_016789=176, P_012861=186, P_011651=156, P_016787=179, P_011531=153, P_012863=185, P_012865=180, Schi=148, P_011657=162, P_012867=184, P_011537=135, P_012869=183, P_016793=178, P_016791=180, P_016797=182, SJEV=182, P_016795=177, P_012871=179, P_012873=185, P_016799=183, P_012875=185, P_012877=182, P_012879=186, P_011549=170, P_007844=130, P_007845=33, S02=147, S04=49, P_012921=170, S03=172, P_012801=184, P_011713=127, P_012923=180, P_012803=184, P_012925=183, P_011715=156, S08=119, P_007843=162, P_012805=184, P_012927=185, P_012807=182, P_011719=23, P_012809=185, VYLQ=185, DHPO=183, GAP_80390=166, P2622=137, P2623=72, XQWC=178, GAP_80394=185, GAP_80393=184, GAP_80395=185, GAP_80397=181, P_012931=185, P_012811=185, WPHN=177, P_012933=180, P_012813=183, P_012935=182, P_012815=180, P_012937=186, P_012817=182, P_011607=3, P_012939=182, P_011609=122, P_012819=180, P2619=126, OSHQ=178, GAP_80389=176, P_012941=187, P_012821=184, P_011611=31, P_012823=183, P_011613=63, P_011735=183, S27=133, P_012825=186, P_012827=163, P_011739=155, P_012829=138, Dhai=178, P0104A=159, P_012831=178, P_011501=185, GAP_81226=184, P_012833=183, P_011745=165, GAP_81227=182, P_012835=183, S38=51, P_012837=184, P_012839=180, P_011509=184}
-Number of gene trees: 187
-187 trees have missing taxa
+Taxon occupancy: {P_019193=157, P_019191=78, P_019197=166, OPDF=163, GAP_81172=180, P_018783=175, P_019199=62, Wsal=157, P_016921=177, WKSU=175, P_025523=30, P_025525=53, P_025527=23, P_014073=18, P0203H=131, P_014077=102, QDVW=171, P_011487=176, P_011489=178, P_016813=163, P_006421=180, P_006422=175, P_006420=143, P_006418=178, P_006419=179, P_006414=178, P_014081=127, P_014083=131, P_018689=180, P0206H=168, P0206G=156, Msal=157, P0109B=96, P_012901=177, P_006410=173, P_006411=175, P_012903=178, P_006412=177, P_006413=173, P_012905=178, P_012907=181, GAP_79862=173, PAWA=168, ABSS=170, P_012909=179, P_018691=87, GAP_80291=181, P_018695=173, P_014095=75, GAP_80293=179, GAP_80292=179, P_018693=173, GAP_80295=176, GAP_80294=179, P_014099=171, GAP_80297=176, GAP_80298=175, P_012911=178, P_011701=30, P_012913=159, P_012915=176, P_011705=93, P_012917=173, P_012919=169, P_011709=17, P_012881=181, P_011671=106, P_011551=110, P_012883=180, P_011673=148, MAQO=174, P_012885=178, P_011675=166, GAP_80322=179, P2590=153, P_012887=179, P_011677=138, P_012889=177, P_011679=154, P_008647=169, PSJT=164, P2589=157, P_012891=178, P_011681=126, P_012893=179, P_018637=176, P_012895=179, P_018635=166, P_012897=178, P0207C=174, P0207B=175, P_012899=176, P0207A=174, P_018639=165, P_008646=178, P_008640=177, BCGB=164, WZFE=171, P_018645=172, KRJP=172, KAYP=79, P_011699=90, P_011579=137, CSSK=163, P_008632=174, P_016909=178, P_007783=165, P_008631=39, P_019187=174, P_019185=171, Sdec=45, P_019189=154, P_012791=178, P_012793=176, Asie=139, P_012795=178, P_018779=136, P_011465=178, P_012797=177, P_011587=140, P_012799=178, P_011589=3, GAP_80417=108, WIGA=154, GAP_79804=142, P_007802=138, P_012841=176, P_011631=148, Pcol=151, P_012843=179, P_012845=178, P_011637=173, P_012847=171, P_011759=165, P_012849=179, Apet=83, OBPL=174, P0110C=164, P0110B=127, P_018831=174, YZRI=173, P_012851=176, P_011643=178, P_012853=175, P_011523=178, P_012855=172, P_012857=176, P_011647=160, P_011527=110, P_012859=178, WAIL=179, P_016789=170, P_012861=180, P_011651=150, P_016787=173, P_011531=147, P_012863=179, P_012865=174, Schi=143, P_011657=157, P_012867=178, P_011537=129, P_012869=177, P_016793=172, P_016791=174, P_016797=176, SJEV=176, P_016795=171, P_012871=174, P_012873=179, P_016799=177, P_012875=179, P_012877=176, P_012879=180, P_011549=164, P_007844=127, P_007845=33, S02=141, S04=47, P_012921=164, S03=166, P_012801=179, P_011713=123, P_012923=174, P_012803=178, P_012925=177, P_011715=150, S08=115, P_007843=156, P_012805=178, P_012927=179, P_012807=176, P_011719=20, P_012809=179, VYLQ=179, DHPO=177, GAP_80390=160, P2622=133, P2623=69, XQWC=172, GAP_80394=179, GAP_80393=178, GAP_80395=179, GAP_80397=175, P_012931=179, P_012811=179, WPHN=171, P_012933=174, P_012813=177, P_012935=176, P_012815=174, P_012937=180, P_012817=176, P_011607=2, P_012939=176, P_011609=120, P_012819=174, P2619=121, OSHQ=172, GAP_80389=171, P_012941=181, P_012821=178, P_011611=30, P_012823=177, P_011613=61, P_011735=177, S27=128, P_012825=180, P_012827=157, P_011739=149, P_012829=135, Dhai=172, P0104A=153, P_012831=172, P_011501=179, GAP_81226=178, P_012833=177, P_011745=160, GAP_81227=176, P_012835=177, S38=49, P_012837=178, P_012839=174, P_011509=178}
+Number of gene trees: 181
+181 trees have missing taxa
 Calculating quartet distance matrix (for completion of X)
 Species tree distances calculated ...
 Will attempt to complete bipartitions from X before adding using a distance matrix.
 Building set of clusters (X) from gene trees 
 ------------------------------
-gradient0: 41447
-Number of Clusters after addition by distance: 41447
+gradient0: 39737
+Number of Clusters after addition by distance: 39737
 calculating extra bipartitions to be added at level 1 ...
 Adding to X using resolutions of greedy consensus ...
 Limit for sigma of degrees:6150
-polytomy size limit : 46
-discarded polytomies:  [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 8, 9, 12, 12, 13, 14, 14, 15, 17, 25, 27, 46]
+polytomy size limit : 43
+discarded polytomies:  [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 8, 8, 9, 12, 12, 13, 14, 14, 14, 15, 25, 26, 43]
 Threshold 0.0:
-polytomy of size 6; rounds with additions with at least 5 support: 2; clusters: 41539
+polytomy of size 6; rounds with additions with at least 5 support: 2; clusters: 39831
 Threshold 0.01:
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41539
-polytomy of size 7; rounds with additions with at least 5 support: 0; clusters: 41629
+polytomy of size 7; rounds with additions with at least 5 support: 2; clusters: 39911
 Threshold 0.02:
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41637
-polytomy of size 7; rounds with additions with at least 5 support: 1; clusters: 41645
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 39911
+polytomy of size 8; rounds with additions with at least 5 support: 0; clusters: 39995
 Threshold 0.05:
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41645
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41645
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41645
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41645
-polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 41653
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41653
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41653
-polytomy of size 12; rounds with additions with at least 5 support: 1; clusters: 41705
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 39995
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 39995
+polytomy of size 4; rounds with additions with at least 5 support: 1; clusters: 39997
+polytomy of size 4; rounds with additions with at least 5 support: 1; clusters: 39999
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 39999
+polytomy of size 6; rounds with additions with at least 5 support: 1; clusters: 40007
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40007
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40007
+polytomy of size 12; rounds with additions with at least 5 support: 2; clusters: 40079
 Threshold 0.1:
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41705
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41705
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41705
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41705
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41705
-polytomy of size 15; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41715
-polytomy of size 14; rounds with additions with at least 5 support: 0; clusters: 41725
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40079
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40079
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40079
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40079
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40079
+polytomy of size 15; rounds with additions with at least 5 support: 0; clusters: 40091
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40091
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40095
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40095
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40095
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40095
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40095
+polytomy of size 14; rounds with additions with at least 5 support: 0; clusters: 40099
 Threshold 0.2:
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41725
-polytomy of size 12; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 8; rounds with additions with at least 5 support: 0; clusters: 41741
-polytomy of size 27; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 14; rounds with additions with at least 5 support: 0; clusters: 41815
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40099
+polytomy of size 12; rounds with additions with at least 5 support: 0; clusters: 40101
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40101
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40101
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40101
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40101
+polytomy of size 8; rounds with additions with at least 5 support: 0; clusters: 40103
+polytomy of size 26; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40137
+polytomy of size 14; rounds with additions with at least 5 support: 0; clusters: 40155
 Threshold 0.3333333333333333:
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41815
-polytomy of size 17; rounds with additions with at least 5 support: 0; clusters: 41825
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41825
-polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 41825
-polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 41825
-polytomy of size 9; rounds with additions with at least 5 support: 0; clusters: 41825
-polytomy of size 46; rounds with additions with at least 5 support: 0; clusters: 41855
-polytomy of size 13; rounds with additions with at least 5 support: 0; clusters: 41855
-polytomy of size 25; rounds with additions with at least 5 support: 0; clusters: 41857
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 6; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 40155
+polytomy of size 14; rounds with additions with at least 5 support: 0; clusters: 40177
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40177
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 40177
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 40177
+polytomy of size 9; rounds with additions with at least 5 support: 0; clusters: 40177
+polytomy of size 43; rounds with additions with at least 5 support: 0; clusters: 40193
+polytomy of size 13; rounds with additions with at least 5 support: 0; clusters: 40193
+polytomy of size 25; rounds with additions with at least 5 support: 0; clusters: 40193
 max k is :4
-Number of Clusters after addition by greedy: 41857
-gradient0 in heuristiic: 41857
-partitions formed in 13.534 secs
-Dynamic Programming starting after 13.534 secs
+Number of Clusters after addition by greedy: 40193
+gradient0 in heuristiic: 40193
+partitions formed in 9.135 secs
+Dynamic Programming starting after 9.135 secs
 Using tree-based weight calculation.
 Using polytree-based weight calculation.
-Polytree max score: 10814489947
-Polytree building time: 0.102 seconds.
-Number of quartet trees in the gene trees: 10814489947
+Polytree max score: 10327268447
+Polytree building time: 0.119 seconds.
+Number of quartet trees in the gene trees: 10327268447
 Size of largest cluster: 244
-Greedy score: 10100227807
-estimationFactor: 1.0707174287202688
-Sub-optimal score: 10152173192
-Calculated 100000 weights; time (seconds): 106
-Total Number of elements weighted: 100570
-Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.9510078219503106
-Optimization score: 10284664530
-Optimal tree inferred in 107.413 secs.
-(P_012803,(P_012853,((P_012829,P_012837),((P_012937,(P_006421,P_012939)),((((P_012801,(P_012809,P_012879)),(P_012839,(P_012805,(P_012825,(YZRI,P_012799))))),((((P_012849,P_012871),(P_012807,P_012845)),(P_012865,(P_012931,(P_012933,P_012935)))),(P_012909,((GAP_81172,P_012833),((P_012927,(PSJT,GAP_80295)),((P_012915,P_012791),(P_012869,(P_012835,(P_012823,P_012819))))))))),(P_012843,((P_012867,((P_012847,P_012923),(P_012817,P_012899))),(((P_012841,((P_012913,P_012877),(P_012811,(P_012895,P_012891)))),(P_012797,((P_012857,(((P_012815,P_012903),(P_012925,P_012883)),(P_012875,(P_012901,((P_012831,P_012905),(P_012887,P_012851)))))),(P_018689,((P_012885,(P_012859,(P_006420,GAP_80294))),((P_012907,(P_012873,P_012881)),((GAP_80291,(P_012897,(GAP_80293,P_012893))),((P_012911,(P_012917,P_012821)),(P_006418,((P_012889,P_012793),(P_012863,(P_006419,GAP_80292)))))))))))),((P_012861,((P_012855,(P_007802,P_012827)),((P_012813,P_018637),(P_012921,P_012919)))),((P_012941,P_012795),((DHPO,GAP_80322),(((P2622,P2623),(P0110C,(P0110B,((P0207C,P0207A),((XQWC,P0207B),(P0206H,P0206G)))))),((((P_018779,P_018639),(P_018695,(P_018645,P_018783))),(P_018691,(((P_016793,(P_016795,P_006422)),(P_016797,(P_007845,(P_016799,(GAP_80397,OBPL))))),(P_018693,((S02,P_016787),((S04,(S38,(S27,P_016789))),(P_016791,((S08,P_014095),(P_014099,S03))))))))),(((P0203H,((P_016909,WZFE),(P0109B,(P_018831,OSHQ)))),(((SJEV,(P_019193,(P_019187,Wsal))),(P_016921,(GAP_81227,(WKSU,(Pcol,(P_006410,GAP_81226)))))),((P_025527,(P_025523,P_025525)),(((Asie,QDVW),(P_019189,(PAWA,P_019197))),(((P2589,OPDF),(CSSK,P_019185)),((P_019191,P_019199),(GAP_80417,(P2590,GAP_79804)))))))),((WPHN,P_011613),(((P_011609,(Sdec,P2619)),(MAQO,(P_014077,(WAIL,(P_011527,(GAP_80298,(P_014083,GAP_80297))))))),(((GAP_79862,P_011587),(P_014081,(P_008647,P0104A))),(((KRJP,(GAP_80395,P_011549)),((P_011657,(P_011643,(P_011509,P_011651))),((GAP_80394,GAP_80393),((P_011647,(P_011465,(P_011501,(P_011489,(P_011487,P_011523))))),(P_011631,(P_011551,((P_011637,P_007844),(P_007843,(P_007783,P_006414))))))))),((P_011589,(P_011531,(P_011699,(Schi,P_006411)))),(VYLQ,(P_018635,(P_008631,((P_011579,(P_008632,(P_011671,P_011607))),(P_011719,(P_014073,(P_011709,(((P_011713,(Dhai,P_011705)),(P_006413,(Apet,(WIGA,Msal)))),((P_016813,(KAYP,((GAP_80390,GAP_80389),((P_011679,P_008646),(P_008640,P_006412))))),((ABSS,BCGB),(P_011701,((P_011673,(P_011537,(P_011677,P_011739))),(P_011759,((P_011675,P_011735),(P_011715,(P_011681,(P_011745,P_011611))))))))))))))))))))))))))))))))))));
-Final quartet score is: 10284664530
-Final normalized quartet score is: 0.9510078219503106
+Greedy score: 9643770041
+estimationFactor: 1.070874606413689
+Sub-optimal score: 9669668663
+Total Number of elements weighted: 95952
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.951146335975554
+Optimization score: 9822743544
+Optimal tree inferred in 104.89 secs.
+(P_012803,(P_012853,((P_012829,P_012837),((P_012937,(P_006421,P_012939)),((((P_012801,(P_012809,P_012879)),(P_012839,(P_012805,(P_012825,(YZRI,P_012799))))),((((P_012849,P_012871),(P_012807,P_012845)),(P_012865,(P_012931,(P_012933,P_012935)))),(P_012909,((GAP_81172,P_012833),((P_012927,(PSJT,GAP_80295)),((P_012915,P_012791),(P_012869,(P_012835,(P_012823,P_012819))))))))),(P_012843,((P_012867,((P_012847,P_012923),(P_012817,P_012899))),(((P_012797,(P_012841,((P_012913,P_012877),(P_012811,(P_012895,P_012891))))),((P_012857,(((P_012815,P_012903),(P_012925,P_012883)),(P_012875,(P_012901,((P_012831,P_012905),(P_012887,P_012851)))))),(P_018689,((P_012885,(P_012859,(P_006420,GAP_80294))),((P_012873,P_012881),((P_012907,(P_006418,((P_012889,P_012793),(P_012863,(P_006419,GAP_80292))))),((P_012911,(P_012917,P_012821)),(GAP_80291,(P_012897,(GAP_80293,P_012893)))))))))),((P_012861,((P_012855,(P_007802,P_012827)),((P_012813,P_018637),(P_012921,P_012919)))),((P_012941,P_012795),((DHPO,GAP_80322),(((P2622,P2623),(P0110C,(P0110B,((XQWC,P0207B),(P0207A,(P0207C,(P0206H,P0206G))))))),((((P_018779,P_018639),(P_018695,(P_018645,P_018783))),(((P_016793,(P_016795,P_006422)),(P_018691,(P_018693,(P_016797,(P_007845,(P_016799,(GAP_80397,OBPL))))))),((S02,P_016787),((S04,(S38,(S27,P_016789))),(P_016791,((S08,P_014095),(P_014099,S03))))))),(((P0203H,((P_016909,WZFE),(P0109B,(P_018831,OSHQ)))),(((SJEV,(P_019193,(P_019187,Wsal))),(P_016921,(GAP_81227,(WKSU,(Pcol,(P_006410,GAP_81226)))))),((P_025527,(P_025523,P_025525)),(((Asie,QDVW),(P_019189,(PAWA,P_019197))),(((P2589,OPDF),(CSSK,P_019185)),((P_019191,P_019199),(GAP_80417,(P2590,GAP_79804)))))))),((WPHN,P_011613),(((P_011609,(Sdec,P2619)),(MAQO,(WAIL,(P_011527,((P_014083,GAP_80297),(P_014077,GAP_80298)))))),(((GAP_79862,P_011587),(P_014081,(P_008647,P0104A))),(((KRJP,(GAP_80395,P_011549)),((P_011657,(P_011643,(P_011509,P_011651))),((GAP_80394,GAP_80393),((P_011647,(P_011465,(P_011501,(P_011489,(P_011487,P_011523))))),(P_011631,(P_011551,((P_011637,P_007844),(P_007843,(P_007783,P_006414))))))))),((P_011589,(P_011531,(P_011699,(Schi,P_006411)))),(VYLQ,(P_018635,(P_008631,((P_011579,(P_011671,P_008632)),(((P_011713,(Dhai,P_011705)),(P_006413,(Apet,(WIGA,Msal)))),((P_016813,(KAYP,((GAP_80390,GAP_80389),((P_011679,P_008646),(P_008640,P_006412))))),((ABSS,BCGB),((P_011607,(P_011701,P_011719)),((P_014073,P_011709),((P_011673,(P_011537,(P_011677,P_011739))),(P_011759,((P_011675,P_011735),(P_011715,(P_011681,(P_011745,P_011611))))))))))))))))))))))))))))))))));
+Final quartet score is: 9822743544
+Final normalized quartet score is: 0.951146335975554
 You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
 	{P_025523, P_025525}
 You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 16:
@@ -120,15 +122,17 @@ You may want to ignore posterior probabilities and other statistics related to t
 	{P_011699, P_011531, Schi, P_006411}
 You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 3:
 	{P_011699, P_011531, Schi, P_006411, P_011589}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 0:
+	{P_011701, P_011719}
 You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 1:
-	{P_011671, P_011607}
-You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 17:
-	{P_011681, P_011715, P_011537, P_011677, GAP_80390, P_011679, P_011739, P_011673, GAP_80389, ABSS, P_011713, Dhai, P_006413, P_008640, P_008646, P_011745, P_011759, P_006412, P_011675, P_011735, P_016813, Apet, P_011701, P_011705, BCGB, WIGA, Msal, KAYP, P_011611}
+	{P_011701, P_011719, P_011607}
 You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 2:
-	{P_011681, P_011715, P_011537, P_011677, GAP_80390, P_011679, P_011739, P_011673, GAP_80389, ABSS, P_011713, Dhai, P_006413, P_008640, P_008646, P_011745, P_011759, P_006412, P_011675, P_011735, P_016813, Apet, P_011701, P_011705, BCGB, WIGA, Msal, KAYP, P_011709, P_011611}
-You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 4:
-	{P_011681, P_011715, P_011537, P_011677, GAP_80390, P_011679, P_011739, P_011673, GAP_80389, ABSS, P_011713, Dhai, P_006413, P_008640, P_008646, P_011745, P_011759, P_006412, P_011675, P_011735, P_016813, Apet, P_011701, P_011705, BCGB, WIGA, Msal, KAYP, P_014073, P_011709, P_011611}
+	{P_014073, P_011709}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 19:
+	{P_011745, P_011611}
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 11:
+	{P_011681, P_011715, P_011537, P_011677, P_011739, P_011673, P_011745, P_011759, P_011675, P_011735, P_014073, P_011709, P_011611}
 Extended species tree:
-(P0109B,((P_018831,OSHQ)1:1.790332679055763,((P_016909,WZFE)1:2.4569560025804082,(P0203H,((((SJEV,(P_019193,(P_019187,Wsal)1:0.6348579518831212)1:0.25183301631165533)1:2.983937974862656,(P_016921,(GAP_81227,(WKSU,(Pcol,(P_006410,GAP_81226)1:0.8563979933173728)1:0.391584122994796)1:0.3973690691762966)1:0.7672360215479819)1:2.389715051646423)1:1.9926902221954017,((P_025527,(P_025523,P_025525)0.68:0.19693189453583868)0.99:0.7049182246991494,(((Asie,QDVW)1:3.1106432829231605,(P_019189,(PAWA,P_019197)1:0.896710986939448)0.99:0.19855075463582283)1:0.3302386466612699,(((P2589,OPDF)1:1.4509560952278775,(CSSK,P_019185)1:0.25469193990823463)1:1.0824150874776959,((P_019191,P_019199)0.87:0.21886062928715252,(GAP_80417,(P2590,GAP_79804)1:1.5929166212171806)1:0.7372863518831121)1:0.49386807908465086)1:1.36476372330365)0.88:0.22849236952418808)1:0.6125420391928432)0.95:0.16614546948451872,(((WPHN,P_011613)0.96:0.2929316602586823,(((P_011609,(Sdec,P2619)0.89:0.23999869330528198)1:0.9642103257516996,(MAQO,(P_014077,(WAIL,(P_011527,(GAP_80298,(P_014083,GAP_80297)1:1.6538023835368543)0.85:0.11290084115569572)0.62:0.06242675354864011)0.5:0.04013242318209829)1:0.9978995391639971)1:1.5709702589732337)1:0.6095364001771645,(((GAP_79862,P_011587)1:1.2862037515540945,(P_014081,(P_008647,P0104A)1:3.2618773239421204)1:1.5603230419264302)1:1.7978299614399582,(((KRJP,(GAP_80395,P_011549)1:1.2552297012319258)1:1.4001533420625314,((P_011657,(P_011643,(P_011509,P_011651)1:0.5288506469056468)0.91:0.12478985432697144)1:0.889951913129403,((GAP_80394,GAP_80393)1:0.8172535096273262,((P_011647,(P_011465,(P_011501,(P_011489,(P_011487,P_011523)0.74:0.07431117752349135)0.54:0.05165798109635992)1:0.5770027173795866)1:1.1410779068518069)1:0.2461326180350841,(P_011631,(P_011551,((P_011637,P_007844)1:0.25684130184059933,(P_007843,(P_007783,P_006414)0.98:0.2238252319683899)1:0.613535489835233)0.72:0.09737914967014845)0.7:0.09000903408642084)0.51:0.04754796609365985)1:0.6482536369112836)0.58:0.05544857495578526)1:2.220500478964132)1:1.6894676442754877,((P_011589,(P_011531,(P_011699,(Schi,P_006411)1:0.6800206445025138)1:0.5499203833015879)0.59:0.18419246472976622)0.75:0.4325214464984111,(VYLQ,(P_018635,(P_008631,((P_011579,(P_008632,(P_011671,P_011607)0.66:0.2831469172863898)0.88:0.14469141826148058)1:1.5869340925367132,(P_011719,(P_014073,(P_011709,(((P_011713,(Dhai,P_011705)0.98:0.2750226223041114)0.93:0.19307008139702547,(P_006413,(Apet,(WIGA,Msal)0.36:0.0)0.87:0.18547872882681593)0.86:0.12370949971303087)1:0.39589406512773834,((P_016813,(KAYP,((GAP_80390,GAP_80389)1:1.363109113022305,((P_011679,P_008646)0.99:0.2522058537293258,(P_008640,P_006412)1:0.9241064853738004)0.49:0.052303538263881684)0.96:0.2774578147362192)0.38:0.006650469481267651)1:0.5379146028529799,((ABSS,BCGB)1:0.6970227152813091,(P_011701,((P_011673,(P_011537,(P_011677,P_011739)1:1.116941297997426)0.76:0.11871049701499291)0.92:0.16324166442839477,(P_011759,((P_011675,P_011735)1:1.4487659854089383,(P_011715,(P_011681,(P_011745,P_011611)0.96:0.45858552821597276)0.8:0.1294960050456038)1:0.340087652611341)1:0.2791291896974784)0.88:0.13504720445109358)0.9:0.3439026408213204)0.22:0.049929427214080876)0.89:0.16221684153302782)0.9:0.16555382374133415)0.86:0.41251007771485715)0.19:0.0)0.93:0.8429828597006912)0.81:0.28401406590891487)1:1.8207513144681648)0.39:0.03712965645105129)1:0.48353682255718167)0.92:0.14713119537808214)1:1.375392599840704)0.56:0.06998710283972345)1:0.5776999505951863)1:0.5334616190958662)1:1.7512243908275082,((((P_018779,P_018639)1:0.3681828359970824,(P_018695,(P_018645,P_018783)0.85:0.10112825207134708)1:0.24563283298123692)1:0.4181114470156818,(P_018691,(((P_016793,(P_016795,P_006422)1:0.43885176569782747)1:0.35099527101534406,(P_016797,(P_007845,(P_016799,(GAP_80397,OBPL)0.88:0.1498320968240477)1:0.7466563384100139)0.88:0.28339901855587296)1:1.1252593502676245)0.64:0.06816970850172895,(P_018693,((S02,P_016787)1:2.378273125740401,((S04,(S38,(S27,P_016789)0.76:0.18868786018664246)0.64:0.13282095330045782)1:0.7399157681658964,(P_016791,((S08,P_014095)1:1.0064368207115535,(P_014099,S03)1:2.438708442634923)0.35:0.006955185176450442)0.8:0.0990699560169165)0.32:0.0031331898751805094)1:0.3153352796480908)0.57:0.0629674467392892)0.38:0.006615496529811096)0.97:0.2562396984430996)1:2.700151116510815,(((P2622,P2623)0.98:0.28453446833042106,(P0110C,(P0110B,((P0207C,P0207A)0.54:0.033621939806807645,((XQWC,P0207B)1:0.4035672558880437,(P0206H,P0206G)1:0.24808546729039999)0.63:0.05758013182633021)0.66:0.07275455637240792)1:1.4433845975785682)1:2.2106676964326915)1:0.42354443810468084,((DHPO,GAP_80322)1:2.750217084086189,((P_012941,P_012795)1:3.9693934851911195,((P_012861,((P_012855,(P_007802,P_012827)1:1.9344967567777804)1:0.8192920513747727,((P_012813,P_018637)1:0.5043258684572673,(P_012921,P_012919)1:2.1504530187519846)1:1.6316070759795727)1:2.636634952672978)0.8:0.10589906304895856,(((P_012841,((P_012913,P_012877)1:0.9587231184064723,(P_012811,(P_012895,P_012891)1:0.2443450787236442)1:0.9969486580881413)1:1.3882037755893317)1:0.40736346347176255,(P_012797,((P_012857,(((P_012815,P_012903)1:1.2302680079497637,(P_012925,P_012883)1:2.0221699253473244)0.4:0.013407749101898592,(P_012875,(P_012901,((P_012831,P_012905)1:0.2464999995315196,(P_012887,P_012851)1:1.948998991403954)0.46:0.02418936761601153)1:0.26958093227481583)1:0.6830095290203063)0.71:0.08474441038641495)1:0.567639894014513,(P_018689,((P_012885,(P_012859,(P_006420,GAP_80294)1:1.9624056352992885)0.6:0.0605631831098047)0.69:0.08457357759099624,((P_012907,(P_012873,P_012881)1:0.9146031237280416)0.53:0.049356768626693234,((GAP_80291,(P_012897,(GAP_80293,P_012893)1:2.136335139638191)0.63:0.08103250615792439)0.55:0.05616983293039991,((P_012911,(P_012917,P_012821)1:1.6422883642283732)1:0.9144996554439715,(P_006418,((P_012889,P_012793)0.55:0.05811993050944119,(P_012863,(P_006419,GAP_80292)1:2.547552657810051)0.51:0.05097770147920832)0.6:0.06518188283250986)0.83:0.14425867217719585)0.41:0.018607590663414865)0.54:0.052363629267765235)0.75:0.10584266019885645)1:1.027706220422929)1:1.110825602904284)1:2.051481225943418)0.33:0.0)1:2.421688307484722,((P_012867,((P_012847,P_012923)1:2.751021511602529,(P_012817,P_012899)1:1.310527122693641)1:0.5330273669968493)1:3.2364992258657734,(P_012843,((((P_012801,(P_012809,P_012879)1:3.136997963851104)1:0.4897627336350811,(P_012839,(P_012805,(P_012825,(YZRI,P_012799)1:2.066659056898321)0.97:0.14792245963440967)0.42:0.02555311116604359)1:0.5122157126549179)1:1.1252830488303385,((((P_012849,P_012871)1:1.1353305858530067,(P_012807,P_012845)1:0.43468426635800195)1:0.3604284037397008,(P_012865,(P_012931,(P_012933,P_012935)1:2.235609923349131)1:1.501706344799589)0.99:0.1971377954920814)1:1.9585569866863448,(P_012909,((GAP_81172,P_012833)1:2.0471688190041726,((P_012927,(PSJT,GAP_80295)1:0.2621125503010868)1:2.4788645524065527,((P_012915,P_012791)1:0.2118528938123063,(P_012869,(P_012835,(P_012823,P_012819)0.49:0.04157701750773351)1:0.5073750635517471)1:2.071045289904799)1:1.1030014183363068)0.8:0.08745420045503972)1:1.7325496283423643)0.38:0.007639032989023707)1:1.941822738104969)1:1.991948361356329,((P_012937,(P_006421,P_012939)1:1.003986742026394)1:3.1583509857022296,((P_012829,P_012837)1:0.903192399094793,(P_012853,P_012803)0.59:0.055528719843779634)0.65:0.06593032202534449)0.84:0.11250894883375664)0.83:0.1059132243483281)1:1.1695804873567488)1:1.077175991970894)1:0.28114183869133896)1:1.453521077906942)1:2.4540987439789324)1:0.6865056397274535)1:0.48419184979136204)1:2.2401119860997927)1:0.9888571324715455)1:2.12611374197047)1:1.0046171669015527)1:0.8084021471166082));
-Weight calculation took 88.325407849 secs
-ASTRAL finished in 108.824 secs
+(P0109B,((P_018831,OSHQ)1:1.8730398544053448,((P_016909,WZFE)1:2.4215089075220946,(P0203H,((((SJEV,(P_019193,(P_019187,Wsal)1:0.652301225104388)1:0.23713441303305421)1:2.94720653358395,(P_016921,(GAP_81227,(WKSU,(Pcol,(P_006410,GAP_81226)1:0.8462580972331425)1:0.38759176152481506)1:0.40647782091548035)1:0.7601077290534135)1:2.3530261628153837)1:1.945926647486722,((P_025527,(P_025523,P_025525)0.68:0.19693189453583868)0.99:0.7049182246991494,(((Asie,QDVW)1:3.365691045219565,(P_019189,(PAWA,P_019197)1:0.9026755999270987)0.98:0.17273244818832434)1:0.32386898875989784,(((P2589,OPDF)1:1.4227738133125907,(CSSK,P_019185)1:0.2800090110121007)1:1.064432751921051,((P_019191,P_019199)0.81:0.19485998769353552,(GAP_80417,(P2590,GAP_79804)1:1.5718164616737087)1:0.7228367293831689)1:0.4713474811480735)1:1.3308131573985238)0.77:0.19834199579685483)1:0.7025402905370421)0.95:0.16907178074622878,(((WPHN,P_011613)0.93:0.2625955740517932,(((P_011609,(Sdec,P2619)0.89:0.23999869330528198)1:0.979921025343456,(MAQO,(WAIL,(P_011527,((P_014083,GAP_80297)1:1.6138783458295736,(P_014077,GAP_80298)0.7:0.08500933553968668)0.62:0.06171625688470137)0.58:0.0547309842221541)1:1.0238247758289505)1:1.5396035672790302)1:0.6378338884598437,(((GAP_79862,P_011587)1:1.2511993326605961,(P_014081,(P_008647,P0104A)1:3.2273927616406555)1:1.5979740615794804)1:1.7635735735882252,(((KRJP,(GAP_80395,P_011549)1:1.2151846887873465)1:1.3999132851324438,((P_011657,(P_011643,(P_011509,P_011651)1:0.5303097152889766)0.95:0.14538478271429112)1:0.8717545556881788,((GAP_80394,GAP_80393)1:0.8158166437245009,((P_011647,(P_011465,(P_011501,(P_011489,(P_011487,P_011523)0.8:0.09094586591593017)0.54:0.05803796649010184)1:0.5655842654951936)1:1.1703858549461632)1:0.24970457028422421,(P_011631,(P_011551,((P_011637,P_007844)1:0.27465079818986216,(P_007843,(P_007783,P_006414)0.99:0.23668633301541928)1:0.6464618198262134)0.71:0.09763972534273377)0.7:0.08912289875539689)0.51:0.04911730179757862)1:0.6673972654650802)0.61:0.06076102100638452)1:2.3386198854376166)1:1.701410503237897,((P_011589,(P_011531,(P_011699,(Schi,P_006411)1:0.7200861909117816)1:0.49381418886012257)0.59:0.18419246472976622)0.75:0.4325214464984111,(VYLQ,(P_018635,(P_008631,((P_011579,(P_011671,P_008632)0.94:0.17852136533339538)1:1.6008842464391773,(((P_011713,(Dhai,P_011705)0.99:0.29392826933364624)0.95:0.2127132059664969,(P_006413,(Apet,(WIGA,Msal)0.4:0.012362714029482308)0.87:0.19198874631076626)0.8:0.10641622237777575)1:0.40970861507818607,((P_016813,(KAYP,((GAP_80390,GAP_80389)1:1.3767659386989106,((P_011679,P_008646)1:0.29560871837730507,(P_008640,P_006412)1:0.903486357798257)0.46:0.03982674404626498)0.96:0.2854449617347219)0.4:0.013127545911419554)1:0.5501099757339776,((ABSS,BCGB)1:0.7272284058015853,((P_011607,(P_011701,P_011719)0.33:0.0)0.67:0.2876820724517809,((P_014073,P_011709)0.21:0.0,((P_011673,(P_011537,(P_011677,P_011739)1:1.0779449964990515)0.77:0.1189945013751489)0.87:0.14115253845612755,(P_011759,((P_011675,P_011735)1:1.4180990207902857,(P_011715,(P_011681,(P_011745,P_011611)0.96:0.4589095159872863)0.86:0.1444564890278295)1:0.345229964976448)1:0.28942687244089244)0.9:0.14359348096484228)0.98:0.4461267657825216)0.5:0.10766607229557912)0.07:0.0)0.79:0.12934405471467095)0.88:0.15335228238893192)1:1.2558771826567134)1:1.8207513144681648)0.39:0.03712965645105129)1:0.4711722386536115)0.94:0.160047114372792)1:1.3557738214645751)0.57:0.07107665465360885)1:0.5740715109566165)1:0.577613389715799)1:1.7046158806948728,((((P_018779,P_018639)1:0.3824230837976514,(P_018695,(P_018645,P_018783)0.84:0.1005303255936974)1:0.24846554358044956)1:0.41810627185681787,(((P_016793,(P_016795,P_006422)1:0.47710380649085526)1:0.3634022848975408,(P_018691,(P_018693,(P_016797,(P_007845,(P_016799,(GAP_80397,OBPL)0.84:0.14447921621634197)1:0.7466563384100139)0.88:0.28339901855587296)1:1.1480126700310123)0.73:0.13593850450089254)0.38:0.0065310885151223285)0.59:0.0587517509364666,((S02,P_016787)1:2.4603689592585223,((S04,(S38,(S27,P_016789)0.85:0.22890662920175944)0.7:0.17217616671230707)1:0.8012243667755181,(P_016791,((S08,P_014095)1:1.1423039014247696,(P_014099,S03)1:2.4022219229259063)0.4:0.014763189863560459)0.66:0.06840509250232747)0.34:0.0010723072998563331)1:0.36545119602209186)1:0.2507293042609839)1:2.7263430827099673,(((P2622,P2623)0.98:0.28442337127240047,(P0110C,(P0110B,((XQWC,P0207B)1:0.43091429857390995,(P0207A,(P0207C,(P0206H,P0206G)1:0.26519512095711334)0.67:0.057366564367808244)0.5:0.04362594451606639)0.8:0.1384343054876165)1:1.426422777497255)1:2.1712969203598558)1:0.4642444730704103,((DHPO,GAP_80322)1:2.7156316638357425,((P_012941,P_012795)1:3.9351546538676923,((P_012861,((P_012855,(P_007802,P_012827)1:1.9019826167610359)1:0.8003667152160205,((P_012813,P_018637)1:0.5135530542597327,(P_012921,P_012919)1:2.1126017554675873)1:1.5940694492330303)1:2.5966187979425874)0.88:0.1293123290743271,(((P_012797,(P_012841,((P_012913,P_012877)1:0.9726491593990328,(P_012811,(P_012895,P_012891)1:0.2425931758242015)1:0.9695914466539374)1:1.3475952378419596)1:0.3089627238508333)0.58:0.054529141975706956,((P_012857,(((P_012815,P_012903)1:1.3794429605010765,(P_012925,P_012883)1:2.100195600524538)0.32:0.0,(P_012875,(P_012901,((P_012831,P_012905)1:0.22286599933611792,(P_012887,P_012851)1:1.98281523794065)0.44:0.02042798739759136)1:0.2591686555620681)1:0.7117781439057834)0.57:0.05402315232071717)1:0.5775363822322988,(P_018689,((P_012885,(P_012859,(P_006420,GAP_80294)1:2.009788504646944)0.69:0.08312647465902012)0.72:0.09529331839947916,((P_012873,P_012881)1:0.959863745859834,((P_012907,(P_006418,((P_012889,P_012793)0.55:0.05967945171638401,(P_012863,(P_006419,GAP_80292)1:2.6384995470119916)0.53:0.06420394063213253)0.66:0.08227146263205214)0.71:0.09729991368307646)0.38:0.01396466220156087,((P_012911,(P_012917,P_012821)1:1.7198272059413577)1:1.014842394817529,(GAP_80291,(P_012897,(GAP_80293,P_012893)1:2.1929017700731426)0.47:0.04030474893867407)0.57:0.06401608056711393)0.38:0.006748427774782628)0.51:0.05318083819293823)0.74:0.10553404985429908)1:1.006444973870988)1:1.1063060263748452)1:1.985935626765791)1:2.4698813367979255,((P_012867,((P_012847,P_012923)1:2.7144292402194994,(P_012817,P_012899)1:1.3078624409732504)1:0.5113366909932573)1:3.1988805702614407,(P_012843,((((P_012801,(P_012809,P_012879)1:3.1078477864211913)1:0.47774745567546983,(P_012839,(P_012805,(P_012825,(YZRI,P_012799)1:2.028596451578725)0.95:0.1423041389983979)0.47:0.03923413284066554)1:0.5085783320749993)1:1.1437498689565053,((((P_012849,P_012871)1:1.1490004116057322,(P_012807,P_012845)1:0.45910595478799915)1:0.3560690443509189,(P_012865,(P_012931,(P_012933,P_012935)1:2.19947427333372)1:1.507051754879649)0.98:0.16829773796913736)1:1.9352847736767296,(P_012909,((GAP_81172,P_012833)1:2.085050453613022,((P_012927,(PSJT,GAP_80295)1:0.26110342070410714)1:2.442835516211671,((P_012915,P_012791)0.99:0.18400077163246623,(P_012869,(P_012835,(P_012823,P_012819)0.61:0.05337039995888332)1:0.5010407641529857)1:2.033092249302611)1:1.0617999280733597)0.86:0.10480954729721285)1:1.6891804639528158)0.44:0.01945809529823375)1:1.8960227301657409)1:2.119751690364548,((P_012937,(P_006421,P_012939)1:0.9922937752455232)1:3.122244291411074,((P_012829,P_012837)1:0.8712463579761917,(P_012853,P_012803)0.37:0.01499719459029006)0.66:0.06623496553718601)0.83:0.12059781471176968)0.78:0.09590464665618989)1:1.1153260793372524)1:1.1059985155486571)0.99:0.2385072506111711)1:1.5164426574916177)1:2.415220705695449)1:0.6818308741989644)1:0.45540414552169795)1:2.207942060878081)1:0.9728814955220142)1:2.107013404201195)1:0.9876042733348764)1:0.8049998252941578));
+Weight calculation took 90.653606551 secs
+ASTRAL finished in 106.65 secs

@@ -418,7 +418,7 @@ cd /data3/projects/AFRODYN2/magnoliids/align_magnoliids_879557/helmstetter_87955
 bash ~/scripts/post_align.sh
 
 ###
-## ALIGNMENT MAFFT + TRIMAL
+#  ALIGNMENT MAFFT + TRIMAL
 ###
 
 ###
@@ -502,7 +502,7 @@ bash ~/scripts/fill_fasta.sh ~/data/hybpiper/namelist_magnoliids_phylo_1kp.txt 5
 #Delete empty alignments
 find . -name "*.FNA" -type 'f' -size -4k -delete
 
-module load bioinfo/phyx/0.999 
+module load phyx
 pxcat -s *.FNA -o mag.fa -p mag.partitions
 
 #add new path
@@ -537,20 +537,20 @@ python3 ./phypartspiecharts.py ./mag/astral_bs10_LPP.tre mag_out 195
 # DiscoVista quartet frequency analysis
 ###
 
-#copy astral output to DiscoVista-master/mag/trees
+#copy astral output to DiscoVista-master/mag/rel_trees
 
 #rename files to convention
 mv all_bs10.trees estimated_gene_trees.tree
 mv astral_bs10_LPP.tre estimated_species_tree.tree
 
 #conduct a relative frequency analysis with DiscoVista (angiosperm orders)
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/order_annotation.txt -m 5 -p rel_trees/ -o order_output/ -g Chloranthales
+sudo docker run -v /home/andrew.helmstetter/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/order_annotation.txt -m 5 -p rel_trees/ -o order_output/ -g Chloranthales
 
 #Meiocarpidium, other Magnoliales + Orders
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/meio_annotation.txt -m 5 -p rel_trees/ -o meio_output/ -g Chloranthales
+sudo docker run -v /home/andrew.helmstetter/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/meio_annotation.txt -m 5 -p rel_trees/ -o meio_output/ -g Chloranthales
 
 #Hydnora, other Piperales genera + Orders
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/hydn_annotation.txt -m 5 -p rel_trees/ -o hydn_output/ -g Chloranthales
+sudo docker run -v /home/andrew.helmstetter/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -a parameters/hydn_annotation.txt -m 5 -p rel_trees/ -o hydn_output/ -g Chloranthales
 
 ```
 
@@ -585,12 +585,12 @@ mv iqtree-magus_r10_l50_i50_trimal_auto/mag.partitions.contree iqtree-magus_r10_
 
 
 #rename folder names so they have the same suffix after '-'
-rename 's/_auto/-auto/' *
-rename 's/_magus/-magus/' *
-rename 's/_linsi/-linsi/' *
-rename 's/_einsi/-einsi/' *
-rename 's/_ginsi/-ginsi/' *
-rename 's/_exons/-exons/' *
+#rename 's/_auto/-auto/' *
+#rename 's/_magus/-magus/' *
+#rename 's/_linsi/-linsi/' *
+#rename 's/_einsi/-einsi/' *
+#rename 's/_ginsi/-ginsi/' *
+#rename 's/_exons/-exons/' *
 
 #run species tree analysis
 # -t is the threshold for high support (needs to be correct units for tree e.g. LPP is 0-1, QS 0-100)
@@ -599,7 +599,10 @@ rename 's/_exons/-exons/' *
 # -y parameters/newModel.txt 
 # -w parameters/newOrders.txt
 
-sudo docker run  -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs.txt -p species_oruned_trees/ -t 0.9 -m 0 -o species_oruned_trees/results
+#prune the trees to remove wandering taxa and adapt IQTREE support values to match ASTRAL (0-1)
+prune_trees.R
+
+sudo docker run  -v /home/andrew.helmstetter/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs_pruned_tree.txt -p species_pruned_trees/ -t 0.9 -m 0 -o species_pruned_trees/results
 
 ```
 
@@ -626,19 +629,33 @@ find . -type d -name "*l25_i75*" -prune -exec rm -rf {} \;
 # mafft_r10_i75_l25_b2_0
 # magus_r10_l50_i50_b2_d
 
+#prune the trees to remove wandering taxa (don't run twice)
+prune_trees.R
+
 #run genetree analysis
 # -t is the threshold for high support (needs to be correct units for tree e.g. LPP is 0-1, QS 0-100)
 #
 # These two options can be added if you want to reorder / rename analyses or groups:
 # -y parameters/newModel.txt 
 # -w parameters/newOrders.txt
-sudo docker run -v /home/andrew/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs.txt -p genetrees/ -t 90 -m 1 -o genetrees/results
+sudo docker run -v /home/andrew.helmstetter/Dropbox/projects/AJH_magnoliids/DiscoVista-master/mag:/data esayyari/discovista discoVista.py -c parameters/clade-defs_pruned_tree.txt -p genetrees_pruned/ -t 90 -m 1 -o genetrees_pruned/results
 
 #PERMISSIONS OF DOCKER FILES:
 #make myself owner
-sudo chown andrew results
+sudo chown andrew.helmstetter results
 
 #make folder and contents read/writable
 sudo chmod -R a+rw results
+
+```
+
+To remove low recovery species from hybpiper supercontig output:
+
+species that have <50 loci with 50% or more of exon recovered written to
+outputs/low_recovery.csv
+
+```{bash pipeline, eval = FALSE}
+
+sed -i '/Asie/{N;d;}' *
 
 ```

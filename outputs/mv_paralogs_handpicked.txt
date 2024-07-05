@@ -1,11 +1,19 @@
-mv RAxML_bipartitions*4951* paralogs/
-mv RAxML_bipartitions*5355* paralogs/
-mv RAxML_bipartitions*5428* paralogs/
-mv RAxML_bipartitions*5434* paralogs/
-mv RAxML_bipartitions*5578* paralogs/
-mv RAxML_bipartitions*5919* paralogs/
-mv RAxML_bipartitions*5958* paralogs/
-mv RAxML_bipartitions*6003* paralogs/
-mv RAxML_bipartitions*6004* paralogs/
-mv RAxML_bipartitions*6128* paralogs/
-mv RAxML_bipartitions*6387* paralogs/
+mv RAxML_bipartitions*4951* paralogs/ ###potential paralogy for a 5 species ###
+mv RAxML_bipartitions*5428* paralogs/ ###paralogy for 4 species ###
+mv RAxML_bipartitions*5434* paralogs/ ###many sequences, a few sequences with potential paralogy ###
+mv RAxML_bipartitions*5578* paralogs/ ###clear paralogy ###
+mv RAxML_bipartitions*5859* paralogs/ #potential paralogy in closely related Magnolia ###
+mv RAxML_bipartitions*5958* paralogs/ ###many species, quite clear paralogy ###
+mv RAxML_bipartitions*6004* paralogs/ ###iffy, some potential paralogy but just handful of species in Myristicaceae, small distances ###
+mv RAxML_bipartitions*6128* paralogs/ ###many, many species - if not paralogy then something strange is happening so better to remove ###
+mv RAxML_bipartitions*6387* paralogs/ ###obvious paralogy ###
+
+mv *4951_* paralogs/ ###potential paralogy for a 5 species ###
+mv *5428_* paralogs/ ###paralogy for 4 species ###
+mv *5434_* paralogs/ ###many sequences, a few sequences with potential paralogy ###
+mv *5578_* paralogs/ ###clear paralogy ###
+mv *5859_* paralogs/ #potential paralogy in closely related Magnolia ###
+mv *5958_* paralogs/ ###many species, quite clear paralogy ###
+mv *6004_* paralogs/ ###iffy, some potential paralogy but just handful of species in Myristicaceae, small distances ###
+mv *6128_* paralogs/ ###many, many species - if not paralogy then something strange is happening so better to remove ###
+mv *6387_* paralogs/ ###obvious paralogy ###

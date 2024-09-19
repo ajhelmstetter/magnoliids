@@ -205,7 +205,7 @@ p <- ggtree(tree,aes(colour=trait),ladderize = T, right = T, branch.length = 'no
   xlim(0,13) +
   theme(legend.position = "none") +
   scale_color_manual(values=c("black", wesanderson::wes_palettes$IsleofDogs1[1])) +
-  annotate("text", x = 0, y = 19, label = "(a)")
+  annotate("text", x = 0, y = 20, label = "(a)")
 
 p2 <- p %<+% edge + geom_label(aes(x=branch, label=labs))
 
@@ -214,7 +214,11 @@ p2
 #combine phylo and absolute frequency plots
  ( p2 + f2 ) / ( p1 + f1 )
 
-ggsave("figures/fig6_relative_freq.png",height = 10,width = 10)
+ggsave("figures/fig6_relative_freq.pdf",
+       height = 7.5,
+       width = 7.5,
+       units = "in",
+       dpi = 600)
 
 
 

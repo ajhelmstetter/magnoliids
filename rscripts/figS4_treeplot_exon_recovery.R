@@ -164,11 +164,11 @@ p2 <- ggplot(percent.len_melt, aes(x = category, y = label)) +
 
 p2
 
-pdf('figures/FigS4_tree_exon_recovery.pdf',
+pdf('figures/figS4_tree_exon_recovery.pdf',
     height = 20,
     width = 20)
 library(aplot)
 p2 %>% insert_left(g2,width=0.5)
 dev.off()
 
-ggsave("figures/FigS4_tree_exon_recovery.png",height=40,width=40)
+ggsave("figures/figS4_tree_exon_recovery.png",height=40,width=40)

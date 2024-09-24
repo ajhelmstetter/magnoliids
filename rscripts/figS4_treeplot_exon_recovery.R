@@ -133,7 +133,7 @@ library(ggtree)
 g <- ggtree(phy, layout = "rectangular")
 g
 g2 <- g %<+% df3 +
-  geom_tiplab(aes(color = factor(order)), size = 1.75) + theme(
+  geom_tiplab(aes(color = factor(order)), size = 2) + theme(
     legend.position = c(0.1, 0.9),
     #legend.title = element_blank(),
     # no title
@@ -165,9 +165,11 @@ p2 <- ggplot(percent.len_melt, aes(x = category, y = label)) +
 p2
 
 pdf('figures/figS4_tree_exon_recovery.pdf',
-    height = 20,
-    width = 20)
+    height = 30,
+    width = 35)
 library(aplot)
+options("aplot_guides" = "keep")
+p2 <- p2 + theme(legend.position="right")
 p2 %>% insert_left(g2,width=0.5)
 dev.off()
 

@@ -171,8 +171,8 @@ pdf(pdf_path,width=20,height=20)
 pp + geom_line(aes(x, y, group=label), color='grey',linetype=2, data=dd1,alpha=0.6)
 dev.off()
 
-ggsave("figures/figS8_tangle_pruned.png",width = 10, height = 10)
-ggsave("figures/figS8_tangle_pruned.pdf",width = 10, height = 10)
+ggsave("figures/figS9_tangle_pruned.png",width = 10, height = 10)
+ggsave("figures/figS9_tangle_pruned.pdf",width = 10, height = 10)
 
 #test branch lengths
 ast_phy$edge.length==ast_phy2$edge.length

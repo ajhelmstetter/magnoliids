@@ -205,7 +205,7 @@ p <- ggtree(tree,aes(colour=trait),ladderize = T, right = T, branch.length = 'no
   xlim(0,13) +
   theme(legend.position = "none") +
   scale_color_manual(values=c("black", wesanderson::wes_palettes$IsleofDogs1[1])) +
-  annotate("text", x = 0, y = 20, label = "(a)")
+  annotate("text", x = 0, y = 19.5, label = "(a)")
 
 p2 <- p %<+% edge + geom_label(aes(x=branch, label=labs))
 

@@ -209,11 +209,11 @@ dd1 <- as.data.frame(dd)
 #Now, we are going to conditionally join the tips of both trees for the feature we are interested in.
 # Connected tips will represent the same species.
 
-png("figures/figS4_tangle.png",width=1500,height=2000)
+png("figures/figS8_tangle.png",width=1500,height=2000)
 pp + geom_line(aes(x, y, group=label), color='grey', alpha=0.5, linetype=2, data=dd1)
 dev.off()
 
-pdf("figures/figS4_tangle.pdf",width=15,height=20)
+pdf("figures/figS8_tangle.pdf",width=15,height=20)
 pp + geom_line(aes(x, y, group=label), color='grey', alpha=0.5,linetype=2, data=dd1)
 dev.off()
 

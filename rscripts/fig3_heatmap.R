@@ -58,8 +58,6 @@ tn<-tn[tn$included_hybpiper==1,]
 setdiff(tn$Namelist,rownames(percent.len))
 setdiff(rownames(percent.len),tn$Namelist)
 
-filename<-"figures/fig3_heatmap.pdf"
-
 #set thresholds
 #limits <- c(0.25, 0.5, 0.75, 0.9)
 limits <- seq(0.01, 0.99, 0.01)
@@ -179,7 +177,7 @@ p2 +
   annotate("point", x = ast_filt$x, y = ast_filt$y, size=2, alpha=0.7, pch=3, stroke=1) +
   annotate("text", x = ast_filt$x+2.5, y = ast_filt$y+2.5, label = no_markers, size=3, alpha=0.7)
 
-ggsave(filename,  width = 7.5,
-       height = 6.5,
+ggsave("figures/fig3_heatmap.pdf",  width = 5.5,
+       height = 4.75,
        units = "in",
        dpi = 600)

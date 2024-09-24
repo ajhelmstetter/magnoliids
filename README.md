@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# PAFTOL_magnoliids
+# Magnoliids
 
 <!-- badges: start -->
 
@@ -13,7 +13,8 @@ Check](https://github.com/ajhelmstetter/magnoliids/actions/workflows/R-CMD-check
 
 <!-- badges: end -->
 
-Research Compendium of the project: PAFTOL Magnoliids
+Research Compendium of the project: Towards a phylogenomic
+classification of magnoliids
 
 ### How to cite
 
@@ -26,34 +27,25 @@ Please cite this compendium as:
 This repository is structured as follow:
 
 - [`data/`](https://github.com/ajhelmstetter/magnoliids/tree/master/data):
-  contains all raw data required to perform analyses **(Hidden until
-  publication)**
+  contains data required to perform analyses
 
 - [`rscripts/`](https://github.com/ajhelmstetter/magnoliids/tree/master/rscripts/):
   contains R scripts to run each step of the workflow
 
 - [`outputs/`](https://github.com/ajhelmstetter/magnoliids/tree/master/outputs):
-  contains all the results created during the workflow
+  contains the results created during the workflow
 
 - [`figures/`](https://github.com/ajhelmstetter/magnoliids/tree/master/figures):
-  contains all the figures created during the workflow
-
-- [`paper/`](https://github.com/ajhelmstetter/magnoliids/tree/master/paper):
-  contains all the manuscript and related content (biblio, templates,
-  etc.)
+  contains the figures created during the workflow
 
 - [`R/`](https://github.com/ajhelmstetter/magnoliids/tree/master/R):
-  contains R functions developed especially for this project
+  contains R functions developed for this project
 
 - [`man/`](https://github.com/ajhelmstetter/magnoliids/tree/master/man):
   contains help files of R functions
 
 - [`DESCRIPTION`](https://github.com/ajhelmstetter/magnoliids/tree/master/DESCRIPTION):
   contains project metadata (author, date, dependencies, etc.)
-
-- [`make.R`](https://github.com/ajhelmstetter/magnoliids/tree/master/make.R):
-  master R script to run the entire project by calling each R script
-  stored in the `rscripts/` folder
 
 ### Usage
 

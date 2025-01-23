@@ -28,13 +28,15 @@ Check](https://github.com/ajhelmstetter/magnoliids/actions/workflows/R-CMD-check
 
 <!-- badges: end -->
 
-Research Compendium of the project: Towards a phylogenomic classification of magnoliids
+### Research Compendium of the project:
+
+## Towards a phylogenomic classification of magnoliids
 
 ### How to cite
 
 Please cite this compendium as:
 
-> **{{ CITATION TO BE ADDED UPON PUBLICATION }}**
+> Helmstetter, A. J., Ezedin, Z., de Lírio, E. J., de Oliveira, S. M., Chatrou, L. W., Erkens, R. H., ... & Sauquet, H. (2025). Toward a phylogenomic classification of magnoliids. American Journal of Botany, e16451.
 
 ### Content
 

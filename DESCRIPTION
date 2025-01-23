@@ -20,7 +20,6 @@ RoxygenNote: 7.1.1
 Imports: 
     ape,
     aplot,
-    devtools,
     dplyr,
     GGally,
     ggplot2,
@@ -31,7 +30,6 @@ Imports:
     gplots,
     harrypotter,
     here,
-    knitr,
     ochRe,
     patchwork,
     phangorn,
@@ -41,7 +39,6 @@ Imports:
     RColorBrewer,
     reshape,
     reshape2,
-    rmarkdown,
     stringr,
     tidyr,
     tidyverse,

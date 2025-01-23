@@ -24,7 +24,7 @@ Please cite this compendium as:
 > Helmstetter, A. J., Ezedin, Z., de Lírio, E. J., de Oliveira, S. M.,
 > Chatrou, L. W., Erkens, R. H., … & Sauquet, H. (2025). Toward a
 > phylogenomic classification of magnoliids. American Journal of Botany,
-> e16451.
+> 112(1), e16451.
 
 ### Content
 
